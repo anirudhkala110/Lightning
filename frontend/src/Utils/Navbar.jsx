@@ -82,14 +82,14 @@ const Navbar = () => {
                             <NavLink to='/' className="btn  my-1 w-100 rounded-0 linkTabs" >Home</NavLink>
                             <NavLink to='/about' className='btn  my-1 w-100 rounded-0 linkTabs'>About</NavLink>
                             <NavLink to='/contact-us' className='btn  my-1 w-100 rounded-0 linkTabs'>Contact</NavLink>
-                            <NavLink to='/all-products' className="btn  my-1 w-100 rounded-0 linkTabs" type="button" >Products</NavLink>
+                            {/* <NavLink to='/all-products' className="btn  my-1 w-100 rounded-0 linkTabs" type="button" >Products</NavLink> */}
                             <NavLink to='/services' className='btn  my-1 w-100 rounded-0 linkTabs'>Services</NavLink>
-                            <NavLink to={`/profile/${admin}`} className='btn  my-1 w-100 rounded-0 linkTabs'>Profile</NavLink>
-                            <NavLink to='/dashboard' className='btn  my-1 w-100 rounded-0 linkTabs'>Dashboard</NavLink>
-                            <NavLink to='/login' className='w-50 btn  rounded-0 linkTabs'>Login</NavLink>
+                            {/* <NavLink to={`/profile/${admin}`} className='btn  my-1 w-100 rounded-0 linkTabs'>Profile</NavLink> */}
+                            {/* <NavLink to='/dashboard' className='btn  my-1 w-100 rounded-0 linkTabs'>Dashboard</NavLink> */}
+                            {/* <NavLink to='/login' className='w-50 btn  rounded-0 linkTabs'>Login</NavLink>
                             <NavLink to='/register' className='w-50 btn  rounded-0 linkTabs'>Sign Up</NavLink>
-                            <NavLink to='/home' className='w-50 btn  rounded-0 linkTabs'>Logout</NavLink>
-                            <NavLink to='/support' className='btn  my-1 w-50 rounded-0 linkTabs'>Support</NavLink>
+                            <NavLink to='/home' className='w-50 btn  rounded-0 linkTabs'>Logout</NavLink> */}
+                            <NavLink to='/support' className='btn  my-1 w-100 rounded-0 linkTabs'>Support</NavLink>
                         </div>
                     </div>
                 </div>

@@ -67,22 +67,22 @@ const Support = () => {
   return (
     <>
       <Helmet>
-        <title>RoboShop - Support</title>
+        <title>Slogfy - Support</title>
         <meta name='description' content='Query abuout any process, Subject, topic, and Cunsultaion' />
         <meta name='keywords' content='Contact Us' />
       </Helmet>
-      <div className="bg-white container min-vh-100 pt-3">
+      <div className="bg-black container min-vh-100 pt-3">
         <center className="fs-4 text-primary border-bottom py-3 fw-semibold alert-info alert rounded-0" style={{letterSpacing:'5px', wordSpacing:'15px'}}>. . .Get 24X7 Support. . .</center>
         <div className="px-5 py-1 container" style={{ background: "rgba(0, 0, 0, 5%)", minHeight: "100vh" }}>
           <div className="my-3">
-            <i className="bi bi-exclamation-triangle-fill text-warning me-1"></i> If you have any questions or require our assistance, please don't hesitate to get in touch with <a href='/all-products' className='text-primary text-decoration-none fw-bolder'>Roboshop</a>. We are here to help you.
+            <i className="bi bi-exclamation-triangle-fill text-warning me-1"></i> If you have any questions or require our assistance, please don't hesitate to get in touch with <a href='/all-products' className='text-primary text-decoration-none fw-bolder'>Slogfy</a>. We are here to help you.
           </div>
           <hr className="" style={{ color: "black" }} />
           <div className="row col-12 contactUsBG ps-4 py-5">
-            <div className="border bg-white col-lg-6 col-xl-6 my-2 py-2 col-sm-12 d-flex align-items-center justify-content-center " style={{ height: "470px", maxWidth: '550px' }}>
+            <div className="border bg-black col-lg-6 col-xl-6 my-2 py-2 col-sm-12 d-flex align-items-center justify-content-center " style={{ height: "470px", maxWidth: '550px' }}>
               <img src={csc} className="contactUsBG" alt="Contact Us" />
             </div>
-            <div className="container border pt-3 col-lg-6 col-xl-6 my-2 py-2 col-sm-12 pb-1 bg-white">
+            <div className="container border pt-3 col-lg-6 col-xl-6 my-2 py-2 col-sm-12 pb-1 bg-black">
               <form onSubmit={(e) => handleSubmit(e)} ref={form} >
                 <div className="form-group">
                   <label className="fw-bold" htmlFor="formGroupName">Name</label>
