@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <div className='container'>
-            <nav className="navbar w-100 bg-black rounded-0" style={{ background: 'rgb(255 255 255 / 90%)', borderBottom: '0px solid' }}>
+            <nav className="navbar w-100 bg-dark rounded-0" style={{ background: 'rgb(255 255 255 / 90%)', borderBottom: '0px solid' }}>
                 <div className="d-flex w-100 justify-content-between align-items-center ">
                     <a href='/' className='text-decoration-none text-white d-flex ps-0 align-items-center' >
                         <img src={logo} width={35} className='rounded-2 text-white' style={{filter:'invert()'}} />
