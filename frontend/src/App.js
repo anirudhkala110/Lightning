@@ -34,7 +34,7 @@ function App() {
             <div className='navbar-fixed-top bg-dark pb-0 border-bottom border-white' style={{ maxHeight: '57px',borderBottom:'1px solid white' }}>
               <Navbar />
             </div>
-            <div className='text-primary navbar-fixed-top mt-5 pt-3 bg-black pb-3' style={{ position: '',borderBottom:'1px solid black' }}>
+            <div className='text-primary navbar-fixed-top mt-5 pt-3 bg-black pb-2' style={{zIndex:'1',borderBottom:'1px solid black' }}>
               <NavSupport />
             </div>
             <div className='pt-2 bg-dark mt-5 pt-5 text-white' style={{ minWidth: "400px" }}>
