@@ -18,6 +18,7 @@ import Footer from './Utils/Footer';
 import JoinUs from './Images/JoinUs.jpg'
 import ContactDetails from './Components/Contact/ContactDetails';
 import NavSupport from './Utils/NavSupport';
+import DetailsOfHomePageDiv from './Components/Home/DetailsOfHomePageDiv';
 
 export const userContext = createContext()
 
@@ -51,6 +52,7 @@ function App() {
                 <Route exact path='/Registerpage' element={<Register />} />
                 <Route exact path='/dashboard' element={<DashBoard />} />
                 <Route exact path='/detail/:id/:machineName/:location/:uploadedBy' element={<Details />} />
+                <Route exact path='/info' element={<DetailsOfHomePageDiv />} />
                 <Route exact path='/contact-detail/:userName/:phone/:email/:address' element={<ContactDetails />} />
                 <Route path='*' element={<PageNoteFound />} />
               </Routes>
