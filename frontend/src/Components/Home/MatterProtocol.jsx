@@ -37,129 +37,131 @@ const MatterProtocol = () => {
                         Supported Devices
                     </strong>
                     <p className=''> The Connectivity Standards Alliance (CSA) maintains the official list of Matter certified products and restricts use of the Matter logo to certified devices. This list is available on the CSA's Certified Products Search. Matter product certification is also stored on the CSA's Distributed Compliance Ledger (DCL), which publishes attestation information about certified devices.</p>
-                    <table className='table table-striped table-dark table-hover table-bordered table-striped table-responsive-sm table-responsive-md'>
-                        <thead className=' '>
-                            <tr>
-                                <th className='text-primary'>Company</th>
-                                <th className='text-primary'>Platforms</th>
-                                <th className='text-primary'>Device Type</th>
-                                <th className='text-primary'>Hub(s)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Google</td>
-                                <td>
-                                    <ul style={{ listStyle: '' }} className=''>
-                                        <li>
-                                            Android
-                                        </li>
-                                        <li>
-                                            Wear OS
-                                        </li>
-                                        <li>
-                                            iOS
-                                        </li>
-                                        <li>
-                                            iPadOS
-                                        </li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            Bridges
-                                        </li>
-                                        <li>
-                                            Lights
-                                        </li>
-                                        <li>Locks</li>
-                                        <li>Outlets</li>
-                                        <li>sensors (contact, flow, humidity, illuminance, motion, occupancy, pressure, & temperature)</li>
-                                        <li>Speakers</li>
-                                        <li>Thermostats</li>
-                                        <li>Window coverings (except tilting)</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            Google Home Speaker & Google Home Mini
-                                        </li>
-                                        <li>Nest Mini, Nest Audio, Nest Hub (All Generations),Nest Wifi Pro*</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Apple
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            iOS
-                                        </li>
-                                        <li>
-                                            iPadOS
-                                        </li>
-                                        <li>
-                                            macOS
-                                        </li>
-                                        <li>
-                                            watchOS
-                                        </li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            Air conditioners
-                                        </li>
-                                        <li>
-                                            Bridges, Lights, locks, outlets, switches, blinds & shades
-                                        </li>
-                                        <li>
-                                            Sensors (motion, ambient light, contact, temperature, and humidity)
-                                        </li>
-                                        <li>
-                                            Thermostats, and window coverings
-                                        </li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            Amazon Echo smart speakers, Echo Pop, Echo Dot, and Echo Dot with Clock (third-gen and newer)
-                                        </li>
-                                        <li>
-                                            Echo Studio
-                                        </li>
-                                        <li>
-                                            Echo Show 5 and Echo Show 8 (second-gen and newer)
-                                        </li>
-                                        <li>
-                                            Echo Show 10 (third-gen)
-                                        </li>
-                                        <li>
-                                            Echo Input, Flex, and Plus (v2)
-                                        </li>
-                                        <li>
-                                            Echo (4th-gen)*
-                                        </li>
-                                        <li>
-                                            Eero Pro 6E, Pro 6, 6 Plus, 6, PoE 6, and PoE Gateway*
-                                        </li>
-                                        <li>
-                                            Echo Show 8 (third-gen)*
-                                        </li>
-                                        <li>
-                                            Eero Max 7*
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div className='' style={{ overflowX: 'auto' }}>
+                        <table className='table table-striped table-dark table-hover table-bordered table-striped table-responsive-sm table-responsive-md'>
+                            <thead className=' '>
+                                <tr>
+                                    <th className='text-primary'>Company</th>
+                                    <th className='text-primary'>Platforms</th>
+                                    <th className='text-primary'>Device Type</th>
+                                    <th className='text-primary'>Hub(s)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Google</td>
+                                    <td>
+                                        <ul style={{ listStyle: '' }} className=''>
+                                            <li>
+                                                Android
+                                            </li>
+                                            <li>
+                                                Wear OS
+                                            </li>
+                                            <li>
+                                                iOS
+                                            </li>
+                                            <li>
+                                                iPadOS
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                Bridges
+                                            </li>
+                                            <li>
+                                                Lights
+                                            </li>
+                                            <li>Locks</li>
+                                            <li>Outlets</li>
+                                            <li>sensors (contact, flow, humidity, illuminance, motion, occupancy, pressure, & temperature)</li>
+                                            <li>Speakers</li>
+                                            <li>Thermostats</li>
+                                            <li>Window coverings (except tilting)</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                Google Home Speaker & Google Home Mini
+                                            </li>
+                                            <li>Nest Mini, Nest Audio, Nest Hub (All Generations),Nest Wifi Pro*</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Apple
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                iOS
+                                            </li>
+                                            <li>
+                                                iPadOS
+                                            </li>
+                                            <li>
+                                                macOS
+                                            </li>
+                                            <li>
+                                                watchOS
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                Air conditioners
+                                            </li>
+                                            <li>
+                                                Bridges, Lights, locks, outlets, switches, blinds & shades
+                                            </li>
+                                            <li>
+                                                Sensors (motion, ambient light, contact, temperature, and humidity)
+                                            </li>
+                                            <li>
+                                                Thermostats, and window coverings
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                Amazon Echo smart speakers, Echo Pop, Echo Dot, and Echo Dot with Clock (third-gen and newer)
+                                            </li>
+                                            <li>
+                                                Echo Studio
+                                            </li>
+                                            <li>
+                                                Echo Show 5 and Echo Show 8 (second-gen and newer)
+                                            </li>
+                                            <li>
+                                                Echo Show 10 (third-gen)
+                                            </li>
+                                            <li>
+                                                Echo Input, Flex, and Plus (v2)
+                                            </li>
+                                            <li>
+                                                Echo (4th-gen)*
+                                            </li>
+                                            <li>
+                                                Eero Pro 6E, Pro 6, 6 Plus, 6, PoE 6, and PoE Gateway*
+                                            </li>
+                                            <li>
+                                                Echo Show 8 (third-gen)*
+                                            </li>
+                                            <li>
+                                                Eero Max 7*
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <sm>Note* : For more information you can visit <a href="https://en.wikipedia.org/wiki/Matter_(standard)" target='__blank' className='text-decoration-none'>Wikipedia</a></sm>
                 </div>
             </div>
