@@ -42,19 +42,19 @@ const Navbar = () => {
                     <div className='text-white'>
 
                         <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
-                            <i class="bi bi-instagram fs-4 "></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="bi bi-instagram fs-4 "></i>&nbsp;&nbsp;
                         </Link>
                         <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
-                            <i class="bi bi-facebook fs-4 "></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="bi bi-facebook fs-4 "></i>&nbsp;&nbsp;
                         </Link>
                         <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
-                            <i class="bi bi-messenger fs-4 "></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="bi bi-messenger fs-4 "></i>&nbsp;&nbsp;
                         </Link>
                         <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
-                            <i class="bi bi-whatsapp fs-4 "></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="bi bi-whatsapp fs-4 "></i>&nbsp;&nbsp;
                         </Link>
                         <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
-                            <i class="bi bi-meta fs-4 "></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="bi bi-meta fs-4 "></i>&nbsp;&nbsp;
                         </Link>
                     </div>
                     <div className='less1000pxDisabled me-3'>

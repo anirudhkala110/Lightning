@@ -3,12 +3,12 @@ import React from 'react'
 const DetailsOfHomePageDiv = () => {
     return (
 
-        <div className='bg-white w-100 pt-2 d-flex align-items-start justify-content-center'>
-            <div className='container  p-2 bg-white text-black'
+        <div className='bg-black w-100 pt-2 d-flex align-items-start justify-content-center'>
+            <div className='container  p-2 bg-black text-white'
             // style={{ borderLeft: '1px solid rgb(196 191 191)', borderRight: '1px solid rgb(196 191 191)' }}
             >
                 <div className='py-1'>
-                    <center className='p-1 rounded-0 mb-1 alert alert-info fw-semibold fs-2'>What does home automation typically include?</center>
+                    <center className='p-1 rounded-0 mb-1 alert text-primary fw-semibold fs-2'>What does home automation typically include?</center>
                     <br/>
                     <h4>A home automation system typically include a range of features aimed at enhancing convenience, security, and energy efficiency.</h4>
                     <br/>
