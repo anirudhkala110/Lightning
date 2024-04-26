@@ -31,8 +31,8 @@ const Home = () => {
                             <br />
                             <strong className='fw-semibold  text-primary px-0' style={{ fontSize: "2em", letterSpacing: "0px", borderTop: '0px solid white' }}><Typewriter text="Lightening... " infinite={true} speed={500} /><Typewriter text="| " infinite={true} speed={280} /></strong>
                         </div>
-                        <h1># India's  1<sup>st</sup> Brand</h1>
-                        <h1>Home Automation Matter Protocal Brand</h1>
+                        <h1>India's &nbsp;&nbsp;# 1<sup>st</sup> Brand</h1>
+                        <h1>Home Automation Brand Based on Matter Protocal</h1>
                         <hr />
                         {/* RoboShop is an online platform dedicated exclusively to robotic arm technology. It serves as a comprehensive marketplace where enthusiasts, professionals, and businesses can explore, discover, and procure the latest advancements in robotic arm technology. From industrial-grade robotic arms for manufacturing and automation to cutting-edge models for research and education, RoboShop offers a wide range of options to cater to every need and application. With a user-friendly interface, advanced search filters, and detailed product descriptions, RoboShop makes it easy to find the perfect robotic arm for your requirements. Additionally, RoboShop provides exceptional support and assistance throughout the purchasing process, ensuring a seamless and hassle-free experience for customers. */}
                     </p>

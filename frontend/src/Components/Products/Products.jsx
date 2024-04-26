@@ -33,7 +33,7 @@ const Products = () => {
         return stringUpdated
     }
     return (
-        <div className='min-vh-100 d-flex justify-content-start align-items-start'>
+        <div className='min-vh-100 bg-white d-flex justify-content-start align-items-start'>
             <div>
                 <div className='sideBar p-2' style={{ width: '200px', minHeight: '600px', borderRight: "1px solid rgba(0, 0, 0, 0.22)", minHeight: "600px", boxShadow: "rgba(0, 0, 0, 0) 1px -4px 5px 1px" }}>
                     <div className='mb-3'>
@@ -89,7 +89,7 @@ const Products = () => {
                     </button>
                 </div>
                 <div>
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel" data-bs-dismiss="offcanvas">
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel" data-bs-dismiss="offcanvas">
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Content</h5>
                             <button type="button" class="btn-close text-reset fs-3" aria-label="Close"></button>
