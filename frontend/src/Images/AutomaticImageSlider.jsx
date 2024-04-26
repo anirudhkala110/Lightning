@@ -6,10 +6,11 @@ import DivCollection from './DiverseCollection.jpg'
 import Intro from './intro.jpg'
 import Navigation from './navigation.jpg'
 import JoinUs from './JoinUs.jpg'
+import mi from './MI.svg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const colors = [Logo, cANDvisit, custSat, DivCollection, Intro, Navigation, JoinUs];
+const colors = [Logo, cANDvisit, custSat, DivCollection, Intro, Navigation, JoinUs, mi];
 const delay = 2500;
 
 function AutomaticImageSlider() {
@@ -47,13 +48,16 @@ function AutomaticImageSlider() {
                     <div
                         className="slide"
                         key={idx}
-                        style={{ backgroundColor }}
-                    ><img className=' w-100' src={backgroundColor} style={{maxHeight:'450px',height:'100%',minWidth:'400px',maxWidth:"600px"}}
-                    // data-aos="slide-left" data-aos-delay={1000*idx} data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='true'
-                    /></div>
+                        // style={{ backgroundColor }}
+                    >
+                        <span>Heading</span>
+                        <br/>
+                        <img className=' w-100 text-white bg-white' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "600px", color: 'white' }}
+                        // data-aos="slide-left" data-aos-delay={1000*idx} data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='true'
+                        /></div>
                 ))}
             </div>
-
+<br/>
             <div className="slideshowDots">
                 {colors.map((_, idx) => (
                     <div

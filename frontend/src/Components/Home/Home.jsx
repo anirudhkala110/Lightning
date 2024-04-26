@@ -81,10 +81,11 @@ const Home = () => {
                 </div>
                 {/* <div className='sliderImages bg-dark justify-content-center align-items-center d-flex' style={{ minHeight: "350px" }}><ImgSlider /></div> */}
                 <hr />
-                <div className='sliderImages bg-white w-100' 
+                <div className='sliderImages bg-black w-100' 
                  data-aos="zoom-in" data-aos-delay='' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='true'
                 style={{ minHeight: "350px" }}><AutomaticImageSlider /></div>
                 {/* <div className='sliderImages bg-dark w-100' style={{ minHeight: "350px" }}><AutomaticImageSlider /></div> */}
+                <hr/>
                 <div>
                     <br />
                     <div>
