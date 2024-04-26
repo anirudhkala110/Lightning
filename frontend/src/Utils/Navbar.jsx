@@ -18,7 +18,7 @@ const Navbar = () => {
                         <a href='/' className='text-decoration-none text-white d-flex ps-0 align-items-center' >
                             <img src={logo} width={35} className='rounded-2 text-white' style={{ filter: 'invert()' }} />
                             &nbsp;
-                            <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Lightning</strong>
+                            <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogfy</strong>
                         </a>
                         <div className='show1000px ms-4'>
                             {/* <div className=''> */}
@@ -73,7 +73,7 @@ const Navbar = () => {
                             <a href='/' className='text-decoration-none text-white d-flex ps-0 align-items-center' >
                                 <img src={logo} width={35} className='rounded-2 text-black' style={{ filter: 'invert(1)' }} />
                                 &nbsp;
-                                <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Lightning</strong>
+                                <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogfy</strong>
                             </a>
                             <button type="button" className="btn-close text-reset text-white fs-3 fw-bolder py-2" data-bs-dismiss="offcanvas" aria-label="Close" style={{ color: 'white' }}><i class="bi bi-x-lg text-white"></i></button>
                         </div>

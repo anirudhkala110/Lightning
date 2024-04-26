@@ -46,7 +46,16 @@ body {
 
 .homeHover:hover {
   border: 1px solid rgba(0, 110, 255, 0.741);
+  background: #192c4d7d !important;
   border-radius: 8px;
+}
+.homeHover:hover a{
+  color: rgb(0, 106, 255) !important;
+  font-weight: 700;
+}
+.homeHover:hover li{
+  color: rgb(255, 255, 255) !important;
+  font-weight: 700;
 }
 
 /*  Home Div Hover  */
