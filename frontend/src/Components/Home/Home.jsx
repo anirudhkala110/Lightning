@@ -48,32 +48,56 @@ const Home = () => {
                 <div className='container'>
                     <br />
                     <br />
-                    <div>
-                        <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>Introduction to RoboShop</center>
+                    <div className='homeHover p-3'>
+                        <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>How Much Do Home Automation Systems Cost In 2024</center>
                         <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
-                            <hr />
-                            <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>  Your ultimate destination for all things robotic arms! As the premier online platform dedicated exclusively to robotic arm technology, RoboShop offers a comprehensive marketplace where enthusiasts, professionals, and businesses can explore, discover, and procure the latest advancements in robotic arm technology.
+                            <div className='w-100 border border-secondary' />
+                            <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>
+                                <ul className='p-0' style={{ listStyle: 'none' }}>
+                                    <li className='mb-3'>In the ever-evolving landscape of technology, home automation systems have become a key component of modern living. As 2024 rolls in, an increasing number of homeowners are seeking to enhance their living experiences with these innovative systems.</li>
+                                    <li className='mb-3'>However, cost is an important consideration in this journey towards smart homes. This document aims to give you a comprehensive understanding of the costs associated with home automation in 2024, helping you make an informed decision and plan your investments wisely.</li>
+                                </ul>
                             </p>
                             <img src={Intro} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                         </div>
                     </div>
                     <br />
                     <br />
-                    <div>
-                        <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>RoboShop's Diverse Collection</center>
+                    <div className='homeHover p-3'>
+                        <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>What is a home automation system?</center>
                         <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
                             <hr />
                             <img src={DivCollection} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
-                            <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>RoboShop prides itself on curating a diverse and extensive collection of robotic arms sourced from top manufacturers and suppliers worldwide. From industrial-grade robotic arms for manufacturing and automation to state-of-the-art models for research and education, our platform features a wide range of options to cater to every need and application.</p>
+                            <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>
+                                <ul>
+                                    <li>Home automation systems, also known as smart homes, allow homeowners to control different aspects of their house remotely, often with the use of smart devices. This includes functions such as CCTV security, lighting and temperature adjustment with the help of their smartphones or voice commands.</li>
+                                    <li>In addition, these systems can be used to monitor energy usage and provide automated alerts for potential problems in the home. They are commonly used to increase security, to streamline entertainment systems, and to increase accessibility. Home automation is also commonly used to increase safety around the home. For example, smart home technology can be used to monitor very young or very old residents.</li>
+                                </ul>
+                            </p>
                         </div>
                     </div>
                     <br />
                     <br />
-                    <div>
-                        <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>User-Friendly Navigation</center>
+                    <div className='homeHover p-3'>
+                        <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>What does home automation typically include?</center>
                         <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
                             <hr />
-                            <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>Navigating RoboShop is a breeze, thanks to our user-friendly interface, advanced search filters, and detailed product descriptions. Whether you're searching for a specific model or exploring new possibilities, RoboShop provides the tools and resources to find the perfect robotic arm for your requirements.</p>
+                            <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>
+                                <ul className='p-0' style={{listStyle:'none'}}>
+                                    <li>A home automation system typically include a range of features aimed at enhancing convenience, security, and energy efficiency.</li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                One of the key elements is lighting control, allowing users to adjust the intensity and colour of lights in different rooms directly from their smartphone. Smart lighting can adapt to the homeowners routine, or be linked to sensors that respond to other smart devices such as automated blinds. Smart lights are also high energy efficient, as you can control lighting from anywhere with an internet connection, not just from your home lighting controls.
+                                            </li>
+                                            <li>
+                                                Security is another major aspect, with security features like smart locks, security cameras, and a security alarm that can be remotely monitored and controlled.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>More...</li>
+                                </ul>
+                            </p>
                             <img src={Navigation} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                         </div>
                     </div>
@@ -81,14 +105,14 @@ const Home = () => {
                 </div>
                 {/* <div className='sliderImages bg-dark justify-content-center align-items-center d-flex' style={{ minHeight: "350px" }}><ImgSlider /></div> */}
                 <hr />
-                <div className='sliderImages bg-black w-100' 
-                 data-aos="zoom-in" data-aos-delay='' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='true'
-                style={{ minHeight: "350px" }}><AutomaticImageSlider /></div>
+                <div className='sliderImages bg-black w-100'
+                    data-aos="zoom-in" data-aos-delay='' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='true'
+                    style={{ minHeight: "350px" }}><AutomaticImageSlider /></div>
                 {/* <div className='sliderImages bg-dark w-100' style={{ minHeight: "350px" }}><AutomaticImageSlider /></div> */}
-                <hr/>
-                <div>
+                <hr />
+                <div className='container'>
                     <br />
-                    <div>
+                    <div className='homeHover p-3'>
                         <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>Facilitating Communication and Visits</center>
                         <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
                             <hr />
@@ -98,7 +122,7 @@ const Home = () => {
                     </div>
                     <br />
                     <br />
-                    <div>
+                    <div className='homeHover p-3'>
                         <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>Commitment to Customer Satisfaction</center>
                         <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
                             <hr />
@@ -108,7 +132,7 @@ const Home = () => {
                     </div>
                     <br />
                     <br />
-                    <div>
+                    <div className='homeHover p-3'>
                         <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>Join the RoboShop Community</center>
                         <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
                             <hr />

@@ -36,6 +36,19 @@ body {
   display: flex;
 }
 
+/*  Home Div Hover  */
+
+.homeHover{
+  border: 1px solid transparent;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.homeHover:hover{
+  border: 1px solid rgba(0, 110, 255, 0.741);
+  border-radius: 8px;
+}
+
+/*  Home Div Hover  */
 
 @media only screen and (max-width:999px) {
   .less1000px {
