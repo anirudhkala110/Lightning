@@ -37,7 +37,7 @@ const Navbar = () => {
                             </a>
                         </div>
                     </div>
-                    <div className='less1000px'>
+                    <div className='less1000px me-3'>
                         <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                             <i className="bi bi-list-nested"></i>
                         </button>
