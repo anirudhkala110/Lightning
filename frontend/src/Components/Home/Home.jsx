@@ -104,15 +104,6 @@ const Home = () => {
                         </div>
                     </div>
                     <br />
-                </div>
-                {/* <div className='sliderImages bg-dark justify-content-center align-items-center d-flex' style={{ minHeight: "350px" }}><ImgSlider /></div> */}
-                <hr />
-                <div className='sliderImages bg-black w-100'
-                    data-aos="zoom-in" data-aos-delay='' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='true'
-                    style={{ minHeight: "350px" }}><AutomaticImageSlider /></div>
-                {/* <div className='sliderImages bg-dark w-100' style={{ minHeight: "350px" }}><AutomaticImageSlider /></div> */}
-                <hr />
-                <div className='container'>
                     <br />
                     <div className='homeHover p-3'>
                         <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>WHat is Matter Protocol ?</center>
@@ -124,29 +115,40 @@ const Home = () => {
                                     <li>
                                         Matter is an open-source connectivity standard for smart home and IoT (Internet of Things) devices
                                     </li>
+                                    <li>
+                                        The standard is royalty-free, though developers and manufacturers incur certification costs. It originated in December 2019 as the "Project Connected Home over IP" (or "CHIP" for short) working group, founded by Amazon, Apple, Google and the Zigbee Alliance, now called the Connectivity Standards Alliance. Subsequent members include IKEA, Huawei, and Schneider. Version 1.0 of the specification was published on 4 October 2022. The Matter software development kit is open-source under the Apache License.
+                                    </li>
                                 </ul>
-                                <NavLink to='/What-is-Matter-protocol?' className='text-decoration-none mx-3' >More</NavLink>
+                                <NavLink to='/What-is-Matter-protocol?' className='text-decoration-none mx-3' >More...</NavLink>
                             </p>
                         </div>
                     </div>
-                    <br />
-                    <br />
-                    <div className='homeHover p-3'>
-                        <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>Commitment to Customer Satisfaction</center>
-                        <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
-                            <div className='w-100 border mb-2 border-secondary' />
-                            <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>At RoboShop, customer satisfaction is our top priority. Our team is committed to providing exceptional support and assistance throughout the purchasing process, ensuring a seamless and hassle-free experience from start to finish.</p>
-                            <img src={custSat} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                </div>
+                {/* <div className='sliderImages bg-dark justify-content-center align-items-center d-flex' style={{ minHeight: "350px" }}><ImgSlider /></div> */}
+                {/* <div className='sliderImages bg-dark w-100' style={{ minHeight: "350px" }}><AutomaticImageSlider /></div> */}
+                <br />
+                <div className='sliderImages bg-dark w-100'
+                    data-aos="zoom-in" data-aos-delay='' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='true'
+                    style={{ minHeight: "350px" }}><AutomaticImageSlider />
+                </div>
+                <br />
+                <div className='container'>
+                    <div className='row'>
+                        <div className='homeHover p-3'>
+                            <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>Features</center>
+                            <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
+                                <div className='w-100 border mb-2 border-secondary' />
+                                <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>At RoboShop, customer satisfaction is our top priority. Our team is committed to providing exceptional support and assistance throughout the purchasing process, ensuring a seamless and hassle-free experience from start to finish.</p>
+                                <img src={custSat} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                            </div>
                         </div>
-                    </div>
-                    <br />
-                    <br />
-                    <div className='homeHover p-3'>
-                        <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>Join the RoboShop Community</center>
-                        <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
-                            <div className='w-100 border mb-2 border-secondary' />
-                            <img src={JoinUs} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
-                            <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>Join the RoboShop community today and unlock the potential of robotic arm technology. Whether you're a seasoned professional or a curious enthusiast, RoboShop is your trusted partner in harnessing the power of robotics. Start exploring now and take the first step towards transforming your operations with cutting-edge robotic technology!</p>
+                        <div className='homeHover p-3'>
+                            <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>Join the RoboShop Community</center>
+                            <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
+                                <div className='w-100 border mb-2 border-secondary' />
+                                <img src={JoinUs} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>Join the RoboShop community today and unlock the potential of robotic arm technology. Whether you're a seasoned professional or a curious enthusiast, RoboShop is your trusted partner in harnessing the power of robotics. Start exploring now and take the first step towards transforming your operations with cutting-edge robotic technology!</p>
+                            </div>
                         </div>
                     </div>
                 </div>

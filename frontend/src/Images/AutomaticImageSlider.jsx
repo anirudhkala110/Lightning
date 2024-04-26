@@ -35,28 +35,51 @@ function AutomaticImageSlider() {
     const timeoutRef = useRef(null);
 
     useEffect(() => {
-        const resetTimeout = () => {
-            if (timeoutRef.current) {
-                clearTimeout(timeoutRef.current);
+        if (index <= colors.length) {
+            const resetTimeout = () => {
+                if (timeoutRef.current) {
+                    clearTimeout(timeoutRef.current);
+                }
+            };
+
+            const handleNextSlide = () => {
+                setIndex((prevIndex) =>
+                    prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+                );
+            };
+            console.log(index, colors.length)
+            if (index >= colors.length - 1) {
+                return; // Stop the useEffect if index exceeds colors.length
             }
-        };
+            else {
+                resetTimeout();
+                timeoutRef.current = setTimeout(handleNextSlide, delay);
 
-        const handleNextSlide = () => {
-            setIndex((prevIndex) =>
-                prevIndex === colors.length - 1 ? 0 : prevIndex + 1
-            );
-        };
-
-        resetTimeout();
-        timeoutRef.current = setTimeout(handleNextSlide, delay);
-
-        return () => {
-            resetTimeout();
-        };
+                return () => {
+                    resetTimeout();
+                };
+            }
+        }
     }, [index]);
 
+    const handleMouseEnter = () => {
+        clearTimeout(timeoutRef.current); // Pause the slideshow
+    };
+    const handleMouseLeave = () => {
+        // Resume the slideshow only if index is less than colors.length
+        if (index < colors.length) {
+            timeoutRef.current = setTimeout(
+                () => setIndex((prevIndex) => prevIndex + 1),
+                delay
+            );
+        }
+    };
+
     return (
-        <div className="slideshow pt-3">
+        <div className="slideshow pt-3"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+        >
             <div
                 className="slideshowSlider rounded-0"
                 style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
@@ -69,17 +92,17 @@ function AutomaticImageSlider() {
                     >
                         <span>Heading</span>
                         <br />
-                        <img className=' w-100 text-white bg-white' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "600px", color: 'white' }}
+                        <img className=' w-100 text-white bg-white' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }}
                         // data-aos="slide-left" data-aos-delay={1000*idx} data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='true'
                         /></div>
                 ))}
             </div>
             <br />
-            <div className="slideshowDots d-flex w-100" style={{overflow:'auto'}}>
+            <div className="slideshowDots d-flex w-100" style={{ overflow: 'auto' }}>
                 {colors.map((_, idx) => (
                     <div
                         key={idx}
-                        style={{width:'200px'}}
+                        style={{ width: '200px' }}
                         className={`slideshowDot${index === idx ? " active" : ""}`}
                         onClick={() => {
                             setIndex(idx);
