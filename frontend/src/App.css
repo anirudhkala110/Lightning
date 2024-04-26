@@ -38,39 +38,44 @@ body {
 
 /*  Home Div Hover  */
 
-.homeHover{
+.homeHover {
   border: 1px solid transparent;
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
-.homeHover:hover{
+
+.homeHover:hover {
   border: 1px solid rgba(0, 110, 255, 0.741);
   border-radius: 8px;
 }
 
 /*  Home Div Hover  */
 #sidebar a.active {
-  border-bottom:solid rgb(0, 145, 255) !important;
+  border-bottom: solid rgb(0, 145, 255) !important;
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
 }
-.linkTabs{
+
+.linkTabs {
   box-shadow: none !important;
-  border-bottom:solid rgb(0, 238, 255) !important;
+  border-bottom: solid rgb(0, 238, 255) !important;
   background: rgb(0, 0, 0) !important;
   color: white !important;
   transition: .2s ease;
   border-bottom: 2px;
 }
-.linkTabs:hover{
+
+.linkTabs:hover {
   background: rgba(4, 122, 122, 0.749) !important;
   color: rgb(0, 0, 0) !important;
   font-weight: 600;
 }
+
 .show1000NavSupport {
-  display: flex !important ;
+  display: flex !important;
 }
+
 @media only screen and (max-width:999px) {
   .less1000px {
     display: block;
@@ -81,7 +86,7 @@ body {
   }
 
   .show1000NavSupport {
-    display: none ;
+    display: none;
   }
 }
 
@@ -970,3 +975,35 @@ transform: scale(2.5);
 
 
 /*Automatic Image Slider */
+
+/*  Social Media Data Hover */
+
+.instahover,.metahover,.whatsapphover,.msngerhover,.facebookhover {
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+.bi-instagram:hover {
+  color: #ff00b3c2;
+  transform: scale(1.01);
+}
+.bi-meta:hover {
+  color: #1586c0;
+  transform: scale(1.01);
+}
+.bi-whatsapp:hover {
+  color: #02cf02;
+  transform: scale(1.01);
+}
+.bi-messenger:hover {
+  color: #08a9ff;
+  transform: scale(1.01);
+}
+.bi-facebook:hover{
+  color: #006fff;
+  transform: scale(1.01);
+
+}
+
+
+/*  Social Media Data Hover */

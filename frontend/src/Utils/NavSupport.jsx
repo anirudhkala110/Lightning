@@ -4,7 +4,7 @@ const NavSupport = () => {
     const admin = useContext(userContext)
     const handleCall = (number) => {
         const phoneNumber = parseInt(number); // Replace this with the phone number you want to call
-        window.open(`tel:${phoneNumber}`);
+        window.open(`tel:+91${phoneNumber}`);
     };
     return (
         <div className='container text-white d-flex align-items-center' >
@@ -13,7 +13,7 @@ const NavSupport = () => {
             </div>
             <div className='w-100 justify-content-end show1000NavSupport' >
                 {/* <div className='w-100 justify-content-end show1000NavSupport' > */}
-                <span className='fs-5 d-flex align-items-center'><strong className='fs-6'>+91-7668490213</strong> &nbsp;<button className='btn rounded-0 py-1 fw-bold' style={{ background: '#ff5722' }} onClick={e=>handleCall(7668490213)}>Call Now</button></span>
+                <span className='fs-5 d-flex align-items-center'><strong className='fs-6'>+91-8005183363</strong> &nbsp;<button className='btn rounded-0 py-1 fw-bold' style={{ background: '#ff5722' }} onClick={e=>handleCall(8005183363)}>Call Now</button></span>
                 {/* <div className="dropdown me-1">
                     <button className="btn btnHover navsupport fw-bold dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
                         {/* <button className="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"> 
