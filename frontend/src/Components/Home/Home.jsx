@@ -24,11 +24,11 @@ const Home = () => {
                 <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 px-5 py-3'>
                     {/* <div className='col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6'> */}
                     {/* <strong className='mt-2 px-2'>What is RoboShop ?</strong> */}
-                    <p className='py-3 px-3'>
+                    <p className='py-3'>
                         <div className='fs-2 mt-3' style={{ minHeight: '200px' }}>
                             <span style={{ fontSize: "48px" }}>Welcome to </span>
                             <br />
-                            <strong className='fw-semibold  text-primary px-0' style={{ fontSize: "78px", letterSpacing: "5px", borderTop: '0px solid white' }}><Typewriter text="Lightening... " infinite={true} speed={500} /><Typewriter text="| " infinite={true} speed={280} /></strong>
+                            <strong className='fw-semibold  text-primary px-0' style={{ fontSize: "3em", letterSpacing: "0px", borderTop: '0px solid white' }}><Typewriter text="Lightening... " infinite={true} speed={500} /><Typewriter text="| " infinite={true} speed={280} /></strong>
                         </div>
                         <h1># India's  1<sup>st</sup> Brand</h1>
                         <h1>Home Automation Matter Protocal Brand</h1>
