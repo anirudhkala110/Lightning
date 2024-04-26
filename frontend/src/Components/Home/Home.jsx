@@ -12,7 +12,7 @@ import Typewriter from '../../Utils/Typewriter';
 import ImageSlider from '../../Images/ImageSlider';
 import ImgSlider from '../../Images/ImgSlider';
 import AutomaticImageSlider from '../../Images/AutomaticImageSlider';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
     }, [])
     return (
         <div className='min-vh-100'>
-            <div className='row border border-black'>
+            <div className='row'>
                 <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 px-5 py-3'>
                     {/* <div className='col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6'> */}
                     {/* <strong className='mt-2 px-2'>What is RoboShop ?</strong> */}
@@ -89,14 +89,14 @@ const Home = () => {
                                     <li>
                                         <ul>
                                             <li>
-                                                One of the key elements is lighting control, allowing users to adjust the intensity and colour of lights in different rooms directly from their smartphone. Smart lighting can adapt to the homeowners routine, or be linked to sensors that respond to other smart devices such as automated blinds. Smart lights are also high energy efficient, as you can control lighting from anywhere with an internet connection, not just from your home lighting controls.
+                                                One of the key elements is lighting control, allowing users to adjust the intensity and colour of lights in different rooms directly from their smartphone. Smart lighting can adapt to the homeowners routine, or be NavLinked to sensors that respond to other smart devices such as automated blinds. Smart lights are also high energy efficient, as you can control lighting from anywhere with an internet connection, not just from your home lighting controls.
                                             </li>
                                             <li>
                                                 Security is another major aspect, with security features like smart locks, security cameras, and a security alarm that can be remotely monitored and controlled.
                                             </li>
                                         </ul>
                                     </li>
-                                    <Link to='/info' className='text-decoration-none'>More...</Link>
+                                    <NavLink to='/info' className='text-decoration-none'>More...</NavLink>
                                 </ul>
                             </p>
                             <img src={Navigation} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />

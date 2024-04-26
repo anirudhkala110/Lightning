@@ -31,31 +31,33 @@ function App() {
       <div className='bg-black' style={{ minWidth: "400px" }}>
         <userContext.Provider value={admin}>
           <Router>
-            <div className='navbar-fixed-top bg-dark pb-0 border-bottom border-white' style={{ maxHeight: '57px',borderBottom:'1px solid white' }}>
+            <div className='navbar-fixed-top bg-dark pb-0 border-bottom border-white' style={{ maxHeight: '57px', borderBottom: '1px solid white' }}>
               <Navbar />
             </div>
-            <div className='text-primary navbar-fixed-top mt-5 pt-3 bg-black pb-2' style={{zIndex:'1',borderBottom:'1px solid white' }}>
+            <div className='text-primary navbar-fixed-top py-3 mt-5 bg-black pb-2' style={{ zIndex: '1', borderBottom: '1px solid white' }}>
               <NavSupport />
             </div>
-            <div className='pt-2 bg-dark mt-5 pt-5 text-white' style={{ minWidth: "400px" }}>
-              <Routes>
-                <Route exact path='/' element={<Home />} />
-                <Route exact path='/home' element={<Home />} />
-                <Route exact path='/all-products' element={<Products />} />
-                <Route exact path='/about' element={<About />} />
-                <Route exact path='/contact-us' element={<Contact />} />
-                <Route exact path='/services' element={<Services />} />
-                <Route exact path='/support' element={<Support />} />
-                <Route exact path='/profile/:user' element={<Profile />} />
-                <Route exact path='/login' element={<Login />} />
-                <Route exact path='/register' element={<Register />} />
-                <Route exact path='/Registerpage' element={<Register />} />
-                <Route exact path='/dashboard' element={<DashBoard />} />
-                <Route exact path='/detail/:id/:machineName/:location/:uploadedBy' element={<Details />} />
-                <Route exact path='/info' element={<DetailsOfHomePageDiv />} />
-                <Route exact path='/contact-detail/:userName/:phone/:email/:address' element={<ContactDetails />} />
-                <Route path='*' element={<PageNoteFound />} />
-              </Routes>
+            <div className='pt-2 mt-5 pt-5 text-white' style={{ minWidth: "400px" }}>
+              <div className='mt-3'>
+                <Routes>
+                  <Route exact path='/' element={<Home />} />
+                  <Route exact path='/home' element={<Home />} />
+                  <Route exact path='/all-products' element={<Products />} />
+                  <Route exact path='/about' element={<About />} />
+                  <Route exact path='/contact-us' element={<Contact />} />
+                  <Route exact path='/services' element={<Services />} />
+                  <Route exact path='/support' element={<Support />} />
+                  <Route exact path='/profile/:user' element={<Profile />} />
+                  <Route exact path='/login' element={<Login />} />
+                  <Route exact path='/register' element={<Register />} />
+                  <Route exact path='/Registerpage' element={<Register />} />
+                  <Route exact path='/dashboard' element={<DashBoard />} />
+                  <Route exact path='/detail/:id/:machineName/:location/:uploadedBy' element={<Details />} />
+                  <Route exact path='/info' element={<DetailsOfHomePageDiv />} />
+                  <Route exact path='/contact-detail/:userName/:phone/:email/:address' element={<ContactDetails />} />
+                  <Route path='*' element={<PageNoteFound />} />
+                </Routes>
+              </div>
             </div>
             <div className='navbar-dark bg-dark rounded-0 px-5 d-flex align-items-center' style={{ minHeight: '50px' }}>
               {/* <div className='navbar-inverse rounded-0' style={{ minHeight: '50px' }}> */}
