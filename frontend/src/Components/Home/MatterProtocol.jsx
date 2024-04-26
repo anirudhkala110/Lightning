@@ -2,14 +2,14 @@ import React from 'react'
 
 const MatterProtocol = () => {
     return (
-        <div className='bg-black w-100 pt-2 d-flex align-items-start justify-content-center'>
+        <div className='bg-black w-100 d-flex align-items-start justify-content-center'>
             <div className='container  p-2 bg-black text-white'
             // style={{ borderLeft: '1px solid rgb(196 191 191)', borderRight: '1px solid rgb(196 191 191)' }}
             >
                 <div className='py-1'>
-                    <center className='p-1 rounded-0 mb-1 alert alert-info fw-semibold fs-2'>What is Matter or Matter Protocol ?</center>
-                    <br />
-                    <h4><b>Matter</b> is an open-source connectivity standard for smart home and IoT (Internet of Things) devices.</h4>
+                    <center className='p-1 rounded-0 text-primary alert fw-semibold fs-2'>What is Matter or Matter Protocol ?</center>
+                    <hr />
+                    <h4 className='text-info'><b>Matter</b> is an open-source connectivity standard for smart home and IoT (Internet of Things) devices.</h4>
                     <br />
                     <ul>
                         <li>
@@ -23,7 +23,7 @@ const MatterProtocol = () => {
                         </li>
                     </ul>
                     <hr />
-                    <strong className='fs-3 fw-bold text-primary'>
+                    <strong className='fs-3 fw-bold text-info'>
                         Background or History
                     </strong>
                     <br />
@@ -37,13 +37,13 @@ const MatterProtocol = () => {
                         Supported Devices
                     </strong>
                     <p className=''> The Connectivity Standards Alliance (CSA) maintains the official list of Matter certified products and restricts use of the Matter logo to certified devices. This list is available on the CSA's Certified Products Search. Matter product certification is also stored on the CSA's Distributed Compliance Ledger (DCL), which publishes attestation information about certified devices.</p>
-                    <table className='table table-bordered table-striped table-responsive-sm table-responsive-md'>
+                    <table className='table table-striped table-dark table-hover table-bordered table-striped table-responsive-sm table-responsive-md'>
                         <thead className=' '>
-                            <tr className=''>
-                                <th>Company</th>
-                                <th>Platforms</th>
-                                <th>Device Type</th>
-                                <th>Hub(s)</th>
+                            <tr>
+                                <th className='text-primary'>Company</th>
+                                <th className='text-primary'>Platforms</th>
+                                <th className='text-primary'>Device Type</th>
+                                <th className='text-primary'>Hub(s)</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -160,6 +160,7 @@ const MatterProtocol = () => {
                             </tr>
                         </tbody>
                     </table>
+                    <sm>Note* : For more information you can visit <a href="https://en.wikipedia.org/wiki/Matter_(standard)" target='__blank' className='text-decoration-none'>Wikipedia</a></sm>
                 </div>
             </div>
 

@@ -41,25 +41,31 @@ const Navbar = () => {
                     </div>
                     <div className='text-white'>
 
-                        <Link to='https://wa.me/+918005183363'  className='text-decoration-none' target='_blank'>
+                        <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
                             <i class="bi bi-instagram fs-4 "></i>&nbsp;&nbsp;&nbsp;&nbsp;
                         </Link>
-                        <Link to='https://wa.me/+918005183363'  className='text-decoration-none' target='_blank'>
+                        <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
                             <i class="bi bi-facebook fs-4 "></i>&nbsp;&nbsp;&nbsp;&nbsp;
                         </Link>
-                        <Link to='https://wa.me/+918005183363'  className='text-decoration-none' target='_blank'>
+                        <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
                             <i class="bi bi-messenger fs-4 "></i>&nbsp;&nbsp;&nbsp;&nbsp;
                         </Link>
-                        <Link to='https://wa.me/+918005183363'  className='text-decoration-none' target='_blank'>
+                        <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
                             <i class="bi bi-whatsapp fs-4 "></i>&nbsp;&nbsp;&nbsp;&nbsp;
                         </Link>
-                        <Link to='https://wa.me/+918005183363'  className='text-decoration-none' target='_blank'>
+                        <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
                             <i class="bi bi-meta fs-4 "></i>&nbsp;&nbsp;&nbsp;&nbsp;
                         </Link>
                     </div>
                     <div className='less1000pxDisabled me-3'>
-                        <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                            <i className="bi bi-list-nested"></i>
+                        <button className="btn text-white d-flex align-items-center rounded-0" style={{ background: '#ff5722' }} data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <strong>
+                                Menu
+                            </strong>
+                            &nbsp;
+                            <strong className='' >
+                                <i className="bi bi-list p-0" ></i>
+                            </strong>
                         </button>
                     </div>
                     <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
