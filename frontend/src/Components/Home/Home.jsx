@@ -8,6 +8,7 @@ import DivCollection from '../../Images/2.png'
 import Intro from '../../Images/intro.jpg'
 import Navigation from '../../Images/navigation.jpg'
 import JoinUs from '../../Images/JoinUs.jpg'
+import mi from '../../Images/MI.svg'
 import Typewriter from '../../Utils/Typewriter';
 import ImageSlider from '../../Images/ImageSlider';
 import ImgSlider from '../../Images/ImgSlider';
@@ -52,7 +53,7 @@ const Home = () => {
                     <div className='homeHover p-3'>
                         <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>How Much Do Home Automation Systems Cost In 2024</center>
                         <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
-                            <div className='w-100 border border-secondary' />
+                            <div className='w-100 border mb-2 border-secondary' />
                             <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>
                                 <ul className='p-0' style={{ listStyle: 'none' }}>
                                     <li className='mb-3'>In the ever-evolving landscape of technology, home automation systems have become a key component of modern living. As 2024 rolls in, an increasing number of homeowners are seeking to enhance their living experiences with these innovative systems.</li>
@@ -67,7 +68,7 @@ const Home = () => {
                     <div className='homeHover p-3'>
                         <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>What is a home automation system?</center>
                         <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
-                            <hr />
+                            <div className='w-100 border mb-2 border-secondary' />
                             <img src={DivCollection} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                             <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>
                                 <ul>
@@ -82,7 +83,7 @@ const Home = () => {
                     <div className='homeHover p-3'>
                         <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>What does home automation typically include?</center>
                         <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
-                            <hr />
+                            <div className='w-100 border mb-2 border-secondary' />
                             <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>
                                 <ul className='p-0' style={{ listStyle: 'none' }}>
                                     <li>A home automation system typically include a range of features aimed at enhancing convenience, security, and energy efficiency.</li>
@@ -114,11 +115,18 @@ const Home = () => {
                 <div className='container'>
                     <br />
                     <div className='homeHover p-3'>
-                        <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>Facilitating Communication and Visits</center>
+                        <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>WHat is Matter Protocol ?</center>
                         <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
-                            <hr />
-                            <img src={cANDvisit} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
-                            <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>Once you've found the robotic arm that meets your needs, simply reach out to our dedicated team, and we'll facilitate communication with the supplier or warehouse owner to inquire about availability and arrange a visit to inspect the machine firsthand.</p>
+                            <div className='w-100 border mb-2 border-secondary' />
+                            <img src={mi} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6 bg-white p-2' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                            <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6 px-1'>
+                                <ul className='' style={{ listStyle: 'none' }}>
+                                    <li>
+                                        Matter is an open-source connectivity standard for smart home and IoT (Internet of Things) devices
+                                    </li>
+                                </ul>
+                                <NavLink to='/What-is-Matter-protocol?' className='text-decoration-none mx-3' >More</NavLink>
+                            </p>
                         </div>
                     </div>
                     <br />
@@ -126,7 +134,7 @@ const Home = () => {
                     <div className='homeHover p-3'>
                         <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>Commitment to Customer Satisfaction</center>
                         <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
-                            <hr />
+                            <div className='w-100 border mb-2 border-secondary' />
                             <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>At RoboShop, customer satisfaction is our top priority. Our team is committed to providing exceptional support and assistance throughout the purchasing process, ensuring a seamless and hassle-free experience from start to finish.</p>
                             <img src={custSat} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                         </div>
@@ -136,7 +144,7 @@ const Home = () => {
                     <div className='homeHover p-3'>
                         <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>Join the RoboShop Community</center>
                         <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
-                            <hr />
+                            <div className='w-100 border mb-2 border-secondary' />
                             <img src={JoinUs} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                             <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>Join the RoboShop community today and unlock the potential of robotic arm technology. Whether you're a seasoned professional or a curious enthusiast, RoboShop is your trusted partner in harnessing the power of robotics. Start exploring now and take the first step towards transforming your operations with cutting-edge robotic technology!</p>
                         </div>

@@ -43,9 +43,13 @@ const Navbar = () => {
                         </button>
                     </div>
                     <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                        <div className="offcanvas-header">
-                            <h5 className="offcanvas-title" id="offcanvasExampleLabel">Logo</h5>
-                            <button type="button" className="btn-close text-reset text-dark fs-3 fw-bolder" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <div className="offcanvas-header bg-black">
+                            <a href='/' className='text-decoration-none text-white d-flex ps-0 align-items-center' >
+                                <img src={logo} width={35} className='rounded-2 text-black' style={{ filter: 'invert(1)' }} />
+                                &nbsp;
+                                <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Lightning</strong>
+                            </a>
+                            <button type="button" className="btn-close text-reset text-white fs-3 fw-bolder py-2" data-bs-dismiss="offcanvas" aria-label="Close" style={{color:'white'}}><i class="bi bi-x-lg text-white"></i></button>
                         </div>
                         <hr />
                         <div className="offcanvas-body " style={{ minHeight: "500px" }}>

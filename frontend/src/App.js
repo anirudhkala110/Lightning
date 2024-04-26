@@ -19,6 +19,7 @@ import JoinUs from './Images/JoinUs.jpg'
 import ContactDetails from './Components/Contact/ContactDetails';
 import NavSupport from './Utils/NavSupport';
 import DetailsOfHomePageDiv from './Components/Home/DetailsOfHomePageDiv';
+import MatterProtocol from './Components/Home/MatterProtocol';
 
 export const userContext = createContext()
 
@@ -31,7 +32,7 @@ function App() {
       <div className='bg-black' style={{ minWidth: "400px" }}>
         <userContext.Provider value={admin}>
           <Router>
-            <div className='navbar-fixed-top bg-dark pb-0 border-bottom border-white' style={{ maxHeight: '57px', borderBottom: '1px solid white',zIndex:'100' }}>
+            <div className='navbar-fixed-top bg-dark pb-0 border-bottom border-white' style={{ maxHeight: '57px', borderBottom: '1px solid white', zIndex: '100' }}>
               <Navbar />
             </div>
             <div className='text-primary navbar-fixed-top py-3 mt-5 bg-black pb-2' style={{ zIndex: '50', borderBottom: '1px solid white' }}>
@@ -54,6 +55,7 @@ function App() {
                   <Route exact path='/dashboard' element={<DashBoard />} />
                   <Route exact path='/detail/:id/:machineName/:location/:uploadedBy' element={<Details />} />
                   <Route exact path='/info' element={<DetailsOfHomePageDiv />} />
+                  <Route exact path='/What-is-Matter-protocol?' element={<MatterProtocol />} />
                   <Route exact path='/contact-detail/:userName/:phone/:email/:address' element={<ContactDetails />} />
                   <Route path='*' element={<PageNoteFound />} />
                 </Routes>
