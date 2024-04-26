@@ -4,12 +4,14 @@ const DetailsOfHomePageDiv = () => {
     return (
 
         <div className='bg-black w-100 d-flex align-items-start justify-content-center'>
-            <div className='container w-100  px-2'
+            <div className='container  p-2 bg-white text-black'
             // style={{ borderLeft: '1px solid rgb(196 191 191)', borderRight: '1px solid rgb(196 191 191)' }}
             >
                 <div className='py-1'>
-                    <hr />
-                    <center className='p-1 rounded-0 mb-1 alert alert-info fw-semibold fs-4'>complete Detail</center>
+                    <center className='p-1 rounded-0 mb-1 alert alert-info fw-semibold fs-2'>What does home automation typically include?</center>
+                    <br/>
+                    <h4>A home automation system typically include a range of features aimed at enhancing convenience, security, and energy efficiency.</h4>
+                    <br/>
                     <ul>
                         <li>One of the key elements is lighting control, allowing users to adjust the intensity and colour of lights in different rooms directly from their smartphone. Smart lighting can adapt to the homeowners routine, or be linked to sensors that respond to other smart devices such as automated blinds. Smart lights are also high energy efficient, as you can control lighting from anywhere with an internet connection, not just from your home lighting controls.</li>
                         <li>Security is another major aspect, with security features like smart locks, security cameras, and a security alarm that can be remotely monitored and controlled. If you're going to invest money in a smart home system, it makes sense to ensure improved security is on your list of priorities. A good security system can help you to feel more at ease in your own home. It can also make those living alone feel better about their home security.</li>
