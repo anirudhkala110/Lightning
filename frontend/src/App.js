@@ -34,10 +34,10 @@ function App() {
             <div className='navbar-fixed-top bg-black pb-0' style={{ maxHeight: '57px' }}>
               <Navbar />
             </div>
-            <div className='text-primary mt-5 pt-3 bg-dark pb-1' style={{ position: 'relative' }}>
+            <div className='text-primary navbar-fixed-top mt-5 pt-3 bg-dark pb-3' style={{ position: '',borderBottom:'1px solid black' }}>
               <NavSupport />
             </div>
-            <div className='pt-2 bg-dark text-white' style={{ minWidth: "400px" }}>
+            <div className='pt-2 bg-dark mt-5 pt-5 text-white' style={{ minWidth: "400px" }}>
               <Routes>
                 <Route exact path='/' element={<Home />} />
                 <Route exact path='/home' element={<Home />} />

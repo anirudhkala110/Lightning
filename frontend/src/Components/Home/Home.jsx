@@ -12,6 +12,7 @@ import Typewriter from '../../Utils/Typewriter';
 import ImageSlider from '../../Images/ImageSlider';
 import ImgSlider from '../../Images/ImgSlider';
 import AutomaticImageSlider from '../../Images/AutomaticImageSlider';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -83,7 +84,7 @@ const Home = () => {
                         <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
                             <hr />
                             <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>
-                                <ul className='p-0' style={{listStyle:'none'}}>
+                                <ul className='p-0' style={{ listStyle: 'none' }}>
                                     <li>A home automation system typically include a range of features aimed at enhancing convenience, security, and energy efficiency.</li>
                                     <li>
                                         <ul>
@@ -95,7 +96,7 @@ const Home = () => {
                                             </li>
                                         </ul>
                                     </li>
-                                    <li>More...</li>
+                                    <Link to='/info' className='text-decoration-none'>More...</Link>
                                 </ul>
                             </p>
                             <img src={Navigation} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />

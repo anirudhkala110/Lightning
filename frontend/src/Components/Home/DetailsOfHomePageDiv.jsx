@@ -3,7 +3,7 @@ import React from 'react'
 const DetailsOfHomePageDiv = () => {
     return (
 
-        <div className='bg-black w-100 d-flex align-items-start justify-content-center'>
+        <div className='bg-black w-100 pt-2 d-flex align-items-start justify-content-center'>
             <div className='container  p-2 bg-white text-black'
             // style={{ borderLeft: '1px solid rgb(196 191 191)', borderRight: '1px solid rgb(196 191 191)' }}
             >
