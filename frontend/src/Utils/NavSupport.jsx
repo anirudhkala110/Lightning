@@ -9,7 +9,7 @@ const NavSupport = () => {
     return (
         <div className='container text-white d-flex align-items-center' >
             <div className='navsupport ps-1 fs-5' >
-                Smarthings
+                ThingMATTERS
             </div>
             <div className='w-100 justify-content-end show1000NavSupport' >
                 {/* <div className='w-100 justify-content-end show1000NavSupport' > */}
