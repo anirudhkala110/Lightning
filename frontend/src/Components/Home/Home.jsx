@@ -28,7 +28,7 @@ const Home = () => {
                         <div className='fs-2 mt-3' style={{ minHeight: '200px' }}>
                             <span style={{ fontSize: "48px" }}>Welcome to </span>
                             <br />
-                            <strong className='fw-semibold  text-primary px-0' style={{ fontSize: "3em", letterSpacing: "0px", borderTop: '0px solid white' }}><Typewriter text="Lightening... " infinite={true} speed={500} /><Typewriter text="| " infinite={true} speed={280} /></strong>
+                            <strong className='fw-semibold  text-primary px-0' style={{ fontSize: "2.5em", letterSpacing: "0px", borderTop: '0px solid white' }}><Typewriter text="Lightening... " infinite={true} speed={500} /><Typewriter text="| " infinite={true} speed={280} /></strong>
                         </div>
                         <h1># India's  1<sup>st</sup> Brand</h1>
                         <h1>Home Automation Matter Protocal Brand</h1>
