@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div className='min-vh-100'>
-      <div className='container bg-white pt-3' style={{ borderLeft: '1px solid #8080806b', borderRight: '1px solid #8080806b' }}>
+      <div className='container bg-black pt-3' style={{ borderLeft: '1px solid #8080806b', borderRight: '1px solid #8080806b' }}>
         <center className='fs-4 fw-semibold alert alert-info rounded-0'>About</center>
         <div>
           <div>
