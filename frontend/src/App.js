@@ -31,10 +31,10 @@ function App() {
       <div className='bg-black' style={{ minWidth: "400px" }}>
         <userContext.Provider value={admin}>
           <Router>
-            <div className='navbar-fixed-top bg-dark pb-0 border-bottom border-white' style={{ maxHeight: '57px', borderBottom: '1px solid white' }}>
+            <div className='navbar-fixed-top bg-dark pb-0 border-bottom border-white' style={{ maxHeight: '57px', borderBottom: '1px solid white',zIndex:'100' }}>
               <Navbar />
             </div>
-            <div className='text-primary navbar-fixed-top py-3 mt-5 bg-black pb-2' style={{ zIndex: '1', borderBottom: '1px solid white' }}>
+            <div className='text-primary navbar-fixed-top py-3 mt-5 bg-black pb-2' style={{ zIndex: '50', borderBottom: '1px solid white' }}>
               <NavSupport />
             </div>
             <div className='pt-2 mt-5 pt-5 text-white' style={{ minWidth: "400px" }}>

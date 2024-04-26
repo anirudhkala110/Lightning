@@ -155,7 +155,7 @@ const Products = () => {
 
             </div>
             <div className='mainBase ms-1 bg-white p-2'>
-                <center className='fs-3 fw-semibold my-2 py-2 alert alert-info rounded-0' style={{ position: '', zIndex: '100' }}>Products</center>
+                <center className='fs-3 fw-semibold my-2 py-2 alert alert-info rounded-0' style={{ position: '', zIndex: '10' }}>Products</center>
                 <hr className='' />
                 <div className='p-2'>
                     {
