@@ -90,9 +90,8 @@ function AutomaticImageSlider() {
                         key={idx}
                     // style={{ backgroundColor }}
                     >
-                        <span>Heading</span>
-                        <br />
-                        <img className=' w-100 text-white bg-white' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }}
+                        <center>Detail of the Image</center>
+                        <img className=' w-100 text-white bg-white mt-1' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }}
                         // data-aos="slide-left" data-aos-delay={1000*idx} data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='true'
                         /></div>
                 ))}
