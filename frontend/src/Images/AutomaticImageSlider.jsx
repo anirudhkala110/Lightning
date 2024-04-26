@@ -7,10 +7,27 @@ import Intro from './intro.jpg'
 import Navigation from './navigation.jpg'
 import JoinUs from './JoinUs.jpg'
 import mi from './MI.svg'
+import one from './1.png'
+import two from './2T.png'
+import tre from './3.png'
+import fr from './4.jpg'
+import fv from './5.jpg'
+import six from './6.jpg'
+import svn from './7.jpg'
+import eth from './8.jpg'
+import nin from './9.jpg'
+import elv from './11.jpg'
+import tlv from './12.jpg'
+import trln from './13.jpg'
+import frtn from './14.jpg'
+import fvtn from './15.jpg'
+import sxtn from './16.jpg'
+import svtn from './17.jpg'
+import etn from './18.jpeg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const colors = [Logo, cANDvisit, custSat, DivCollection, Intro, Navigation, JoinUs, mi];
+const colors = [one, two, tre, fr, six, svn, eth, nin, elv, tlv, trln, frtn, fvtn, sxtn, svtn, etn, DivCollection, Intro, Navigation, mi];
 const delay = 2500;
 
 function AutomaticImageSlider() {
@@ -48,20 +65,21 @@ function AutomaticImageSlider() {
                     <div
                         className="slide"
                         key={idx}
-                        // style={{ backgroundColor }}
+                    // style={{ backgroundColor }}
                     >
                         <span>Heading</span>
-                        <br/>
+                        <br />
                         <img className=' w-100 text-white bg-white' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "600px", color: 'white' }}
                         // data-aos="slide-left" data-aos-delay={1000*idx} data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='true'
                         /></div>
                 ))}
             </div>
-<br/>
-            <div className="slideshowDots">
+            <br />
+            <div className="slideshowDots d-flex w-100" style={{overflow:'auto'}}>
                 {colors.map((_, idx) => (
                     <div
                         key={idx}
+                        style={{width:'200px'}}
                         className={`slideshowDot${index === idx ? " active" : ""}`}
                         onClick={() => {
                             setIndex(idx);

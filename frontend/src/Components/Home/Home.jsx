@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import Logo from '../../Images/frst.png'
 import cANDvisit from '../../Images/CommAndVisit.jpg'
 import custSat from '../../Images/customerSatisfaction.jpg'
-import DivCollection from '../../Images/DiverseCollection.jpg'
+import DivCollection from '../../Images/2.png'
 import Intro from '../../Images/intro.jpg'
 import Navigation from '../../Images/navigation.jpg'
 import JoinUs from '../../Images/JoinUs.jpg'
