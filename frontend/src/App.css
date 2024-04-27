@@ -36,6 +36,14 @@ body {
   display: flex;
 }
 
+
+.sliderImages {
+  background-image: url(./Images/Logo.png) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*  Home Div Hover  */
 
 .homeHover {
@@ -43,6 +51,7 @@ body {
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
+
 .homehoverTab {
   border: 1px solid transparent;
   transition: 0.2s ease-in-out;
@@ -54,16 +63,26 @@ body {
   background: #19346261 !important;
   border-radius: 8px;
 }
+
 .homehoverTab:hover {
   border: 1px solid rgba(0, 110, 255, 0.741);
   background: #19346261 !important;
   border-radius: 8px;
 }
-.homeHover:hover a{
+
+.homehoverTab:hover img {
+  border: 1px solid rgba(0, 110, 255, 0.741);
+  background: #19346261 !important;
+  border-bottom-right-radius: '18px' !important;
+  border-Top-Left-Radius: '18px' !important;
+}
+
+.homeHover:hover a {
   color: rgb(0, 106, 255) !important;
   font-weight: 700;
 }
-.homeHover:hover li{
+
+.homeHover:hover li {
   color: rgb(255, 255, 255) !important;
   font-weight: 700;
 }
@@ -963,8 +982,7 @@ transform: scale(2.5);
 
 .slide {
   display: inline-block;
-
-  height: 400px;
+  height: 500px;
   width: 100%;
   border-radius: 40px;
 }
@@ -982,7 +1000,7 @@ transform: scale(2.5);
   border-radius: 50px;
 
   cursor: pointer;
-  margin: 15px 7px ;
+  margin: 15px 7px;
 
   background-color: #c4c4c4;
 }
@@ -996,7 +1014,11 @@ transform: scale(2.5);
 
 /*  Social Media Data Hover */
 
-.instahover,.metahover,.whatsapphover,.msngerhover,.facebookhover {
+.instahover,
+.metahover,
+.whatsapphover,
+.msngerhover,
+.facebookhover {
   transition: .3s ease-in-out;
   cursor: pointer;
 }
@@ -1005,19 +1027,23 @@ transform: scale(2.5);
   color: #ff00b3c2;
   transform: scale(1.01);
 }
+
 .bi-meta:hover {
   color: #1586c0;
   transform: scale(1.01);
 }
+
 .bi-whatsapp:hover {
   color: #02cf02;
   transform: scale(1.01);
 }
+
 .bi-messenger:hover {
   color: #08a9ff;
   transform: scale(1.01);
 }
-.bi-facebook:hover{
+
+.bi-facebook:hover {
   color: #006fff;
   transform: scale(1.01);
 

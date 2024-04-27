@@ -29,7 +29,7 @@ import 'aos/dist/aos.css';
 
 const colors = [one, two, tre, fr, six, svn, eth, nin, elv, tlv, trln, frtn,
     fvtn, sxtn, svtn, etn, DivCollection, Intro, Navigation, mi];
-const delay = 2500;
+const delay = 250;
 
 function AutomaticImageSlider() {
     const [index, setIndex] = useState(0);
@@ -77,13 +77,13 @@ function AutomaticImageSlider() {
     };
 
     return (
-        <div className="slideshow pt-3"
+        <div className="slideshow"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             style={{ cursor: 'pointer' }}
         >
             <div
-                className="slideshowSlider rounded-0"
+                className="slideshowSlider rounded-0 shadow-6-strong"
                 style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
             >
                 {colors.map((backgroundColor, idx) => (
@@ -92,9 +92,9 @@ function AutomaticImageSlider() {
                         key={idx}
                     // style={{ backgroundColor }}
                     >
-                        <center>Detail of the Image</center>
+                        <center className='w-100 bg-dark alert rounded-0'>Detail of the Image</center>
                         {
-                            <img className=' w-100 text-white bg-white mt-1' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> ? <img className=' w-100 text-white bg-white mt-1' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> : 'No More Images'
+                            <img className=' w-100 text-white bg-white shadow-lg' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> ? <img className=' w-100 text-white bg-white mt-1' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> : 'No More Images'
                         }
                         {/* data-aos="slide-left" data-aos-delay={1000*idx} data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='true'/> */}
                     </div>
