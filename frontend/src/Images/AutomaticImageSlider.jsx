@@ -28,7 +28,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const colors = [one, two, tre, fr, six, svn, eth, nin, elv, tlv, trln, frtn,
-    fvtn, sxtn, svtn, etn, DivCollection, Intro, Navigation, mi];
+    fvtn, sxtn, svtn, etn, Intro, Navigation, mi];
 const delay = 2000;
 
 function AutomaticImageSlider() {
