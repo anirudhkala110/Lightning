@@ -9,7 +9,7 @@ const HomeAutomation = () => {
                 <div className='py-1'>
                     <br />
                     <center className='p-1 rounded-0 mb-1 alert text-primary fw-semibold fs-2'>
-                        Smart Lights and Switches with use of Matter Protocol
+                        Motion Detection with Matter Protocol
                     </center>
                     <h4>Turn your Lights, Switches, Cooler, Fan, AC ON and OFF just by only <b>Entering</b> and <b>Leaving</b> the room. Motion detectors are a key component in modern home automation
                         systems, enabling intelligent control of lighting, security, and other
