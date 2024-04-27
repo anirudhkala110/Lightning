@@ -1023,30 +1023,54 @@ transform: scale(2.5);
   cursor: pointer;
 }
 
-.bi-instagram:hover {
+.bi-instagram:hover, .homehoverTab:hover .bi-instagram {
   color: #ff00b3c2;
   transform: scale(1.01);
 }
 
-.bi-meta:hover {
+.bi-meta:hover, .homehoverTab:hover .bi-meta {
   color: #1586c0;
   transform: scale(1.01);
 }
 
-.bi-whatsapp:hover {
+.bi-whatsapp:hover, .homehoverTab:hover .bi-whatsapp {
   color: #02cf02;
   transform: scale(1.01);
 }
 
-.bi-messenger:hover {
+.bi-messenger:hover, .homehoverTab:hover .bi-messenger {
   color: #08a9ff;
   transform: scale(1.01);
 }
+.bi-envelope-at:hover, .homehoverTab:hover .bi-envelope-at {
+  color:  #d44638;
+  transform: scale(1.01);
+}
 
-.bi-facebook:hover {
+.bi-twitter-x:hover, .homehoverTab:hover .bi-twitter-x {
+  background: #000000;
+  padding: auto 14px !important;
+  transform: scale(1.01);
+}
+.bi-facebook:hover, .homehoverTab:hover .bi-facebook {
   color: #006fff;
   transform: scale(1.01);
-
+}
+.bi-globe-americas:hover, .homehoverTab:hover .bi-globe-americas {
+  color: #34A56F ;
+  transform: scale(1.01);
+}
+.bi-linkedin:hover, .homehoverTab:hover .bi-linkedin {
+  color: #0a66c2;
+  transform: scale(1.01);
+}
+.bi-youtube:hover, .homehoverTab:hover .bi-youtube {
+  color: #ff0000;
+  transform: scale(1.01);
+}
+.bi-telephone-outbound:hover, .homehoverTab:hover .bi-telephone-outbound {
+  color: #5cdb5c;
+  transform: scale(1.01);
 }
 
 
