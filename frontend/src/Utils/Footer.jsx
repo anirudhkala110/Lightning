@@ -8,7 +8,7 @@ const Footer = () => {
     };
     return (
         <div className='text-white bg-dark container'>
-            <div className='text-white pt-2 d-flex align-items-start justify-content-between' style={{ display: '' }} data-aos="fade-up" data-aos-delay='10' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='false'>
+            <div className='text-white pt-2 d-flex align-items-start justify-content-between' style={{ display: '' }} data-aos="slide-right" data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='false'>
                 <Link className='text-decoration-none text-white' target='__blank' to='https://wa.me/+918005183363'><i class="bi fs-3 bi-whatsapp"></i></Link>
                 <Link className='text-decoration-none text-white' target='__blank' to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg=='><i class="bi fs-3 bi-instagram"></i></Link>
                 {/* <Link className='text-decoration-none text-white' target='__blank' to='https://Slogfy@gmail.com'><i class="bi fs-3 bi-envelope-at"></i></Link> */}
@@ -19,7 +19,7 @@ const Footer = () => {
                 </Link>
             </div>
             <hr />
-            <Link to="https://maps.app.goo.gl/4eqS6DdxRkrgA5Rt5" className='text-decoration-none'>
+            <Link to="https://maps.app.goo.gl/4eqS6DdxRkrgA5Rt5" target='__blank' className='text-decoration-none'>
                 <i class="bi fs-3 bi-globe-americas"></i> &nbsp;Address: F-76, near saket metro, Saidulajab, DDA Flats, Munirka, New Delhi, Delhi 110030
             </Link>
             <hr />
