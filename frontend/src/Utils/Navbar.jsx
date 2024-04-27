@@ -32,12 +32,24 @@ const Navbar = () => {
                                         Home
                                     </button>
                                 </NavLink>
-                                <NavLink to='/all-products'>
-                                    <button className="btn btnHover fw-bold  navsupport "  >
+                                <NavLink to='/about' >
+                                    <button className="btn btnHover fw-bold navsupport "  >
                                         {/* <button className="btn btn-primary ms-2 " type="button" > */}
-                                        Products
+                                        About
                                     </button>
                                 </NavLink>
+                                <NavLink to='/support' >
+                                    <button className="btn btnHover fw-bold navsupport "  >
+                                        {/* <button className="btn btn-primary ms-2 " type="button" > */}
+                                        Support
+                                    </button>
+                                </NavLink>
+                                {/* <NavLink to='/all-products'>
+                                    <button className="btn btnHover fw-bold  navsupport "  >
+                                        {/* <button className="btn btn-primary ms-2 " type="button" > 
+                                        Products
+                                    </button>
+                                </NavLink> */}
                             </div>
                         </div>
                     </div>
@@ -58,7 +70,7 @@ const Navbar = () => {
                     </div>
                     <div className='less1000pxDisabled me-3'>
                         <button className="btn text-white d-flex align-items-center btn-primary rounded-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        {/* style={{ background: '#ff5722' }} */}
+                            {/* style={{ background: '#ff5722' }} */}
                             <strong>
                                 Menu
                             </strong>
@@ -83,9 +95,9 @@ const Navbar = () => {
                         <div className="offcanvas-body " style={{ minHeight: "500px" }}>
                             <NavLink to='/' className="btn  my-1 w-100 rounded-0 linkTabs" >Home</NavLink>
                             <NavLink to='/about' className='btn  my-1 w-100 rounded-0 linkTabs'>About</NavLink>
-                            <NavLink to='/contact-us' className='btn  my-1 w-100 rounded-0 linkTabs'>Contact</NavLink>
+                            {/* <NavLink to='/contact-us' className='btn  my-1 w-100 rounded-0 linkTabs'>Contact</NavLink> */}
                             {/* <NavLink to='/all-products' className="btn  my-1 w-100 rounded-0 linkTabs" type="button" >Products</NavLink> */}
-                            <NavLink to='/services' className='btn  my-1 w-100 rounded-0 linkTabs'>Services</NavLink>
+                            {/* <NavLink to='/services' className='btn  my-1 w-100 rounded-0 linkTabs'>Services</NavLink> */}
                             {/* <NavLink to={`/profile/${admin}`} className='btn  my-1 w-100 rounded-0 linkTabs'>Profile</NavLink> */}
                             {/* <NavLink to='/dashboard' className='btn  my-1 w-100 rounded-0 linkTabs'>Dashboard</NavLink> */}
                             {/* <NavLink to='/login' className='w-50 btn  rounded-0 linkTabs'>Login</NavLink>

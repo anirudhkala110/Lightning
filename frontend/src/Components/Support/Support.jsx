@@ -72,7 +72,7 @@ const Support = () => {
         <meta name='keywords' content='Contact Us' />
       </Helmet>
       <div className="bg-black container min-vh-100 pt-3">
-        <center className="fs-4 text-primary border-bottom py-3 fw-semibold alert-info alert rounded-0" style={{letterSpacing:'5px', wordSpacing:'15px'}}>. . .Get 24X7 Support. . .</center>
+        <center className="fs-4 text-primary border-bottom py-3 fw-semibold alert rounded-0" style={{letterSpacing:'5px', wordSpacing:'15px'}}>. . .Get 24X7 Support. . .</center>
         <div className="px-5 py-1 container" style={{ background: "rgba(0, 0, 0, 5%)", minHeight: "100vh" }}>
           <div className="my-3">
             <i className="bi bi-exclamation-triangle-fill text-warning me-1"></i> If you have any questions or require our assistance, please don't hesitate to get in touch with <a href='/all-products' className='text-primary text-decoration-none fw-bolder'>Slogfy</a>. We are here to help you.

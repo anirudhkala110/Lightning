@@ -4,7 +4,8 @@ const About = () => {
   return (
     <div className='min-vh-100'>
       <div className='container bg-black pt-3' style={{ borderLeft: '1px solid #8080806b', borderRight: '1px solid #8080806b' }}>
-        <center className='fs-4 fw-semibold alert alert-info rounded-0'>About</center>
+        <center className='fs-2 fw-semibold alert rounded-0'>About</center>
+        <hr/>
         <div>
           <div>
             At RoboShop, we're pioneering the frontier of robotics, one arm at a time. Our platform serves as the ultimate hub for all things robotic arms, catering to enthusiasts, professionals, and businesses seeking innovation and automation solutions.
