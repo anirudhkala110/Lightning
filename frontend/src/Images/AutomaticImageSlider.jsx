@@ -92,7 +92,7 @@ function AutomaticImageSlider() {
                         key={idx}
                     // style={{ backgroundColor }}
                     >
-                        <center className='w-100 bg-dark alert rounded-0'>Detail of the Image</center>
+                     {/*<center className='w-100 bg-dark alert rounded-0'>Detail of the Image</center>*/}
                         {
                             <img className=' w-100 text-white bg-white shadow-lg' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> ? <img className=' w-100 text-white bg-white mt-1' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> : 'No More Images'
                         }
@@ -101,7 +101,7 @@ function AutomaticImageSlider() {
                 ))}
             </div>
             <br />
-            <div className="slideshowDots d-flex w-100" style={{ overflow: 'auto' }}>
+            <div className="slideshowDots d-flex w-100" style={{ overflow: 'auto',filter:'invert(1)' }}>
                 {colors.map((_, idx) => (
                     <div
                         key={idx}
