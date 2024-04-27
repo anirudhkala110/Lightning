@@ -9,7 +9,7 @@ const SmartLightsandSwitches = () => {
                 <div className='py-1'>
                     <br />
                     <center className='p-1 rounded-0 mb-1 alert text-primary fw-semibold fs-2'>
-                        Smart Lights and Switches with use of Matter Protocol
+                        Smart Lights and Switches with use of Motion Detection with Matter Protocol
                     </center>
                     <h4> Turn your light ON / OFF just by your inward and outward movement, voice or Smart Phone. The Matter protocol is a new industry standard that enables seamless
                         connectivity and control of smart home devices, including lights and
