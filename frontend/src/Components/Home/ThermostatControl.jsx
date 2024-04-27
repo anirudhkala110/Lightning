@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+import TMP from '../../Images/Thermostats-in-the-Matter-Protocol.pdf'
 
 const ThermostatControl = () => {
+    const [download, SetDownload] = useState(false)
     return (
         <div className='bg-black w-100 pt-2 d-flex align-items-start justify-content-center'>
             <div className='container  p-2 bg-black text-white'
@@ -84,6 +86,11 @@ const ThermostatControl = () => {
                             </ol>
                         </div>
                     </div>
+                    {
+                        !download ? <button className='btn btn-success my-2' onClick={e => SetDownload(!download)}>Download Info as PDF file</button> : <div className='w-100' style={{ height: "500px" }}>
+                            <iframe src={TMP} style={{ width: "100%", height: "100%", border: "none" }}></iframe>
+                        </div>
+                    }
                     <hr />
                 </div>
             </div>

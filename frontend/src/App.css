@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+.navSupport{
+  box-shadow: 0px -1px 10px ;
+}
+
 html {
   background-image: -webkit-linear-gradient(#00000021, transparent, #00000021);
   background-repeat: no-repeat;
