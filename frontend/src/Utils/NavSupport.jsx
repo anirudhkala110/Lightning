@@ -7,7 +7,7 @@ const NavSupport = () => {
         window.open(`tel:+91${phoneNumber}`);
     };
     return (
-        <div className='container text-white d-flex align-items-center' >
+        <div className='container text-white d-flex align-items-center pt-3' >
             <div className='navsupport ps-1 fs-5' >
                 ThingMATTERS
             </div>

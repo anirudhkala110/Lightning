@@ -16,7 +16,9 @@ const Navbar = () => {
                 <div className="d-flex w-100 justify-content-between align-items-center ">
                     <div className='d-flex align-items-center justify-content-between'>
                         <a href='/' className='text-decoration-none text-white d-flex ps-0 align-items-center' >
-                            <img src={logo} width={35} className='rounded-circle text-white' style={{ filter: 'invert()' }} />
+                            <div>
+                                <img src={logo} width={50} className='rounded-circle text-white bg-white' style={{ filter: 'invert(1) !important' }} />
+                            </div>
                             &nbsp;
                             <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogfy</strong>
                         </a>
@@ -41,19 +43,19 @@ const Navbar = () => {
                     </div>
                     <div className='text-white'>
 
-                        <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
+                        <Link to='https://wa.me/+918005183363' className='text-decoration-none text-white' target='_blank'>
                             <i class="bi bi-instagram fs-4 "></i>&nbsp;&nbsp;
                         </Link>
-                        <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
+                        <Link to='https://wa.me/+918005183363' className='text-decoration-none text-white' target='_blank'>
                             <i class="bi bi-facebook fs-4 "></i>&nbsp;&nbsp;
                         </Link>
-                        <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
+                        <Link to='https://wa.me/+918005183363' className='text-decoration-none text-white' target='_blank'>
                             <i class="bi bi-messenger fs-4 "></i>&nbsp;&nbsp;
                         </Link>
-                        <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
+                        <Link to='https://wa.me/+918005183363' className='text-decoration-none text-white' target='_blank'>
                             <i class="bi bi-whatsapp fs-4 "></i>&nbsp;&nbsp;
                         </Link>
-                        <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
+                        <Link to='https://wa.me/+918005183363' className='text-decoration-none text-white' target='_blank'>
                             <i class="bi bi-meta fs-4 "></i>&nbsp;&nbsp;
                         </Link>
                     </div>
@@ -71,7 +73,9 @@ const Navbar = () => {
                     <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                         <div className="offcanvas-header bg-black">
                             <a href='/' className='text-decoration-none text-white d-flex ps-0 align-items-center' >
-                                <img src={logo} width={35} className='rounded-2 text-black' style={{ filter: 'invert(1)' }} />
+                                <div className='bg-white text-white rounded-circle'>
+                                    <img src={logo} width={35} className='rounded-circle text-white bg-white' style={{ filter: 'invert() !important' }} />
+                                </div>
                                 &nbsp;
                                 <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogfy</strong>
                             </a>
