@@ -1,7 +1,8 @@
 import React from 'react'
 
-const SmartLightsandSwitches = () => {
+const Security = () => {
     return (
+
         <div className='bg-black w-100 pt-2 d-flex align-items-start justify-content-center'>
             <div className='container  p-2 bg-black text-white'
             // style={{ borderLeft: '1px solid rgb(196 191 191)', borderRight: '1px solid rgb(196 191 191)' }}
@@ -9,53 +10,53 @@ const SmartLightsandSwitches = () => {
                 <div className='py-1'>
                     <br />
                     <center className='p-1 rounded-0 mb-1 alert text-primary fw-semibold fs-2'>
-                        Smart Lights and Switches with use of Matter Protocol
+                        Enhancing Smart Security and Emergency with Matter Protocol
                     </center>
-                    <h4> Turn your light ON / OFF just by your inward and outward movement, voice or Smart Phone. The Matter protocol is a new industry standard that enables seamless
-                        connectivity and control of smart home devices, including lights and
-                        switches, across different brands and platforms.
+                    <h4> Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members. The Matter protocol offers a unified, secure, and reliable platform to
+                        seamlessly integrate various smart devices for enhanced security and
+                        emergency response in homes and buildings.
                     </h4>
                     <hr />
                     <div className='card bg-dark px-2 text-white rounded-0 py-2'>
                         <div className=''>
-                            <center className='fs-3'>Integrating Matter Protocol into Your Smart Home (smart switches and lights)</center>
+                            <center className='fs-3'>Implementing Matter in Smart Security and  Emergency</center>
                             <hr />
                             <ol className='ps-3 text-info'>
-                                <li>&nbsp;Upgrading Existing Devices
+                                <li>&nbsp;Sensor Integration
                                     <div className='card-body text-white'>
-                                        Many existing smart home devices can be upgraded to support the Matter protocol, allowing you to seamlessly integrate them into your smart home setup.
+                                        Seamlessly connect various security sensors, such as motion detectors, smoke alarms, and water leak sensors, through the Matter protocol.
                                     </div>
                                 </li>
-                                <li>&nbsp;Choosing New Matter Enabled Devices
+                                <li>&nbsp;Centralized Control
                                     <div className='card-body text-white'>
-                                        When selecting new smart home devices, look for those  that are Matter-certified to  ensure compatibility and ease  of integration.
+                                        Manage and monitor all connected security devices from a single, user-friendly platform, enhancing overall situational awareness.
                                     </div>
                                 </li>
-                                <li>&nbsp;Updating Your Smart Home Hub
+                                <li>&nbsp;Automated Responses
                                     <div className='card-body text-white'>
-                                        Ensure your smart home hub  or platform is Matter compatible to control and  manage all your Matter enabled devices from a single  interface
+                                        Trigger pre-programmed emergency actions, like notifying authorities, activating alarms, or unlocking doors, to ensure rapid and coordinated response
                                     </div>
                                 </li>
                             </ol>
                         </div>
                         <hr />
                         <div className=''>
-                            <center className='fs-3'>The Benefits of Matter Protocol in Smart lights and Switches</center>
+                            <center className='fs-3'>Understanding the Matter Protocol in Smart Security and Emergency</center>
                             <hr />
                             <ol className='ps-3 text-info'>
                                 <li>&nbsp;Interoperability
                                     <div className='card-body text-white'>
-                                        Matter ensures that smart home devices can communicate and work together, regardless of the brand or platform
+                                        Matter enables smart devices from different brands to communicate and work together, ensuring a cohesive and seamless smart home experience.
                                     </div>
                                 </li>
-                                <li>&nbsp;Simplified Setup
+                                <li>&nbsp; Security-First Approach
                                     <div className='card-body text-white'>
-                                        Matter provides a simplified setup process, making it easier to integrate new smart devices into your home.
+                                        The protocol prioritizes secure connectivity and data encryption, providing robust protection against cyber threats and unauthorized access.
                                     </div>
                                 </li>
-                                <li>&nbsp; Enhanced Security
+                                <li>&nbsp; Versatile Applications
                                     <div className='card-body text-white'>
-                                        Matter incorporates robust security measures to protect your smart home from potential cyber threats
+                                        From smart locks and security cameras to emergency notification systems, Matter empowers a wide range of smart security and safety solutions.
                                     </div>
                                 </li>
                             </ol>
@@ -69,4 +70,4 @@ const SmartLightsandSwitches = () => {
     )
 }
 
-export default SmartLightsandSwitches
+export default Security

@@ -21,6 +21,9 @@ import NavSupport from './Utils/NavSupport';
 import DetailsOfHomePageDiv from './Components/Home/DetailsOfHomePageDiv';
 import MatterProtocol from './Components/Home/MatterProtocol';
 import SmartLightsandSwitches from './Components/Home/SmartLightsandSwitches';
+import Security from './Components/Home/Security';
+import HomeAutomation from './Components/Home/HomeAutomation';
+import ThermostatControl from './Components/Home/ThermostatControl';
 
 export const userContext = createContext()
 
@@ -58,6 +61,9 @@ function App() {
                   <Route exact path='/info' element={<DetailsOfHomePageDiv />} />
                   <Route exact path='/What-is-Matter-protocol?' element={<MatterProtocol />} />
                   <Route exact path='/Smart-Lights-and-Switches-with-use-of-Matter Protocol' element={<SmartLightsandSwitches />} />
+                  <Route exact path='/Enhancing-Smart-Security-and-Emergency-with-Matter-Protocol' element={<Security />} />
+                  <Route exact path='/Home-Automation-with-Motion-Detectors' element={<HomeAutomation />} />
+                  <Route exact path='/Thermostat-with-Matter-Protocol' element={<ThermostatControl />} />
                   <Route exact path='/contact-detail/:userName/:phone/:email/:address' element={<ContactDetails />} />
                   <Route path='*' element={<PageNoteFound />} />
                 </Routes>
