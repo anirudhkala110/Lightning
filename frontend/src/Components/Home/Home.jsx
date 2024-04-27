@@ -3,15 +3,15 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Logo from '../../Images/frst.png'
 import cANDvisit from '../../Images/CommAndVisit.jpg'
-import custSat from '../../Images/customerSatisfaction.jpg'
+import ThermostateMatter from '../../Images/ThermostateMatter.jpg'
 import DivCollection from '../../Images/2.png'
 import Intro from '../../Images/intro.jpg'
 import Navigation from '../../Images/navigation.jpg'
 import JoinUs from '../../Images/JoinUs.jpg'
 import mi from '../../Images/MI.svg'
 import Typewriter from '../../Utils/Typewriter';
-import ImageSlider from '../../Images/ImageSlider';
-import ImgSlider from '../../Images/ImgSlider';
+import MotionDetectionAutomation from '../../Images/MotionDetectionAutomation.jpg';
+import SecurityWithMatter from '../../Images/SecurityWithMatter.jpg';
 import AutomaticImageSlider from '../../Images/AutomaticImageSlider';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -176,7 +176,7 @@ const Home = () => {
                                     <Link to='/Enhancing-Smart-Security-and-Emergency-with-Matter-Protocol' className='text-white text-decoration-none'>
                                         <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Security with Matter Protocol:</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                         </div>
-                                            <img src={JoinUs} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                            <img src={SecurityWithMatter} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                                         </div>
                                     </Link>
                                 </div>
@@ -184,7 +184,7 @@ const Home = () => {
                                     <Link to='/Home-Automation-with-Motion-Detectors' className='text-white text-decoration-none'>
                                         <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Motion Detectors Automation:</h4> {truncate('Turn your Lights, Switches, Cooler, Fan, AC ON and OFF just by only <b>Entering</b> and <b>Leaving</b> the room.', 100)} <br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                         </div>
-                                            <img src={JoinUs} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                            <img src={MotionDetectionAutomation} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                                         </div>
                                     </Link>
                                 </div>
@@ -192,7 +192,7 @@ const Home = () => {
                                     <Link to='/Thermostat-with-Matter-Protocol' className='text-white text-decoration-none'>
                                         <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' > Matter Protocol in Thermostats:</h4>{truncate('Utilizing an automated system, fan speed is dynamically adjusted in response to changes in the room temperature, ensuring optimal comfort levels while also minimizing energy consumption using Matter Protocol. ', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                         </div>
-                                            <img src={JoinUs} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                            <img src={ThermostateMatter} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                                         </div>
                                     </Link>
                                 </div>
