@@ -46,6 +46,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: invert(1);
+}
+.sliderImages img{
+  filter: invert(1);
 }
 
 /*  Home Div Hover  */
