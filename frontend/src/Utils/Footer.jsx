@@ -19,9 +19,9 @@ const Footer = () => {
                 </Link>
             </div>
             <hr />
-            <div className=''>
+            <Link to="https://www.google.com/maps/dir/25.6002237,83.6027452/slogfy/@26.8630207,75.0915494,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x390ce1fad4ebf025:0x5c77723190c86583!2m2!1d77.1729745!2d28.5508758?entry=ttu" className='text-decoration-none'>
                 <i class="bi fs-3 bi-globe-americas"></i> &nbsp;Address: F-76, near saket metro, Saidulajab, DDA Flats, Munirka, New Delhi, Delhi 110030
-            </div>
+            </Link>
             <hr />
             <div>
                 <span className='fs-5 d-flex align-items-center pe-3'><strong className='fs-6'>Owner: +91-8005183363</strong> &nbsp;<button className='btn rounded-0 py-1 fw-bold' style={{ background: '#ff5722' }} onClick={e => handleCall(8005183363)}>Call Now</button></span>
