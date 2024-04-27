@@ -46,7 +46,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: invert(1);
+  filter: invert(0);
 }
 .sliderImages img{
   filter: invert(1);
