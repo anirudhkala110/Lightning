@@ -79,8 +79,9 @@ const Support = () => {
         <center className="fs-4 text-primary border-bottom py-3 fw-semibold alert rounded-0" style={{ letterSpacing: '5px', wordSpacing: '15px' }}>. . .Get 24X7 Support. . .</center>
         <div className="px-5 py-1 container" style={{ background: "rgba(0, 0, 0, 5%)", minHeight: "100vh" }}>
           <div className="my-3">
-            <i className="bi bi-exclamation-triangle-fill text-warning me-1"></i> If you have any questions or require our assistance, please don't hesitate to get in touch with <a href='/all-products' className='text-primary text-decoration-none fw-bolder'>Slogfy</a>. We are here to help you.
+            <center> <i className="bi bi-exclamation-triangle-fill text-warning me-1"></i> If you have any questions or require our assistance, please don't hesitate to get in touch with <a href='/all-products' className='text-primary text-decoration-none fw-bolder'>Slogfy</a>. We are here to help you.</center>
           </div>
+          <hr />
           <hr className="" style={{ color: "black" }} />
           <div className='container'>
             <center className='fs-2 text-info'>Contact Us</center>
@@ -129,10 +130,10 @@ const Support = () => {
           <center><h1>Ask Question ? </h1></center>
           <hr />
           <div className="row col-12 contactUsBG ps-4">
-            <div className="border bg-black col-lg-6 col-xl-6 my-2 py-2 col-sm-12 d-flex align-items-center justify-content-center " style={{ height: "470px", maxWidth: '550px' }}>
+            <div className="border bg-dark col-lg-6 col-xl-6 my-2 py-2 col-sm-12 d-flex align-items-center justify-content-center " style={{ height: "470px", maxWidth: '550px' }}>
               <img src={csc} className="contactUsBG" alt="Contact Us" />
             </div>
-            <div className="container border pt-3 col-lg-6 col-xl-6 my-2 py-2 col-sm-12 pb-1 bg-black">
+            <div className="container border pt-3 col-lg-6 col-xl-6 my-2 py-2 col-sm-12 pb-1 bg-dark">
               <form onSubmit={(e) => handleSubmit(e)} ref={form} >
                 <div className="form-group">
                   <label className="fw-bold" htmlFor="formGroupName">Name</label>
@@ -162,7 +163,7 @@ const Support = () => {
                   <textarea name="message" value={finalquery} style={{ display: "none" }} />
                 </div>
                 <button className="btn border-0 rounded-0 mb-2 send-mail btn-primary" value="Send">Send Mail</button>
-                <div className="btn btn-success border-0 rounded-0 ms-2 mb-2 call-btn" id="call" onClick={() => handleButtonClick(7668490213)}>Make a Call</div>
+                <div className="btn btn-success border-0 rounded-0 ms-2 mb-2 call-btn" id="call" onClick={() => handleCall(8005183363)}>Make a Call</div>
                 <div className="btn btn-warning border-0 rounded-0 ms-2 mb-2 call-btn" id="call" onClick={() => handleRoute('home')}>Home</div>
               </form>
             </div>
