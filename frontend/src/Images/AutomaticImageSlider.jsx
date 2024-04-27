@@ -29,7 +29,7 @@ import 'aos/dist/aos.css';
 
 const colors = [one, two, tre, fr, six, svn, eth, nin, elv, tlv, trln, frtn,
     fvtn, sxtn, svtn, etn, DivCollection, Intro, Navigation, mi];
-const delay = 250;
+const delay = 1000;
 
 function AutomaticImageSlider() {
     const [index, setIndex] = useState(0);
