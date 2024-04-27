@@ -92,7 +92,7 @@ function AutomaticImageSlider() {
                         key={idx}
                     // style={{ backgroundColor }}
                     >
-                     <center className='w-100 bg-white alert rounded-0'>Detail of the Image</center>
+                     <center className='w-100 bg-white alert text-dark rounded-0'>Detail of the Image</center>
                         {
                             <img className=' w-100 text-white bg-white shadow-lg' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> ? <img className=' w-100 text-white bg-white mt-1' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> : 'No More Images'
                         }
