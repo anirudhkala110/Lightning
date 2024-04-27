@@ -48,7 +48,7 @@ function AutomaticImageSlider() {
                     prevIndex === colors.length - 1 ? 0 : prevIndex + 1
                 );
             };
-            console.log(index, colors.length)
+            // console.log(index, colors.length)
             if (index >= colors.length - 1) {
                 return; // Stop the useEffect if index exceeds colors.length
             }

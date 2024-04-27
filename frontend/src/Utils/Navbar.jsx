@@ -57,7 +57,8 @@ const Navbar = () => {
                         </Link>
                     </div>
                     <div className='less1000pxDisabled me-3'>
-                        <button className="btn text-white d-flex align-items-center rounded-0" style={{ background: '#ff5722' }} data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <button className="btn text-white d-flex align-items-center btn-primary rounded-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        {/* style={{ background: '#ff5722' }} */}
                             <strong>
                                 Menu
                             </strong>

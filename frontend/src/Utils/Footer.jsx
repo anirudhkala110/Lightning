@@ -8,26 +8,19 @@ const Footer = () => {
     };
     return (
         <div className='text-white bg-dark container'>
-            <div className='text-white pt-3'>
-                <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
-                    <i class="bi bi-instagram fs-4 "></i>&nbsp;&nbsp;
-                </Link>
-                <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
-                    <i class="bi bi-facebook fs-4 "></i>&nbsp;&nbsp;
-                </Link>
-                <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
-                    <i class="bi bi-messenger fs-4 "></i>&nbsp;&nbsp;
-                </Link>
-                <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
-                    <i class="bi bi-whatsapp fs-4 "></i>&nbsp;&nbsp;
-                </Link>
-                <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
-                    <i class="bi bi-meta fs-4 "></i>&nbsp;&nbsp;
+            <div className='text-white pt-2 d-flex align-items-start justify-content-between' style={{ display: '' }} data-aos="fade-up" data-aos-delay='10' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='false'>
+                <Link className='text-decoration-none text-white' target='__blank' to='https://wa.me/+918005183363'><i class="bi fs-3 bi-whatsapp"></i></Link>
+                <Link className='text-decoration-none text-white' target='__blank' to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg=='><i class="bi fs-3 bi-instagram"></i></Link>
+                {/* <Link className='text-decoration-none text-white' target='__blank' to='https://Slogfy@gmail.com'><i class="bi fs-3 bi-envelope-at"></i></Link> */}
+                <Link className='text-decoration-none text-white' target='__blank' to='https://www.facebook.com/slogfy'><i class="bi fs-3 bi-facebook"></i></Link>
+                <Link className='text-decoration-none text-white' target='__blank' to='https://www.linkedin.com/company/slogfy/'><i class="bi fs-3 bi-linkedin"></i></Link>
+                <Link className='text-decoration-none text-white' target='__blank' to='https://x.com/slogfy?t=7W11e-jgtl8NoIiFlBllQQ&s=09'><i class="bi fs-3 bi-twitter-x"></i></Link>
+                <Link className='text-decoration-none text-white' target='__blank' to='https://youtube.com/@slogfy8260'><i class="bi fs-3 bi-youtube"></i>
                 </Link>
             </div>
             <hr />
             <div className=''>
-                <i class="bi bi-geo"></i> &nbsp;Address: F-76, near saket metro, Saidulajab, DDA Flats, Munirka, New Delhi, Delhi 110030
+                <i class="bi fs-3 bi-globe-americas"></i> &nbsp;Address: F-76, near saket metro, Saidulajab, DDA Flats, Munirka, New Delhi, Delhi 110030
             </div>
             <hr />
             <div>
