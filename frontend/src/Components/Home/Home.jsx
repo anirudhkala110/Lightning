@@ -156,7 +156,7 @@ const Home = () => {
                                 <div className='w-100 border my-3 border-secondary' />
                                 <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
                                     <Link to='/Smart-Lights-and-Switches-with-use-of-Matter Protocol' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2'><h4 className='text-primary fw-bold'>Smart Lights and Switches:</h4> Turn your light ON / OFF just by your inward and outward movement, voice or Smart Phone. <br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Smart Lights and Switches:</h4> Turn your light ON / OFF just by your inward and outward movement, voice or Smart Phone. <br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                         </div>
                                             <img src={JoinUs} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                                         </div>
@@ -164,7 +164,7 @@ const Home = () => {
                                 </div>
                                 <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
                                     <Link to='/Smart-Lights-and-Switches-with-use-of-Matter Protocol' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2'><h4 className='text-primary fw-bold'>Enhancing Smart Security and Emergency with Matter Protocol:</h4> Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Enhancing Smart Security and Emergency with Matter Protocol:</h4> Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                         </div>
                                             <img src={JoinUs} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                                         </div>
@@ -172,7 +172,15 @@ const Home = () => {
                                 </div>
                                 <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
                                     <Link to='/Smart-Lights-and-Switches-with-use-of-Matter Protocol' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2'><h4 className='text-primary fw-bold'>Home Automation with Motion Detectors</h4> Turn your Cooler, Fan, AC ON and OFF just by only <b>Entering</b> and <b>Leaving</b> the room. Automatic Fan speed, according to your setted room temperature. <br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Home Automation with Motion Detectors:</h4> Turn your Lights, Switches, Cooler, Fan, AC ON and OFF just by only <b>Entering</b> and <b>Leaving</b> the room. <br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                        </div>
+                                            <img src={JoinUs} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                        </div>
+                                    </Link>
+                                </div>
+                                <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
+                                    <Link to='/Smart-Lights-and-Switches-with-use-of-Matter Protocol' className='text-white text-decoration-none'>
+                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Thermostats using Matter Protocol:</h4> Automatic Fan speed control, according to your setted room temperature. <br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                         </div>
                                             <img src={JoinUs} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                                         </div>
@@ -238,6 +246,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <br />
             <hr />
         </div>
     )
