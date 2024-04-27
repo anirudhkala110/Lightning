@@ -20,6 +20,7 @@ import ContactDetails from './Components/Contact/ContactDetails';
 import NavSupport from './Utils/NavSupport';
 import DetailsOfHomePageDiv from './Components/Home/DetailsOfHomePageDiv';
 import MatterProtocol from './Components/Home/MatterProtocol';
+import SmartLightsandSwitches from './Components/Home/SmartLightsandSwitches';
 
 export const userContext = createContext()
 
@@ -56,6 +57,7 @@ function App() {
                   <Route exact path='/detail/:id/:machineName/:location/:uploadedBy' element={<Details />} />
                   <Route exact path='/info' element={<DetailsOfHomePageDiv />} />
                   <Route exact path='/What-is-Matter-protocol?' element={<MatterProtocol />} />
+                  <Route exact path='/Smart-Lights-and-Switches-with-use-of-Matter Protocol' element={<SmartLightsandSwitches />} />
                   <Route exact path='/contact-detail/:userName/:phone/:email/:address' element={<ContactDetails />} />
                   <Route path='*' element={<PageNoteFound />} />
                 </Routes>

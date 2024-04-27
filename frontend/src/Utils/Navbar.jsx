@@ -43,20 +43,17 @@ const Navbar = () => {
                     </div>
                     <div className='text-white'>
 
-                        <Link to='https://wa.me/+918005183363' className='text-decoration-none text-white' target='_blank'>
+                        <Link to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg==' className='text-decoration-none text-white' target='__blank'>
                             <i class="bi bi-instagram fs-4 "></i>&nbsp;&nbsp;
                         </Link>
-                        <Link to='https://wa.me/+918005183363' className='text-decoration-none text-white' target='_blank'>
+                        <Link to='https://www.facebook.com/slogfy' className='text-decoration-none text-white' target='__blank'>
                             <i class="bi bi-facebook fs-4 "></i>&nbsp;&nbsp;
                         </Link>
-                        <Link to='https://wa.me/+918005183363' className='text-decoration-none text-white' target='_blank'>
-                            <i class="bi bi-messenger fs-4 "></i>&nbsp;&nbsp;
+                        <Link to='https://www.linkedin.com/company/slogfy/' className='text-decoration-none text-white' target='__blank'>
+                            <i class="bi bi-linkedin fs-4 "></i>&nbsp;&nbsp;
                         </Link>
-                        <Link to='https://wa.me/+918005183363' className='text-decoration-none text-white' target='_blank'>
-                            <i class="bi bi-whatsapp fs-4 "></i>&nbsp;&nbsp;
-                        </Link>
-                        <Link to='https://wa.me/+918005183363' className='text-decoration-none text-white' target='_blank'>
-                            <i class="bi bi-meta fs-4 "></i>&nbsp;&nbsp;
+                        <Link to='https://youtube.com/@slogfy8260' className='text-decoration-none text-white' target='__blank'>
+                            <i class="bi bi-youtube fs-4 "></i>&nbsp;&nbsp;
                         </Link>
                     </div>
                     <div className='less1000pxDisabled me-3'>
