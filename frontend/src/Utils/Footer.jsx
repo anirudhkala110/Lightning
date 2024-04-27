@@ -19,7 +19,7 @@ const Footer = () => {
                 </Link>
             </div>
             <hr />
-            <Link to="https://www.google.com/maps/dir/25.6002237,83.6027452/slogfy/@26.8630207,75.0915494,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x390ce1fad4ebf025:0x5c77723190c86583!2m2!1d77.1729745!2d28.5508758?entry=ttu" className='text-decoration-none'>
+            <Link to="https://maps.app.goo.gl/4eqS6DdxRkrgA5Rt5" className='text-decoration-none'>
                 <i class="bi fs-3 bi-globe-americas"></i> &nbsp;Address: F-76, near saket metro, Saidulajab, DDA Flats, Munirka, New Delhi, Delhi 110030
             </Link>
             <hr />
