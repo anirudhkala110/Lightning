@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { userContext } from '../App';
 import { BrowserRouter as Router, Routes, Route, a, useNavigate, NavLink, Link } from 'react-router-dom';
-import logo from '../Images/MI.svg'
+import logo from '../Images/Logo.png'
 
 const Navbar = () => {
     const admin = useContext(userContext);
@@ -16,7 +16,7 @@ const Navbar = () => {
                 <div className="d-flex w-100 justify-content-between align-items-center ">
                     <div className='d-flex align-items-center justify-content-between'>
                         <a href='/' className='text-decoration-none text-white d-flex ps-0 align-items-center' >
-                            <img src={logo} width={35} className='rounded-2 text-white' style={{ filter: 'invert()' }} />
+                            <img src={logo} width={35} className='rounded-circle text-white' style={{ filter: 'invert()' }} />
                             &nbsp;
                             <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogfy</strong>
                         </a>
