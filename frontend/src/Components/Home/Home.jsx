@@ -13,7 +13,7 @@ import Typewriter from '../../Utils/Typewriter';
 import ImageSlider from '../../Images/ImageSlider';
 import ImgSlider from '../../Images/ImgSlider';
 import AutomaticImageSlider from '../../Images/AutomaticImageSlider';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
                             <strong className='fw-semibold  text-primary px-0' style={{ fontSize: "2em", letterSpacing: "0px", borderTop: '0px solid white' }}><Typewriter text="Slogfy... " infinite={true} speed={500} /><Typewriter text="| " infinite={true} speed={280} /></strong>
                         </div>
                         <h1>India's &nbsp;&nbsp;# 1<sup>st</sup> Brand</h1>
-                        <h1>Home Automation Brand Based on Matter Protocal</h1>
+                        <h1>Home Automation Based on Matter Protocal</h1>
                         <hr />
                         {/* RoboShop is an online platform dedicated exclusively to robotic arm technology. It serves as a comprehensive marketplace where enthusiasts, professionals, and businesses can explore, discover, and procure the latest advancements in robotic arm technology. From industrial-grade robotic arms for manufacturing and automation to cutting-edge models for research and education, RoboShop offers a wide range of options to cater to every need and application. With a user-friendly interface, advanced search filters, and detailed product descriptions, RoboShop makes it easy to find the perfect robotic arm for your requirements. Additionally, RoboShop provides exceptional support and assistance throughout the purchasing process, ensuring a seamless and hassle-free experience for customers. */}
                     </p>
@@ -132,14 +132,26 @@ const Home = () => {
                     style={{ minHeight: "350px" }}><AutomaticImageSlider />
                 </div>
                 <br />
+                <br />
+                <br />
                 <div className='container'>
                     <div className='row'>
-                        <div className='homeHover p-3'>
-                            <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>Features</center>
+                        <div className='p-3'>
+                            <center className='fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>
+                                <h1>
+                                    <b style={{ fontSize: '50px' }}>What is a Slogfy smart home 🏡</b>
+                                </h1>
+                            </center>
+                            <center className='fs-4 ' data-aos='zoom-in' data-aos-delay='50' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>
+                                Slogfy Smart Home is designed,<br />  <h4 className='text-primary'><Link to='/what-is-matter-protocol?' className='text-decoration-none'>with matter protocol</Link></h4>to elevate the comfort of your space & redefine the way you live your daily life!
+                            </center>
                             <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
-                                <div className='w-100 border mb-2 border-secondary' />
-                                <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>At RoboShop, customer satisfaction is our top priority. Our team is committed to providing exceptional support and assistance throughout the purchasing process, ensuring a seamless and hassle-free experience from start to finish.</p>
-                                <img src={custSat} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                <div className='w-100 border my-3 border-secondary' />
+                                <div className='homehover col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6 my-3' style={{ height: '200px' }}> <div className='homehoverTab bg-dark rounded-4 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '200px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>Smart Lights and Switches</div><img src={JoinUs} className='col-6 rounded shadow' style={{ maxHeight: '180px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' /></div></div>
+                                <div className='homehover col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6 my-3' style={{ height: '200px' }}> <div className='homehoverTab bg-dark rounded-4 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '200px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>Thermostats</div><img src={JoinUs} className='col-6 rounded shadow' style={{ maxHeight: '180px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' /></div></div>
+                                <div className='homehover col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6 my-3' style={{ height: '200px' }}> <div className='homehoverTab bg-dark rounded-4 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '200px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>Motion Detector Home Automation</div><img src={JoinUs} className='col-6 rounded shadow' style={{ maxHeight: '180px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' /></div></div>
+                                <div className='homehover col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6 my-3' style={{ height: '200px' }}> <div className='homehoverTab bg-dark rounded-4 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '200px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>Smart Security and Emergency</div><img src={JoinUs} className='col-6 rounded shadow' style={{ maxHeight: '180px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' /></div></div>
+                                {/* <img src={custSat} className='homehover col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' /> */}
                             </div>
                         </div>
                         <div className='homeHover p-3'>

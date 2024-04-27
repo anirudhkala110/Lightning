@@ -27,8 +27,8 @@ import etn from './18.jpeg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const colors = [one, two, tre, fr, six, svn, eth, nin, elv, tlv, trln, frtn, ]
-    // fvtn, sxtn, svtn, etn, DivCollection, Intro, Navigation, mi];
+const colors = [one, two, tre, fr, six, svn, eth, nin, elv, tlv, trln, frtn,
+    fvtn, sxtn, svtn, etn, DivCollection, Intro, Navigation, mi];
 const delay = 2500;
 
 function AutomaticImageSlider() {
@@ -80,6 +80,7 @@ function AutomaticImageSlider() {
         <div className="slideshow pt-3"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            style={{ cursor: 'pointer' }}
         >
             <div
                 className="slideshowSlider rounded-0"
@@ -87,14 +88,16 @@ function AutomaticImageSlider() {
             >
                 {colors.map((backgroundColor, idx) => (
                     <div
-                        className="slide"
+                        className="slide text-white"
                         key={idx}
                     // style={{ backgroundColor }}
                     >
                         <center>Detail of the Image</center>
-                        <img className=' w-100 text-white bg-white mt-1' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }}
-                        // data-aos="slide-left" data-aos-delay={1000*idx} data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='true'
-                        /></div>
+                        {
+                            <img className=' w-100 text-white bg-white mt-1' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> ? <img className=' w-100 text-white bg-white mt-1' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> : 'No More Images'
+                        }
+                        {/* data-aos="slide-left" data-aos-delay={1000*idx} data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='true'/> */}
+                    </div>
                 ))}
             </div>
             <br />

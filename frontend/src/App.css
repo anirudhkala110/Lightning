@@ -43,10 +43,20 @@ body {
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
+.homehoverTab {
+  border: 1px solid transparent;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
 
 .homeHover:hover {
   border: 1px solid rgba(0, 110, 255, 0.741);
-  background: #192c4d7d !important;
+  background: #19346261 !important;
+  border-radius: 8px;
+}
+.homehoverTab:hover {
+  border: 1px solid rgba(0, 110, 255, 0.741);
+  background: #19346261 !important;
   border-radius: 8px;
 }
 .homeHover:hover a{
