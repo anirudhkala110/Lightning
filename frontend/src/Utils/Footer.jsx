@@ -7,7 +7,7 @@ const Footer = () => {
         window.open(`tel:+91${phoneNumber}`);
     };
     return (
-        <div className='text-white bg-dark'>
+        <div className='text-white bg-dark container'>
             <div className='text-white pt-3'>
                 <Link to='https://wa.me/+918005183363' className='text-decoration-none' target='_blank'>
                     <i class="bi bi-instagram fs-4 "></i>&nbsp;&nbsp;
