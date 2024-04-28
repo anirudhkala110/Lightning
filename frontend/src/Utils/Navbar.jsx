@@ -9,7 +9,10 @@ const Navbar = () => {
     const handleRoute = (route) => {
         navigate(`/${route}`)
     }
-
+    const handleCall = (number) => {
+        const phoneNumber = parseInt(number); // Replace this with the phone number you want to call
+        window.open(`tel:+91${phoneNumber}`);
+    };
     return (
         <div className='container'>
             <nav className="navbar w-100 bg-dark rounded-0" id="sidebar" style={{ background: 'rgb(255 255 255 / 90%)', borderBottom: '0px solid' }}>
@@ -104,6 +107,36 @@ const Navbar = () => {
                             <NavLink to='/register' className='w-50 btn  rounded-0 linkTabs'>Sign Up</NavLink>
                             <NavLink to='/home' className='w-50 btn  rounded-0 linkTabs'>Logout</NavLink> */}
                             <NavLink to='/support' className='btn  my-1 w-100 rounded-0 linkTabs'>Support</NavLink>
+                            <Link className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://wa.me/+918005183363' data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
+                                <i class="bi bi-whatsapp"></i> Whatsapp
+                            </Link>
+                            <Link className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg==' data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
+                                <i class="bi bi-instagram"></i> Instagram
+                            </Link>
+                            <Link className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://Slogfy@gmail.com' data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
+                                <i class="bi bi-envelope-at"></i> Gmail
+                            </Link>
+
+                            <Link className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.facebook.com/slogfy' data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
+                                <i class="bi bi-facebook"></i> Facebook
+                            </Link>
+
+                            <Link className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.linkedin.com/company/slogfy/' data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </Link>
+
+                            <Link className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://x.com/slogfy?t=7W11e-jgtl8NoIiFlBllQQ&s=09'>
+                                <i class="bi bi-twitter-x"></i> Twiter
+                            </Link>
+
+                            <Link className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://youtube.com/@slogfy8260'>
+                                <i class="bi bi-youtube"></i> YouTube
+                            </Link>
+
+                            <Link to="https://maps.app.goo.gl/4eqS6DdxRkrgA5Rt5" className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' >
+
+                                <i class="bi bi-globe-americas"></i> &nbsp;Address
+                            </Link>
                         </div>
                     </div>
                 </div>
