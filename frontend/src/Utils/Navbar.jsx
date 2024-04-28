@@ -14,7 +14,7 @@ const Navbar = () => {
         window.open(`tel:+91${phoneNumber}`);
     };
     return (
-        <div className='container'>
+        <div className=''>
             <nav className="navbar w-100 bg-dark rounded-0" id="sidebar" style={{ background: 'rgb(255 255 255 / 90%)', borderBottom: '0px solid' }}>
                 <div className="d-flex w-100 justify-content-between align-items-center ">
                     <div className='d-flex align-items-center justify-content-between'>
@@ -56,28 +56,23 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='text-white'>
-
-                        <Link to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg==' className='text-decoration-none text-white' target='__blank'>
-                            <i class="bi bi-instagram fs-4 "></i>&nbsp;&nbsp;
-                        </Link>
-                        <Link to='https://www.facebook.com/slogfy' className='text-decoration-none text-white' target='__blank'>
-                            <i class="bi bi-facebook fs-4 "></i>&nbsp;&nbsp;
-                        </Link>
-                        <Link to='https://www.linkedin.com/company/slogfy/' className='text-decoration-none text-white' target='__blank'>
-                            <i class="bi bi-linkedin fs-4 "></i>&nbsp;&nbsp;
-                        </Link>
-                        <Link to='https://youtube.com/@slogfy8260' className='text-decoration-none text-white' target='__blank'>
-                            <i class="bi bi-youtube fs-4 "></i>&nbsp;&nbsp;
-                        </Link>
-                    </div>
-                    <div className='less1000pxDisabled me-3'>
+                    <div className='less1000pxDisabled d-flex align-items-center me-1'>
+                        <div className='text-white'>
+                            <Link to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg==' className='text-decoration-none text-white' target='__blank'>
+                                <i class="bi bi-instagram fs-4 "></i>&nbsp;&nbsp;
+                            </Link>
+                            <Link to='https://www.facebook.com/slogfy' className='text-decoration-none text-white' target='__blank'>
+                                <i class="bi bi-facebook fs-4 "></i>&nbsp;&nbsp;
+                            </Link>
+                            <Link to='https://www.linkedin.com/company/slogfy/' className='text-decoration-none text-white' target='__blank'>
+                                <i class="bi bi-linkedin fs-4 "></i>&nbsp;&nbsp;
+                            </Link>
+                            <Link to='https://youtube.com/@slogfy8260' className='text-decoration-none text-white' target='__blank'>
+                                <i class="bi bi-youtube fs-4 "></i>&nbsp;&nbsp;
+                            </Link>
+                        </div>
                         <button className="btn text-white d-flex align-items-center btn-primary rounded-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                             {/* style={{ background: '#ff5722' }} */}
-                            <strong>
-                                Menu
-                            </strong>
-                            &nbsp;
                             <strong className='' >
                                 <i className="bi bi-list p-0" ></i>
                             </strong>

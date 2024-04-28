@@ -76,10 +76,10 @@ const Support = () => {
         <meta name='keywords' content='Contact Us' />
       </Helmet>
       <div className="bg-black container min-vh-100 pt-3">
-        <center className="fs-4 text-primary border-bottom py-3 fw-semibold alert rounded-0" style={{ letterSpacing: '5px', wordSpacing: '15px' }}>. . .Get 24X7 Support. . .</center>
+        <center className="fs-3 text-primary border-bottom py-3 fw-semibold alert rounded-0" style={{ letterSpacing: '1px', wordSpacing: '5px' }}>CONTACT US ✉</center>
         <div className="px-5 py-1 container" style={{ background: "rgba(0, 0, 0, 5%)", minHeight: "100vh" }}>
           <div className="my-3">
-            <center> <i className="bi bi-exclamation-triangle-fill text-warning me-1"></i> If you have any questions or require our assistance, please don't hesitate to get in touch with <a href='/' className='text-primary text-decoration-none fw-bolder'>Slogfy</a>. We are here to help you.</center>
+            <center> <i className="bi bi-exclamation-triangle-fill text-warning me-1"></i> If you have any questions or require our assistance, Get in touch with <a href='/' className='text-primary text-decoration-none fw-bolder'>Slogfy</a>. We are here to help you.</center>
           </div>
           <hr />
           <hr className="" style={{ color: "black" }} />
@@ -130,35 +130,35 @@ const Support = () => {
           <center><h1>Ask Question ? </h1></center>
           <hr />
           <div className="row col-12 contactUsBG ps-4">
-            <div className="border bg-dark col-lg-6 col-xl-6 my-2 py-2 col-sm-12 d-flex align-items-center justify-content-center " style={{ height: "470px", maxWidth: '550px' }}>
+            {/* <div className="border bg-dark col-lg-6 col-xl-6 my-2 py-2 col-sm-12 d-flex align-items-center justify-content-center " style={{ height: "470px", maxWidth: '550px' }}>
               <img src={csc} className="contactUsBG" alt="Contact Us" />
-            </div>
-            <div className="container border pt-3 col-lg-6 col-xl-6 my-2 py-2 col-sm-12 pb-1 bg-dark">
+            </div> */}
+            <div className="container pt-3 col-lg-6 col-xl-6 my-2 py-2 col-sm-12 pb-1">
               <form onSubmit={(e) => handleSubmit(e)} ref={form} >
-                <div className="form-group">
-                  <label className="fw-bold" htmlFor="formGroupName">Name</label>
-                  <input type="text" className="form-control rounded-0" id="formGroupName" placeholder="Your Valid Name" name="user_name" value={name} onChange={e => setName(e.target.value)} required />
+                <div className="form-group text-secondary fw-bolder">
+                  <label className="fw-bold" htmlFor="formGroupName">Name <sup className='text-danger'>*</sup></label>
+                  <input type="text" className="form-control   text-light rounded-3 border-0  bg-dark" id="formGroupName" placeholder="Your Valid Name" name="user_name" value={name} onChange={e => setName(e.target.value)} required />
                 </div>
-                <div className="form-group">
-                  <label className="fw-bold" htmlFor="formGroupMobile">Mobile Number</label>
-                  <input type="number" className="form-control rounded-0" id="formGroupMobile" placeholder="Mobile Number" name="mobile" value={mobile} onChange={e => setMobile(e.target.value)} required />
+                <div className="form-group text-secondary fw-bolder">
+                  <label className="fw-bold" htmlFor="formGroupMobile">Mobile Number<sup className='text-danger'>*</sup></label>
+                  <input type="number" className="form-control   text-light rounded-3 border-0  bg-dark" id="formGroupMobile" placeholder="Mobile Number" name="mobile" value={mobile} onChange={e => setMobile(e.target.value)} required />
                 </div>
-                <div className="form-group">
-                  <label className="fw-bold" htmlFor="formGroupEmail">Email Address</label>
-                  <input type="email" className="form-control rounded-0" id="formGroupEmail" placeholder="Email Address" name="user_email" value={email} onChange={e => setEmail(e.target.value)} required />
+                <div className="form-group text-secondary fw-bolder">
+                  <label className="fw-bold" htmlFor="formGroupEmail">Email Address<sup className='text-danger'>*</sup></label>
+                  <input type="email" className="form-control   text-light rounded-3 border-0  bg-dark" id="formGroupEmail" placeholder="Email Address" name="user_email" value={email} onChange={e => setEmail(e.target.value)} required />
                 </div>
-                <div className="form-group mb-2">
-                  <label className="fw-bold" htmlFor="formGroupQuery">Query / Information / Problem / Suggestion</label>
+                <div className="form-group text-secondary fw-bolder mb-2">
+                  <label className="fw-bold" htmlFor="formGroupQuery">Messege<sup className='text-danger'>*</sup></label>
                   <textarea
                     type="text"
-                    className="form-control rounded-0"
+                    className="form-control   text-light rounded-3 border-0  bg-dark"
                     cols={30}
                     rows={5}
                     style={{ resize: "none" }}
                     id="formGroupQuery"
                     value={query}
                     onChange={e => handleQuery(e)}
-                    placeholder="Enter your query here" required
+                    placeholder={`✉ Enter your Message here`} required
                   />
                   <textarea name="message" value={finalquery} style={{ display: "none" }} />
                 </div>
