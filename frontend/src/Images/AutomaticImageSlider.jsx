@@ -46,7 +46,7 @@ const colors = [
     { img: Navigation, info: 'Control Your Complete Home Devices by single touch' },
     { img: mi, info: ' Automation Your Home Using Matter Protocol' }
 ];
-const delay = 2500;
+const delay = 3000;
 
 function AutomaticImageSlider() {
     const [index, setIndex] = useState(0);
