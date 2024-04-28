@@ -293,7 +293,7 @@ const Home = () => {
                 <hr />
                 <div className='container pt-4'>
                     <center className='fs-3 fw-bold'>
-                        ASK AND ANSWERED
+                        ASKED QUESTIONS 
                     </center>
                     <FAQ />
                 </div>
