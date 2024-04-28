@@ -43,7 +43,7 @@ const Support = () => {
         .catch(err => console.log(err))
       emailjs.sendForm('service_j5cbb74', 'template_x4fuopb', form.current, 'hSXZGZXrCPMp3p6wt')
         .then((result) => {
-          alert("Your  Query Has been saved.\nNow you are redirecting to the Homepage. . .")
+          alert("Your  message ✉ Has been sent.\nNow you are redirecting to the Homepage. . .")
           navigate('/')
         }, (error) => {
           console.log(error.text);
@@ -88,7 +88,7 @@ const Support = () => {
             <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
               <div className='w-100 border my-3 border-secondary' />
               <div className='homehover col-sm-6 col-md-4 col-xl-3 col-xxl-3 col-lg-3 mb-3' style={{ height: '100px' }}>
-                <Link className='text-decoration-none text-white'><div className='homehoverTab bg-dark rounded-4 px-3 py-2 d-flex justify-content-between align-items-start' onClick={e => handleCall(8005183363)} style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-telephone-outbound"></i><div><span className='d-flex align-items-center pe-3'><strong className='' style={{ fontSize: '12px' }}>Owner: +91-8005183363</strong> &nbsp;&nbsp;&nbsp;&nbsp;<button className='btn rounded-0  text-white py-1 fw-bold' onClick={e => handleCall(8005183363)}>Call Now</button></span></div></div></div>
+                <Link className='text-decoration-none text-white'><div className='homehoverTab bg-dark rounded-4 px-3 py-2 d-flex justify-content-between align-items-start' onClick={e => handleCall(8005183363)} style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-telephone-outbound"></i><div><span className='d-flex align-items-center pe-3'><strong className='' style={{ fontSize: '12px' }}>Owner: +91-8005183363</strong> <button className='btn rounded-0  text-white py-1' onClick={e => handleCall(8005183363)}>Call Now</button></span></div></div></div>
                 </Link>
               </div>
               <div className='homehover col-sm-6 col-md-4 col-xl-3 col-xxl-3 col-lg-3 mb-3' style={{ height: '100px' }}>
@@ -162,7 +162,7 @@ const Support = () => {
                   />
                   <textarea name="message" value={finalquery} style={{ display: "none" }} />
                 </div>
-                <button className="btn border-0 rounded-0 mb-2 fw-bolder send-mail btn-primary w-100" value="Send">Send Mail</button>
+                <button type='submit' className="btn border-0 rounded-0 mb-2 fw-bolder send-mail btn-primary w-100" value="Send">Send Mail</button>
                 {/* <div className="btn btn-success border-0 rounded-0 ms-2 mb-2 call-btn" id="call" onClick={() => handleCall(8005183363)}>Make a Call</div> */}
                 <div className="btn btn-warning border-0 w-100 rounded-0 fw-bolder mb-2 call-btn" id="call" onClick={() => handleRoute('home')}>Home</div>
               </form>
