@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  background: #F6F8FC;
+} */
+
+.hding {
+    color: #212943;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.cntner {
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* form {
+  display: flex;
+  width: 35rem;
+  background-color: #fff;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 1rem;
+} */
+
+/* form svg {
+  height: 1rem;
+  fill: #9EA6AE;
+  position: fixed; 
+  width: 4rem;
+} */
+
+.searchbar {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    padding: 1rem;
+    padding-left: 4rem;
+    width: 100%;
+    box-shadow: 0px 5px 13px 0px #DEE4F1;
+    border-radius: 0.8rem;
+}
+
+.searchbar:focus {
+    outline: none;
+    box-shadow: 0 0 0 1.5px #DEE4F1, 0px 5px 13px 0px #DEE4F1;
+}
+
+.faq {
+    margin: 3rem 0;
+}
+
+.quesHover {
+    transition: .2s ease-in-out;
+    font-size: 16px !important;
+
+}
+
+.quesHover:hover {
+    color: #1e00ff !important;
+}
+
+.question-wrapper {
+    /* border-bottom: 1px solid #DEE4F1;  */
+    margin: 0 auto;
+    padding: 1rem 1rem 0.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #0f1d4a4e;
+    transition: 1s;
+}
+
+.question {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #212943;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question svg {
+    width: 1rem;
+    height: 1.5rem;
+    fill: #9EA6AE;
+}
+
+.question svg.active {
+    transform: rotate(180deg);
+}
+
+.question svg:hover {
+    opacity: 0.8;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.answer {
+    display: none;
+}
+
+.answer.active {
+    display: block;
+    text-align: left;
+    /* padding-top: 1.5rem; */
+    font-weight: light;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #9EA6AE;
+    height: 0%;
+    animation: slidein 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0.3;
+        transform: translateY(-20%)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.typeBtn {
+    color: white !important;
+    transition: .2s ease-in-out;
+    border-radius: 30px !important;
+}
+
+.typeBtn:hover {
+    background: #1e00ff !important;
+}
+
+.FAQes {
+    -webkit-animation: color-change 5s infinite;
+    -moz-animation: color-change 5s infinite;
+    -o-animation: color-change 5s infinite;
+    -ms-animation: color-change 5s infinite;
+    animation: color-change 5s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: red; }
+    25% { color: hsl(35, 100%, 50%); }
+    50% { color: hsl(200, 100%, 50%); }
+    75% { color: hsl(35, 100%, 50%); }
+    100% { color: red; }
+}
+@-moz-keyframes color-change {
+    0% { color: red; }
+    25% { color: hsl(35, 100%, 50%); }
+    50% { color: hsl(200, 100%, 50%); }
+    75% { color: hsl(35, 100%, 50%); }
+    100% { color: red; }
+}
+@-ms-keyframes color-change {
+    0% { color: red; }
+    25% { color: hsl(35, 100%, 50%); }
+    50% { color: hsl(200, 100%, 50%); }
+    75% { color: hsl(35, 100%, 50%); }
+    100% { color: red; }
+}
+@-o-keyframes color-change {
+    0% { color: red; }
+    25% { color: hsl(35, 100%, 50%); }
+    50% { color: hsl(200, 100%, 50%); }
+    75% { color: hsl(35, 100%, 50%); }
+    100% { color: red; }
+}
+@keyframes color-change {
+    0% { color: red; }
+    25% { color: hsl(35, 100%, 50%); }
+    50% { color: hsl(200, 100%, 50%); }
+    75% { color: hsl(35, 100%, 50%); }
+    100% { color: red; }
+}
