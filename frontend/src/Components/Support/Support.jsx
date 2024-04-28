@@ -162,9 +162,9 @@ const Support = () => {
                   />
                   <textarea name="message" value={finalquery} style={{ display: "none" }} />
                 </div>
-                <button className="btn border-0 rounded-0 mb-2 send-mail btn-primary" value="Send">Send Mail</button>
-                <div className="btn btn-success border-0 rounded-0 ms-2 mb-2 call-btn" id="call" onClick={() => handleCall(8005183363)}>Make a Call</div>
-                <div className="btn btn-warning border-0 rounded-0 ms-2 mb-2 call-btn" id="call" onClick={() => handleRoute('home')}>Home</div>
+                <button className="btn border-0 rounded-0 mb-2 fw-bolder send-mail btn-primary w-100" value="Send">Send Mail</button>
+                {/* <div className="btn btn-success border-0 rounded-0 ms-2 mb-2 call-btn" id="call" onClick={() => handleCall(8005183363)}>Make a Call</div> */}
+                <div className="btn btn-warning border-0 w-100 rounded-0 fw-bolder mb-2 call-btn" id="call" onClick={() => handleRoute('home')}>Home</div>
               </form>
             </div>
           </div>
