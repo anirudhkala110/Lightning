@@ -16,8 +16,8 @@ const Navbar = () => {
                 <div className="d-flex w-100 justify-content-between align-items-center ">
                     <div className='d-flex align-items-center justify-content-between'>
                         <a href='/' className='text-decoration-none text-white d-flex ps-0 align-items-center' >
-                            <div>
-                                <img src={logo} width={50} className='rounded-circle text-white bg-white' style={{ filter: 'invert(1) !important' }} />
+                            <div className='bg-dark'>
+                                <img src={logo} width={50} className='rounded-circle' style={{ filter: 'invert(1) !important' }} />
                             </div>
                             &nbsp;
                             <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogfy</strong>
@@ -83,8 +83,8 @@ const Navbar = () => {
                     <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                         <div className="offcanvas-header bg-black">
                             <a href='/' className='text-decoration-none text-white d-flex ps-0 align-items-center' >
-                                <div className='bg-white text-white rounded-circle'>
-                                    <img src={logo} width={35} className='rounded-circle text-white bg-white' style={{ filter: 'invert() !important' }} />
+                                <div className='bg-black text-white rounded-circle'>
+                                    <img src={logo} width={35} className='rounded-circle text-white bg-black' style={{ filter: 'invert() !important' }} />
                                 </div>
                                 &nbsp;
                                 <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogfy</strong>
