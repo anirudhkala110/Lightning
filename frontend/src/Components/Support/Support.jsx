@@ -79,7 +79,7 @@ const Support = () => {
         <center className="fs-4 text-primary border-bottom py-3 fw-semibold alert rounded-0" style={{ letterSpacing: '5px', wordSpacing: '15px' }}>. . .Get 24X7 Support. . .</center>
         <div className="px-5 py-1 container" style={{ background: "rgba(0, 0, 0, 5%)", minHeight: "100vh" }}>
           <div className="my-3">
-            <center> <i className="bi bi-exclamation-triangle-fill text-warning me-1"></i> If you have any questions or require our assistance, please don't hesitate to get in touch with <a href='/all-products' className='text-primary text-decoration-none fw-bolder'>Slogfy</a>. We are here to help you.</center>
+            <center> <i className="bi bi-exclamation-triangle-fill text-warning me-1"></i> If you have any questions or require our assistance, please don't hesitate to get in touch with <a href='/' className='text-primary text-decoration-none fw-bolder'>Slogfy</a>. We are here to help you.</center>
           </div>
           <hr />
           <hr className="" style={{ color: "black" }} />
