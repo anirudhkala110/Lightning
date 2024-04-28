@@ -20,7 +20,7 @@ import SSE from './SSE.jpg'
 import tlv from './12.jpg'
 import trln from './13.jpg'
 import frtn from './14.jpg'
-import fvtn from './15.jpg'
+import CHA from './CHA.jpg'
 import sxtn from './16.jpg'
 import svtn from './17.jpg'
 import etn from './18.jpeg'
@@ -29,6 +29,7 @@ import 'aos/dist/aos.css';
 
 const colors = [
     { img: fv, info: "Complete Home Automation Using Matter Protocols" },
+    { img: CHA, info: "Complete Home Automation Using Matter Protocols and Smart Phone" },
     { img: SSL, info: "Smart Lights and Switches Using Matter Protocols" },
     { img: six, info: 'Smart Display Control' },
     { img: SLS, info: 'Smart Light and Switches, controled by one click' },
