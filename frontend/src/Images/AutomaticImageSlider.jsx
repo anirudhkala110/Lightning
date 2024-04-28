@@ -11,7 +11,7 @@ import one from './1.png'
 import two from './2T.png'
 import tre from './3.png'
 import fr from './4.jpg'
-import fv from './5.jpg'
+import fv from './frst.png'
 import six from './6.jpg'
 import svn from './7.jpg'
 import eth from './8.jpg'
@@ -27,9 +27,21 @@ import etn from './18.jpeg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const colors = [one, two, tre, fr, six, svn, eth, nin, elv, tlv, trln, frtn,
-    fvtn, sxtn, svtn, etn, Intro, Navigation, mi];
-const delay = 2000;
+const colors = [
+    { img: fv, info: "Complete Home Automation Using Matter Protocols" },
+    { img: six, info: 'Smart Display Control' },
+    { img: svn, info: 'Control AC, Fans from Anywhere' },
+    { img: eth, info: 'Get the Latest Update of Security' },
+    { img: tlv, info: 'Control Your Home System Through Voice' },
+    { img: trln, info: 'Smart LED Lights and Displays Systems' },
+    { img: frtn, info: 'System for automate washing Machines' },
+    { img: sxtn, info: 'Control and Automate Home From your Smart Phone' },
+    { img: svtn, info: 'Get Video Updates on Smart Devices' },
+    { img: Intro, info: 'Get room Temperature Updates and Set your Fan to maintain a fix Room Temperature on your Demand' },
+    { img: Navigation, info: 'Control Your Complete Home Devices by single touch' },
+    { img: mi, info: ' Automation Your Home Using Matter Protocol' }
+];
+const delay = 20000;
 
 function AutomaticImageSlider() {
     const [index, setIndex] = useState(0);
@@ -50,6 +62,7 @@ function AutomaticImageSlider() {
             };
             // console.log(index, colors.length)
             if (index >= colors.length - 1) {
+                // clearTimeout(timeoutRef.current);
                 return; // Stop the useEffect if index exceeds colors.length
             }
             else {
@@ -86,22 +99,22 @@ function AutomaticImageSlider() {
                 className="slideshowSlider rounded-0 shadow-6-strong"
                 style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
             >
-                {colors.map((backgroundColor, idx) => (
+                {colors.map((data, idx) => (
                     <div
                         className="slide text-white"
                         key={idx}
                     // style={{ backgroundColor }}
                     >
-                     <center className='w-100 text-white alert bg-dark rounded-0'>Detail of the Image</center>
+                        <center className='w-100 text-white alert bg-dark rounded-0'>{data.info}</center>
                         {
-                            <img className=' w-100 text-white bg-white shadow-lg' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> ? <img className=' w-100 text-white bg-white mt-1' src={backgroundColor} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> : 'No More Images'
+                            <img className=' w-100 text-white bg-dark shadow-lg' src={data.img} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> ? <div className='bg-dark'><img className=' w-100 text-white py-2' src={data.img} style={{ color: "white", maxHeight: '450px',filter:`${data.img==mi?'invert(1)':'invert(0)'}`, height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /></div> : 'No More Images'
                         }
                         {/* data-aos="slide-left" data-aos-delay={1000*idx} data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='true'/> */}
                     </div>
                 ))}
             </div>
             <br />
-            <div className="slideshowDots d-flex w-100" style={{ overflow: 'auto',filter:'invert(0)' }}>
+            <div className="slideshowDots d-flex w-100" style={{ overflow: 'auto', filter: 'invert(0)' }}>
                 {colors.map((_, idx) => (
                     <div
                         key={idx}
