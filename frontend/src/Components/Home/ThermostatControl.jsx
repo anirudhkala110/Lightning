@@ -10,14 +10,14 @@ const ThermostatControl = () => {
             >
                 <div className='py-1'>
                     <br />
-                    <center className='p-1 rounded-0 mb-1 alert text-primary fw-semibold fs-2'>
+                    <center className='p-1 rounded-0 mb-1 alert text-primary fw-semibold fs-1'>
                         Matter Protocol in Thermostats
                     </center>
-                    <h4>Utilizing an automated system, fan speed is dynamically adjusted in response to changes in the room temperature, ensuring optimal comfort levels while also minimizing energy consumption using Matter Protocol. The Matter protocol is a new standard for smart home devices that
+                    <h5>Utilizing an automated system, fan speed is dynamically adjusted in response to changes in the room temperature, ensuring optimal comfort levels while also minimizing energy consumption using Matter Protocol. The Matter protocol is a new standard for smart home devices that
                         enables seamless connectivity and interoperability. Thermostats are a
                         key component of Matter-enabled devices, providing precise climate
                         control and energy efficiency.
-                    </h4>
+                    </h5>
                     <hr />
                     <div className='card bg-dark px-2 text-white rounded-0 py-2'>
                         <div className=''>

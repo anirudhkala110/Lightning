@@ -10,13 +10,13 @@ const Security = () => {
             >
                 <div className='py-1'>
                     <br />
-                    <center className='p-1 rounded-0 mb-1 alert text-primary fw-semibold fs-2'>
+                    <center className='p-1 rounded-0 mb-1 alert text-primary fw-semibold fs-1'>
                         Enhancing Smart Security and Emergency with Matter Protocol
                     </center>
-                    <h4> Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members. The Matter protocol offers a unified, secure, and reliable platform to
+                    <h5> Live streamed, smartphone,integrated video is the example of security systems have gained more attention in past years. Take  example it sends video feeds from around your home straight to your smartphone so you can easily monitor pets,children, or simply watch for suspicious or unusual activities. This technology is just the starting point for smart security with emergency system as many more applications can  be added. So, Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members. The Matter protocol offers a unified, secure, and reliable platform to
                         seamlessly integrate various smart devices for enhanced security and
                         emergency response in homes and buildings.
-                    </h4>
+                    </h5>
                     <hr />
                     <div className='card bg-dark px-2 text-white rounded-0 py-2'>
                         <div className=''>

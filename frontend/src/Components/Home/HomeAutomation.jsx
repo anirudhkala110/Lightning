@@ -10,14 +10,20 @@ const HomeAutomation = () => {
             >
                 <div className='py-1'>
                     <br />
-                    <center className='p-1 rounded-0 mb-1 alert text-primary fw-semibold fs-2'>
+                    <center className='p-1 rounded-0 mb-1 alert text-primary fw-semibold fs-1'>
                         Motion Detection with Matter Protocol
                     </center>
-                    <h4>Turn your Lights, Switches, Cooler, Fan, AC ON and OFF just by only <b>Entering</b> and <b>Leaving</b> the room. Motion detectors are a key component in modern home automation
+                    <h5>Turn your Lights, Switches, Cooler, Fan, AC ON and OFF just by only <b>Entering</b> and <b>Leaving</b> the room.
+                        Several types of motion detectors with using matter are Driveway alarms, Motion-activated lights, Motion sensor cameras
+                        including doorbell camera, as  floodlight camera
+                        motion sensors for swimming pool safety
+                        Some medical alert systems
+
+                        You can use motion sensors  hone automation to automatically turn on a light when someone approaches your home, sound an alarm when movement is detected in your living room, or trigger a motion sensor camera to start recording when someone enters your home. Motion detectors are a key component in modern home automation
                         systems, enabling intelligent control of lighting, security, and other
                         connected devices based on occupancy. This can enhance convenience,
                         energy efficiency, and overall home management.
-                    </h4>
+                    </h5>
                     <hr />
                     <div className='card bg-dark px-2 text-white rounded-0 py-2'>
                         <div className=''>
