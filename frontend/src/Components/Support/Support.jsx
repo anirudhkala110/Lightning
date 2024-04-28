@@ -84,9 +84,9 @@ const Support = () => {
           <hr />
           <hr className="" style={{ color: "black" }} />
           <div className='container'>
-            <center className='fs-2 text-info'>Contact Us</center>
+            {/* <center className='fs-2 text-info'>Contact Us</center> */}
             <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
-              <div className='w-100 border my-3 border-secondary' />
+              {/* <div className='w-100 border my-3 border-secondary' /> */}
               <div className='homehover col-sm-6 col-md-4 col-xl-3 col-xxl-3 col-lg-3 mb-3' style={{ height: '100px' }}>
                 <Link className='text-decoration-none text-white'><div className='homehoverTab bg-dark rounded-4 px-3 py-2 d-flex justify-content-between align-items-start' onClick={e => handleCall(8005183363)} style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-telephone-outbound"></i><div><span className='d-flex align-items-center pe-3'><strong className='' style={{ fontSize: '12px' }}>Owner: +91-8005183363</strong> <button className='btn rounded-0  text-white py-1' onClick={e => handleCall(8005183363)}>Call Now</button></span></div></div></div>
                 </Link>
