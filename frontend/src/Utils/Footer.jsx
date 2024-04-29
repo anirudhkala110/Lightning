@@ -14,7 +14,7 @@ const Footer = () => {
                 {/* <Link className='text-decoration-none text-white' target='__blank' to='https://Slogfy@gmail.com'><i class="bi fs-3 bi-envelope-at"></i></Link> */}
                 <Link className='text-decoration-none text-white' target='__blank' to='https://www.facebook.com/slogfy'><i class="bi bi-facebook"> Facebook</i> </Link>
                 <Link className='text-decoration-none text-white' target='__blank' to='https://www.linkedin.com/company/slogfy/'><i class="bi bi-linkedin"> LinkedIn</i> </Link>
-                <Link className='text-decoration-none text-white' target='__blank' to='https://x.com/slogfy?t=7W11e-jgtl8NoIiFlBllQQ&s=09'><i class="bi bi-twitter-x"> Twitter</i> </Link>
+                <Link className='text-decoration-none text-white' target='__blank' to='https://x.com/slogfy?t=7W11e-jgtl8NoIiFlBllQQ&s=09'><i class="bi bi-twitter-x px-1"> Twitter</i> </Link>
                 <Link className='text-decoration-none text-white' target='__blank' to='https://youtube.com/@slogfy8260'><i class="bi bi-youtube"> YouTube</i>
                 </Link>
             </div>

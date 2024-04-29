@@ -1028,8 +1028,15 @@ transform: scale(2.5);
 .metahover,
 .whatsapphover,
 .msngerhover,
-.facebookhover {
-  transition: .3s ease-in-out;
+.facebookhoverm,
+.bi-youtube,
+.bi-facebook,
+.bi-instagram,
+.bi-whatsapp,
+.bi-telephone-outbound,
+.bi-twitter-x,
+.bi-linkedin {
+  transition: .2s ease-in-out;
   cursor: pointer;
 }
 
