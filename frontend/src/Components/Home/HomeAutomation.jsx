@@ -19,7 +19,7 @@ const HomeAutomation = () => {
                         motion sensors for swimming pool safety
                         Some medical alert systems
 
-                        You can use motion sensors  hone automation to automatically turn on a light when someone approaches your home, sound an alarm when movement is detected in your living room, or trigger a motion sensor camera to start recording when someone enters your home. Motion detectors are a key component in modern home automation
+                        You can use motion sensors  home automation to automatically turn on a light when someone approaches your home, sound an alarm when movement is detected in your living room, or trigger a motion sensor camera to start recording when someone enters your home. Motion detectors are a key component in modern home automation
                         systems, enabling intelligent control of lighting, security, and other
                         connected devices based on occupancy. This can enhance convenience,
                         energy efficiency, and overall home management.

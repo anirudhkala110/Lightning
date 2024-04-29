@@ -13,7 +13,18 @@ const SmartLightsandSwitches = () => {
                     <center className='p-1 rounded-0 mb-1 alert text-primary fw-semibold fs-1'>
                         Smart Lights and Switches with use of Matter Protocol
                     </center>
-                    <h5> Turn your light ON / OFF just by your inward and outward movement, voice or Smart Phone. In the smart switches and lights a basic  example of Apple Home’s Adaptive Lighting feature works with Philips Hue bulbs if you connect your bridge to Apple Home through HomeKit, but not if you connect it to Apple Home through Matter. Bridges that currently support Matter Philips Hue Bridge Aqara Hub M2 (OTA update) Aqara Hub M1S Gen 2 Aqara Hub E1 Aqara Camera Hub G3 SwitchBot Hub 2The Matter protocol is a new industry standard that enables seamless
+                    <h5> Turn your light ON / OFF just by your inward and outward movement, voice or Smart Phone. In the smart switches and lights a basic  example of Apple Home’s Adaptive Lighting feature works with Philips Hue bulbs if you connect your bridge to Apple Home through HomeKit, but not if you connect it to Apple Home through Matter
+                        <ul>
+                            <li> Bridges that currently support Matter</li>
+                            <li> Philips Hue Bridge</li>
+                            <li> Aqara Hub M2 (OTA update)</li>
+                            <li> Aqara Hub M1S Gen 2 </li>
+                            <li> Aqara Hub E1 </li>
+                            <li> Aqara Camera Hub G3 </li>
+                            <li> SwitchBot Hub 2</li>
+
+                        </ul>
+                        The Matter protocol is a new industry standard that enables seamless
                         connectivity and control of smart home devices, including lights and
                         switches, across different brands and platforms.
                     </h5>
