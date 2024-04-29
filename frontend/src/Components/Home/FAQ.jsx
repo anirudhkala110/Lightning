@@ -147,7 +147,7 @@ const Question = ({ question, answer }) => {
                     </svg>
                 </button>
             </div>
-            <div className={`${isActive ? 'answer active' : 'answer'} text-white mb-2 pb-4`} >
+            <div className={`${isActive ? 'answer active' : 'answer'} text-white mb-2 pb-4`}  style={{height:'-webkit-fill-available'}}>
                 <hr />
                 {answer}
             </div>
