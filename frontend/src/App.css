@@ -7,8 +7,8 @@
   padding: 0;
 }
 
-.navSupport{
-  box-shadow: 0px -1px 10px ;
+.navSupport {
+  box-shadow: 0px -1px 10px;
 }
 
 html {
@@ -22,6 +22,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden !important;
   font-family: "Poppins" !important;
+  text-align: 'justify' !important
 }
 
 body {
@@ -48,7 +49,8 @@ body {
   background-size: cover;
   filter: invert(0);
 }
-.sliderImages img{
+
+.sliderImages img {
   filter: invert(0);
 }
 
@@ -1031,52 +1033,69 @@ transform: scale(2.5);
   cursor: pointer;
 }
 
-.bi-instagram:hover, .homehoverTab:hover .bi-instagram {
+.bi-instagram:hover,
+.homehoverTab:hover .bi-instagram {
   color: #ff00b3c2;
   transform: scale(1.01);
 }
 
-.bi-meta:hover, .homehoverTab:hover .bi-meta {
+.bi-meta:hover,
+.homehoverTab:hover .bi-meta {
   color: #1586c0;
   transform: scale(1.01);
 }
 
-.bi-whatsapp:hover, .homehoverTab:hover .bi-whatsapp {
+.bi-whatsapp:hover,
+.homehoverTab:hover .bi-whatsapp {
   color: #02cf02;
   transform: scale(1.01);
 }
 
-.bi-messenger:hover, .homehoverTab:hover .bi-messenger {
+.bi-messenger:hover,
+.homehoverTab:hover .bi-messenger {
   color: #08a9ff;
   transform: scale(1.01);
 }
-.bi-envelope-at:hover, .homehoverTab:hover .bi-envelope-at {
-  color:  #d44638;
+
+.bi-envelope-at:hover,
+.homehoverTab:hover .bi-envelope-at {
+  color: #d44638;
   transform: scale(1.01);
 }
 
-.bi-twitter-x:hover, .homehoverTab:hover .bi-twitter-x {
+.bi-twitter-x:hover,
+.homehoverTab:hover .bi-twitter-x {
   background: #000000;
   padding: auto 14px !important;
   transform: scale(1.01);
 }
-.bi-facebook:hover, .homehoverTab:hover .bi-facebook {
+
+.bi-facebook:hover,
+.homehoverTab:hover .bi-facebook {
   color: #006fff;
   transform: scale(1.01);
 }
-.bi-globe-americas:hover, .homehoverTab:hover .bi-globe-americas {
-  color: #34A56F ;
+
+.bi-globe-americas:hover,
+.homehoverTab:hover .bi-globe-americas {
+  color: #34A56F;
   transform: scale(1.01);
 }
-.bi-linkedin:hover, .homehoverTab:hover .bi-linkedin {
+
+.bi-linkedin:hover,
+.homehoverTab:hover .bi-linkedin {
   color: #0a66c2;
   transform: scale(1.01);
 }
-.bi-youtube:hover, .homehoverTab:hover .bi-youtube {
+
+.bi-youtube:hover,
+.homehoverTab:hover .bi-youtube {
   color: #ff0000;
   transform: scale(1.01);
 }
-.bi-telephone-outbound:hover, .homehoverTab:hover .bi-telephone-outbound {
+
+.bi-telephone-outbound:hover,
+.homehoverTab:hover .bi-telephone-outbound {
   color: #5cdb5c;
   transform: scale(1.01);
 }

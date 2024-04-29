@@ -24,6 +24,10 @@ import SmartLightsandSwitches from './Components/Home/SmartLightsandSwitches';
 import Security from './Components/Home/Security';
 import HomeAutomation from './Components/Home/HomeAutomation';
 import ThermostatControl from './Components/Home/ThermostatControl';
+import AppControl from './Components/Home/AppControl';
+import VoiceControl from './Components/Home/VoiceControl';
+import Schedule from './Components/Home/Schedule';
+import Analytics from './Components/Home/Analytics';
 
 export const userContext = createContext()
 
@@ -64,6 +68,10 @@ function App() {
                   <Route exact path='/Enhancing-Smart-Security-and-Emergency-with-Matter-Protocol' element={<Security />} />
                   <Route exact path='/Home-Automation-with-Motion-Detectors' element={<HomeAutomation />} />
                   <Route exact path='/Thermostat-with-Matter-Protocol' element={<ThermostatControl />} />
+                  <Route exact path='/Slogfy-App-Control' element={<AppControl />} />
+                  <Route exact path='/Slogfy-Voice-Control' element={<VoiceControl />} />
+                  <Route exact path='/Slogfy-App-Analytics' element={<Analytics />} />
+                  <Route exact path='/Slogfy-App-Schedule-Control' element={<Schedule />} />
                   <Route exact path='/contact-detail/:userName/:phone/:email/:address' element={<ContactDetails />} />
                   <Route path='*' element={<PageNoteFound />} />
                 </Routes>
