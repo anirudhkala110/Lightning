@@ -1121,3 +1121,17 @@ transform: scale(2.5);
 
 
 /*  Social Media Data Hover */
+
+/* hideUnder600px footer*/
+
+.hideUnder600px {
+  display: block;
+}
+
+@media only screen and (max-width:600px) {
+  .hideUnder600px {
+    display: none;
+  }
+}
+
+/* hideUnder600px footer*/
