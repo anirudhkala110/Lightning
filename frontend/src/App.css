@@ -1066,59 +1066,82 @@ transform: scale(2.5);
 .homehoverTab:hover .bi-messenger,
 .hoveringEffect:hover .bi-messenger {
   color: #08a9ff;
-  transform: scale(1.01);
+  /* transform: scale(1.01); */
 }
 
 .bi-envelope-at:hover,
 .homehoverTab:hover .bi-envelope-at,
 .hoveringEffect:hover .bi-envelope-at {
   color: #d44638;
-  transform: scale(1.01);
+  /* transform: scale(1.01); */
 }
 
 .bi-twitter-x:hover,
 .homehoverTab:hover .bi-twitter-x,
 .hoveringEffect:hover .bi-twitter-x {
-  background: #000000;
-  padding: auto 14px !important;
-  transform: scale(1.01);
+  /* background: #000000; */
+  color: white !important;
+  /* transform: scale(1.01); */
 }
 
 .bi-facebook:hover,
 .homehoverTab:hover .bi-facebook,
 .hoveringEffect:hover .bi-facebook {
   color: #006fff;
-  transform: scale(1.01);
+  /* transform: scale(1.01); */
 }
 
 .bi-globe-americas:hover,
 .homehoverTab:hover .bi-globe-americas,
 .hoveringEffect:hover .bi-globe-americas {
   color: #34A56F;
-  transform: scale(1.01);
+  /* transform: scale(1.01); */
 }
 
 .bi-linkedin:hover,
 .homehoverTab:hover .bi-linkedin,
 .hoveringEffect:hover .bi-linkedin {
   color: #0a66c2;
-  transform: scale(1.01);
+  /* transform: scale(1.01); */
 }
 
 .bi-youtube:hover,
 .homehoverTab:hover .bi-youtube,
 .hoveringEffect:hover .bi-youtube {
   color: #ff0000;
-  transform: scale(1.01);
+  /* transform: scale(1.01); */
+}
+
+.hoveringEffect:hover .utube {
+  /* -webkit-text-stroke-width: 1px; */
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.506);
 }
 
 .bi-telephone-outbound:hover,
 .homehoverTab:hover .bi-telephone-outbound,
 .hoveringEffect .bi-telephone-outbound {
   color: #5cdb5c;
-  transform: scale(1.01);
+  /* transform: scale(1.01); */
+  background: #000000;
+
 }
 
+.hoveringEffect {
+  padding: 2px 5px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.hoveringEffect:hover {
+  background: #19346261;
+  border: 1px solid rgba(0, 110, 255, 0.741);
+}
+
+.hoveringEffect:hover .bi-twitter-x {
+  /* background: #000000; */
+  color: rgb(255, 255, 255) !important;
+  /* transform: scale(1.01); */
+}
 
 /*  Social Media Data Hover */
 
