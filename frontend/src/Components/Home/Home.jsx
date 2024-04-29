@@ -40,6 +40,10 @@ const Home = () => {
     }
     return (
         <div className='min-vh-100'>
+            <div className='sliderImages bg-dark w-100'
+                data-aos="zoom-in" data-aos-delay='' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='true'
+                style={{ minHeight: "350px" }}><AutomaticImageSlider />
+            </div>
             <div className='row'>
                 <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 px-5 py-3'>
                     {/* <div className='col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6'> */}
@@ -145,10 +149,7 @@ const Home = () => {
                 {/* <div className='sliderImages bg-dark justify-content-center align-items-center d-flex' style={{ minHeight: "350px" }}><ImgSlider /></div> */}
                 {/* <div className='sliderImages bg-dark w-100' style={{ minHeight: "350px" }}><AutomaticImageSlider /></div> */}
                 <br />
-                <div className='sliderImages bg-dark w-100'
-                    data-aos="zoom-in" data-aos-delay='' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='true'
-                    style={{ minHeight: "350px" }}><AutomaticImageSlider />
-                </div>
+
                 <br />
                 <br />
                 <br />
@@ -199,7 +200,7 @@ const Home = () => {
                                 </div>
                                 <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
                                     <Link to='/Smart-Lights-and-Switches-with-use-of-Matter Protocol' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Smart Switches</h4> {truncate('Turn your light ON / OFF just by your inward and outward movement, voice or Smart Phone. ', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >App Control</h4> {truncate('We Put your home in the palm of your hands with our highly lauded mobile app.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                         </div>
                                             <img src={JoinUs} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                                         </div>
@@ -207,7 +208,7 @@ const Home = () => {
                                 </div>
                                 <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
                                     <Link to='/Enhancing-Smart-Security-and-Emergency-with-Matter-Protocol' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Emergnecy Alert SOS</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Voice Control</h4> {truncate('Compatible with all leading voice assistants like Alexa, Google Home and Apple Siri', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                         </div>
                                             <img src={SecurityWithMatter} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                                         </div>
@@ -215,7 +216,7 @@ const Home = () => {
                                 </div>
                                 <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
                                     <Link to='/Home-Automation-with-Motion-Detectors' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Motion Detectors Automation</h4> {truncate('Turn your Cooler, Fan, AC ON and OFF just by only Entering and Leaving the room.', 100)} <br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Analytics</h4> {truncate('Gain insight into consumption & save on your bills with analytics & bill prediction.', 100)} <br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                         </div>
                                             <img src={MotionDetectionAutomation} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                                         </div>
@@ -223,7 +224,7 @@ const Home = () => {
                                 </div>
                                 <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
                                     <Link to='/Thermostat-with-Matter-Protocol' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' > Room Temperature Controler</h4>{truncate('Utilizing an automated system, fan speed is dynamically adjusted in response to changes in the room temperature, ensuring optimal comfort levels while also minimizing energy consumption using Matter Protocol. ', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' > Schedules</h4>{truncate('Get time-based appliance control with scheduling & timer functionalities', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                         </div>
                                             <img src={ThermostateMatter} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                                         </div>
@@ -246,7 +247,7 @@ const Home = () => {
                 <hr />
                 <div className='container pt-4'>
                     <center className='fs-3 fw-bold'>
-                        ASKED QUESTIONS 
+                        ASKED QUESTIONS
                     </center>
                     <FAQ />
                 </div>
@@ -294,7 +295,7 @@ const Home = () => {
                         {/* <img src={custSat} className='homehover col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' /> */}
                     </div>
                 </div>
-                <br/>
+                <br />
             </div>
             <br />
             <hr />

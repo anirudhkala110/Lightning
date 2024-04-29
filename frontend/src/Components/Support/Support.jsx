@@ -28,24 +28,25 @@ const Support = () => {
       alert("Please Enter All the Fields")
     }
     else {
-      axios.post('https://localhost:8099/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
-        //   axios.post('https://api.legalbrother.in/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
-        .then(res => {
-          console.log(res)
-          if (res.data.success) {
-            alert("Your  Query Has been saved.\nNow you are redirecting to the Homepage. . .")
-            window.location.href = '/'
-          }
-          else {
-            alert("Sorry, not able to send your query.\nTry again after some time.")
-          }
-        })
-        .catch(err => console.log(err))
+      // axios.post('https://localhost:8099/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
+      //   //   axios.post('https://api.legalbrother.in/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
+      //   .then(res => {
+      //     console.log(res)
+      //     if (res.data.success) {
+      //       alert("Your  Query Has been saved.\nNow you are redirecting to the Homepage. . .")
+      //       window.location.href = '/'
+      //     }
+      //     else {
+      //       alert("Sorry, not able to send your query.\nTry again after some time.")
+      //     }
+      //   })
+      //   .catch(err => console.log(err))
       emailjs.sendForm('service_j5cbb74', 'template_x4fuopb', form.current, 'hSXZGZXrCPMp3p6wt')
         .then((result) => {
           alert("Your  message ✉ Has been sent.\nNow you are redirecting to the Homepage. . .")
           navigate('/')
         }, (error) => {
+          alert("Sorry, not able to send your query.\nTry again after some time.")
           console.log(error.text);
         });
     }
