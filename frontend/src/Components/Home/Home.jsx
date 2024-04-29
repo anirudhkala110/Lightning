@@ -243,9 +243,14 @@ const Home = () => {
 
                     </div>
                 </div>
-                <br />
-                <br />
-                <br />
+                <hr />
+                <div className='container pt-4'>
+                    <center className='fs-3 fw-bold'>
+                        ASKED QUESTIONS 
+                    </center>
+                    <FAQ />
+                </div>
+                <hr />
                 <div className='container'>
                     <center className='fs-2 text-info'>Contact Us</center>
                     <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
@@ -290,13 +295,6 @@ const Home = () => {
                     </div>
                 </div>
                 <br/>
-                <hr />
-                <div className='container pt-4'>
-                    <center className='fs-3 fw-bold'>
-                        ASKED QUESTIONS 
-                    </center>
-                    <FAQ />
-                </div>
             </div>
             <br />
             <hr />
