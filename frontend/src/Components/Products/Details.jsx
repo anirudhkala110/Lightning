@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import { useParams } from "react-router-dom";
-import arm1 from '../../Images/Arm1.jpeg'
-import arm2 from '../../Images/arm2.jpeg'
-import arm3 from '../../Images/arm3.jpeg'
-import arm4 from '../../Images/arm4.jpeg'
-import arm5 from '../../Images/arm5.jpeg'
-import vdo1 from '../../Images/roboticArm.mp4'
+import arm1 from '../../Images/homeAutomationUsingMotion.jpg'
+import arm2 from '../../Images/homeAutomationUsingMotion.jpg'
+import arm3 from '../../Images/homeAutomationUsingMotion.jpg'
+import arm4 from '../../Images/homeAutomationUsingMotion.jpg'
+import arm5 from '../../Images/homeAutomationUsingMotion.jpg'
+// import vdo1 from '../../Images/roboticArm.mp4'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -142,9 +142,9 @@ const Details = () => {
                                                 <p>The advantages of robotic arms are manifold. Their precision and repeatability enhance quality and efficiency in manufacturing processes. By automating repetitive or hazardous tasks, they increase productivity while reducing the risk of injuries to human workers. Additionally, the versatility of robotic arms allows them to be programmed for a wide range of tasks, making them indispensable across various industries. Overall, robotic arms represent a critical component of modern industry and technology, offering advanced capabilities for automation, precision, and efficiency.</p>
                                                 <hr />
                                             </div>
-                                            <div className='text-center'>
+                                            {/* <div className='text-center'>
                                                 <video src={vdo1} className='w-100' style={{ maxWidth: "1000px" }} autoPlay controls disablePictureInPicture loop controlsList='nodownload' alt="Automated PCB Assembly Line. Conveyor with Advanced High Precision Robot Arms at Electronics Manufacturing Factory. Component Installation on Circuit Board. Semiconductor Production Industry Manufacturing Stock Footage Video" />
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 ))

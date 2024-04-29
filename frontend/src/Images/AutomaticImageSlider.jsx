@@ -1,14 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Logo from './frst.png'
-import cANDvisit from './CommAndVisit.jpg'
-import custSat from './customerSatisfaction.jpg'
-import DivCollection from './DiverseCollection.jpg'
 import Intro from './intro.jpg'
 import Navigation from './navigation.jpg'
-import JoinUs from './JoinUs.jpg'
 import mi from './MI.svg'
-import one from './1.png'
-import two from './2T.png'
 import SLS from './SLS.png'
 import SSL from './SSL.jpg'
 import fv from './frst.png'
@@ -23,7 +16,6 @@ import frtn from './14.jpg'
 import CHA from './CHA.jpg'
 import sxtn from './16.jpg'
 import svtn from './17.jpg'
-import etn from './18.jpeg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

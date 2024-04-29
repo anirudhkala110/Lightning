@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import arm1 from '../../Images/Arm1.jpeg'
-import arm2 from '../../Images/arm2.jpeg'
-import arm3 from '../../Images/arm3.jpeg'
-import arm4 from '../../Images/arm4.jpeg'
-import arm5 from '../../Images/arm5.jpeg'
+import arm1 from '../../Images/homeAutomationUsingMotion.jpg'
+import arm2 from '../../Images/homeAutomationUsingMotion.jpg'
+import arm3 from '../../Images/homeAutomationUsingMotion.jpg'
+import arm4 from '../../Images/homeAutomationUsingMotion.jpg'
+import arm5 from '../../Images/homeAutomationUsingMotion.jpg'
 
 import { Link } from 'react-router-dom'
 import AOS from 'aos';
