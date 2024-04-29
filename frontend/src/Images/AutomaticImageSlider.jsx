@@ -14,7 +14,7 @@ import tlv from './12.jpg'
 import trln from './13.jpg'
 import frtn from './14.jpg'
 import CHA from './CHA.jpg'
-import sxtn from './16.jpg'
+import sxtn from './homeAutomationUsingMotion.jpg'
 import svtn from './17.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -30,7 +30,7 @@ const colors = [
     { img: tlv, info: 'Control Your Home System Through Voice' },
     { img: trln, info: 'Smart LED Lights and Displays Systems' },
     { img: frtn, info: 'System for automate washing Machines' },
-    { img: sxtn, info: 'Control and Automate Home From your Smart Phone' },
+    { img: sxtn, info: 'Control and Automate Home From your motion' },
     { img: svtn, info: 'Get Video Updates on Smart Devices' },
     { img: SSAE, info: 'Smart Emergency Monitoring, Voice controled and Automated by Matter Protocol' },
     { img: SSE, info: 'Smart Security and Monitoring, controled and Automated by Matter Protocol' },
