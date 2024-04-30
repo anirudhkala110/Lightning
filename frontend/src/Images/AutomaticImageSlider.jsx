@@ -37,7 +37,7 @@ const colors = [
     { img: SSE, info: 'Smart Security and Monitoring, controled and Automated by Matter Protocol' },
     { img: Intro, info: 'Get room Temperature Updates and Set your Fan to maintain a fix Room Temperature on your Demand' },
     { img: Navigation, info: 'Control Your Complete Home Devices by single touch' },
-    { img: MID, info: ' Connecting all in one' },
+    { img: MID, info: ' Connecting all in one.' },
     { img: mi, info: ' Automation Your Home Using Matter Protocol' }
 ];
 const delay = 3000;
