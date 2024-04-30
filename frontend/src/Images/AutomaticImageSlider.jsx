@@ -15,6 +15,7 @@ import trln from './13.jpg'
 import frtn from './14.jpg'
 import CHA from './CHA.jpg'
 import sxtn from './homeAutomationUsingMotion.jpg'
+import MID from './MatterinDevices.jpg'
 import svtn from './17.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -36,6 +37,7 @@ const colors = [
     { img: SSE, info: 'Smart Security and Monitoring, controled and Automated by Matter Protocol' },
     { img: Intro, info: 'Get room Temperature Updates and Set your Fan to maintain a fix Room Temperature on your Demand' },
     { img: Navigation, info: 'Control Your Complete Home Devices by single touch' },
+    { img: MID, info: ' Connecting all in one' },
     { img: mi, info: ' Automation Your Home Using Matter Protocol' }
 ];
 const delay = 3000;
@@ -104,7 +106,7 @@ function AutomaticImageSlider() {
                     >
                         <center className='w-100 text-white alert bg-dark rounded-0'>{data.info}</center>
                         {
-                            <img className=' w-100 text-white bg-dark shadow-lg' src={data.img} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> ? <div className='bg-dark' style={{ color: "white", maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }}><img className=' w-100 text-white py-2' src={data.img} style={{ color: "white", maxHeight: '450px',filter:`${data.img==mi?'invert(1)':'invert(0)'}`, height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /></div> : 'No More Images'
+                            <img className=' w-100 text-white bg-dark shadow-lg' src={data.img} style={{ maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /> ? <div className='bg-dark' style={{ color: "white", maxHeight: '450px', height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }}><img className=' w-100 text-white py-2' src={data.img} style={{ color: "white", maxHeight: '450px', filter: `${data.img == mi ? 'invert(1)' : 'invert(0)'}`, height: '100%', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white' }} /></div> : 'No More Images'
                         }
                         {/* data-aos="slide-left" data-aos-delay={1000*idx} data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='true'/> */}
                     </div>
