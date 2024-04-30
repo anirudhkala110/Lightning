@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import SLSMP from '../../Images/Smart-Lights-and-Switches-with-use-of-Matter-Protocol.pdf'
+import SLSMP from '../../Images/Voice_Integration_with_matter_protocol.pdf'
 
 
 const VoiceControl = () => {

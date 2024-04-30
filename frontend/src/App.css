@@ -107,7 +107,7 @@ body {
 
 .linkTabs {
   box-shadow: none !important;
-  border-bottom: solid rgb(0, 238, 255) !important;
+  border-bottom: solid transparent !important;
   background: rgb(0, 0, 0) !important;
   color: white !important;
   transition: .2s ease;
