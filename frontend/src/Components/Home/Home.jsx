@@ -50,7 +50,7 @@ const Home = () => {
                 data-aos="zoom-in" data-aos-delay='' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='true'
                 style={{ minHeight: "350px" }}><AutomaticImageSlider />
             </div>
-            <div className='row'>
+            <div className='row pt-3'>
                 <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 px-5 py-3'>
                     {/* <div className='col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6'> */}
                     {/* <strong className='mt-2 px-2'>What is RoboShop ?</strong> */}
