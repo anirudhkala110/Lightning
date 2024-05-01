@@ -18,10 +18,10 @@ const About = () => {
           <img src={b3} className='rounded-3 col-sm-12 col-lg-6 col-xl-6 col-md-6' />
           <div className='col-sm-12 col-lg-6 col-xl-6 col-md-6'>
             <div className='row'>
-              <div className='col-12'>
-                <ul className='' style={{ listStyle: 'none' }}>
-                  <li>Slogfy is the brand created by Roboslog.</li>
-                  <li>Slogfy is an integral part of Roboslog.</li>
+              <div className='col-12 p-2 '>
+                <ul className='bg-white text-black' style={{ listStyle: 'none' }}>
+                  <li>Slogfy is the brand created by <strong>Roboslog</strong>.</li>
+                  <li>Slogfy is an integral part of <strong>Roboslog</strong>.</li>
                   <li>
                     Slogfy assists people to secure their home with
                     creating matter protocol based smart home automation
