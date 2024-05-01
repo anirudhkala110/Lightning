@@ -1,5 +1,7 @@
 .aboutUsBacki {
     background-image: url(../../Images/bbrn.jpg);
+    /* background-repeat: ; */
+    background-size: cover;
 }
 
 .aboutusName {
@@ -8,6 +10,8 @@
     -o-animation: color-change 5s infinite;
     -ms-animation: color-change 5s infinite;
     animation: color-change 5s infinite;
+    stroke: 5px solid red ;
+    stroke-width: 10px;
 }
 
 @-webkit-keyframes color-change {
