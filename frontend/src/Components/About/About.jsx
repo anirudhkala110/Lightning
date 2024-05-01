@@ -8,7 +8,10 @@ import './AboutUs.css'
 import { NavLink } from 'react-router-dom'
 
 const data = [
-  { name: 'ABC', position: 'CEO', twitter: 'http://localhost:3033/', insta: '', linkedin: '', profilePic: b2 }
+  { name: 'Shivendra', position: 'Co Founder, Research & Development Lead', twitter: 'http://localhost:3033/', insta: '', linkedin: '', profilePic: b2 },
+  { name: 'ABC', position: 'CEO', twitter: 'http://localhost:3033/', insta: '', linkedin: '', profilePic: b2 },
+  { name: 'ABC', position: 'CEO', twitter: 'http://localhost:3033/', insta: '', linkedin: '', profilePic: b2 },
+  { name: 'ABC', position: 'CEO', twitter: 'http://localhost:3033/', insta: '', linkedin: '', profilePic: b2 },
 ]
 
 const About = () => {
@@ -50,7 +53,7 @@ const About = () => {
           <div className='row'>
             {
               data.map((data, idx) => (
-                <div className='card col-sm-12 col-md-6 col-lg-4 bg-black border-dark col-xl-3 col-xxl-3 border rounded-0' key={idx}>
+                <div className='card pt-2 bg-dark col-sm-12 col-md-6 col-lg-4 border-dark col-xl-3 col-xxl-3 border rounded-0' key={idx}>
                   <img src={data.profilePic} />
                   <div className='card-body text-white'>
                     <strong>{data.name}</strong><br />
