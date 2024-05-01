@@ -8,6 +8,7 @@ import analytics from '../../Images/analytics.jpg'
 import automaticLightUsingSwitch from '../../Images/automaticLightUsingSwitch.jpg'
 import applicationControl from '../../Images/applicationControl.jpg'
 import emergencySOS2 from '../../Images/emergencySOS2.jpg'
+import securityBreach from '../../Images/security.jpg'
 import voiceAssistant from '../../Images/voiceAssistant.jpg'
 import homeAutomationUsingMotionMatterProtocol from '../../Images/homeAutomationUsingMotionMatterProtocol.jpg'
 import Typewriter from '../../Utils/Typewriter';
@@ -230,10 +231,19 @@ const Home = () => {
                                 </div>
                                 <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
                                     <Link to='/Enhancing-Smart-Security-and-Emergency-with-Matter-Protocol' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Security</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Smart Emergency SOS</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                         {/* <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Emergnecy Alert SOS</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em> */}
                                         </div>
                                             <img src={emergencySOS2} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                        </div>
+                                    </Link>
+                                </div>
+                                <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
+                                    <Link to='/Enhancing-Smart-Security-and-Emergency-with-Matter-Protocol' className='text-white text-decoration-none'>
+                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Security</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                        {/* <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Emergnecy Alert SOS</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em> */}
+                                        </div>
+                                            <img src={securityBreach} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
                                         </div>
                                     </Link>
                                 </div>
