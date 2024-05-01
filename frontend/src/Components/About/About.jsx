@@ -8,6 +8,7 @@ import ss from '../../Images/Members/ShivendraPratapSingh.jpg'
 import NV from '../../Images/Members/NarendraVerma.jpg'
 import AP from '../../Images/Members/AbhinavPrajapati.jpg'
 import KA from '../../Images/Members/KaviAgyat.jpg'
+import AK from '../../Images/Members/AK.jpg'
 import './AboutUs.css'
 import { NavLink } from 'react-router-dom'
 
@@ -16,7 +17,7 @@ const data = [
   { name: 'Mr. Shivendra Pratap Singh', position: 'Co Founder, Research & Development Lead', twitter: 'https://x.com/Nirajbabuaan01?t=vbFEqIi4HJzHvgjLllscQw&s=09', insta: 'https://www.instagram.com/niraj_singh_babuaan?igsh=aXZkanZydzNvYnh0', linkedin: 'https://www.linkedin.com/in/shivendra-pratap-singh-683188247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', profilePic: ss },
   { name: 'Mr. Abhinav Prajapati', position: 'CTO, Research & Development Lead', twitter: 'https://twitter.com/Abhi9prajapati', insta: 'https://www.instagram.com/abhi9_prajapati?igsh=MThtZjZjYmYzc2tzYQ==', linkedin: 'https://www.linkedin.com/in/abhinav-prajapati-318080190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', profilePic: AP },
   { name: 'Mr. Kavi agyat', position: 'Web content creator', twitter: '', insta: 'https://www.instagram.com/iamagyat?igsh=eDVtb2I0c2hjeXZ2', linkedin: '', profilePic: KA },
-  { name: 'Mr. Anirudh Kala', position: 'Python & MERN Stack Developer', twitter: 'https://twitter.com/AnirudhKala_110', insta: 'https://www.instagram.com/jrcasetooyt/', linkedin: 'https://www.linkedin.com/in/anirudh-kala-808772245/', profilePic: KA },
+  { name: 'Mr. Anirudh Kala', position: 'Python & MERN Stack Developer', twitter: 'https://twitter.com/AnirudhKala_110', insta: 'https://www.instagram.com/jrcasetooyt/', linkedin: 'https://www.linkedin.com/in/anirudh-kala-808772245/', profilePic: AK },
 ]
 
 const About = () => {
