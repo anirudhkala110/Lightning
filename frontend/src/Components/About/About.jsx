@@ -1,11 +1,15 @@
 import React from 'react'
+import bbr from '../../Images/bbrn.jpg'
+import './AboutUs.css'
 
 const About = () => {
   return (
     <div className='min-vh-100'>
+      <div className='aboutUsBacki' style={{ fontSize: '78px' }}>
+        <center className='fw-bold aboutusName' style={{filter:'drop-shadow(12px 12px 2px black)'}}>About Us</center>
+      </div>
       <div className='container bg-black pt-3' style={{ borderLeft: '1px solid #8080806b', borderRight: '1px solid #8080806b' }}>
-        <center className='fs-2 fw-semibold alert rounded-0'>About</center>
-        <hr/>
+        <hr />
         <div>
           <div>
             At RoboShop, we're pioneering the frontier of robotics, one arm at a time. Our platform serves as the ultimate hub for all things robotic arms, catering to enthusiasts, professionals, and businesses seeking innovation and automation solutions.
