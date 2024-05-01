@@ -5,6 +5,11 @@ import b2 from '../../Images/b2.jpeg'
 import b3 from '../../Images/b3.jpeg'
 import b4 from '../../Images/b4.jpeg'
 import './AboutUs.css'
+import { NavLink } from 'react-router-dom'
+
+const data = [
+  { name: 'ABC', position: 'CEO', twitter: 'http://localhost:3033/', insta: '', linkedin: '', profilePic: b2 }
+]
 
 const About = () => {
   return (
@@ -19,7 +24,7 @@ const About = () => {
           <div className='col-sm-12 col-lg-6 col-xl-6 col-md-6'>
             <div className='row'>
               <div className='col-12 p-2 '>
-                <ul className='bg-white text-black' style={{ listStyle: 'none' }}>
+                <ul className='bg- text-' style={{ listStyle: 'none' }}>
                   <li>Slogfy is the brand created by <strong>Roboslog</strong>.</li>
                   <li>Slogfy is an integral part of <strong>Roboslog</strong>.</li>
                   <li>
@@ -37,7 +42,32 @@ const About = () => {
       <br />
       <br />
       <div>
+        <center className='btn-primary py-2'><i class="bi bi-c-circle"></i> Slogfy All Rights Reserved, Since 2021</center>
+        <br />
+        <div className='container'>
+          <center>Our Team</center>
+          <hr />
+          <div className='row'>
+            {
+              data.map((data, idx) => (
+                <div className='card col-sm-12 col-md-6 col-lg-4 bg-black border-dark col-xl-3 col-xxl-3 border rounded-0' key={idx}>
+                  <img src={data.profilePic} />
+                  <div className='card-body text-white'>
+                    <strong>{data.name}</strong><br />
+                    <strong>{data.position}</strong><br />
+                    <div className='d-flex align-items-center justify-content-between'>
+                      <NavLink to={data.insta} className='text-decoration-none text-white'><strong><b className='fs-4 bi bi-instagram'></b>{data.insta} </strong></NavLink>
+                      <NavLink to={data.twitter} className='text-decoration-none text-white'><strong><b className='fs-4 bi bi-twitter-x'></b> {data.linkedin}</strong></NavLink>
+                      <NavLink to={data.linkedin} className='text-decoration-none text-white'><strong><b className='fs-4 bi bi-linkedin'></b></strong></NavLink>
+                    </div>
 
+                  </div>
+                </div>
+              ))
+            }
+
+          </div>
+        </div>
       </div>
       <br />
       <br />
