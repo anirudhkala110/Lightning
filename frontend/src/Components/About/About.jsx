@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import bbr from '../../Images/bbrn.jpg'
 import b1 from '../../Images/b1.jpeg'
 import b2 from '../../Images/b2.jpeg'
@@ -21,6 +21,13 @@ const data = [
 ]
 
 const About = () => {
+  const [admin, setAdmin] = useState(false)
+  const [edit, setEdit] = useState(false)
+  useEffect(() => {
+    if (!admin) {
+      setEdit(false)
+    }
+  })
   return (
     <div className='min-vh-100'>
       <div className='aboutUsBacki d-flex align-items-center justify-content-center' style={{ fontSize: '78px', height: '250px', width: '100%' }} >
@@ -78,6 +85,36 @@ const About = () => {
             }
 
           </div>
+          {admin && <button className='btn-primary px-1 py-1 mt-3 w-100' onClick={e => setEdit(!edit)}>{edit ? <b class="bi bi-x-lg"> Close</b> : <b class="bi bi-plus-lg"> Add New Memeber</b>} </button>}
+          {edit && <center>
+            <div>
+              <form className='form border p-2 border-dark' style={{ maxWidth: '550px', textAlign: 'left' }}>
+                <center className='text-primary fs-3 fw-semibold'>Add Memeber</center>
+                <div className='form-group'>
+                  <label>Name</label>
+                  <input className='form-control' placeholder='Enter Member Name' />
+                </div>
+                <div className='form-group'>
+                  <label>Position</label>
+                  <input className='form-control' placeholder='Enter Member Name' />
+                </div>
+                <div className='form-group'>
+                  <label>Twitter</label>
+                  <input className='form-control' placeholder='Enter Twitter Account Link' />
+                </div>
+                <div className='form-group'>
+                  <label>LinkedIn</label>
+                  <input className='form-control' placeholder='Enter LinkedIn Account Link' />
+                </div>
+                <div className='form-group'>
+                  <label>Instagram</label>
+                  <input className='form-control' placeholder='Enter Instagram Link' />
+                </div>
+                <button className='btn btn-success w-100'>
+                  Submit
+                </button>
+              </form>
+            </div></center>}
         </div>
       </div>
       <br />

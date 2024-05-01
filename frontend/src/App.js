@@ -22,6 +22,7 @@ import DetailsOfHomePageDiv from './Components/Home/DetailsOfHomePageDiv';
 import MatterProtocol from './Components/Home/MatterProtocol';
 import SmartLightsandSwitches from './Components/Home/SmartLightsandSwitches';
 import Security from './Components/Home/Security';
+import EmergencySOS from './Components/Home/EmergencySOS';
 import HomeAutomation from './Components/Home/HomeAutomation';
 import ThermostatControl from './Components/Home/ThermostatControl';
 import AppControl from './Components/Home/AppControl';
@@ -65,7 +66,8 @@ function App() {
                   <Route exact path='/info' element={<DetailsOfHomePageDiv />} />
                   <Route exact path='/What-is-Matter-protocol?' element={<MatterProtocol />} />
                   <Route exact path='/Smart-Lights-and-Switches-with-use-of-Matter Protocol' element={<SmartLightsandSwitches />} />
-                  <Route exact path='/Enhancing-Smart-Security-and-Emergency-with-Matter-Protocol' element={<Security />} />
+                  <Route exact path='/Enhancing-Smart-Security-with-Matter-Protocol' element={<Security />} />
+                  <Route exact path='/Enhancing-Emergency-SOS-with-Matter-Protocol' element={<EmergencySOS />} />
                   <Route exact path='/Home-Automation-with-Motion-Detectors' element={<HomeAutomation />} />
                   <Route exact path='/Thermostat-with-Matter-Protocol' element={<ThermostatControl />} />
                   <Route exact path='/Slogfy-App-Control' element={<AppControl />} />
