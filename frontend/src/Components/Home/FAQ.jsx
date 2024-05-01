@@ -3,9 +3,15 @@ import './FAQ.css'
 
 const questions = [
     {
+        id: 0,
+        question: 'What is Matter Protocol ?',
+        answer: "<b>Matter</b> is an open-source connectivity standard for smart home and IoT (Internet of Things) devices.",
+        type: 'general',
+    },
+    {
         id: 1,
         question: 'How do the automation solutions work ?',
-        answer: 'Switch Based Appliances : A Credit card sized device is installed behind your switchboard which connects to the supply and loads & provides conventional switching as well as Wi-Fi based control. Remote-Based appliances : A Table-top device is installed in front of the appliance and is trained to replicate the respective IR-based commands',
+        answer: '<ul><li>Switch Based Appliances : A Credit card sized device is installed behind your switchboard which connects to the supply and loads & provides conventional switching as well as Wi-Fi based control.</li><li>Remote-Based appliances : A Table-top device is installed in front of the appliance and is trained to replicate the respective IR-based commands</li></ul>',
         type: 'product',
     },
     {
@@ -147,9 +153,9 @@ const Question = ({ question, answer }) => {
                     </svg>
                 </button>
             </div>
-            <div className={`${isActive ? 'answer active' : 'answer'} text-white mb-2 pb-4`}  style={{height:'-webkit-fill-available'}}>
+            <div className={`${isActive ? 'answer active' : 'answer'} text-white mb-2 pb-4`} style={{ height: '-webkit-fill-available' }}>
                 <hr />
-                {answer}
+                <div dangerouslySetInnerHTML={{ __html: answer }} ></div>
             </div>
         </div>
     );

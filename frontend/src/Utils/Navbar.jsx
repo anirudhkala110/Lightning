@@ -29,7 +29,43 @@ const Navbar = () => {
                         </a>
 
                     </div>
-                    <div className='less1000pxDisabled d-flex align-items-center me-1'>
+                    <div className='show1000px ms-4 '>
+                        {/* <div className=''> */}
+                        <div className='d-flex fw-semibold'>
+                            {/* <button className='fw-semibold text-white btn px-2 py-1 adminTag'>{admin.user}</button> */}
+                            <NavLink to='/'>
+                                <button className="btn btnHover fw-bold navsupport ">
+                                    {/* <button className="btn btn-primary ms-2 " type="button" > */}
+                                    Home
+                                </button>
+                            </NavLink>
+                            <NavLink to='/about' >
+                                <button className="btn btnHover fw-bold navsupport "  >
+                                    {/* <button className="btn btn-primary ms-2 " type="button" > */}
+                                    About
+                                </button>
+                            </NavLink>
+                            <NavLink to='/support' >
+                                <button className="btn btnHover fw-bold navsupport "  >
+                                    {/* <button className="btn btn-primary ms-2 " type="button" > */}
+                                    Support
+                                </button>
+                            </NavLink>
+                            <Link to='' >
+                                <button className="btn btnHover fw-bold navsupport " onClick={e => alert('Available Soon..')}>
+                                    {/* <button className="btn btn-primary ms-2 " type="button" > */}
+                                    App
+                                </button>
+                            </Link>
+                            {/* <NavLink to='/all-products'>
+                                    <button className="btn btnHover fw-bold  navsupport "  >
+                                        {/* <button className="btn btn-primary ms-2 " type="button" > 
+                                        Products
+                                    </button>
+                                </NavLink> */}
+                        </div>
+                    </div>
+                    <div className='less1000px  align-items-center me-1'>
                         {/* <div className='text-white'>
                             <Link to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg==' className='text-decoration-none text-white' target='__blank'>
                                 <i class="bi bi-instagram fs-4 "></i>&nbsp;&nbsp;
@@ -44,42 +80,7 @@ const Navbar = () => {
                                 <i class="bi bi-youtube fs-4 "></i>&nbsp;&nbsp;
                             </Link>
                         </div> */}
-                        <div className='show1000px ms-4 '>
-                            {/* <div className=''> */}
-                            <div className='d-flex fw-semibold'>
-                                {/* <button className='fw-semibold text-white btn px-2 py-1 adminTag'>{admin.user}</button> */}
-                                <NavLink to='/'>
-                                    <button className="btn btnHover fw-bold navsupport ">
-                                        {/* <button className="btn btn-primary ms-2 " type="button" > */}
-                                        Home
-                                    </button>
-                                </NavLink>
-                                <NavLink to='/about' >
-                                    <button className="btn btnHover fw-bold navsupport "  >
-                                        {/* <button className="btn btn-primary ms-2 " type="button" > */}
-                                        About
-                                    </button>
-                                </NavLink>
-                                <NavLink to='/support' >
-                                    <button className="btn btnHover fw-bold navsupport "  >
-                                        {/* <button className="btn btn-primary ms-2 " type="button" > */}
-                                        Support
-                                    </button>
-                                </NavLink>
-                                <Link to='' >
-                                    <button className="btn btnHover fw-bold navsupport " onClick={e => alert('Available Soon..')}>
-                                        {/* <button className="btn btn-primary ms-2 " type="button" > */}
-                                        App
-                                    </button>
-                                </Link>
-                                {/* <NavLink to='/all-products'>
-                                    <button className="btn btnHover fw-bold  navsupport "  >
-                                        {/* <button className="btn btn-primary ms-2 " type="button" > 
-                                        Products
-                                    </button>
-                                </NavLink> */}
-                            </div>
-                        </div>
+
                         <button className="btn text-white d-flex align-items-center btn-primary rounded-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                             {/* style={{ background: '#ff5722' }} */}
                             <strong className='' >

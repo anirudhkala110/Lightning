@@ -19,6 +19,13 @@ import MID from './MatterinDevices.jpg';
 import svtn from './17.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
 const colors = [
     { img: fv, info: "Complete Home Automation Using Matter Protocols" },
@@ -48,7 +55,7 @@ function AutomaticImageSlider() {
 
     useEffect(() => {
         const handleNextSlide = () => {
-            setIndex((prevIndex) => (prevIndex === colors.length - 1 ? colors.length - 1  : prevIndex + 1));
+            setIndex((prevIndex) => (prevIndex === colors.length - 1 ? colors.length - 1 : prevIndex + 1));
         };
 
         const startSlideshow = () => {
@@ -70,7 +77,7 @@ function AutomaticImageSlider() {
     const handleMouseEnter = () => {
         clearTimeout(timeoutRef.current);
     };
-
+    console.log(colors[index].img)
     const handleMouseLeave = () => {
         timeoutRef.current = setTimeout(() => {
             setIndex((prevIndex) => (prevIndex === colors.length - 1 ? 0 : prevIndex + 1));
@@ -93,9 +100,11 @@ function AutomaticImageSlider() {
                         key={idx}
                     >
                         <center className='w-100 text-white alert bg-dark rounded-0 mb-0'>{data.info}</center>
+
                         <center>
-                            <img className={`${data.img==mi?'white !important':'bg-dark'} w-100 text-white `} src={data.img} style={{ background:`${data.img==mi?'white !important':''}`,maxHeight: '400px', height: '100%', minWidth: '400px', maxWidth: "550px", width: '-webkit-fill-available', color: 'white',filter:`${data.img==mi?'invert(1)':''}` }} />
+                            <img className={`${data.img == mi ? 'white !important' : 'bg-dark'} w-100 text-white `} src={data.img} style={{ background: `${data.img == mi ? 'white !important' : ''}`, transform: 'scale(1)', maxHeight: '400px', height: '-webkit-fill-available', minWidth: '400px', maxWidth: "550px", width: '-webkit-fill-available', color: 'white', filter: `${data.img == mi ? 'invert(1)' : ''}` }} />
                         </center>
+
                     </div>
                 ))}
             </div>
@@ -111,6 +120,10 @@ function AutomaticImageSlider() {
                         }}
                     ></div>
                 ))}
+            </div>
+
+            <div>
+
             </div>
         </div>
     );
