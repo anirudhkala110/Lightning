@@ -18,6 +18,8 @@ const Footer = () => {
                 {/* <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to=''><b class="bi bi-twitter-x "> <b className='hideUnder600px utube'>Twitter</b></b> </Link> */}
                 <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://youtube.com/@slogfy8260'><b class="bi bi-youtube"> <b className='hideUnder600px utube'>YouTube</b></b>
                 </Link>
+                <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://Slogfy@gmail.com'><b class="bi bi-envelope-at"> <b className='hideUnder600px utube'>Gmail</b></b>
+                </Link>
             </div>
             <hr />
             <Link to="https://maps.app.goo.gl/4eqS6DdxRkrgA5Rt5" target='__blank' className='text-decoration-none'>
@@ -25,7 +27,8 @@ const Footer = () => {
             </Link>
             <hr />
             <div>
-                <span className='fs-5 d-flex align-items-center pe-3'><strong className='fs-6'>Owner: +91-8005183363</strong> &nbsp;<button className='btn rounded-0 py-1 fw-bold' style={{ background: '#ff5722' }} onClick={e => handleCall(8005183363)}>Call Now</button></span>
+                <span className='fs-5 d-flex align-items-center pe-3'><strong className='fs-6'>Gmail: </strong> &nbsp;<button className='btn rounded-0 py-1 text-white fw-bold' >Slogfy@gmail.com</button></span>
+                {/* <span className='fs-5 d-flex align-items-center pe-3'><strong className='fs-6'>Gmail: </strong> &nbsp;<button className='btn rounded-0 py-1 fw-bold' style={{ background: '#ff5722' }} >Slogfy@gmail.com</button></span> */}
             </div>
             <hr />
             <sm className='text-dark'>Website Designed and Created by <b>Anirudh Kala, 7668490213, anirudhkala110@gmail.com</b></sm>

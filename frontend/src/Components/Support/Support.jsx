@@ -41,7 +41,7 @@ const Support = () => {
       //     }
       //   })
       //   .catch(err => console.log(err))
-      emailjs.sendForm('service_j5cbb74', 'template_x4fuopb', form.current, 'hSXZGZXrCPMp3p6wt')
+      emailjs.sendForm('service_j5cbb74', 'template_x4fuopb', form.current, 'A7Zgb_4LO8WMThAjR')
         .then((result) => {
           alert("Your  message ✉ Has been sent.\nNow you are redirecting to the Homepage. . .")
           navigate('/')

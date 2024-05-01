@@ -4,20 +4,13 @@ import 'aos/dist/aos.css';
 import Logo from '../../Images/frst.png'
 import smartSwitches from '../../Images/smartSwitches.png'
 import ThermostateMatter from '../../Images/ThermostateMatter.jpg'
-import JoinUs from '../../Images/JoinUs.jpg'
-import mi from '../../Images/MI.svg'
 import analytics from '../../Images/analytics.jpg'
 import automaticLightUsingSwitch from '../../Images/automaticLightUsingSwitch.jpg'
 import applicationControl from '../../Images/applicationControl.jpg'
-import automaticThermostat from '../../Images/automaticThermostat.jpg'
-import emergencySOS from '../../Images/emergencySOS.jpg'
 import emergencySOS2 from '../../Images/emergencySOS2.jpg'
 import voiceAssistant from '../../Images/voiceAssistant.jpg'
-import homeAutomationUsingMotion from '../../Images/homeAutomationUsingMotion.jpg'
 import homeAutomationUsingMotionMatterProtocol from '../../Images/homeAutomationUsingMotionMatterProtocol.jpg'
 import Typewriter from '../../Utils/Typewriter';
-import MotionDetectionAutomation from '../../Images/MotionDetectionAutomation.jpg';
-import SecurityWithMatter from '../../Images/SecurityWithMatter.jpg';
 import AutomaticImageSlider from '../../Images/AutomaticImageSlider';
 import { Link, NavLink } from 'react-router-dom';
 import FAQ from './FAQ';
@@ -250,15 +243,15 @@ const Home = () => {
 
                     </div>
                 </div>
-                <hr />
+                <br />
                 <div className='container pt-4'>
                     <center className='fs-3 fw-bold'>
                         ASKED QUESTIONS
                     </center>
                     <FAQ />
                 </div>
-                <hr />
-                <div className='container'>
+                {/* <hr /> */}
+                {/* <div className='container'>
                     <center className='fs-2 text-info'>Contact Us</center>
                     <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
                         <div className='w-100 border my-3 border-secondary' />
@@ -298,13 +291,13 @@ const Home = () => {
                             <Link to="https://maps.app.goo.gl/4eqS6DdxRkrgA5Rt5" className='text-decoration-none text-white' target='__blank' ><div className='homehoverTab bg-dark rounded-4 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><div className='' style={{ fontSize: '' }}><i class="bi fs-3 bi-globe-americas"></i> &nbsp;Address: F-76, near saket metro, Saidulajab, DDA Flats, Munirka, New Delhi, Delhi 110030</div></div></div>
                             </Link>
                         </div>
-                        {/* <img src={custSat} className='homehover col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' /> */}
+                        {/* <img src={custSat} className='homehover col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' /> 
                     </div>
-                </div>
+                </div> */}
                 <br />
             </div>
             <br />
-            <hr />
+            {/* <hr /> */}
         </div>
     )
 }
