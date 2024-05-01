@@ -64,6 +64,12 @@ const Navbar = () => {
                                         Support
                                     </button>
                                 </NavLink>
+                                <Link to='' >
+                                    <button className="btn btnHover fw-bold navsupport "  onClick={e=>alert('Available Soon..')}>
+                                        {/* <button className="btn btn-primary ms-2 " type="button" > */}
+                                        App
+                                    </button>
+                                </Link>
                                 {/* <NavLink to='/all-products'>
                                     <button className="btn btnHover fw-bold  navsupport "  >
                                         {/* <button className="btn btn-primary ms-2 " type="button" > 

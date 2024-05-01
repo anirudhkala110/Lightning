@@ -106,9 +106,12 @@ const HomeAutomation = () => {
                     </div>
                     {
                         !download ? <button className='btn btn-success mt-3' onClick={e => SetDownload(!download)}>Download PDF file</button> : <div className='w-100' style={{ height: "500px" }}>
+                            <button className='w-100 btn rounded-0 fw-bold my-1' style={{ background: '#00e3ff' }} onClick={e => SetDownload(false)}>Close &nbsp;&nbsp;&nbsp;<i class="bi bi-x-lg"></i></button>
                             <iframe src={HAMD} style={{ width: "100%", height: "100%", border: "none" }}></iframe>
                         </div>
                     }
+                    <br />
+                    <br />
                     <hr />
                 </div>
             </div>

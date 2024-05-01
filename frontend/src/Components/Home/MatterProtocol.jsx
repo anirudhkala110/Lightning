@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import MP from '../../Images/Voice_Integration_with_matter_protocol.pdf'
+import MP from '../../Images/The-Matter-Protocol-Revolutionizing-the-Smart-Home.pdf'
 
 const MatterProtocol = () => {
     const [download, SetDownload] = useState(false)
@@ -166,9 +166,12 @@ const MatterProtocol = () => {
                     </div>
                     {
                         !download ? <button className='btn btn-success my-2' onClick={e => SetDownload(!download)}>Download Info as PDF file</button> : <div className='w-100' style={{ height: "500px" }}>
+                            <button className='w-100 btn rounded-0 fw-bold my-1' style={{ background: '#00e3ff' }} onClick={e => SetDownload(false)}>Close &nbsp;&nbsp;&nbsp;<i class="bi bi-x-lg"></i></button>
                             <iframe src={MP} style={{ width: "100%", height: "100%", border: "none" }}></iframe>
                         </div>
                     }
+                    <br/>
+                    <br/>
                     <hr />
                     <sm>Note* : For more information you can visit <a href="https://en.wikipedia.org/wiki/Matter_(standard)" target='__blank' className='text-decoration-none'>Wikipedia</a></sm>
                 </div>

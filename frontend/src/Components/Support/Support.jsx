@@ -124,11 +124,11 @@ const Support = () => {
                 <div className="btn btn-warning border-0 w-100 rounded-0 fw-bolder mb-2 call-btn" id="call" onClick={() => handleRoute('home')}>Home</div>
               </form>
             </div>
-            <hr />
-            <div className='container'>
-              {/* <center className='fs-2 text-info'>Contact Us</center> */}
+            {/* <hr /> */}
+            {/* <div className='container'>
+              {/* <center className='fs-2 text-info'>Contact Us</center> 
               <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
-                {/* <div className='w-100 border my-3 border-secondary' /> */}
+                {/* <div className='w-100 border my-3 border-secondary' /> 
                 <div className='homehover col-sm-6 col-md-4 col-xl-3 col-xxl-3 col-lg-3 mb-3' style={{ height: '100px' }}>
                   <Link className='text-decoration-none text-white'><div className='homehoverTab bg-dark rounded-4 px-3 py-2 d-flex justify-content-between align-items-start' onClick={e => handleCall(8005183363)} style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-telephone-outbound"></i><div><span className='d-flex align-items-center pe-3'><strong className='' style={{ fontSize: '12px' }}>Owner: +91-8005183363</strong> <button className='btn rounded-0  text-white py-1' onClick={e => handleCall(8005183363)}>Call Now</button></span></div></div></div>
                   </Link>
@@ -161,15 +161,15 @@ const Support = () => {
                   <Link className='text-decoration-none text-white' target='__blank' to='https://youtube.com/@slogfy8260'><div className='homehoverTab bg-dark rounded-4 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-youtube"></i><div><Link to='https://youtube.com/@slogfy8260' className='text-decoration-none text-white' target='_blank'>YouTube: @slogfy8260</Link></div></div></div>
                   </Link>
                 </div>
-                {/* <div className='homehover col-sm-6 col-md-4 col-xl-3 col-xxl-3 col-lg-3 mb-3' style={{ height: '100px' }}>
+                <div className='homehover col-sm-6 col-md-4 col-xl-3 col-xxl-3 col-lg-3 mb-3' style={{ height: '100px' }}>
                 <Link to="https://maps.app.goo.gl/4eqS6DdxRkrgA5Rt5" className='text-decoration-none text-white' target='__blank' ><div className='homehoverTab bg-dark rounded-4 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><div className='' style={{ fontSize: '' }}><i class="bi fs-3 bi-globe-americas"></i> &nbsp;Address: F-76, near saket metro, Saidulajab, DDA Flats, Munirka, New Delhi, Delhi 110030</div></div></div>
                 </Link>
-              </div> */}
-                {/* <img src={custSat} className='homehover col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' /> */}
               </div>
-            </div>
+                <img src={custSat} className='homehover col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' /> 
+              </div>
+            </div> */}
           </div>
-          <hr />
+          {/* <hr /> */}
         </div>
       </div>
     </>
