@@ -25,6 +25,23 @@ const Navbar = () => {
                             &nbsp;
                             <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogfy</strong>
                         </a>
+
+                    </div>
+                    <div className='less1000pxDisabled d-flex align-items-center me-1'>
+                        {/* <div className='text-white'>
+                            <Link to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg==' className='text-decoration-none text-white' target='__blank'>
+                                <i class="bi bi-instagram fs-4 "></i>&nbsp;&nbsp;
+                            </Link>
+                            <Link to='https://www.facebook.com/slogfy' className='text-decoration-none text-white' target='__blank'>
+                                <i class="bi bi-facebook fs-4 "></i>&nbsp;&nbsp;
+                            </Link>
+                            <Link to='https://www.linkedin.com/company/slogfy/' className='text-decoration-none text-white' target='__blank'>
+                                <i class="bi bi-linkedin fs-4 "></i>&nbsp;&nbsp;
+                            </Link>
+                            <Link to='https://youtube.com/@slogfy8260' className='text-decoration-none text-white' target='__blank'>
+                                <i class="bi bi-youtube fs-4 "></i>&nbsp;&nbsp;
+                            </Link>
+                        </div> */}
                         <div className='show1000px ms-4'>
                             {/* <div className=''> */}
                             <div className='d-flex fw-semibold'>
@@ -54,22 +71,6 @@ const Navbar = () => {
                                     </button>
                                 </NavLink> */}
                             </div>
-                        </div>
-                    </div>
-                    <div className='less1000pxDisabled d-flex align-items-center me-1'>
-                        <div className='text-white'>
-                            <Link to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg==' className='text-decoration-none text-white' target='__blank'>
-                                <i class="bi bi-instagram fs-4 "></i>&nbsp;&nbsp;
-                            </Link>
-                            <Link to='https://www.facebook.com/slogfy' className='text-decoration-none text-white' target='__blank'>
-                                <i class="bi bi-facebook fs-4 "></i>&nbsp;&nbsp;
-                            </Link>
-                            <Link to='https://www.linkedin.com/company/slogfy/' className='text-decoration-none text-white' target='__blank'>
-                                <i class="bi bi-linkedin fs-4 "></i>&nbsp;&nbsp;
-                            </Link>
-                            <Link to='https://youtube.com/@slogfy8260' className='text-decoration-none text-white' target='__blank'>
-                                <i class="bi bi-youtube fs-4 "></i>&nbsp;&nbsp;
-                            </Link>
                         </div>
                         <button className="btn text-white d-flex align-items-center btn-primary rounded-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                             {/* style={{ background: '#ff5722' }} */}

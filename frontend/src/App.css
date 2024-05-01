@@ -43,7 +43,7 @@ body {
 
 
 .sliderImages {
-  background-image: url(./Images/background.png) !important;
+  /* background-image: url(./Images/background.png) !important; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -14,7 +14,7 @@ const NavSupport = () => {
             </div>
             <div className='w-100 justify-content-end show1000NavSupport' >
                 {/* <div className='w-100 justify-content-end show1000NavSupport' > */}
-                <span className='fs-5 d-flex align-items-center pe-1'><strong className='fs-6'>+91-8005183363</strong>&nbsp;<button className='btn btn-primary text-white rounded-0 py-1 px-3 fw-bold' style={{ background: '' }} onClick={e => handleCall(8005183363)}><Link to='https://wa.me/+918005183363' className='text-decoration-none text-white' target='_blank'><i className='bi bi-whatsapp'></i></Link></button></span>
+                <span className='fs-5 d-flex align-items-center pe-1'><strong className='fs-6'></strong>&nbsp;<button className='btn btn-primary text-white rounded-0 py-1 px-3 fw-bold' style={{ background: '' }} onClick={e => handleCall(8005183363)}><Link to='https://wa.me/+918005183363' className='text-decoration-none text-white' target='_blank'><i className='bi bi-whatsapp'></i></Link></button></span>
                 {/* <div className="dropdown me-1">
                     <button className="btn btnHover navsupport fw-bold dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
                         {/* <button className="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"> 
