@@ -62,22 +62,27 @@ body {
   cursor: pointer;
 }
 
-.homehoverTab {
+.homehoverTab , .aboutUsTeam{
   border: 1px solid transparent;
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.homeHover:hover {
+.homeHover:hover,.aboutUsTeam:hover {
   border: 1px solid rgba(0, 110, 255, 0.741);
   background: #0b182e95 !important;
   border-radius: 8px;
 }
 
 .homehoverTab:hover {
-  border: 1px solid rgba(0, 110, 255, 0.741);
+  border: 1px solid rgba(0, 110, 255, 0.741) !important;
   background: #19346261 !important;
   border-radius: 8px;
+}
+.aboutUsTeam:hover{
+  border: 1px solid rgba(0, 110, 255, 0.741) !important;
+  background: #0b1f428f !important;
+  border-radius: 8px !important;
 }
 
 .homehoverTab:hover img {
