@@ -14,7 +14,7 @@ const NavSupport = () => {
             </div>
             <div className='w-100 justify-content-end show1000NavSupport' >
                 {/* <div className='w-100 justify-content-end show1000NavSupport' > */}
-                <NavLink to='https://wa.me/+918005183363' className='text-white rounded-0 py-1 px-3 fw-bold' target='_blank' onClick={handleCall('https://wa.me/+918005183363')}>
+                <NavLink to='https://wa.me/+918005183363' className='text-white rounded-0 py-1 px-3 fw-bold' target='_blank' >
                     <i className='bi bi-whatsapp'></i>
                 </NavLink>
                 {/* <div className="dropdown me-1">
