@@ -50,7 +50,7 @@ const colors = [
     { img: mi, info: ' Automation Your Home Using Matter Protocol' }
 ];
 
-const delay = 3000;
+const delay = 2500;
 
 function AutomaticImageSlider() {
     const [index, setIndex] = useState(0);
@@ -97,7 +97,7 @@ function AutomaticImageSlider() {
                     rotate: 10,
                     stretch: 10,
                     depth: 100,
-                    modifier:1,
+                    modifier: 1,
                     slideShadows: true,
                 }}
                 navigation={{
@@ -109,8 +109,8 @@ function AutomaticImageSlider() {
                     <SwiperSlide className="slide bg-black text-white" key={idx}
                         onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                     >
-                        <div className='w-100 text-white alert bg-black rounded-0 mb-0'>{data.info}</div>
                         <center>
+                            <center className='text-white alert bg-black rounded-0 mb-0'>{data.info}</center>
                             <img
                                 // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                                 className={`${data.img === mi ? 'white !important' : 'bg-dark'} w-100 text-white `}
@@ -127,8 +127,18 @@ function AutomaticImageSlider() {
                 <div className="swiper-button-next slider-arrow bg-dark p-2">
                     <ion-icon name="arrow-forward-outline"></ion-icon>
                 </div>
+                {/* <center>
+                    {colors.map((data, idx) => (
+                        <div className="slide text-white mx-3" key={idx}
+                            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                            style={{ width: '5px', height: '5px',background:`${idx==index ? 'blue':'white'}` }}
+                        >
+
+                        </div>
+                    ))}
+                </center> */}
             </Swiper>
-            <br />
+            <hr />
         </div>
     );
 }
