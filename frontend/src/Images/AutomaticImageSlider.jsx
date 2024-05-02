@@ -54,30 +54,44 @@ const delay = 3000;
 
 function AutomaticImageSlider() {
     const [index, setIndex] = useState(0);
+    const [hover, setHover] = useState(false);
+    const [autoplayParams, setAutoplayParams] = useState({ delay: 2500, disableOnInteraction: false });
 
     useEffect(() => {
-        const timeout = setTimeout(() => {
-            setIndex(prevIndex => (prevIndex === colors.length - 1 ? 0 : prevIndex + 1));
-        }, delay);
+        const handleNextSlide = () => {
+            setIndex((prevIndex) => (prevIndex === colors.length - 1 ? 0 : prevIndex + 1));
+        };
+
+        const timeout = setTimeout(handleNextSlide, delay);
 
         return () => clearTimeout(timeout);
     }, [index]);
+    useEffect(() => {
+        // Update autoplay parameters based on hover state
+        setAutoplayParams(hover ? { delay: 50000, disableOnInteraction: false } : { delay: 500, disableOnInteraction: false });
+    }, [hover]);
+    const handleMouseEnter = () => {
+        setHover(true);
+    };
 
-    const handleSlideChange = (swiper) => {
-        if (swiper.isEnd) {
-            clearTimeout(swiper.autoplay.timeout);
-        }
+    const handleMouseLeave = () => {
+        setHover(false);
     };
 
     return (
-        <div className="slideshow mt-4 pt-2">
+        <div className="slideshow mt-4 pt-2"
+        // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+        >
             <Swiper
+                // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                 className="slideshowSlider swiper_container rounded-0 shadow-6-strong"
                 effect={'coverflow'}
                 grabCursor={true}
                 centeredSlides={true}
-                loop={true}
-                autoplay={{ delay: 2500, disableOnInteraction: false }}
+                loop={false}
+                // autoplay={hover ? false : { delay: 2500 }}
+                // autoplay={hover === true ? false : { delay: 300 }}
+                autoplay={autoplayParams}
                 slidesPerView={2}
                 coverflowEffect={{
                     rotate: 10,
@@ -90,16 +104,20 @@ function AutomaticImageSlider() {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 }}
-                onSlideChange={(swiper) => handleSlideChange(swiper)}
             >
                 {colors.map((data, idx) => (
-                    <SwiperSlide
-                        className="slide text-white"
-                        key={idx}
+                    <SwiperSlide className="slide text-white" key={idx}
+                        onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                     >
                         <div className='w-100 text-white alert bg-black rounded-0 mb-0'>{data.info}</div>
                         <center>
-                            <img className={`${data.img === mi ? 'white !important' : 'bg-dark'} w-100 text-white `} src={data.img} style={{ background: `${data.img === mi ? 'white !important' : ''}`, transform: 'scale(1)', maxHeight: '350px', height: '30vh', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white', filter: `${data.img === mi ? 'invert(1)' : ''}` }} alt={`Slide ${idx}`} />
+                            <img
+                                // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                                className={`${data.img === mi ? 'white !important' : 'bg-dark'} w-100 text-white `}
+                                src={data.img}
+                                style={{ background: `${data.img === mi ? 'white !important' : ''}`, transform: 'scale(1)', maxHeight: '350px', height: '40vh', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white', filter: `${data.img === mi ? 'invert(1)' : ''}` }}
+                                alt={`Slide ${idx}`}
+                            />
                         </center>
                     </SwiperSlide>
                 ))}
