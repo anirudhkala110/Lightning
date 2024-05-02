@@ -77,7 +77,7 @@ function AutomaticImageSlider() {
                 grabCursor={true}
                 centeredSlides={true}
                 loop={true}
-                autoplay={{ delay: 300, disableOnInteraction: false }}
+                autoplay={{ delay: 2500, disableOnInteraction: false }}
                 slidesPerView={2}
                 coverflowEffect={{
                     rotate: 10,
