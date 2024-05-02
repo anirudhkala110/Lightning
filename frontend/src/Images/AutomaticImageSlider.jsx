@@ -30,22 +30,22 @@ import 'aos/dist/aos.css';
 SwiperCore.use([EffectCoverflow, Navigation, Autoplay]);
 
 const colors = [
-    { img: fv, info: "Complete Home Automation Using Matter Protocols" },
-    { img: CHA, info: "Complete Home Automation Using Matter Protocols and Smart Phone" },
-    { img: SSL, info: "Smart Lights and Switches Using Matter Protocols" },
+    { img: fv, info: "Complete Home Automation with Slogfy" },
+    { img: CHA, info: "Home Automation Using  Smart Phone" },
+    { img: SSL, info: "Smart Lights and Switches " },
     { img: six, info: 'Smart Display Control' },
-    { img: SLS, info: 'Smart Light and Switches, controlled by one click' },
+    { img: SLS, info: 'Smart Light controlled by one click' },
     { img: svn, info: 'Control AC, Fans from Anywhere' },
     { img: eth, info: 'Get the Latest Update of Security' },
-    { img: tlv, info: 'Control Your Home System Through Voice' },
+    { img: tlv, info: 'Control Your Home with Voice' },
     { img: trln, info: 'Smart LED Lights and Displays Systems' },
     { img: frtn, info: 'System for automate washing Machines' },
-    { img: sxtn, info: 'Control and Automate Home From your motion' },
+    { img: sxtn, info: 'Automate Home From your motion' },
     { img: svtn, info: 'Get Video Updates on Smart Devices' },
-    { img: SSAE, info: 'Smart Emergency Monitoring, Voice controlled and Automated by Matter Protocol' },
-    { img: SSE, info: 'Smart Security and Monitoring, controlled and Automated by Matter Protocol' },
-    { img: Intro, info: 'Set your Fan to maintain a fixed Room Temperature on your Demand' },
-    { img: Navi, info: 'Control Your Complete Home Devices by single touch' },
+    { img: SSAE, info: 'Smart Emergency SOS Monitoring' },
+    { img: SSE, info: 'Smart Security  Monitoring' },
+    { img: Intro, info: 'Set your room temprature on your Demand' },
+    { img: Navi, info: 'Complete Home Devices under single touch' },
     { img: MID, info: ' Connecting all in one.' },
     { img: mi, info: ' Automation Your Home Using Matter Protocol' }
 ];
@@ -68,7 +68,7 @@ function AutomaticImageSlider() {
     }, [index]);
     useEffect(() => {
         // Update autoplay parameters based on hover state
-        setAutoplayParams(hover ? { delay: 50000, disableOnInteraction: false } : { delay: 500, disableOnInteraction: false });
+        setAutoplayParams(hover ? { delay: 10000, disableOnInteraction: false } : { delay: 2500, disableOnInteraction: false });
     }, [hover]);
     const handleMouseEnter = () => {
         setHover(true);
@@ -79,7 +79,7 @@ function AutomaticImageSlider() {
     };
 
     return (
-        <div className="slideshow mt-4 pt-2"
+        <div className="slideshow mt-4 pt-3"
         // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
         >
             <Swiper
@@ -88,7 +88,7 @@ function AutomaticImageSlider() {
                 effect={'coverflow'}
                 grabCursor={true}
                 centeredSlides={true}
-                loop={false}
+                loop={true}
                 // autoplay={hover ? false : { delay: 2500 }}
                 // autoplay={hover === true ? false : { delay: 300 }}
                 autoplay={autoplayParams}
@@ -97,7 +97,7 @@ function AutomaticImageSlider() {
                     rotate: 10,
                     stretch: 10,
                     depth: 100,
-                    modifier: 2,
+                    modifier:1,
                     slideShadows: true,
                 }}
                 navigation={{
@@ -106,7 +106,7 @@ function AutomaticImageSlider() {
                 }}
             >
                 {colors.map((data, idx) => (
-                    <SwiperSlide className="slide text-white" key={idx}
+                    <SwiperSlide className="slide bg-black text-white" key={idx}
                         onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                     >
                         <div className='w-100 text-white alert bg-black rounded-0 mb-0'>{data.info}</div>
