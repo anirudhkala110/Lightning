@@ -230,10 +230,19 @@ body {
   display: none;
 }
 
+.show750px{
+  display: block;
+}
+
 .offcanvas-backdrop,.modal-backdrop {
   display: none !important;
 }
 
+@media only screen and (max-width:750px) {
+  .show750px{
+    display: none !important;
+  }
+}
 @media only screen and (max-width:1000px) {
   .sideBar {
     display: none;

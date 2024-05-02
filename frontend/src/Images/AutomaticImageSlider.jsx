@@ -82,6 +82,7 @@ function AutomaticImageSlider() {
         <div className="slideshow mt-4 pt-3"
         // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
         >
+            <div className='show750px'>
             <Swiper
                 // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                 className="slideshowSlider swiper_container rounded-0 shadow-6-strong"
@@ -138,6 +139,65 @@ function AutomaticImageSlider() {
                     ))}
                 </center> */}
             </Swiper>
+            </div>
+            <div className='less1000px'>
+                <Swiper
+                    // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                    className="slideshowSlider swiper_container rounded-0 shadow-6-strong"
+                    effect={'coverflow'}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    loop={true}
+                    // autoplay={hover ? false : { delay: 2500 }}
+                    // autoplay={hover === true ? false : { delay: 300 }}
+                    autoplay={autoplayParams}
+                    slidesPerView={1}
+                    coverflowEffect={{
+                        rotate: 10,
+                        stretch: 10,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    }}
+                    navigation={{
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    }}
+                >
+                    {colors.map((data, idx) => (
+                        <SwiperSlide className="slide bg-black text-white" key={idx}
+                            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                        >
+                            <center>
+                                <center className='text-white alert bg-black rounded-0 mb-0'>{data.info}</center>
+                                <img
+                                    // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                                    className={`${data.img === mi ? 'white !important' : 'bg-dark'} w-100 text-white `}
+                                    src={data.img}
+                                    style={{ background: `${data.img === mi ? 'white !important' : ''}`, transform: 'scale(1)', maxHeight: '350px', height: '40vh', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white', filter: `${data.img === mi ? 'invert(1)' : ''}` }}
+                                    alt={`Slide ${idx}`}
+                                />
+                            </center>
+                        </SwiperSlide>
+                    ))}
+                    <div className="swiper-button-prev slider-arrow bg-black p-2">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div className="swiper-button-next slider-arrow bg-dark p-2">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    {/* <center>
+                    {colors.map((data, idx) => (
+                        <div className="slide text-white mx-3" key={idx}
+                            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                            style={{ width: '5px', height: '5px',background:`${idx==index ? 'blue':'white'}` }}
+                        >
+
+                        </div>
+                    ))}
+                </center> */}
+                </Swiper>
+            </div>
             <hr />
         </div>
     );
