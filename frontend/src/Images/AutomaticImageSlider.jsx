@@ -1,6 +1,13 @@
-import React, { useRef, useEffect, useState } from 'react';
+import { Navigation, Pagination, EffectCoverflow, Scrollbar, Autoplay, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import React, { useEffect, useState } from 'react';
+import SwiperCore from 'swiper/core';
 import Intro from './intro.jpg';
-import Navigation from './navigation.jpg';
+import Navi from './navigation.jpg';
 import mi from './MI.svg';
 import SLS from './SLS.png';
 import SSL from './SSL.jpg';
@@ -19,20 +26,15 @@ import MID from './MatterinDevices.jpg';
 import svtn from './17.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 
-// import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+SwiperCore.use([EffectCoverflow, Navigation, Autoplay]);
 
 const colors = [
     { img: fv, info: "Complete Home Automation Using Matter Protocols" },
     { img: CHA, info: "Complete Home Automation Using Matter Protocols and Smart Phone" },
     { img: SSL, info: "Smart Lights and Switches Using Matter Protocols" },
     { img: six, info: 'Smart Display Control' },
-    { img: SLS, info: 'Smart Light and Switches, controled by one click' },
+    { img: SLS, info: 'Smart Light and Switches, controlled by one click' },
     { img: svn, info: 'Control AC, Fans from Anywhere' },
     { img: eth, info: 'Get the Latest Update of Security' },
     { img: tlv, info: 'Control Your Home System Through Voice' },
@@ -40,91 +42,75 @@ const colors = [
     { img: frtn, info: 'System for automate washing Machines' },
     { img: sxtn, info: 'Control and Automate Home From your motion' },
     { img: svtn, info: 'Get Video Updates on Smart Devices' },
-    { img: SSAE, info: 'Smart Emergency Monitoring, Voice controled and Automated by Matter Protocol' },
-    { img: SSE, info: 'Smart Security and Monitoring, controled and Automated by Matter Protocol' },
-    { img: Intro, info: 'Get room Temperature Updates and Set your Fan to maintain a fix Room Temperature on your Demand' },
-    { img: Navigation, info: 'Control Your Complete Home Devices by single touch' },
+    { img: SSAE, info: 'Smart Emergency Monitoring, Voice controlled and Automated by Matter Protocol' },
+    { img: SSE, info: 'Smart Security and Monitoring, controlled and Automated by Matter Protocol' },
+    { img: Intro, info: 'Set your Fan to maintain a fixed Room Temperature on your Demand' },
+    { img: Navi, info: 'Control Your Complete Home Devices by single touch' },
     { img: MID, info: ' Connecting all in one.' },
     { img: mi, info: ' Automation Your Home Using Matter Protocol' }
 ];
+
 const delay = 3000;
 
 function AutomaticImageSlider() {
     const [index, setIndex] = useState(0);
-    const timeoutRef = useRef(null);
 
     useEffect(() => {
-        const handleNextSlide = () => {
-            setIndex((prevIndex) => (prevIndex === colors.length - 1 ? colors.length - 1 : prevIndex + 1));
-        };
+        const timeout = setTimeout(() => {
+            setIndex(prevIndex => (prevIndex === colors.length - 1 ? 0 : prevIndex + 1));
+        }, delay);
 
-        const startSlideshow = () => {
-            timeoutRef.current = setTimeout(handleNextSlide, delay);
-        };
-
-        const stopSlideshow = () => {
-            clearTimeout(timeoutRef.current);
-        };
-        // if(index==)
-
-        startSlideshow();
-
-        return () => {
-            stopSlideshow();
-        };
+        return () => clearTimeout(timeout);
     }, [index]);
 
-    const handleMouseEnter = () => {
-        clearTimeout(timeoutRef.current);
-    };
-    console.log(colors[index].img)
-    const handleMouseLeave = () => {
-        timeoutRef.current = setTimeout(() => {
-            setIndex((prevIndex) => (prevIndex === colors.length - 1 ? 0 : prevIndex + 1));
-        }, delay);
+    const handleSlideChange = (swiper) => {
+        if (swiper.isEnd) {
+            clearTimeout(swiper.autoplay.timeout);
+        }
     };
 
     return (
-        <div className="slideshow mt-4"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            style={{ cursor: 'pointer' }}
-        >
-            <div
-                className="slideshowSlider rounded-0 shadow-6-strong"
-                style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+        <div className="slideshow mt-4 pt-2">
+            <Swiper
+                className="slideshowSlider swiper_container rounded-0 shadow-6-strong"
+                effect={'coverflow'}
+                grabCursor={true}
+                centeredSlides={true}
+                loop={true}
+                autoplay={{ delay: 300, disableOnInteraction: false }}
+                slidesPerView={2}
+                coverflowEffect={{
+                    rotate: 10,
+                    stretch: 10,
+                    depth: 100,
+                    modifier: 2,
+                    slideShadows: true,
+                }}
+                navigation={{
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }}
+                onSlideChange={(swiper) => handleSlideChange(swiper)}
             >
                 {colors.map((data, idx) => (
-                    <div
+                    <SwiperSlide
                         className="slide text-white"
                         key={idx}
                     >
-                        <center className='w-100 text-white alert bg-dark rounded-0 mb-0'>{data.info}</center>
-
+                        <div className='w-100 text-white alert bg-black rounded-0 mb-0'>{data.info}</div>
                         <center>
-                            <img className={`${data.img == mi ? 'white !important' : 'bg-dark'} w-100 text-white `} src={data.img} style={{ background: `${data.img == mi ? 'white !important' : ''}`, transform: 'scale(1)', maxHeight: '400px', height: '-webkit-fill-available', minWidth: '400px', maxWidth: "550px", width: '-webkit-fill-available', color: 'white', filter: `${data.img == mi ? 'invert(1)' : ''}` }} />
+                            <img className={`${data.img === mi ? 'white !important' : 'bg-dark'} w-100 text-white `} src={data.img} style={{ background: `${data.img === mi ? 'white !important' : ''}`, transform: 'scale(1)', maxHeight: '350px', height: '30vh', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white', filter: `${data.img === mi ? 'invert(1)' : ''}` }} alt={`Slide ${idx}`} />
                         </center>
-
-                    </div>
+                    </SwiperSlide>
                 ))}
-            </div>
+                <div className="swiper-button-prev slider-arrow bg-black p-2">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                </div>
+                <div className="swiper-button-next slider-arrow bg-dark p-2">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+            </Swiper>
             <br />
-            <div className="slideshowDots d-flex w-100" style={{ overflow: 'auto', filter: 'invert(0)' }}>
-                {colors.map((_, idx) => (
-                    <div
-                        key={idx}
-                        style={{ width: '200px' }}
-                        className={`slideshowDot${index === idx ? " active" : ""}`}
-                        onClick={() => {
-                            setIndex(idx);
-                        }}
-                    ></div>
-                ))}
-            </div>
-
-            <div>
-
-            </div>
         </div>
     );
 }

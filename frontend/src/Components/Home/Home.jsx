@@ -19,6 +19,8 @@ import emailjs from '@emailjs/browser';
 import { Helmet } from 'react-helmet';
 import axios from 'axios'
 
+axios.defaults.withCredentials = true
+
 const Home = () => {
     const navigate = useNavigate();
     const form = useRef();
@@ -41,7 +43,7 @@ const Home = () => {
             alert("Please Enter All the Fields")
         }
         else {
-            axios.post('https://localhost:8099/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
+            axios.post('http://localhost:5090/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
                 //   axios.post('https://api.legalbrother.in/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
                 .then(res => {
                     console.log(res)
@@ -54,14 +56,14 @@ const Home = () => {
                     }
                 })
                 .catch(err => console.log(err))
-            emailjs.sendForm('service_j5cbb74', 'template_x4fuopb', form.current, 'A7Zgb_4LO8WMThAjR')
-                .then((result) => {
-                    alert("Your  message ✉ Has been sent.\nNow you are redirecting to the Homepage. . .")
-                    navigate('/')
-                }, (error) => {
-                    alert("Sorry, not able to send your query.\nTry again after some time.")
-                    console.log(error.text);
-                });
+            // emailjs.sendForm('service_j5cbb74', 'template_x4fuopb', form.current, 'A7Zgb_4LO8WMThAjR')
+            //     .then((result) => {
+            //         alert("Your  message ✉ Has been sent.\nNow you are redirecting to the Homepage. . .")
+            //         navigate('/')
+            //     }, (error) => {
+            //         alert("Sorry, not able to send your query.\nTry again after some time.")
+            //         console.log(error.text);
+            //     });
         }
     }
     useEffect(() => {
@@ -95,9 +97,9 @@ const Home = () => {
     }
     return (
         <div className='min-vh-100'>
-            <div className='sliderImages bg-dark w-100'
+            <div className='sliderImages bg-black w-100'
                 data-aos="zoom-in" data-aos-delay='' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='true'
-                style={{ minHeight: "350px" }}><AutomaticImageSlider />
+                style={{ minHeight: "" }}><AutomaticImageSlider />
             </div>
             <div className='row pt-3'>
                 <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 px-5 py-3'>

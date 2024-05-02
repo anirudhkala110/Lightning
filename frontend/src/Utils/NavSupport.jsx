@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
 import { userContext } from '../App'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const NavSupport = () => {
     const admin = useContext(userContext)
     const handleCall = (number) => {
-        const phoneNumber = parseInt(number); // Replace this with the phone number you want to call
-        window.open(`tel:+91${phoneNumber}`);
+        // Replace this with the phone number you want to call
+        window.open(`${number}`);
     };
     return (
         <div className='text-white d-flex align-items-center pt-3' >
@@ -14,7 +14,9 @@ const NavSupport = () => {
             </div>
             <div className='w-100 justify-content-end show1000NavSupport' >
                 {/* <div className='w-100 justify-content-end show1000NavSupport' > */}
-                <span className='fs-5 d-flex align-items-center pe-1'><strong className='fs-6'></strong>&nbsp;<button className='btn btn-primary text-white rounded-0 py-1 px-3 fw-bold' style={{ background: '' }} onClick={e => handleCall(8005183363)}><Link to='https://wa.me/+918005183363' className='text-decoration-none text-white' target='_blank'><i className='bi bi-whatsapp'></i></Link></button></span>
+                <NavLink to='https://wa.me/+918005183363' className='text-white rounded-0 py-1 px-3 fw-bold' target='_blank' onClick={handleCall('https://wa.me/+918005183363')}>
+                    <i className='bi bi-whatsapp'></i>
+                </NavLink>
                 {/* <div className="dropdown me-1">
                     <button className="btn btnHover navsupport fw-bold dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
                         {/* <button className="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"> 
