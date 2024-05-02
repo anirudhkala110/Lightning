@@ -230,7 +230,7 @@ body {
   display: none;
 }
 
-.offcanvas-backdrop {
+.offcanvas-backdrop,.modal-backdrop {
   display: none !important;
 }
 

@@ -57,7 +57,7 @@ function Register() {
   const HandleRegiserPage = (e) => {
     e.preventDefault()
     console.log(name, email, password, cpassword)
-    axios.post('http://localhost:5020/post_data', { name: name, email: email, password: password, cpassword: cpassword, phone: phone })
+    axios.post('http://localhost:5090/post_data', { name: name, email: email, password: password, cpassword: cpassword, phone: phone })
       .then(res => {
         console.log(res)
         setMsg(res.data.msg)

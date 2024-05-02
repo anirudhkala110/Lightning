@@ -18,11 +18,13 @@ import FAQ from './FAQ';
 import emailjs from '@emailjs/browser';
 import { Helmet } from 'react-helmet';
 import axios from 'axios'
+import Query from '../../Query/Query';
 
 axios.defaults.withCredentials = true
 
 const Home = () => {
     const navigate = useNavigate();
+    const type = 'FAQ'
     const form = useRef();
     const [name, setName] = useState()
     const [mobile, setMobile] = useState()
@@ -312,14 +314,16 @@ const Home = () => {
                     </div>
                 </div>
                 <br />
-                <div className='container pt-4'>
-                    <center className='fs-3 fw-bold'>
-                        ASKED QUESTIONS
-                    </center>
-                    <FAQ />
+                <div className='container pt-4' >
+                    <section id="faqs">
+                        <center className='fs-3 fw-bold'>
+                            ASKED QUESTIONS
+                        </center>
+                        <FAQ />
+                    </section>
                 </div>
                 <center className='fs-3 fw-semibold'>Have a Question ? Ask Here !</center>
-                <div className='row'>
+                {/* <div className='row'>
                     <div className="container pt-3 col-lg-6 col-xl-6 my-2 py-2 col-sm-12 pb-1">
                         <form onSubmit={(e) => handleSubmit(e)} ref={form} >
                             <div className="form-group text-secondary fw-bolder">
@@ -350,10 +354,11 @@ const Home = () => {
                                 <textarea name="message" value={finalquery} style={{ display: "none" }} />
                             </div>
                             <button type='submit' className="btn border-0 rounded-0 mb-2 fw-bolder send-mail btn-primary w-100" value="Send">Send Mail</button>
-                            {/* <div className="btn btn-success border-0 rounded-0 ms-2 mb-2 call-btn" id="call" onClick={() => handleCall(8005183363)}>Make a Call</div> */}
-                            <div className="btn btn-warning border-0 w-100 rounded-0 fw-bolder mb-2 call-btn" id="call" onClick={() => handleRoute('home')}>Home</div>
                         </form>
                     </div>
+                </div> */}
+                <div className='row'>
+                    <Query value={type}/>
                 </div>
                 {/* <hr /> */}
                 {/* <div className='container'>
