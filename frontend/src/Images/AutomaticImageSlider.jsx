@@ -68,7 +68,7 @@ function AutomaticImageSlider() {
     }, [index]);
     useEffect(() => {
         // Update autoplay parameters based on hover state
-        setAutoplayParams(hover ? { delay: 10000, disableOnInteraction: false } : { delay: 2500, disableOnInteraction: false });
+        setAutoplayParams(hover ? { delay: 7000, disableOnInteraction: true } : { delay: 2500, disableOnInteraction: false });
     }, [hover]);
     const handleMouseEnter = () => {
         setHover(true);
