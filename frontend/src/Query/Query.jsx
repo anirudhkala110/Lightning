@@ -37,27 +37,27 @@ const Query = (type) => {
         }
         else {
             console.log(name, mobile, email, query, date, time, id, modtype)
-            axios.post('http://localhost:5090/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id, type: modtype })
-                //   axios.post('https://api.legalbrother.in/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
-                .then(res => {
-                    console.log(res)
-                    if (res.data.success) {
-                        alert("Your  Query Has been saved.\nNow you are redirecting to the Homepage. . .")
-                        window.location.href = '/'
-                    }
-                    else {
-                        alert("Sorry, not able to send your query.\nTry again after some time.")
-                    }
-                })
-                .catch(err => console.log(err))
-            // emailjs.sendForm('service_j5cbb74', 'template_x4fuopb', form.current, 'A7Zgb_4LO8WMThAjR')
-            //     .then((result) => {
-            //         alert("Your  message ✉ Has been sent.\nNow you are redirecting to the Homepage. . .")
-            //         navigate('/')
-            //     }, (error) => {
-            //         alert("Sorry, not able to send your query.\nTry again after some time.")
-            //         console.log(error.text);
-            //     });
+            // axios.post('http://localhost:5090/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id, type: modtype })
+            //     //   axios.post('https://api.legalbrother.in/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
+            //     .then(res => {
+            //         console.log(res)
+            //         if (res.data.success) {
+            //             alert("Your  Query Has been saved.\nNow you are redirecting to the Homepage. . .")
+            //             window.location.href = '/'
+            //         }
+            //         else {
+            //             alert("Sorry, not able to send your query.\nTry again after some time.")
+            //         }
+            //     })
+            //     .catch(err => console.log(err))
+            emailjs.sendForm('service_zhmn0r6', 'template_zfj3n0x', form.current, 'oLATHJXgsOoPX0nBA')
+                .then((result) => {
+                    alert("Your  message ✉ Has been sent.\nNow you are redirecting to the Homepage. . .")
+                    navigate('/')
+                }, (error) => {
+                    alert("Sorry, not able to send your query.\nTry again after some time.")
+                    console.log(error.text);
+                });
         }
     }
 
