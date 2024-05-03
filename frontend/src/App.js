@@ -52,14 +52,14 @@ function App() {
                 <Routes>
                   <Route exact path='/' element={<Home />} />
                   <Route exact path='/home' element={<Home />} />
+                  <Route exact path='/login' element={<Login />} />
+                  <Route exact path='/register' element={<Register />} />
                   {/* <Route exact path='/all-products' element={<Products />} /> */}
                   <Route exact path='/about' element={<About />} />
                   {/* <Route exact path='/contact-us' element={<Contact />} /> */}
                   {/* <Route exact path='/services' element={<Services />} /> */}
                   <Route exact path='/support' element={<Support />} />
                   {/* <Route exact path='/profile/:user' element={<Profile />} /> */}
-                  {/* <Route exact path='/login' element={<Login />} /> */}
-                  {/* <Route exact path='/register' element={<Register />} /> */}
                   {/* <Route exact path='/Registerpage' element={<Register />} /> */}
                   {/* <Route exact path='/dashboard' element={<DashBoard />} /> */}
                   {/* <Route exact path='/detail/:id/:machineName/:location/:uploadedBy' element={<Details />} /> */}

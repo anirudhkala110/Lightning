@@ -357,7 +357,7 @@ const Home = () => {
                         </form>
                     </div>
                 </div> */}
-                <div className='row'>
+                <div className='row p-2 border border-dark'>
                     <Query value={type}/>
                 </div>
                 {/* <hr /> */}

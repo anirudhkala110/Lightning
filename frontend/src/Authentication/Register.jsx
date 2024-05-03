@@ -17,6 +17,7 @@ import {
   from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 
+axios.defaults.withCredentials = true
 function Register() {
   const [name, setName] = useState()
   const [email, setEmail] = useState()
@@ -25,6 +26,7 @@ function Register() {
   const [retypePassword, setRetypePassword] = useState()
   const [alertMessage, setAlertMessage] = useState(null)
   const [alertColor, setAlertColor] = useState()
+  const [OTP, setOTP] = useState()
 
 
   const handleRetypePasswordChange = (e) => {
@@ -57,7 +59,7 @@ function Register() {
   const HandleRegiserPage = (e) => {
     e.preventDefault()
     console.log(name, email, password, cpassword)
-    axios.post('http://localhost:5090/post_data', { name: name, email: email, password: password, cpassword: cpassword, phone: phone })
+    axios.post('http://localhost:5090/register/email', { name: name, email: email, password: password, cpassword: cpassword, phone: phone })
       .then(res => {
         console.log(res)
         setMsg(res.data.msg)
@@ -72,7 +74,7 @@ function Register() {
   const [verified, setVerified] = useState(false)
   const [otpSent, setOtpSent] = useState(true)
 
-  const handleSendOTP = () => {
+  const handleSendOTP = (e) => {
     if (!email) {
       alert("Enter the Email First. . . ")
       return
@@ -81,14 +83,26 @@ function Register() {
     if (Confirm) {
       setDisableEmail(true)
       setOtpSent(false)
+      e.preventDefault()
+      axios.post('http://localhost:5090/verifyEmail', { email: email })
+        .then(res => {
+          setMsg(res.data.msg)
+          setMsg_type(res.data.msg_type)
+        })
+        .catch(err => {
+          console.log(err)
+        })
+
     }
   }
   const handleVerifyOTP = () => {
-    const Confirm = window.confirm("Are you sure About Email Address, Please Check Again. You will not be able to change it again...")
-    if (Confirm) {
-      setDisableEmail(true)
-      setVerified(true)
-    }
+    setDisableEmail(true)
+    axios.post('http://localhost:5090/verifyOTP', { email: email, OTP: OTP })
+      .then(res => {
+        console.log(res)
+        setVerified(true)
+      })
+      .catch(err => console.log(err))
   }
   return (
     <MDBContainer fluid className='min-vh-100'>
@@ -174,7 +188,7 @@ function Register() {
                     {!otpSent && <>
                       <div className='input-group mb-2'>
                         <label>Enter OTP</label>
-                        <input className='w-100 form-control' />
+                        <input className='w-100 form-control' onChange={e => setOTP(e.target.target.value)} />
                       </div>
                       <button className='btn btn-success' onClick={handleVerifyOTP}>Verify OTP</button></>}
                     <Link to='/login' class="text-decoration-none ms-2 btn btn-primary">Login Here!</Link>

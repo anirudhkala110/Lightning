@@ -95,7 +95,7 @@ function AutomaticImageSlider() {
                 autoplay={autoplayParams}
                 slidesPerView={2}
                 coverflowEffect={{
-                    rotate: 10,
+                    rotate: 60,
                     stretch: 10,
                     depth: 100,
                     modifier: 1,

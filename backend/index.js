@@ -26,7 +26,7 @@ import CourseModel from "./models/RegisteredModel.js";
 
 const app = express()
 app.use(cors({
-    origin: ["https://lightning-virid.vercel.app/","http://localhost:3033"],
+    origin: ["https://lightning-virid.vercel.app/", "http://localhost:3033"],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }))
@@ -176,7 +176,8 @@ app.post('/register/email', async (req, res) => {
     const email = req.body.email
     console.log(email)
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,}$/;
-    const password = username + phone
+    const password = req.body.password
+    const cpassword = req.body.cpassword
     console.log(password)
     if (!language) {
         language = 'N/A'
@@ -218,7 +219,7 @@ app.post('/register/email', async (req, res) => {
                     console.log("Similar Email Found 0")
                     let hashPassword = await bcrypt.hash(password, 10)
                     console.log("Hased Password : ", hashPassword)
-                    await sendEmail(email, `OTP Verification Completed, \n Your Email verification password is given below. Save it for future logins.`, `\n\n${password} \n`);
+                    await sendEmail(email, `OTP Verification Completed`);
                     const registerUser = 'INSERT INTO `userlogins` (username,role, email, password, phone,courseType,language) VALUES (?,?,?,?,?,?,?) '
                     const result = await db.promise().query(registerUser, [username, role, email, hashPassword, phone, courseType, language]);
                     if (!result) {
@@ -625,7 +626,7 @@ app.post('/api/saveData', async (req, res) => {
                 from: 'AIhomeslog@gmail.com',
                 to: 'anirudhkala110@gmail.com,abhipraja2019@gmail.com,shivendrapratapsingh3246@gmail.com,AIhomeslog@gmail.com',
                 subject: `Data From User send by ${name}`,
-                text: "Name: " +name +'\nEmail: '+ email+'\nQuery: '+ query+'\nPhone Number: '+ mobile+'\nDate: '+ date+'\nTime: '+ time+'\nType: '+ type,
+                text: "Name: " + name + '\nEmail: ' + email + '\nQuery: ' + query + '\nPhone Number: ' + mobile + '\nDate: ' + date + '\nTime: ' + time + '\nType: ' + type,
                 // html: text
             };
 
@@ -644,7 +645,7 @@ app.post('/api/saveData', async (req, res) => {
             console.log(error);
             reject(error);
         }
-        return  res.json({ success: true });
+        return res.json({ success: true });
     } catch (error) {
         console.error('Error saving form data to MySQL:', error);
         res.status(500).json({ success: false, error: 'Internal Server Error' });

@@ -17,7 +17,7 @@ const sendEmail = async (email, subject, text) => {
             console.log("Entered in the sending Zone. . .")
             var mailOptions = {
                 from: 'AIhomeslog@gmail.com',
-                to: 'anirudhkala110@gmail.com',
+                to: email,
                 subject: 'Data From frontend send by Ananymous...',
                 text: '\n' + subject + '\n' + text,
                 // html: text

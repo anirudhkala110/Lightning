@@ -17,7 +17,7 @@ const data = [
   { name: 'Mr. Shivendra Pratap Singh', position: 'Co Founder, Research & Development Lead', twitter: 'https://x.com/Nirajbabuaan01?t=vbFEqIi4HJzHvgjLllscQw&s=09', insta: 'https://www.instagram.com/niraj_singh_babuaan?igsh=aXZkanZydzNvYnh0', linkedin: 'https://www.linkedin.com/in/shivendra-pratap-singh-683188247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', profilePic: ss },
   { name: 'Mr. Abhinav Prajapati', position: 'CTO, Research & Development Lead', twitter: 'https://twitter.com/Abhi9prajapati', insta: 'https://www.instagram.com/abhi9_prajapati?igsh=MThtZjZjYmYzc2tzYQ==', linkedin: 'https://www.linkedin.com/in/abhinav-prajapati-318080190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', profilePic: AP },
   { name: 'Mr. Kavi agyat', position: 'Web content creator', twitter: '', insta: 'https://www.instagram.com/iamagyat?igsh=eDVtb2I0c2hjeXZ2', linkedin: '', profilePic: KA },
-  { name: 'Mr. Anirudh Kala', position: 'Python & MERN Stack WEB Developer', twitter: 'https://twitter.com/AnirudhKala_110', insta: 'https://www.instagram.com/jrcasetooyt/', linkedin: 'https://www.linkedin.com/in/anirudh-kala-808772245/', profilePic: AK },
+  { name: 'Mr. Anirudh Kala', position: 'Python & MERN Stack WEB Developer', twitter: 'https://twitter.com/AnirudhKala_110', insta: 'https://www.instagram.com/jrcasetooyt/', linkedin: 'https://www.linkedin.com/in/anirudh-kala-808772245/', portfolio: "https://self-portfolio-green.vercel.app/", profilePic: AK },
 ]
 
 const About = () => {
@@ -74,10 +74,11 @@ const About = () => {
                   <div className='card-body text-white'>
                     <strong className='text-primary'>{data.name}</strong><br />
                     <span style={{ fontSize: '12px' }}>{data.position}</span><br />
-                    <div className='card-footer px-0 align-items-center justify-content-between border-top'>
+                    <div className='card-footer px-0 align-items-center justify-content-start border-top'>
                       <NavLink to={data.insta} className='text-decoration-none text-white'><strong><b className='fs-4 bi bi-instagram'></b></strong></NavLink> &nbsp;&nbsp;
                       <NavLink to={data.twitter} className='text-decoration-none text-white'><strong><b className='fs-4 bi bi-twitter-x'></b></strong></NavLink> &nbsp;&nbsp;
                       <NavLink to={data.linkedin} className='text-decoration-none text-white'><strong><b className='fs-4 bi bi-linkedin'></b></strong></NavLink> &nbsp;&nbsp;
+                      <NavLink to={data.portfolio} className='text-decoration-none text-white' target='__blank' style={{ display: `${data.name === 'Mr. Anirudh Kala' ? 'inline-block' : 'none'}` }}><strong><i class="fs-4 bi bi-person-workspace"></i></strong></NavLink>
                     </div>
                   </div>
                 </div>
