@@ -17,6 +17,12 @@ const Query = (type) => {
     })
     const navigate = useNavigate();
     const form = useRef();
+    const validateEmail = (email) => {
+        console.log(email)
+        // Regular expression for validating email
+        const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return pattern.test(email);
+    };
     const [name, setName] = useState()
     const [mobile, setMobile] = useState()
     const [email, setEmail] = useState()
@@ -35,8 +41,11 @@ const Query = (type) => {
         if (name === '' || !name || mobile === '' || !mobile || email === '' || !email || query === '' || !query) {
             alert("Please Enter All the Fields")
         }
+        else if (validateEmail(email)) {
+            alert("Enter the Email Correctly")
+        }
         else {
-            console.log(name, mobile, email, query, date, time, id, modtype)
+            // console.log(name, mobile, email, query, date, time, id, modtype)
             // axios.post('http://localhost:5090/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id, type: modtype })
             //     //   axios.post('https://api.legalbrother.in/api/saveData', { name: name, mobile: mobile, email: email, query: query, date: date, time: time, id: id })
             //     .then(res => {
@@ -85,7 +94,7 @@ const Query = (type) => {
                 <meta name='description' content='Query abuout any process, Subject, topic, and Cunsultaion' />
                 <meta name='keywords' content='Contact Us' />
             </Helmet>
-            <div className="container pt-3 col-lg-6 col-xl-6 my-2 py-2 col-sm-12 pb-1">
+            <div className="container text-white pt-3 col-lg-6 col-xl-6 my-2 py-2 col-sm-12 pb-1">
                 <form onSubmit={(e) => handleSubmit(e)} ref={form} >
                     <div className="form-group text-secondary fw-bolder">
                         <label className="fw-bold" htmlFor="formGroupName">Name <sup className='text-danger'>*</sup></label>

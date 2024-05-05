@@ -8,7 +8,7 @@ const NavSupport = () => {
         window.open(`${number}`);
     };
     return (
-        <div className='text-white d-flex align-items-center pt-3' >
+        <div className='text-white container px-1 d-flex align-items-center' >
             <div className='navsupport ps-1 fs-5' >
                 SmartSync
             </div>

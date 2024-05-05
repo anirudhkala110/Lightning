@@ -16,7 +16,7 @@ const Support = () => {
         <meta name='description' content='Query abuout any process, Subject, topic, and Cunsultaion' />
         <meta name='keywords' content='Contact Us' />
       </Helmet>
-      <div className="bg-black container min-vh-100 pt-3">
+      <div className=" container min-vh-100 pt-3">
         <center className="fs-3 text-primary border-bottom py-3 fw-semibold alert rounded-0" style={{ letterSpacing: '1px', wordSpacing: '5px' }}>CONTACT US ✉</center>
         <div className="px-5 py-1 container" style={{ background: "rgba(0, 0, 0, 5%)", minHeight: "100vh" }}>
           <div className="my-3">

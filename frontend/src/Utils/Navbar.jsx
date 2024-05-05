@@ -16,13 +16,13 @@ const Navbar = () => {
         window.open(`tel:+91${phoneNumber}`);
     };
     return (
-        <div className=''>
-            <nav className="navbar w-100 bg-dark rounded-0" id="sidebar" style={{ background: 'rgb(255 255 255 / 90%)', borderBottom: '0px solid' }}>
+        <div className='container'>
+            <nav className="navbar w-100 rounded-0 py-0" id="sidebar" style={{ background: '', borderBottom: '0px solid' }}>
                 <div className="d-flex w-100 justify-content-between align-items-center ">
                     <div className='d-flex align-items-center justify-content-between'>
                         <a href='/' className='text-decoration-none text-white d-flex ps-0 align-items-center' >
                             <div className='bg-dark'>
-                                <img src={logo} width={50} className='rounded-circle' style={{ filter: 'invert(1) !important' }} />
+                                <img src={logo} width={30} className='rounded-circle' style={{ filter: 'invert(1) !important' }} />
                             </div>
                             &nbsp;
                             <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogfy</strong>
@@ -93,7 +93,7 @@ const Navbar = () => {
                             </strong>
                         </button>
                     </div>
-                    <div className="offcanvas offcanvas-end " tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div className="offcanvas offcanvas-end offcanvasBacki" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                         <div className="offcanvas-header bg-black">
                             <a href='/' className='text-decoration-none text-white d-flex ps-0 align-items-center' >
                                 <div className='bg-black text-white rounded-circle'>
@@ -104,74 +104,75 @@ const Navbar = () => {
                             </a>
                             <button type="button" className="btn-close text-reset text-white fs-3 fw-bolder py-2" data-bs-dismiss="offcanvas" aria-label="Close" style={{ color: 'white' }}><i class="bi bi-x-lg text-white"></i></button>
                         </div>
-                        <hr />
                         <div className="offcanvas-body  " style={{ minHeight: "500px" }}>
-                            <NavLink to='/home' className="btn  my-1 w-100 rounded-0 linkTabs" >
-                                <div onClick={e => handleRoute('/')} >
-                                    Home
-                                </div>
-                            </NavLink>
-                            <div onClick={e => handleRoute('/about')} >
-                                <NavLink to='/about' className='btn  my-1 w-100 rounded-0 linkTabs'>
-                                    About
+                            <div className='bg-black'>
+                                <NavLink to='/home' className="btn  my-1 w-100 rounded-0 linkTabs" >
+                                    <div onClick={e => handleRoute('/')} >
+                                        Home
+                                    </div>
                                 </NavLink>
-                            </div>
-                            {/* <NavLink to='/contact-us' className='btn  my-1 w-100 rounded-0 linkTabs'>Contact</NavLink> */}
-                            {/* <NavLink to='/all-products' className="btn  my-1 w-100 rounded-0 linkTabs" type="button" >Products</NavLink> */}
-                            {/* <NavLink to='/services' className='btn  my-1 w-100 rounded-0 linkTabs'>Services</NavLink> */}
-                            {/* <NavLink to={`/profile/${admin}`} className='btn  my-1 w-100 rounded-0 linkTabs'>Profile</NavLink> */}
-                            {/* <NavLink to='/dashboard' className='btn  my-1 w-100 rounded-0 linkTabs'>Dashboard</NavLink> */}
-                            {/* <NavLink to='/login' className='w-50 btn  rounded-0 linkTabs'>Login</NavLink>
+                                <div onClick={e => handleRoute('/about')} >
+                                    <NavLink to='/about' className='btn  my-1 w-100 rounded-0 linkTabs'>
+                                        About
+                                    </NavLink>
+                                </div>
+                                {/* <NavLink to='/contact-us' className='btn  my-1 w-100 rounded-0 linkTabs'>Contact</NavLink> */}
+                                {/* <NavLink to='/all-products' className="btn  my-1 w-100 rounded-0 linkTabs" type="button" >Products</NavLink> */}
+                                {/* <NavLink to='/services' className='btn  my-1 w-100 rounded-0 linkTabs'>Services</NavLink> */}
+                                {/* <NavLink to={`/profile/${admin}`} className='btn  my-1 w-100 rounded-0 linkTabs'>Profile</NavLink> */}
+                                {/* <NavLink to='/dashboard' className='btn  my-1 w-100 rounded-0 linkTabs'>Dashboard</NavLink> */}
+                                {/* <NavLink to='/login' className='w-50 btn  rounded-0 linkTabs'>Login</NavLink>
                             <NavLink to='/register' className='w-50 btn  rounded-0 linkTabs'>Sign Up</NavLink>
                             <NavLink to='/home' className='w-50 btn  rounded-0 linkTabs'>Logout</NavLink> */}
-                            <div onClick={e => handleRoute('/support')} >
-                                <NavLink to='/support' className='btn  my-1 w-100 rounded-0 linkTabs'>
-                                    Support
-                                </NavLink>
-                            </div>
-                            <div className='bg-black text-white'>
-                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://wa.me/+918005183363' >
-                                    <i class="bi bi-whatsapp"></i> Whatsapp
-                                </NavLink>
-                            </div>
-                            <div className='bg-black text-white'>
-                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg==' >
-                                    <i class="bi bi-instagram"></i> Instagram
-                                </NavLink>
-                            </div>
-                            <div className='bg-black text-white'>
-                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://Slogfy@gmail.com' >
-                                    <i class="bi bi-envelope-at"></i> Gmail
-                                </NavLink>
-                            </div>
-                            <div className='bg-black text-white'>
-                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.facebook.com/slogfy' >
-                                    <i class="bi bi-facebook"></i> Facebook
-                                </NavLink>
-                            </div>
+                                <div onClick={e => handleRoute('/support')} >
+                                    <NavLink to='/support' className='btn  my-1 w-100 rounded-0 linkTabs'>
+                                        Support
+                                    </NavLink>
+                                </div>
+                                <div className='bg-black text-white'>
+                                    <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://wa.me/+918005183363' >
+                                        <i class="bi bi-whatsapp"></i> Whatsapp
+                                    </NavLink>
+                                </div>
+                                <div className='bg-black text-white'>
+                                    <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg==' >
+                                        <i class="bi bi-instagram"></i> Instagram
+                                    </NavLink>
+                                </div>
+                                <div className='bg-black text-white'>
+                                    <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://Slogfy@gmail.com' >
+                                        <i class="bi bi-envelope-at"></i> Gmail
+                                    </NavLink>
+                                </div>
+                                <div className='bg-black text-white'>
+                                    <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.facebook.com/slogfy' >
+                                        <i class="bi bi-facebook"></i> Facebook
+                                    </NavLink>
+                                </div>
 
-                            <div className='bg-black text-white'>
-                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.linkedin.com/company/slogfy/' >
-                                    <i class="bi bi-linkedin"></i> LinkedIn
-                                </NavLink>
-                            </div>
+                                <div className='bg-black text-white'>
+                                    <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.linkedin.com/company/slogfy/' >
+                                        <i class="bi bi-linkedin"></i> LinkedIn
+                                    </NavLink>
+                                </div>
 
-                            <div className='bg-black text-white'>
-                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://x.com/slogfy?t=7W11e-jgtl8NoIiFlBllQQ&s=09'>
-                                    <i class="bi bi-twitter-x"></i> Twiter
-                                </NavLink>
-                            </div>
+                                <div className='bg-black text-white'>
+                                    <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://x.com/slogfy?t=7W11e-jgtl8NoIiFlBllQQ&s=09'>
+                                        <i class="bi bi-twitter-x"></i> Twiter
+                                    </NavLink>
+                                </div>
 
-                            <div className='bg-black text-white'>
-                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://youtube.com/@slogfy8260'>
-                                    <i class="bi bi-youtube"></i> YouTube
-                                </NavLink>
-                            </div>
-                            <div className='bg-black text-white'>
-                                <NavLink to="https://maps.app.goo.gl/4eqS6DdxRkrgA5Rt5" className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' >
+                                <div className='bg-black text-white'>
+                                    <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://youtube.com/@slogfy8260'>
+                                        <i class="bi bi-youtube"></i> YouTube
+                                    </NavLink>
+                                </div>
+                                <div className='bg-black text-white'>
+                                    <NavLink to="https://maps.app.goo.gl/4eqS6DdxRkrgA5Rt5" className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' >
 
-                                    <i class="bi bi-globe-americas"></i> &nbsp;Address
-                                </NavLink>
+                                        <i class="bi bi-globe-americas"></i> &nbsp;Address
+                                    </NavLink>
+                                </div>
                             </div>
                         </div>
                     </div>

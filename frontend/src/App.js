@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './Utils/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -35,16 +35,27 @@ export const userContext = createContext()
 function App() {
   const [admin, setAdmin] = useState({ user: "Admin", img: JoinUs })
   // const [admin, setAdmin] = useState("Admin")
+  const [time, setTime] = useState(new Date());
+  const [value, setValue] = useState(1)
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(new Date());
+
+
+    }, 5000);
+    // Cleanup function to clear the interval when the component unmounts
+    return () => clearInterval(interval);
+  }, []);
   return (
     <>
-      <div className='bg-black' style={{ minWidth: "400px" }}>
+      <div className={`${time % 3 == 0 ? 'imageSliderBacki1' : time % 3 == 2 ? 'imageSliderBacki2' : 'imageSliderBacki3'}`} style={{ minWidth: "400px" }}>
         <userContext.Provider value={admin}>
           <Router>
-            <div className='navbar-fixed-top bg-dark pb-0' style={{ maxHeight: '70px', borderBottom: '0px solid white', zIndex: '100' }}>
+            <div className='navbar-fixed-top navbarBacki pb-0' style={{ maxHeight: '50px', borderBottom: '0px solid white', zIndex: '100' }}>
               <Navbar />
             </div>
-            <div className='text-primary navSupport navbar-fixed-top py-3 mt-5 bg-black pb-2' style={{ zIndex: '50', borderBottom: '0px solid white' }}>
+            <div className='text-primary navSupport navbar-fixed-top py-3 mt-5 pb-2' style={{ zIndex: '50', borderBottom: '0px solid white', background: '#0a0c3fe8' }}>
               <NavSupport />
             </div>
             <div className='pt-2 mt-5 pt-5 text-white' style={{ minWidth: "400px" }}>
@@ -79,7 +90,7 @@ function App() {
                 </Routes>
               </div>
             </div>
-            <div className='navbar-dark bg-dark rounded-0 px-5 d-flex align-items-center' style={{ minHeight: '50px' }}>
+            <div className='rounded-0 footerBacki px-5 d-flex align-items-center' style={{ minHeight: '50px' }}>
               {/* <div className='navbar-inverse rounded-0' style={{ minHeight: '50px' }}> */}
               {/* <div className='navbar-fixed-bottom navbar-inverse'> */}
               <Footer />

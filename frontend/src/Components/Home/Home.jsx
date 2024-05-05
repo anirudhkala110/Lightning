@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import AOS from 'aos';
+import './Home.css'
 import 'aos/dist/aos.css';
 import Logo from '../../Images/frst.png'
 import smartSwitches from '../../Images/smartSwitches.png'
@@ -99,35 +100,35 @@ const Home = () => {
     }
     return (
         <div className='min-vh-100'>
-            <div className='sliderImages bg-black w-100'
-                data-aos="zoom-in" data-aos-delay='' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='true'
-                style={{ minHeight: "" }}><AutomaticImageSlider />
-            </div>
-            <div className='row pt-3'>
-                <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 px-5 py-3'>
-                    {/* <div className='col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6'> */}
-                    {/* <strong className='mt-2 px-2'>What is RoboShop ?</strong> */}
-                    <p className='py-3'>
-                        <div className='fs-2 mt-3' style={{ minHeight: '220px' }}>
-                            <span style={{ fontSize: "48px" }}>Welcome to </span>
-                            <br />
-                            <strong className='fw-semibold  text-primary px-0' style={{ fontSize: "2em", letterSpacing: "0px", borderTop: '0px solid white' }}><Typewriter text="Slogfy... " infinite={true} speed={500} /><Typewriter text="| " infinite={true} speed={280} /></strong>
+            <div className='bannerBack'>
+                <div className='container'>
+                    <div className='row pt-3 '>
+                        <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 px-5 py-3'>
+                            {/* <div className='col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6'> */}
+                            {/* <strong className='mt-2 px-2'>What is RoboShop ?</strong> */}
+                            <p className='py-3'>
+                                <div className='fs-2 mt-3' style={{ minHeight: '220px' }}>
+                                    <span style={{ fontSize: "48px" }}>Welcome to </span>
+                                    <br />
+                                    <strong className='fw-semibold  text-primary px-0' style={{ fontSize: "2em", letterSpacing: "0px", borderTop: '0px solid white' }}><Typewriter text="Slogfy... " infinite={true} speed={500} /><Typewriter text="| " infinite={true} speed={280} /></strong>
+                                </div>
+                                <h1>India's &nbsp;&nbsp;# 1<sup>st</sup> Brand</h1>
+                                <h1>Home Automation Based on Matter Protocal</h1>
+                                <hr />
+                                {/* RoboShop is an online platform dedicated exclusively to robotic arm technology. It serves as a comprehensive marketplace where enthusiasts, professionals, and businesses can explore, discover, and procure the latest advancements in robotic arm technology. From industrial-grade robotic arms for manufacturing and automation to cutting-edge models for research and education, RoboShop offers a wide range of options to cater to every need and application. With a user-friendly interface, advanced search filters, and detailed product descriptions, RoboShop makes it easy to find the perfect robotic arm for your requirements. Additionally, RoboShop provides exceptional support and assistance throughout the purchasing process, ensuring a seamless and hassle-free experience for customers. */}
+                            </p>
                         </div>
-                        <h1>India's &nbsp;&nbsp;# 1<sup>st</sup> Brand</h1>
-                        <h1>Home Automation Based on Matter Protocal</h1>
-                        <hr />
-                        {/* RoboShop is an online platform dedicated exclusively to robotic arm technology. It serves as a comprehensive marketplace where enthusiasts, professionals, and businesses can explore, discover, and procure the latest advancements in robotic arm technology. From industrial-grade robotic arms for manufacturing and automation to cutting-edge models for research and education, RoboShop offers a wide range of options to cater to every need and application. With a user-friendly interface, advanced search filters, and detailed product descriptions, RoboShop makes it easy to find the perfect robotic arm for your requirements. Additionally, RoboShop provides exceptional support and assistance throughout the purchasing process, ensuring a seamless and hassle-free experience for customers. */}
-                    </p>
-                </div>
-                <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 px-5 py-3'>
-                    {/* <div className='col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6'> */}
-                    <div className='' data-aos="zoom-in" data-aos-delay='' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='true'>
-                        <img src={Logo} className='w-100' style={{ maxHeight: '600px' }} />
+                        <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 px-5 py-3'>
+                            {/* <div className='col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6'> */}
+                            <div className='' data-aos="zoom-in" data-aos-delay='' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='true'>
+                                <img src={Logo} className='w-100' style={{ maxHeight: '600px' }} />
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
             </div>
-            <div className='bg-black pb-3'>
+            <div className=''>
                 {/* <div className='container'>
                     <br />
                     <br />
@@ -206,103 +207,109 @@ const Home = () => {
                     </div>
                 </div> */}
                 {/* <div className='sliderImages bg-dark justify-content-center align-items-center d-flex' style={{ minHeight: "350px" }}><ImgSlider /></div> */}
-                {/* <div className='sliderImages bg-dark w-100' style={{ minHeight: "350px" }}><AutomaticImageSlider /></div> */}
-                <br />
+                <div className='imageSliderBack'>
+                    <div className='sliderImages  w-100'
 
+                        data-aos="zoom-in" data-aos-delay='' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='true'
+                        style={{ minHeight: "" }}>
+                        <center className='fs-2 fw-semibold'>Projects ON</center>
+                        <AutomaticImageSlider />
+                    </div>
+                </div>
                 <br />
                 <br />
-                <br />
-                <div className='container'>
-                    <div className='row'>
-                        <div className='p-3'>
-                            <center className='fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>
-                                <h1>
-                                    <b style={{ fontSize: '50px' }}>What is a Slogfy smart home 🏡</b>
-                                </h1>
-                            </center>
-                            <center className='fs-4 ' data-aos='zoom-in' data-aos-delay='50' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>
-                                Slogfy Smart Home is designed,<br />  <h4 className='text-primary'><Link to='/what-is-matter-protocol?' className='text-decoration-none'>with matter protocol</Link></h4>to elevate the comfort of your space & redefine the way you live your daily life!
-                            </center>
-                            <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
-                                <div className='w-100 border my-3 border-secondary' />
-                                <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
-                                    <Link to='/Smart-Lights-and-Switches-with-use-of-Matter Protocol' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Smart Switches and Plugs</h4> {truncate('Turn your light ON / OFF just by your inward and outward movement, voice or Smart Phone. ', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
-                                        </div>
-                                            <img src={smartSwitches} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
-                                        </div>
-                                    </Link>
+                <div className=''>
+                    <div className='container'>
+                        <div className='row'>
+                            <div className='p-3'>
+                                <center className='fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>
+                                    <h1>
+                                        <b style={{ fontSize: '50px' }}>What is a Slogfy smart home 🏡</b>
+                                    </h1>
+                                </center>
+                                <center className='fs-4 ' data-aos='zoom-in' data-aos-delay='50' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>
+                                    Slogfy Smart Home is designed,<br />  <h4 className='text-primary'><Link to='/what-is-matter-protocol?' className='text-decoration-none'>with matter protocol</Link></h4>to elevate the comfort of your space & redefine the way you live your daily life!
+                                </center>
+                                <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
+                                    <div className='w-100 border my-3 border-secondary' />
+                                    <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
+                                        <Link to='/Smart-Lights-and-Switches-with-use-of-Matter Protocol' className='text-white text-decoration-none'>
+                                            <div className='homehoverTab bg-black rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Smart Switches and Plugs</h4> {truncate('Turn your light ON / OFF just by your inward and outward movement, voice or Smart Phone. ', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                            </div>
+                                                <img src={smartSwitches} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
+                                        <Link to='/Enhancing-Emergency-SOS-with-Matter-Protocol' className='text-white text-decoration-none'>
+                                            <div className='homehoverTab bg-black rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Smart Emergency SOS</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                                {/* <div className='homehoverTab bg-black rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Emergnecy Alert SOS</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em> */}
+                                            </div>
+                                                <img src={emergencySOS2} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
+                                        <Link to='/Enhancing-Smart-Security-with-Matter-Protocol' className='text-white text-decoration-none'>
+                                            <div className='homehoverTab bg-black rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Security</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                                {/* <div className='homehoverTab bg-black rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Emergnecy Alert SOS</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em> */}
+                                            </div>
+                                                <img src={securityBreach} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
+                                        <Link to='/Home-Automation-with-Motion-Detectors' className='text-white text-decoration-none'>
+                                            <div className='homehoverTab bg-black rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Motion Detectors Automation</h4> {truncate('Turn your Cooler, Fan, AC ON and OFF just by only Entering and Leaving the room.', 100)} <br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                            </div>
+                                                <img src={homeAutomationUsingMotionMatterProtocol} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
+                                        <Link to='/Thermostat-with-Matter-Protocol' className='text-white text-decoration-none'>
+                                            <div className='homehoverTab bg-black rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' > Room Temperature Controller</h4>{truncate('Utilizing an automated system, fan speed is dynamically adjusted in response to changes in the room temperature, ensuring optimal comfort levels while also minimizing energy consumption using Matter Protocol. ', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                            </div>
+                                                <img src={ThermostateMatter} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
+                                        <Link to='/Slogfy-App-Control' className='text-white text-decoration-none'>
+                                            <div className='homehoverTab bg-black rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >App Control</h4> {truncate('We Put your home in the palm of your hands with our highly lauded mobile app.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                            </div>
+                                                <img src={applicationControl} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
+                                        <Link to='/Slogfy-Voice-Control' className='text-white text-decoration-none'>
+                                            <div className='homehoverTab bg-black rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Voice Control</h4> {truncate('Compatible with all leading voice assistants like Alexa, Google Home and Apple Siri', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                            </div>
+                                                <img src={voiceAssistant} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
+                                        <Link to='/Slogfy-App-Analytics' className='text-white text-decoration-none'>
+                                            <div className='homehoverTab bg-black rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Analytics</h4> {truncate('Gain insight into consumption & save on your bills with analytics & bill prediction.', 100)} <br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                            </div>
+                                                <img src={analytics} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
+                                        <Link to='/Slogfy-App-Schedule-Control' className='text-white text-decoration-none'>
+                                            <div className='homehoverTab bg-black rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' > Schedules</h4>{truncate('Get time-based appliance control with scheduling & timer functionalities', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
+                                            </div>
+                                                <img src={automaticLightUsingSwitch} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    {/* <img src={custSat} className='homehover col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' /> */}
                                 </div>
-                                <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
-                                    <Link to='/Enhancing-Emergency-SOS-with-Matter-Protocol' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Smart Emergency SOS</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
-                                            {/* <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Emergnecy Alert SOS</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em> */}
-                                        </div>
-                                            <img src={emergencySOS2} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
-                                    <Link to='/Enhancing-Smart-Security-with-Matter-Protocol' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Security</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
-                                            {/* <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Emergnecy Alert SOS</h4> {truncate('Get all the security messages and information about unwanted enterance. Real Time SOS system for Family Members.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em> */}
-                                        </div>
-                                            <img src={securityBreach} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
-                                    <Link to='/Home-Automation-with-Motion-Detectors' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Motion Detectors Automation</h4> {truncate('Turn your Cooler, Fan, AC ON and OFF just by only Entering and Leaving the room.', 100)} <br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
-                                        </div>
-                                            <img src={homeAutomationUsingMotionMatterProtocol} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
-                                    <Link to='/Thermostat-with-Matter-Protocol' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' > Room Temperature Controller</h4>{truncate('Utilizing an automated system, fan speed is dynamically adjusted in response to changes in the room temperature, ensuring optimal comfort levels while also minimizing energy consumption using Matter Protocol. ', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
-                                        </div>
-                                            <img src={ThermostateMatter} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
-                                    <Link to='/Slogfy-App-Control' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >App Control</h4> {truncate('We Put your home in the palm of your hands with our highly lauded mobile app.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
-                                        </div>
-                                            <img src={applicationControl} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
-                                    <Link to='/Slogfy-Voice-Control' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Voice Control</h4> {truncate('Compatible with all leading voice assistants like Alexa, Google Home and Apple Siri', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
-                                        </div>
-                                            <img src={voiceAssistant} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
-                                    <Link to='/Slogfy-App-Analytics' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' >Analytics</h4> {truncate('Gain insight into consumption & save on your bills with analytics & bill prediction.', 100)} <br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
-                                        </div>
-                                            <img src={analytics} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
-                                    <Link to='/Slogfy-App-Schedule-Control' className='text-white text-decoration-none'>
-                                        <div className='homehoverTab bg-dark rounded-4 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='text-primary fw-bold' > Schedules</h4>{truncate('Get time-based appliance control with scheduling & timer functionalities', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
-                                        </div>
-                                            <img src={automaticLightUsingSwitch} className='col-6 shadow' style={{ borderBottomRightRadius: '18px', borderTopLeftRadius: '18px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
-                                        </div>
-                                    </Link>
-                                </div>
-                                {/* <img src={custSat} className='homehover col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' /> */}
                             </div>
-                        </div>
-                        {/* <div className='homeHover p-3'>
+                            {/* <div className='homeHover p-3'>
                             <center className='fs-4 fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>Join the RoboShop Community</center>
                             <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
                                 <div className='w-100 border mb-2 border-secondary' />
@@ -311,6 +318,7 @@ const Home = () => {
                             </div>
                         </div> */}
 
+                        </div>
                     </div>
                 </div>
                 <br />
@@ -358,7 +366,7 @@ const Home = () => {
                     </div>
                 </div> */}
                 <div className='row p-2 border border-dark'>
-                    <Query value={type}/>
+                    <Query value={type} />
                 </div>
                 {/* <hr /> */}
                 {/* <div className='container'>

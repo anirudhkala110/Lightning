@@ -1,0 +1,51 @@
+.bannerBacki {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imageSliderBacki1 {
+    background-image: url(../../Images/divBack5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 4s ease-in-out;
+    /* filter: contrast(1); */
+}
+
+.imageSliderBacki2 {
+    background-image: url(../../Images/divBack1.png);
+    background-position: center;
+    transition: 4s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: contrast(1); */
+}
+
+.imageSliderBacki3 {
+    transition: 4s ease-in-out;
+    background-image: url(../../Images/divBack4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: contrast(1); */
+}
+
+.imageShadow {
+    box-shadow: 0px 4px 4px 1px rgba(255, 255, 255, 0.698) !important;
+    z-index: 50;
+    border-radius: 15px;
+}
+
+.footerBacki{
+    background-image: url(../../Images/divBack5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbarBacki,  .offcanvasBacki{
+    background-image: url(../../Images/divBack1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
