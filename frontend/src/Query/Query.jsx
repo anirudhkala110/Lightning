@@ -96,19 +96,19 @@ const Query = (type) => {
             </Helmet>
             <div className="container text-white pt-3 col-lg-6 col-xl-6 my-2 py-2 col-sm-12 pb-1">
                 <form onSubmit={(e) => handleSubmit(e)} ref={form} >
-                    <div className="form-group text-secondary fw-bolder">
+                    <div className="form-group text-light fw-bolder">
                         <label className="fw-bold" htmlFor="formGroupName">Name <sup className='text-danger'>*</sup></label>
                         <input type="text" className="form-control   text-light rounded-3 border-0  bg-dark" id="formGroupName" placeholder="Your Valid Name" name="user_name" value={name} onChange={e => setName(e.target.value)} required />
                     </div>
-                    <div className="form-group text-secondary fw-bolder">
+                    <div className="form-group text-light fw-bolder">
                         <label className="fw-bold" htmlFor="formGroupMobile">Mobile Number<sup className='text-danger'>*</sup></label>
                         <input type="number" className="form-control   text-light rounded-3 border-0  bg-dark" id="formGroupMobile" placeholder="Mobile Number" name="mobile" value={mobile} onChange={e => setMobile(e.target.value)} required />
                     </div>
-                    <div className="form-group text-secondary fw-bolder">
+                    <div className="form-group text-light fw-bolder">
                         <label className="fw-bold" htmlFor="formGroupEmail">Email Address<sup className='text-danger'>*</sup></label>
                         <input type="email" className="form-control   text-light rounded-3 border-0  bg-dark" id="formGroupEmail" placeholder="Email Address" name="user_email" value={email} onChange={e => setEmail(e.target.value)} required />
                     </div>
-                    <div className="form-group text-secondary fw-bolder mb-2">
+                    <div className="form-group text-light fw-bolder mb-2">
                         <label className="fw-bold" htmlFor="formGroupQuery">Messege<sup className='text-danger'>*</sup></label>
                         <textarea
                             type="text"
