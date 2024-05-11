@@ -83,6 +83,13 @@ function AutomaticImageSlider() {
         // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
         >
             <div className='show750px'>
+                {/* <div className="swiper-button-prev slider-arrow p-2" style={{ height:"-webkit-fill-available", background: 'white' }}> */}
+                <div className="swiper-button-prev slider-arrow hovleft py-5" style={{
+                    // height:"-webkit-fill-available",
+                    background: '#ffffff52'
+                }}>
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                </div>
                 <Swiper
                     // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                     className="slideshowSlider swiper_container rounded-0 shadow-6-strong"
@@ -106,6 +113,7 @@ function AutomaticImageSlider() {
                         prevEl: '.swiper-button-prev',
                     }}
                 >
+
                     {colors.map((data, idx) => (
                         <SwiperSlide className="slide imageShadow text-white mb-3" key={idx}
                             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
@@ -117,19 +125,15 @@ function AutomaticImageSlider() {
                                         // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                                         className={`${data.img === mi ? 'white !important' : 'bg-dark'} w-100 text-white rounded-4 `}
                                         src={data.img}
-                                        style={{ background: `${data.img === mi ? 'white !important' : ''}`, transform: 'scale(1)', maxHeight: '350px', height: '40vh', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white', filter: `${data.img === mi ? 'invert(1)' : ''}` }}
+                                        style={{ background: `${data.img === mi ? 'white !important' : ''}`, transform: 'scale(1.01)', maxHeight: '350px', height: '40vh', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white', filter: `${data.img === mi ? 'invert(1)' : ''}` }}
                                         alt={`Slide ${idx}`}
                                     />
                                 </div>
                             </center>
                         </SwiperSlide>
                     ))}
-                    <div className="swiper-button-prev slider-arrow bg-black p-2">
-                        <ion-icon name="arrow-back-outline"></ion-icon>
-                    </div>
-                    <div className="swiper-button-next slider-arrow bg-dark p-2">
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                    </div>
+
+
                     {/* <center>
                     {colors.map((data, idx) => (
                         <div className="slide text-white mx-3" key={idx}
@@ -141,6 +145,12 @@ function AutomaticImageSlider() {
                     ))}
                 </center> */}
                 </Swiper>
+                <div className="swiper-button-next slider-arrow py-5 hovright" style={{
+                    // height:"-webkit-fill-available", 
+                    background: '#ffffff52'
+                }}>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
             </div>
             <div className='less1000px'>
                 <Swiper
@@ -182,10 +192,14 @@ function AutomaticImageSlider() {
                             </center>
                         </SwiperSlide>
                     ))}
-                    <div className="swiper-button-prev slider-arrow bg-black p-2">
+                    <div className="swiper-button-prev slider-arrow  p-2" style={{
+                        //  height: "-webkit-fill-available", 
+                    background: '#ffffff52' }}>
                         <ion-icon name="arrow-back-outline"></ion-icon>
                     </div>
-                    <div className="swiper-button-next slider-arrow bg-dark p-2">
+                    <div className="swiper-button-next slider-arrow  p-2" style={{ 
+                        // height: "-webkit-fill-available",
+                     background: '#ffffff52' }}>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </div>
                     {/* <center>
