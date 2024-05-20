@@ -7,8 +7,8 @@ const Footer = () => {
         window.open(`tel:+91${phoneNumber}`);
     };
     return (
-        <div className='text-white container'>
-            <div className='border-bottom my-1 text-white pt-2 d-flex align-items-start justify-content-between' style={{ display: '' }}
+        <div className='text-white container-fluid'>
+            <div className='border-bottom my-1 text-white py-2 d-flex align-items-start justify-content-between' style={{ display: '' }}
             // data-aos="slide-down" data-aos-delay='100' data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='false'
             >
                 <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://wa.me/+918005183363'><b class="bi bi-whatsapp"> <b className='hideUnder600px utube'>Whatsapp</b></b> </Link>

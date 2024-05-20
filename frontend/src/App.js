@@ -49,7 +49,7 @@ function App() {
   }, []);
   return (
     <>
-      <div className={`${time % 3 == 0 ? 'imageSliderBacki1' : time % 3 == 2 ? 'imageSliderBacki2' : 'imageSliderBacki3'}`} style={{ minWidth: "400px" }}>
+      <div className={`${time % 3 == 0 ? 'imageSliderBacki1' : time % 3 == 1 ? 'imageSliderBacki3' : 'imageSliderBacki2'}`} style={{ minWidth: "400px" }}>
         <userContext.Provider value={admin}>
           <Router>
             <div className='navbar-fixed-top navbarBacki pb-0' style={{ maxHeight: '50px', borderBottom: '0px solid white', zIndex: '100' }}>
@@ -90,7 +90,7 @@ function App() {
                 </Routes>
               </div>
             </div>
-            <div className='rounded-0 footerBacki px-5 d-flex align-items-center' style={{ minHeight: '50px' }}>
+            <div className='rounded-0 footerBacki px-2 d-flex align-items-center' style={{ minHeight: '50px' }}>
               {/* <div className='navbar-inverse rounded-0' style={{ minHeight: '50px' }}> */}
               {/* <div className='navbar-fixed-bottom navbar-inverse'> */}
               <Footer />
