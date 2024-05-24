@@ -194,12 +194,12 @@ function AutomaticImageSlider() {
                     ))}
                     <div className="swiper-button-prev slider-arrow  p-2" style={{
                         //  height: "-webkit-fill-available", 
-                    background: '#ffffff52' }}>
-                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    background: '' }}>
+                        <ion-icon name="arrow-back-outline" className=""></ion-icon>
                     </div>
                     <div className="swiper-button-next slider-arrow  p-2" style={{ 
                         // height: "-webkit-fill-available",
-                     background: '#ffffff52' }}>
+                     background: '' }}>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </div>
                     {/* <center>
