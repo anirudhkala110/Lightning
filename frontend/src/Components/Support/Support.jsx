@@ -18,13 +18,13 @@ const Support = () => {
       </Helmet>
       <div className=" container min-vh-100 pt-3">
         <center className="fs-3 text-primary border-bottom py-3 fw-semibold alert rounded-0" style={{ letterSpacing: '1px', wordSpacing: '5px' }}>CONTACT US ✉</center>
-        <div className="px-5 py-1 container" style={{ background: "rgba(0, 0, 0, 5%)", minHeight: "100vh" }}>
+        <div className="px-5 py-1 container" style={{ background: "rgba(0, 0, 0, 15%)", minHeight: "100vh" }}>
           <div className="my-3">
             <center> <i className="bi bi-exclamation-triangle-fill text-warning me-1"></i> If you have any questions or require our assistance, Get in touch with <a href='/' className='text-primary text-decoration-none fw-bolder'>Slogfy</a>. We are here to help you.</center>
           </div>
           <hr />
 
-          <center><h1>Ask Question ? </h1></center>
+          <center><h1>Ask Query ? </h1></center>
           <hr />
           <div className="row">
             {/* <div className="border bg-dark col-lg-6 col-xl-6 my-2 py-2 col-sm-12 d-flex align-items-center justify-content-center " style={{ height: "470px", maxWidth: '550px' }}>
