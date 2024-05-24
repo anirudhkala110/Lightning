@@ -142,16 +142,22 @@ const Question = ({ question, answer }) => {
         <div className='question-wrapper' onClick={handleClick} style={{ cursor: 'pointer' }}>
             <div className='question' >
                 <h5 className='text-white quesHover'>{question}</h5>
-                <button >
-                    <svg
-                        className={isActive ? 'active' : ''}
-                        viewBox='0 0 320 512'
-                        width='100'
-                        title='angle-down'
-                    >
-                        <path d='M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z' />
-                    </svg>
-                </button>
+                <div className='d-flex align-items-center'>
+                    {/* <i class="bi bi-hand-thumbs-up me-1 text-white"></i> */}
+                    <i class="bi bi-hand-thumbs-up-fill me-1 text-white"></i>
+                    <i class="bi bi-hand-thumbs-down me-1 text-white"></i>
+                    {/* <i class="bi bi-hand-thumbs-down-fill me-1 text-white"></i> */}
+                    <button >
+                        <svg
+                            className={isActive ? 'active' : ''}
+                            viewBox='0 0 320 512'
+                            width='100'
+                            title='angle-down'
+                        >
+                            <path d='M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z' />
+                        </svg>
+                    </button>
+                </div>
             </div>
             <div className={`${isActive ? 'answer active' : 'answer'} text-white mb-2 pb-4`} style={{ height: '-webkit-fill-available' }}>
                 <hr />
