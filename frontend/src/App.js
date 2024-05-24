@@ -49,7 +49,7 @@ function App() {
   }, []);
   return (
     <div className='bg-black'>
-      <div className={`${time % 3 == 0 ? 'imageSliderBacki1' : time % 3 == 1 ? 'imageSliderBacki3' : 'imageSliderBacki2'}`} style={{ minWidth: "400px" }}>
+      <div className={`${time % 3 == 0 ? 'imageSliderBacki1' : time % 3 == 1 ? 'imageSliderBacki3' : time % 3 == 2 ? 'imageSliderBacki2':'bg-black'}`} style={{ minWidth: "400px" }}>
         <userContext.Provider value={admin}>
           <Router>
             <div className='navbar-fixed-top navbarBacki pb-0' style={{ maxHeight: '50px', borderBottom: '0px solid white', zIndex: '100' }}>
