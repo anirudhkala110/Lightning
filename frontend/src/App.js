@@ -48,7 +48,7 @@ function App() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <>
+    <div className='bg-black'>
       <div className={`${time % 3 == 0 ? 'imageSliderBacki1' : time % 3 == 1 ? 'imageSliderBacki3' : 'imageSliderBacki2'}`} style={{ minWidth: "400px" }}>
         <userContext.Provider value={admin}>
           <Router>
@@ -98,7 +98,7 @@ function App() {
           </Router>
         </userContext.Provider>
       </div>
-    </>
+    </div>
   );
 }
 

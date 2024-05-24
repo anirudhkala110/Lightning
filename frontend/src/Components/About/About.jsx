@@ -35,7 +35,7 @@ const About = () => {
       </div>
       <div className='container bg-black pt-3' style={{ borderLeft: '1px solid #8080806b', borderRight: '1px solid #8080806b' }}>
         <hr />
-        <div className='row'>
+        <div className='row pb-2'>
           <img src={b3} className='rounded-3 col-sm-12 col-lg-6 col-xl-6 col-md-6' />
           <div className='col-sm-12 col-lg-6 col-xl-6 col-md-6'>
             <div className='row'>
