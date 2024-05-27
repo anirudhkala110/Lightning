@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './FAQ.css'
+import 'bootstrap/js/dist/modal'
 
 const questions = [
     {
@@ -137,17 +138,28 @@ const Question = ({ question, answer }) => {
     const handleClick = () => {
         setActive(!isActive);
     };
-
+    const [like, setLike] = useState(false)
+    const [dislike, setDisike] = useState(false)
+    const handleLike = () => {
+        setLike(!like)
+        setDisike(false)
+            alert('Thanks for your feedback. 🙂')
+    }
+    const handleDislike = () => {
+        setDisike(!dislike)
+        setLike(false)
+            alert('Thanks for your feedback. 😉')
+    }
     return (
-        <div className='question-wrapper' onClick={handleClick} style={{ cursor: 'pointer' }}>
+        <div className='question-wrapper' style={{ cursor: 'pointer' }}>
             <div className='question' >
                 <h5 className='text-white quesHover'>{question}</h5>
                 <div className='d-flex align-items-center'>
-                    {/* <i class="bi bi-hand-thumbs-up me-1 text-white"></i> */}
-                    <i class="bi bi-hand-thumbs-up-fill me-1 text-white"></i>
-                    <i class="bi bi-hand-thumbs-down me-1 text-white"></i>
-                    {/* <i class="bi bi-hand-thumbs-down-fill me-1 text-white"></i> */}
-                    <button >
+                    {!like && <i class="bi bi-hand-thumbs-up me-1 text-white" onClick={handleLike} type="button" data-toggle="modal" data-target="#exampleModalCenter"></i>}
+                    {like && <i class="bi bi-hand-thumbs-up-fill me-1 text-white" onClick={handleLike} type="button" data-toggle="modal" data-target="#exampleModalCenter"></i>}
+                    {!dislike && <i class="bi bi-hand-thumbs-down me-1 text-white" onClick={handleDislike} type="button" data-toggle="modal" data-target="#exampleModalCenter"></i>}
+                    {dislike && <i class="bi bi-hand-thumbs-down-fill me-1 text-white" onClick={handleDislike} type="button" data-toggle="modal" data-target="#exampleModalCenter"></i>}
+                    <button onClick={handleClick} >
                         <svg
                             className={isActive ? 'active' : ''}
                             viewBox='0 0 320 512'
@@ -162,6 +174,25 @@ const Question = ({ question, answer }) => {
             <div className={`${isActive ? 'answer active' : 'answer'} text-white mb-2 pb-4`} style={{ height: '-webkit-fill-available' }}>
                 <hr />
                 <div dangerouslySetInnerHTML={{ __html: answer }} ></div>
+            </div>
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

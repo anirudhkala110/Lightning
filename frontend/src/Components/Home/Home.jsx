@@ -220,7 +220,7 @@ const Home = () => {
                 <br />
                 <div className=''>
                     <div className='container'>
-                        <div className='row'>
+                        <div className='row' style={{ background: "rgba(0, 0, 0, 25%)" }}>
                             <div className='p-3'>
                                 <center className='fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>
                                     <h1>
@@ -322,7 +322,7 @@ const Home = () => {
                     </div>
                 </div>
                 <br />
-                <div className='container pt-4' >
+                <div className='container pt-4' style={{ background: "rgba(0, 0, 0, 55%)" }}>
                     <section id="faqs">
                         <center className='fs-3 fw-bold'>
                             ASKED QUESTIONS
@@ -330,7 +330,7 @@ const Home = () => {
                         <FAQ />
                     </section>
                 </div>
-                <center className='fs-3 fw-semibold'>Have a Question ? Ask Here !</center>
+
                 {/* <div className='row'>
                     <div className="container pt-3 col-lg-6 col-xl-6 my-2 py-2 col-sm-12 pb-1">
                         <form onSubmit={(e) => handleSubmit(e)} ref={form} >
@@ -365,8 +365,11 @@ const Home = () => {
                         </form>
                     </div>
                 </div> */}
-                <div className='row p-2 border border-dark'>
-                    <Query value={type} />
+                <div className='container-fluid w-100 py-4 border border-dark'>
+                    <center className='fs-3 fw-semibold mb-3' >Have a Question ? Ask Here !</center>
+                    <div className='container d-flex justify-content-center' style={{ background: "rgba(0, 0, 0, 55%)" }}>
+                        <Query value={type} />
+                    </div>
                 </div>
                 {/* <hr /> */}
                 {/* <div className='container'>
