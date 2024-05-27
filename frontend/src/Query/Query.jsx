@@ -98,7 +98,9 @@ const Query = (type) => {
         setTime(currentTime)
         setId(Date.now())
         e.preventDefault();
-        if (name === '' || name.length < 3 || !name || mobile === '' || !mobile || email === '' || !email || query === '' || !query) {
+        if (e.target.value.length != 10)
+            setMobile(e.target.value)
+        else if (name === '' || name.length < 3 || !name || mobile === '' || !mobile || email === '' || !email || query === '' || !query) {
             alert("Please Enter All the Fields")
         }
         else if (!validateEmail(email)) {
