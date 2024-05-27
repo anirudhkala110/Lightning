@@ -98,7 +98,11 @@ const Query = (type) => {
         setTime(currentTime)
         setId(Date.now())
         e.preventDefault();
-        if (name === '' || name.length < 3 || !name || mobile === '' || !mobile || email === '' || !email || query === '' || !query) {
+        if (mobile.length != 10)
+            alert('Mobile Number should be equal to 10 digits...')
+        else if (name.length < 3)
+            alert("Your Name should be minimum of length 3 or use salutation with your name...")
+        else if (name === '' || name.length < 3 || !name || mobile === '' || !mobile || email === '' || !email || query === '' || !query) {
             alert("Please Enter All the Fields")
         }
         else if (!validateEmail(email)) {
@@ -168,7 +172,7 @@ const Query = (type) => {
                     </div>
                     <div className="form-group text-light fw-bolder">
                         <label className="fw-bold" htmlFor="formGroupEmail">Email Address<sup className='text-danger'>*</sup></label>
-                        <input type="email" className="form-control   text-light rounded-3 border-0  bg-dark" id="formGroupEmail" placeholder="Email Address" name="user_email" value={email} onChange={e => setEmail(e.target.value)} required />
+                        <input type="email" className="form-control text-light rounded-3 border-0  bg-dark" id="formGroupEmail" placeholder="Email Address" name="user_email" value={email} onChange={e => setEmail(e.target.value)} required />
                     </div>
                     <div className="form-group text-light fw-bolder mb-2">
                         <label className="fw-bold" htmlFor="formGroupQuery">Messege<sup className='text-danger'>*</sup></label>
