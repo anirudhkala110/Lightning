@@ -18,18 +18,18 @@ const Query = (type) => {
     const navigate = useNavigate();
     const form = useRef();
     const validateEmail = (email) => {
-        console.log(email);
+        // console.log(email);
 
         // Split the email by '@'
         const atIndex = email.indexOf('@');
-        console.log(atIndex)
+        // console.log(atIndex)
         if (atIndex === -1) {
             return false; // No '@' character
         }
 
         const localPart = email.substring(0, atIndex);
         const domainPart = email.substring(atIndex + 1);
-        console.log(localPart, domainPart)
+        // console.log(localPart, domainPart)
 
         // Check if local part and domain part are non-empty
         if (!localPart || !domainPart) {
@@ -38,14 +38,14 @@ const Query = (type) => {
 
         // Split the domain part by '.'
         const dotIndex = domainPart.lastIndexOf('.');
-        console.log(dotIndex)
+        // console.log(dotIndex)
         if (dotIndex === -1) {
             return false; // No '.' character
         }
 
         const domain = domainPart.substring(0, dotIndex);
         const topLevelDomain = domainPart.substring(dotIndex + 1);
-        console.log(domain, topLevelDomain)
+        // console.log(domain, topLevelDomain)
 
         // Check if domain and top-level domain are non-empty
         if (!domain || !topLevelDomain) {
@@ -53,21 +53,21 @@ const Query = (type) => {
         }
 
         // Check if top-level domain has at least two characters
-        console.log(topLevelDomain.length)
+        // console.log(topLevelDomain.length)
         if (topLevelDomain.length < 2) {
             return false;
         }
 
         // Check for invalid characters in local part
         const localPartValid = /^[a-zA-Z0-9._%+-]+$/.test(localPart);
-        console.log(localPartValid)
+        // console.log(localPartValid)
         if (!localPartValid) {
             return false;
         }
 
         // Check for invalid characters in domain
         const domainValid = /^[a-zA-Z0-9.-]+$/.test(domain);
-        console.log(domainValid)
+        // console.log(domainValid)
         if (!domainValid) {
             return false;
         }
@@ -106,7 +106,7 @@ const Query = (type) => {
             alert("Please Enter All the Fields")
         }
         else if (!validateEmail(email)) {
-            console.log('Validated Email...', validateEmail(email))
+            // console.log('Validated Email...', validateEmail(email))
             alert("Enter the Email Correctly")
         }
         else {
@@ -125,6 +125,7 @@ const Query = (type) => {
             //         }
             //     })
             //     .catch(err => console.log(err))
+            // console.log(email)
             emailjs.sendForm('service_lp4818p', 'template_cv9aadl', form.current, 'KIziC7gLpfq9dXvv7')
                 .then((result) => {
                     alert("Your  message ✉ Has been sent.\nNow you are redirecting to the Homepage. . .")
@@ -168,7 +169,7 @@ const Query = (type) => {
                     </div>
                     <div className="form-group text-light fw-bolder">
                         <label className="fw-bold" htmlFor="formGroupMobile">Mobile Number<sup className='text-danger'>*</sup></label>
-                        <input type="number" className="form-control   text-light rounded-3 border-0  bg-dark" id="formGroupMobile" placeholder="Mobile Number" name="mobile" value={mobile} onChange={handleMobile} required />
+                        <input type="number" className="form-control   text-light rounded-3 border-0  bg-dark" id="formGroupMobile" placeholder="Mobile Number" name="mobile" value={mobile} onChange={e => setMobile(e.target.value)} required />
                     </div>
                     <div className="form-group text-light fw-bolder">
                         <label className="fw-bold" htmlFor="formGroupEmail">Email Address<sup className='text-danger'>*</sup></label>
