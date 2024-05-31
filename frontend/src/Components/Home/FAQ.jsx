@@ -139,62 +139,58 @@ const Question = ({ question, answer }) => {
         setActive(!isActive);
     };
     const [like, setLike] = useState(false)
-    const [dislike, setDisike] = useState(false)
+    const [dislike, setDislike] = useState(false)
+    const [modalShow, setModalShow] = useState(false);
+    useEffect(() => {
+        if (modalShow) {
+            const interval = setInterval(() => {
+                setModalShow(false);
+            }, 1500);
+
+            // Clear the interval when the component unmounts or modalShow changes
+            return () => clearInterval(interval);
+        }
+    }, [modalShow]);
     const handleLike = () => {
-        setLike(!like)
-        setDisike(false)
-            alert('Thanks for your feedback. 🙂')
-    }
+        setLike(!like);
+        setDislike(false);
+        setModalShow(true);
+    };
+
     const handleDislike = () => {
-        setDisike(!dislike)
-        setLike(false)
-            alert('Thanks for your feedback. 😉')
-    }
+        setDislike(!dislike);
+        setLike(false);
+        setModalShow(true);
+    };
     return (
-        <div className='question-wrapper' style={{ cursor: 'pointer' }}>
-            <div className='question' >
-                <h5 className='text-white quesHover'>{question}</h5>
-                <div className='d-flex align-items-center'>
-                    {!like && <i class="bi bi-hand-thumbs-up me-1 text-white" onClick={handleLike} type="button" data-toggle="modal" data-target="#exampleModalCenter"></i>}
-                    {like && <i class="bi bi-hand-thumbs-up-fill me-1 text-white" onClick={handleLike} type="button" data-toggle="modal" data-target="#exampleModalCenter"></i>}
-                    {!dislike && <i class="bi bi-hand-thumbs-down me-1 text-white" onClick={handleDislike} type="button" data-toggle="modal" data-target="#exampleModalCenter"></i>}
-                    {dislike && <i class="bi bi-hand-thumbs-down-fill me-1 text-white" onClick={handleDislike} type="button" data-toggle="modal" data-target="#exampleModalCenter"></i>}
-                    <button onClick={handleClick} >
-                        <svg
-                            className={isActive ? 'active' : ''}
-                            viewBox='0 0 320 512'
-                            width='100'
-                            title='angle-down'
-                        >
-                            <path d='M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z' />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div className={`${isActive ? 'answer active' : 'answer'} text-white mb-2 pb-4`} style={{ height: '-webkit-fill-available' }}>
-                <hr />
-                <div dangerouslySetInnerHTML={{ __html: answer }} ></div>
-            </div>
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
+        <>
+            <div className='question-wrapper' style={{ cursor: 'pointer' }}>
+                <div className='question'>
+                    <h5 className='text-white quesHover'>{question}</h5>
+                    <div className='d-flex align-items-center'>
+                        <i className={`bi ${like ? 'bi-hand-thumbs-up-fill' : 'bi-hand-thumbs-up'} me-1 text-white`} onClick={(handleLike)}></i>
+                        <i className={`bi ${dislike ? 'bi-hand-thumbs-down-fill' : 'bi-hand-thumbs-down'} me-1 text-white`} onClick={(handleDislike)}></i>
+                        <button onClick={handleClick}>
+                            <svg className={isActive ? 'active' : ''} viewBox='0 0 320 512' width='100' title='angle-down'>
+                                <path d='M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z' />
+                            </svg>
+                        </button>
                     </div>
                 </div>
+                <div className={`${isActive ? 'answer active' : 'answer'} text-white mb-2 pb-4`} style={{ height: '-webkit-fill-available' }}>
+                    <hr />
+                    <div dangerouslySetInnerHTML={{ __html: answer }} ></div>
+                </div>
+
             </div>
-        </div>
+            {
+                modalShow &&
+                <div className='modalMade border rounded-3 container-fluid'>
+                    <strong>{like && 'Thanks for your feedback 😍!' }{!like && 'Thanks for your feedback 🙂!'}</strong>
+                    {/* <strong>{dislike && !like && 'Thanks for your feedback 😰!' }{!dislike && 'Thanks for your feedback 🙂!'}</strong> */}
+                </div>
+            }
+        </>
     );
 };
 
