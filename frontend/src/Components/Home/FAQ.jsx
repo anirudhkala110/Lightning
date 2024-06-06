@@ -4,6 +4,7 @@ import 'bootstrap/js/dist/modal'
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const questions = [
     {
@@ -93,7 +94,7 @@ const FAQ = () => {
         );
         setSearchResults(results);
     }, [searchTerm]);
-
+const navigate = useNavigate()
     const handleSubmit = () => {
         // Your API endpoint for saving the content
         const saveEndpoint = 'https://localhost:5090/api/saveUpdate';
