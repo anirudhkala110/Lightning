@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './FAQ.css'
 import 'bootstrap/js/dist/modal'
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
+import axios from 'axios';
 
 const questions = [
     {
@@ -73,12 +76,17 @@ const questions = [
 
 const FAQ = () => {
     const [searchTerm, setSearchTerm] = useState('');
+    const [isAdmin, setAdmin] = useState(false)
     const [searchResults, setSearchResults] = useState([]);
     const [type, setType] = useState('general')
+    const [editorValue, setEditorValue] = useState('');
     const handleSearchChange = (e) => {
         setSearchTerm(e.target.value);
     };
+    const currentDate = new Date().toLocaleDateString();
+    const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
+    const [qerry, setQuerry] = useState()
     useEffect(() => {
         const results = questions.filter((item) =>
             item.question.toLowerCase().includes(searchTerm.toLowerCase())
@@ -86,10 +94,54 @@ const FAQ = () => {
         setSearchResults(results);
     }, [searchTerm]);
 
+    const handleSubmit = () => {
+        // Your API endpoint for saving the content
+        const saveEndpoint = 'https://localhost:5090/api/saveUpdate';
+
+        if (qerry === '' || !qerry) {
+            alert("Enter the Querry First...");
+            return
+        } else {
+            axios.post(saveEndpoint, {
+                topic: qerry,
+                content: editorValue,
+                date: currentDate,
+                time: currentTime
+            })
+                .then(res => {
+                    alert("Post Uploaded...");
+                    navigate('/');
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+        }
+    };
+    const [addQues, setAddQues] = useState(false)
     return (
         <div className='cntner'>
             <h2 className='hding text-primary py-2' style={{ fontSize: '55px', borderBottom: '1px solid ' }}>Frequently asked <strong className='FAQes'>Questions</strong></h2>
-            {/* <Searchbar onSearchChange={handleSearchChange} /> */}
+            {isAdmin && <div className='w-100 d-flex align-items-center justify-content-end' >{addQues ? <button className='btn btn-danger mb-2' onClick={e => setAddQues(!addQues)}>Close <i className='bi bi-x-lg'></i></button> : <button className='btn btn-success mb-2' onClick={e => setAddQues(!addQues)}>Add Query<i className='bi bi-plus-lg'></i></button>}</div>}
+            {addQues &&
+                <form className='my-3 border p-2'>
+                    <center className='fs-2 fw-bold'>Add Querry</center>
+                    <hr style={{ backgroundImage: "linear-gradient(to left,black, white,white,black)", height: "2px" }} />
+                    <div className='text-start mb-2'>
+                        <label className=''>Question</label>
+                        <input className='form-control' placeholder='Enter the question or querry...' type='text' onChange={e => setQuerry(e.target.value)} />
+                    </div>
+                    <div className='text-start mb-2'>
+                        <label className=''>Type</label>
+                        <input className='form-control' placeholder='Enter type of querry same as general or product or usage' type='text' onChange={e => setType(e.target.value)} />
+                    </div>
+                    <div className='text-start mb-2'>
+                        <label className=''>Answer or Reply</label>
+                        <ReactQuill className='bg-white text-dark' value={editorValue} onChange={setEditorValue} style={{ height: '350px', overflow: 'auto' }} />
+                        {/* <textarea cols={100} rows={10} style={{ resize: 'none' }} className='form-control' placeholder='Enter the question or querry...' type='text' onChange={e => setQuerry(e.target.value)} /> */}
+                    </div>
+                    <button className='btn btn-primary w-100 my-1 shadow' onClick={handleSubmit}>Upload</button>
+                </form>}
+            <Searchbar onSearchChange={handleSearchChange} />
             <center id='typeActive'>
                 <button className={`btn mx-2 typeBtn ${type === 'general' ? 'btn-primary' : ''}`} onClick={e => setType('general')}>General</button>
                 <button className={`btn mx-2 typeBtn ${type === 'product' ? 'btn-primary' : ''}`} onClick={e => setType('product')}>Product</button>
@@ -117,12 +169,12 @@ const Searchbar = ({ onSearchChange }) => {
     };
 
     return (
-        <form>
-            <svg viewBox='0 0 512 512' width='100' title='search'>
+        <form className="mb-5">
+            {/* <svg viewBox='0 0 512 512' width='100' title='search'>
                 <path d='M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z' />
-            </svg>
+            </svg> */}
             <input
-                className='searchbar'
+                className='searchbar text-black'
                 type='text'
                 placeholder='Describe your issue'
                 onChange={handleChange}
@@ -186,7 +238,7 @@ const Question = ({ question, answer }) => {
             {
                 modalShow &&
                 <div className='modalMade border rounded-3 container-fluid'>
-                    <strong>{like && 'Thanks for your feedback 😍!' }{!like && 'Thanks for your feedback 🙂!'}</strong>
+                    <strong>{like && 'Thanks for your feedback 😍!'}{!like && 'Thanks for your feedback 🙂!'}</strong>
                     {/* <strong>{dislike && !like && 'Thanks for your feedback 😰!' }{!dislike && 'Thanks for your feedback 🙂!'}</strong> */}
                 </div>
             }

@@ -38,7 +38,7 @@ const Login = () => {
             <input type="password" id="typePasswordX" class="rounded-0 form-control form-control-lg" onChange={e => setPassword(e.target.value)} />
           </div>
           <button class="btn btn-success btn-lg px-5 w-100" type="submit" onClick={HandleLogin}>Login</button>
-          <center className='mt-2'><p class="mb-0">Don't have an account? <a href="/Registerpage" class="fw-bold">Sign Up</a></p></center>
+          <center className='mt-2'><p class="mb-0">Don't have an account? <a href="/register" class="fw-bold">Sign Up</a></p></center>
         </form>
       </div>
     </div>

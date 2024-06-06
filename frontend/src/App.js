@@ -29,6 +29,7 @@ import AppControl from './Components/Home/AppControl';
 import VoiceControl from './Components/Home/VoiceControl';
 import Schedule from './Components/Home/Schedule';
 import Analytics from './Components/Home/Analytics';
+import UpdateImages from './Images/UpdateImages';
 
 export const userContext = createContext()
 
@@ -49,7 +50,7 @@ function App() {
   }, []);
   return (
     <div className='bg-black'>
-      <div className={`${time % 3 == 0 ? 'imageSliderBacki1' : time % 3 == 1 ? 'imageSliderBacki3' : time % 3 == 2 ? 'imageSliderBacki2':'bg-black'}`} style={{ minWidth: "400px" }}>
+      <div className={`${time % 3 == 0 ? 'imageSliderBacki1' : time % 3 == 1 ? 'imageSliderBacki3' : time % 3 == 2 ? 'imageSliderBacki2' : 'bg-black'}`} style={{ minWidth: "400px" }}>
         <userContext.Provider value={admin}>
           <Router>
             <div className='navbar-fixed-top navbarBacki pb-0' style={{ maxHeight: '50px', borderBottom: '0px solid white', zIndex: '100' }}>
@@ -75,6 +76,7 @@ function App() {
                   {/* <Route exact path='/dashboard' element={<DashBoard />} /> */}
                   {/* <Route exact path='/detail/:id/:machineName/:location/:uploadedBy' element={<Details />} /> */}
                   <Route exact path='/info' element={<DetailsOfHomePageDiv />} />
+                  <Route exact path='/updateImageForSlider' element={<UpdateImages />} />
                   <Route exact path='/What-is-Matter-protocol?' element={<MatterProtocol />} />
                   <Route exact path='/Smart-Lights-and-Switches-with-use-of-Matter Protocol' element={<SmartLightsandSwitches />} />
                   <Route exact path='/Enhancing-Smart-Security-with-Matter-Protocol' element={<Security />} />

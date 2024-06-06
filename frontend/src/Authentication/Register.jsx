@@ -105,19 +105,19 @@ function Register() {
       .catch(err => console.log(err))
   }
   return (
-    <MDBContainer fluid className='min-vh-100'>
+    <MDBContainer fluid className='min-vh-100' style={{background:'transparent !imoprtant'}}>
 
-      <MDBCard className='text-black m-5' style={{ borderRadius: '' }}>
+      <MDBCard className='m-5' style={{ borderRadius: '' }}>
         <MDBCardBody>
-          <center><p classNAme="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4 " style={{ fontSize: '40px', fontWeight: '500' }}>Welcome to <strong style={{ color: '#ffc107' }}>RoboShop</strong></p></center>
+          <center><p classNAme="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4 " style={{ fontSize: '40px', fontWeight: '500' }}>Welcome to <strong style={{ color: 'blue' }}>Slogfy</strong></p></center>
           <MDBRow>
-            <MDBCol md='10' lg='6' className='d-flex align-items-center'>
+            <MDBCol md='6' lg='6' className='border d-flex align-items-center'>
               <MDBCardImage src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp' fluid />
             </MDBCol>
 
             {
               verified ?
-                <MDBCol md='10' lg='6' className='order-2 order-lg-1 d-flex flex-column align-items-center'>
+                <MDBCol md='6' lg='6' className='order-2 order-lg-1 d-flex flex-column align-items-center'>
 
 
                   <div className="input-group ">
@@ -175,28 +175,35 @@ function Register() {
                     <span>Already have an account? <a href="/login" className='text-decoration-none'>Login here</a></span>
                     <a href="/login"><button className='btn btn-info w-100'>Login</button></a>
                   </div>
-                </MDBCol> : <div>
-                  <hr />
-                  <center className='fs-4  fw-semibold'>Enter your email for Registration and OTP validation</center>
-                  <hr />
-                  <form>
-                    <div className='input-group mb-2'>
-                      <label>Enter your valid Email</label>
-                      <input className='w-100 form-control' disabled={disableEmail} onChange={e => setEmail(e.target.value)} required />
-                    </div>
-                    {otpSent && <div className='btn btn-success' onClick={handleSendOTP}>Send OTP</div>}
-                    {!otpSent && <>
+                </MDBCol> :
+                <MDBCol md='6' lg='6' className='order-2 border order-lg-1 d-flex flex-column align-items-center'>
+                  <div>
+                    <br />
+                    {!disableEmail && <center className='fs-5  fw-semibold'>Enter Email for OTP validation</center>}
+                    {disableEmail && <center className='fs-5  fw-semibold text-success'> <strong className='fs-3 w-100 py-1 mb-1 btn fw-bold btn-success'>OTP validation</strong> <br /> OTP is sent on your registered gmail... </center>}
+                    <br />
+                    <hr />
+                    <br />
+                    <form>
                       <div className='input-group mb-2'>
-                        <label>Enter OTP</label>
-                        <input className='w-100 form-control' onChange={e => setOTP(e.target.target.value)} />
+                        <label>Enter your valid Email</label>
+                        <input className='w-100 form-control' disabled={disableEmail} onChange={e => setEmail(e.target.value)} required />
                       </div>
-                      <button className='btn btn-success' onClick={handleVerifyOTP}>Verify OTP</button></>}
-                    <Link to='/login' class="text-decoration-none ms-2 btn btn-primary">Login Here!</Link>
+                      {otpSent && <div className='btn btn-success mb-1 w-100' onClick={handleSendOTP}>Send OTP</div>}
+                      <p className='mt-2'>Already have an account ? Login here <i className='bi bi-arrow-down'></i></p>
+                      <Link to='/login' class="text-decoration-none btn btn-primary w-100"><i className='bi bi-arrow-right me-3'></i>Login Here!<i className='bi bi-arrow-left ms-3'></i></Link>
+                      {!otpSent && <>
+                        <div className='input-group mb-2'>
+                          <label>Enter OTP</label>
+                          <input className='w-100 form-control' onChange={e => setOTP(e.target.target.value)} />
+                        </div>
+                        <button className='btn btn-success ' onClick={handleVerifyOTP}>Verify OTP</button></>}
 
-                  </form>
+                    </form>
 
 
-                </div>
+                  </div>
+                </MDBCol>
             }
           </MDBRow>
         </MDBCardBody>

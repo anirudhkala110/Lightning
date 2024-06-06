@@ -86,11 +86,13 @@ const About = () => {
             }
 
           </div>
-          {admin && <button className='btn-primary px-1 py-1 mt-3 w-100' onClick={e => setEdit(!edit)}>{edit ? <b class="bi bi-x-lg"> Close</b> : <b class="bi bi-plus-lg"> Add New Memeber</b>} </button>}
+          {admin && <div className='container py-1 my-2 w-100 d-flex justify-content-end'>
+            <button className='btn-primary btn' onClick={e => setEdit(!edit)}>{edit ? <div class=""> Close <i className='bi bi-x-lg ms-1'></i> </div> : <div>Add New Memeber<b class="bi bi-plus-lg ms-1"> </b></div>} </button>
+          </div>}
           {edit && <center>
             <div>
-              <form className='form border p-2 border-dark' style={{ maxWidth: '550px', textAlign: 'left' }}>
-                <center className='text-primary fs-3 fw-semibold'>Add Memeber</center>
+              <form className='form border p-2 border-dark' style={{ maxWidth: '550px', textAlign: 'left', background: '#2d6a9f' }}>
+                <center className='text-black fs-3 fw-semibold'>Add Memeber</center>
                 <div className='form-group'>
                   <label>Name</label>
                   <input className='form-control' placeholder='Enter Member Name' />

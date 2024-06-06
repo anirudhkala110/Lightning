@@ -27,6 +27,7 @@ const Home = () => {
     const navigate = useNavigate();
     const type = 'FAQ'
     const form = useRef();
+    const [isAdmin, setAdmin] = useState(false)
     const [name, setName] = useState()
     const [mobile, setMobile] = useState()
     const [email, setEmail] = useState()
@@ -110,7 +111,7 @@ const Home = () => {
                                 <div className='fs-2 mt-3' style={{ minHeight: '220px' }}>
                                     <span style={{ fontSize: "48px" }}>Welcome to </span>
                                     <br />
-                                    <strong className='fw-semibold  text-primary px-0' style={{ fontSize: "2em", letterSpacing: "0px", borderTop: '0px solid white' }}><Typewriter text="Slogfy... " infinite={true} speed={500} /><Typewriter text="| " infinite={true} speed={280} /></strong>
+                                    <strong className='fw-semibold  text-primary px-0' style={{ fontSize: "2em", letterSpacing: "0px", borderTop: '0px solid white' }}><Typewriter text="Slogify... " infinite={true} speed={500} /><Typewriter text="| " infinite={true} speed={280} /></strong>
                                 </div>
                                 <h1>India's &nbsp;&nbsp;# 1<sup>st</sup> Brand</h1>
                                 <h1>Home Automation Based on Matter Protocal</h1>
@@ -207,7 +208,9 @@ const Home = () => {
                     </div>
                 </div> */}
                 {/* <div className='sliderImages bg-dark justify-content-center align-items-center d-flex' style={{ minHeight: "350px" }}><ImgSlider /></div> */}
+                <hr style={{ backgroundImage: "linear-gradient(to left, black,white,white,black)", height: "3px" }} />
                 <div className='imageSliderBack'>
+                    {isAdmin && <div className='my-2 container w-100 d-flex justify-content-end' ><button className='btn btn-success' onClick={e => handleRoute('updateImageForSlider')} >Edit Slider Images</button> </div>}
                     <div className='sliderImages  w-100'
 
                         data-aos="zoom-in" data-aos-delay='' data-aos-anchor-easing='ease-in-out' data-aos-duration='1000' data-aos-mirror='true'

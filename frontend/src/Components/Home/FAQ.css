@@ -83,13 +83,13 @@ body {
     padding: 1rem;
     padding-left: 4rem;
     width: 100%;
-    box-shadow: 0px 5px 13px 0px #DEE4F1;
+    box-shadow: 0px 3px 13px 0px #dee4f17c;
     border-radius: 0.8rem;
 }
 
 .searchbar:focus {
     outline: none;
-    box-shadow: 0 0 0 1.5px #DEE4F1, 0px 5px 13px 0px #DEE4F1;
+    box-shadow: 0 0 0 1.5px #dee4f197, 0px 4px 13px 0px #0051ff94;
 }
 
 .faq {
