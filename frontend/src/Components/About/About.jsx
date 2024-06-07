@@ -61,7 +61,7 @@ const About = () => {
       <br />
       <br />
       <div>
-        <center className='btn-primary py-2'><i class="bi bi-c-circle"></i> Slogfy All Rights Reserved, Since 2021</center>
+        <center className='btn w-100 text-white py-2' style={{background:'linear-gradient(0deg, #275c8b, #3175b0)'}}><i class="bi bi-c-circle"></i> Slogfy All Rights Reserved, Since 2021</center>
         <br />
         <div className='container'>
           <center className='fs-2'>Our Team</center>

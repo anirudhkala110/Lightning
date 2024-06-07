@@ -32,19 +32,26 @@
 }
 
 .imageShadow {
-    box-shadow: 0px 4px 4px 1px rgba(255, 255, 255, 0.698) !important;
+    box-shadow: 0px 0px 15px 5px rgba(173, 168, 168, 0.619) !important;
     z-index: 50;
-    border-radius: 15px;
+    border-radius: 1px;
+    padding: 3px 5px ;
 }
 
 .footerBacki{
-    background-image: url(../../Images/divBack5.png);
+    /* background-image: url(../../Images/divBack5.png); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .navbarBacki,  .offcanvasBacki{
-    background-image: url(../../Images/divBack1.png);
+    /* background-image: url(../../Images/divBack1.png); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bgBacki{
+    background-image: url(../../Images/backi5.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,0 +1,21 @@
+/* Input Hover Effect */
+.inputHover {
+    border:1px solid;
+    border-color: transparent;
+    cursor: pointer !;
+    transition: 0.2s ease-in-out;
+}
+.inputHover:hover {
+    border-color:rgb(0, 174, 255);
+    cursor: pointer !important;
+}
+input:focus{
+    border:1px solid rgb(0, 174, 255) !important;
+    background: #78a2f5 !important;
+    color: black;
+}
+textarea:focus{
+    border:1px solid rgb(0, 174, 255) !important;
+    background: #78a2f5 !important;
+    color: black;
+}

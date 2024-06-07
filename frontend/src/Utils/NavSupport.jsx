@@ -8,15 +8,15 @@ const NavSupport = () => {
         window.open(`${number}`);
     };
     return (
-        <div className='text-white container px-1 d-flex align-items-center' >
+        <div className='text-white container px-1 d-flex align-items-center mt-5' style={{zIndex:'50'}} >
             <div className='navsupport ps-1 fs-5' >
                 SmartSync
             </div>
             <div className='w-100 justify-content-end show1000NavSupport' >
                 {/* <div className='w-100 justify-content-end show1000NavSupport' > */}
-                <NavLink to='https://wa.me/+918005183363' className='text-white rounded-0 py-1 px-3 fw-bold' target='_blank' >
+                {/* <NavLink to='https://wa.me/+918005183363' className='text-white rounded-0 py-1 px-3 fw-bold' target='_blank' >
                     <i className='bi bi-whatsapp'></i>
-                </NavLink>
+                </NavLink> */}
                 {/* <div className="dropdown me-1">
                     <button className="btn btnHover navsupport fw-bold dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
                         {/* <button className="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"> 

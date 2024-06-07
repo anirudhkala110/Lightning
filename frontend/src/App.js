@@ -30,6 +30,7 @@ import VoiceControl from './Components/Home/VoiceControl';
 import Schedule from './Components/Home/Schedule';
 import Analytics from './Components/Home/Analytics';
 import UpdateImages from './Images/UpdateImages';
+import Nav2 from './Utils/Nav2';
 
 export const userContext = createContext()
 
@@ -50,17 +51,18 @@ function App() {
   }, []);
   return (
     <div className='bg-black'>
-      <div className={`${time % 3 == 0 ? 'imageSliderBacki1' : time % 3 == 1 ? 'imageSliderBacki3' : time % 3 == 2 ? 'imageSliderBacki2' : 'bg-black'}`} style={{ minWidth: "400px" }}>
+      {/* <div className={`${time % 3 == 0 ? 'imageSliderBacki1' : time % 3 == 1 ? 'imageSliderBacki3' : time % 3 == 2 ? 'imageSliderBacki2' : 'bg-black'}`} style={{ minWidth: "400px" }}> */}
+      <div className='bgBacki' style={{ minWidth: "400px" }}>
         <userContext.Provider value={admin}>
           <Router>
-            <div className='navbar-fixed-top navbarBacki pb-0' style={{ maxHeight: '50px', borderBottom: '0px solid white', zIndex: '100' }}>
+            <div className='navbar-fixed-top bg-black d-flex align-items-center' style={{ minHeight: '50px', borderBottom: '0px solid white', zIndex: '100' }}>
               <Navbar />
             </div>
-            <div className='text-primary navSupport navbar-fixed-top py-3 mt-5 pb-2' style={{ zIndex: '50', borderBottom: '0px solid white', background: '#0a0c3fe8' }}>
+            <div className='text-primary navSupport pt-3 mt-5 pb-2' style={{ zIndex: '50', borderBottom: '0px solid white', background: '#0a0c3fe8' }}>
               <NavSupport />
             </div>
-            <div className='pt-2 mt-5 pt-5 text-white' style={{ minWidth: "400px" }}>
-              <div className='mt-3'>
+            <div className='text-white' style={{ minWidth: "400px" }}>
+              <div className='container' style={{ background: 'rgb(0 0 0 / 67%) ',zIndex:'2' }}>
                 <Routes>
                   <Route exact path='/' element={<Home />} />
                   <Route exact path='/home' element={<Home />} />
@@ -92,7 +94,7 @@ function App() {
                 </Routes>
               </div>
             </div>
-            <div className='rounded-0 footerBacki px-2 d-flex align-items-center' style={{ minHeight: '50px' }}>
+            <div className='rounded-0 footerBacki d-flex align-items-center' style={{ minHeight: '50px' }}>
               {/* <div className='navbar-inverse rounded-0' style={{ minHeight: '50px' }}> */}
               {/* <div className='navbar-fixed-bottom navbar-inverse'> */}
               <Footer />

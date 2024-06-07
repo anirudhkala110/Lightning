@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios'
 import emailjs from '@emailjs/browser';
 import { Helmet } from 'react-helmet';
+import './Query.css'
 
 axios.defaults.withCredentials = true
 const Query = (type) => {
@@ -162,24 +163,24 @@ const Query = (type) => {
                 <meta name='keywords' content='Contact Us' />
             </Helmet>
             <div className="container text-white pt-3 col-lg-6 col-xl-6 my-2 py-2 col-sm-12 pb-1">
-                <form onSubmit={(e) => handleSubmit(e)} ref={form} >
-                    <div className="form-group text-light fw-bolder">
-                        <label className="fw-bold" htmlFor="formGroupName">Your Complete Name <sup className='text-danger'>*</sup></label>
-                        <input type="text" className="form-control   text-light rounded-3 border-0  bg-dark" id="formGroupName" placeholder="Your Valid Name with surname" name="user_name" value={name} onChange={e => setName(e.target.value)} required />
+                <form onSubmit={(e) => handleSubmit(e)} ref={form} className='px-4  py-2 border rounded'>
+                    <div className="form-group fw-bolder">
+                        <label className="fw-bold text-light" htmlFor="formGroupName">Your Complete Name <sup className='text-danger'>*</sup></label>
+                        <input type="text" className="inputHover w-100 py-2 px-2 rounded-3 bg-dark" id="formGroupName" placeholder="Your Valid Name with surname" name="user_name" value={name} onChange={e => setName(e.target.value)} required />
                     </div>
-                    <div className="form-group text-light fw-bolder">
-                        <label className="fw-bold" htmlFor="formGroupMobile">Mobile Number<sup className='text-danger'>*</sup></label>
-                        <input type="number" className="form-control   text-light rounded-3 border-0  bg-dark" id="formGroupMobile" placeholder="Mobile Number" name="mobile" value={mobile} onChange={e => setMobile(e.target.value)} required />
+                    <div className="form-group fw-bolder">
+                        <label className="fw-bold text-light" htmlFor="formGroupMobile">Mobile Number<sup className='text-danger'>*</sup></label>
+                        <input type="number" className="inputHover w-100 py-2 px-2 rounded-3 bg-dark" id="formGroupMobile" placeholder="Mobile Number" name="mobile" value={mobile} onChange={e => setMobile(e.target.value)} required />
                     </div>
-                    <div className="form-group text-light fw-bolder">
-                        <label className="fw-bold" htmlFor="formGroupEmail">Email Address<sup className='text-danger'>*</sup></label>
-                        <input type="email" className="form-control text-light rounded-3 border-0  bg-dark" id="formGroupEmail" placeholder="Email Address" name="user_email" value={email} onChange={e => setEmail(e.target.value)} required />
+                    <div className="form-group fw-bolder">
+                        <label className="fw-bold text-light" htmlFor="formGroupEmail">Email Address<sup className='text-danger'>*</sup></label>
+                        <input type="email" className="inputHover w-100 py-2 px-2 rounded-3 bg-dark" id="formGroupEmail" placeholder="Email Address" name="user_email" value={email} onChange={e => setEmail(e.target.value)} required />
                     </div>
-                    <div className="form-group text-light fw-bolder mb-2">
-                        <label className="fw-bold" htmlFor="formGroupQuery">Messege<sup className='text-danger'>*</sup></label>
+                    <div className="form-group  fw-bolder mb-2">
+                        <label className="fw-bold text-light" htmlFor="formGroupQuery">Messege<sup className='text-danger'>*</sup></label>
                         <textarea
                             type="text"
-                            className="form-control   text-light rounded-3 border-0  bg-dark"
+                            className="inputHover w-100 py-2 px-2 rounded-3  bg-dark"
                             cols={30}
                             rows={5}
                             style={{ resize: "none" }}
@@ -190,7 +191,7 @@ const Query = (type) => {
                         />
                         <textarea name="message" value={finalquery} style={{ display: "none" }} />
                     </div>
-                    <button type='submit' className="btn border-0 rounded-0 mb-2 fw-bolder send-mail btn-primary w-100" value="Send">Send Mail</button>
+                    <button type='submit' className="btn  rounded-0 mb-2 fw-bolder send-mail btn-outline-primary w-100" value="Send" style={{ border: '1px solid' }}>Send Mail</button>
                     {/* <div className="btn btn-success border-0 rounded-0 ms-2 mb-2 call-btn" id="call" onClick={() => handleCall(8005183363)}>Make a Call</div> */}
                     {/* <div className="btn btn-warning border-0 w-100 rounded-0 fw-bolder mb-2 call-btn" id="call" onClick={() => handleRoute('home')}>Home</div> */}
                 </form>

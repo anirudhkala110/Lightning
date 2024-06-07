@@ -33,21 +33,21 @@ const colors = [
     { img: fv, info: "Complete Home Automation with Slogfy" },
     { img: CHA, info: "Home Automation Using  Smart Phone" },
     { img: SSL, info: "Smart Lights and Switches " },
-    { img: six, info: 'Smart Display Control' },
-    { img: SLS, info: 'Smart Light controlled by one click' },
+    // { img: six, info: 'Smart Display Control' },
+    // { img: SLS, info: 'Smart Light controlled by one click' },
     { img: svn, info: 'Control AC, Fans from Anywhere' },
     { img: eth, info: 'Get the Latest Update of Security' },
     { img: tlv, info: 'Control Your Home with Voice' },
     { img: trln, info: 'Smart LED Lights and Displays Systems' },
     { img: frtn, info: 'System for automate washing Machines' },
-    { img: sxtn, info: 'Automate Home From your motion' },
+    // { img: sxtn, info: 'Automate Home From your motion' },
     { img: svtn, info: 'Get Video Updates on Smart Devices' },
-    { img: SSAE, info: 'Smart Emergency SOS Monitoring' },
-    { img: SSE, info: 'Smart Security  Monitoring' },
+    // { img: SSAE, info: 'Smart Emergency SOS Monitoring' },
+    // { img: SSE, info: 'Smart Security  Monitoring' },
     { img: Intro, info: 'Set your room temprature on your Demand' },
     { img: Navi, info: 'Complete Home Devices under single touch' },
-    { img: MID, info: ' Connecting all in one.' },
-    { img: mi, info: ' Automation Your Home Using Matter Protocol' }
+    // { img: MID, info: ' Connecting all in one.' },
+    // { img: mi, info: ' Automation Your Home Using Matter Protocol' }
 ];
 
 const delay = 2500;
@@ -92,7 +92,7 @@ function AutomaticImageSlider() {
                 </div>
                 <Swiper
                     // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-                    className="slideshowSlider swiper_container rounded-0 shadow-6-strong"
+                    className="slideshowSlider swiper_container rounded-0 shadow-6-strong py-5"
                     effect={'coverflow'}
                     grabCursor={true}
                     centeredSlides={true}
@@ -102,8 +102,8 @@ function AutomaticImageSlider() {
                     autoplay={autoplayParams}
                     slidesPerView={2}
                     coverflowEffect={{
-                        rotate: 60,
-                        stretch: 10,
+                        rotate: 65,
+                        stretch: 1,
                         depth: 100,
                         modifier: 1,
                         slideShadows: true,
@@ -119,11 +119,11 @@ function AutomaticImageSlider() {
                             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                         >
                             <center className=''>
-                                <center className='text-white alert bg-black rounded-0 mb-0'>{data.info}</center>
+                                <center className='text-white bg-black py-3 border-0 rounded-0 mb-0'>{data.info}</center>
                                 <div className=''>
                                     <img
                                         // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-                                        className={`${data.img === mi ? 'white !important' : 'bg-dark'} w-100 text-white rounded-4 `}
+                                        className={`${data.img === mi ? 'white !important' : 'bg-dark'} w-100 text-white `}
                                         src={data.img}
                                         style={{ background: `${data.img === mi ? 'white !important' : ''}`, transform: 'scale(1.01)', maxHeight: '350px', height: '40vh', minWidth: '400px', maxWidth: "", width: '-webkit-fill-available', color: 'white', filter: `${data.img === mi ? 'invert(1)' : ''}` }}
                                         alt={`Slide ${idx}`}
@@ -165,8 +165,8 @@ function AutomaticImageSlider() {
                     autoplay={autoplayParams}
                     slidesPerView={1}
                     coverflowEffect={{
-                        rotate: 10,
-                        stretch: 10,
+                        rotate: 15,
+                        stretch: 1,
                         depth: 100,
                         modifier: 1,
                         slideShadows: true,

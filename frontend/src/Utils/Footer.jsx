@@ -7,18 +7,18 @@ const Footer = () => {
         window.open(`tel:+91${phoneNumber}`);
     };
     return (
-        <div className='text-white container-fluid'>
-            <div className='border-bottom my-1 text-white py-2 d-flex align-items-start justify-content-between' style={{ display: '' }}
+        <div className='bg-black container-fluid'>
+            <div className='border-bottom my-1 text-white py-2 d-flex align-items-start justify-content-start' style={{ display: '' }}
             // data-aos="slide-down" data-aos-delay='100' data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='false'
             >
-                <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://wa.me/+918005183363'><b class="bi bi-whatsapp"> <b className='hideUnder600px utube'>Whatsapp</b></b> </Link>
-                <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg=='><b class="bi bi-instagram"> <b className='hideUnder600px utube'>Instagram</b></b> </Link>
+                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://wa.me/+918005183363'><b class="bi bi-whatsapp"> <b className='hideUnder600px utube'></b></b> </Link>
+                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg=='><b class="bi bi-instagram"> <b className='hideUnder600px utube'></b></b> </Link>
                 {/* <Link className='text-decoration-none text-white' target='__blank' to='https://Slogfy@gmail.com'><b class="bi fs-3 bi-envelope-at"></b></Link> */}
-                <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://www.facebook.com/slogfy'><b class="bi bi-facebook"> <b className='hideUnder600px utube'>Facebook</b></b> </Link>
-                <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://www.linkedin.com/company/slogfy/'><b class="bi bi-linkedin"> <b className='hideUnder600px utube'>LinkedIn</b></b> </Link>
-                <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://x.com/slogfy?t=7W11e-jgtl8NoIiFlBllQQ&s=09'><b class="bi bi-twitter-x "> <b className='hideUnder600px utube'>Twitter</b></b> </Link>
+                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.facebook.com/slogfy'><b class="bi bi-facebook"> <b className='hideUnder600px utube'></b></b> </Link>
+                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.linkedin.com/company/slogfy/'><b class="bi bi-linkedin"> <b className='hideUnder600px utube'></b></b> </Link>
+                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://x.com/slogfy?t=7W11e-jgtl8NoIiFlBllQQ&s=09'><b class="bi bi-twitter-x "> <b className='hideUnder600px utube'></b></b> </Link>
                 {/* <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to=''><b class="bi bi-twitter-x "> <b className='hideUnder600px utube'>Twitter</b></b> </Link> */}
-                <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://youtube.com/@slogfy8260'><b class="bi bi-youtube"> <b className='hideUnder600px utube'>YouTube</b></b>
+                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://youtube.com/@slogfy8260'><b class="bi bi-youtube"> <b className='hideUnder600px utube'></b></b>
                 </Link>
                 {/* <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://Slogfy@gmail.com'><b class="bi bi-envelope-at"> <b className='hideUnder600px utube'>Gmail</b></b>
                 </Link> */}
