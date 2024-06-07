@@ -171,11 +171,11 @@ const FAQ = () => {
                 <button className={`btn mx-2 typeBtn ${type === 'product' ? 'btn-primary' : ''}`} onClick={e => setType('product')}>Product</button>
                 <button className={`btn mx-2 typeBtn ${type === 'usage' ? 'btn-primary' : ''}`} onClick={e => setType('usage')}>Usage</button>
             </center>
-            <section className='faq'>
+            <section className='faq px-3' style={{maxHeight:'270px',overflow:'auto'}} >
                 {searchResults.map((item) => (
                     <>
                         {
-                            type === item.type ? <Question key={item.id} question={item.question} answer={item.answer} id={item.id} initialLikes={item.likes} initialdisLikes={item.dislikes} /> : ''
+                            type === item.type ? <div className='' style={{maxHeight:''}}><Question key={item.id} question={item.question} answer={item.answer} id={item.id} initialLikes={item.likes} initialdisLikes={item.dislikes} /></div> : ''
                         }
                     </>
                 ))}

@@ -163,7 +163,7 @@ const Query = (type) => {
                 <meta name='keywords' content='Contact Us' />
             </Helmet>
             <div className="container text-white pt-3 col-lg-6 col-xl-6 my-2 py-2 col-sm-12 pb-1">
-                <form onSubmit={(e) => handleSubmit(e)} ref={form} className='px-4  py-2 border rounded'>
+                <form onSubmit={(e) => handleSubmit(e)} ref={form} className='px-4 py-2 border border-dark rounded' style={{background:'#008eff12'}}>
                     <div className="form-group fw-bolder">
                         <label className="fw-bold text-light" htmlFor="formGroupName">Your Complete Name <sup className='text-danger'>*</sup></label>
                         <input type="text" className="inputHover w-100 py-2 px-2 rounded-3 bg-dark" id="formGroupName" placeholder="Your Valid Name with surname" name="user_name" value={name} onChange={e => setName(e.target.value)} required />

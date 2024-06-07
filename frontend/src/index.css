@@ -84,7 +84,7 @@ body {
 
 /* Style the active/current link */
 #navbar a.active {
-  background-color: rgb(11, 47, 84);
+  background: linear-gradient(0deg, rgb(39, 92, 139), rgb(49, 117, 176));
   /* color: white; */
 }
 
@@ -113,3 +113,18 @@ body {
 
 /* NavBar */
 
+/* Footer */
+
+.pptc {
+  border: 1px solid rgba(255, 255, 255, 0);
+  /* margin-top: 2px; */
+  margin-bottom: 2px;
+  margin-right: 2px;
+  padding:0px 10px;
+  transition: .2s ease-in-out;
+}
+.pptc:hover{
+  border: 1px solid white;
+  background: rgb(0, 157, 255);
+  /* color: black !important; */
+}

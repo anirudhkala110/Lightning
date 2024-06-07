@@ -7,8 +7,41 @@ const Footer = () => {
         window.open(`tel:+91${phoneNumber}`);
     };
     return (
-        <div className='bg-black container-fluid'>
-            <div className='border-bottom my-1 text-white py-2 d-flex align-items-start justify-content-start' style={{ display: '' }}
+        <div className='bg-black container-fluid py-3' style={{ borderTop: "1px solid rgb(72 145 255)", boxShadow: '0px 0px 25px 1px #5388e2' }}>
+
+            <div className='row col-12'>
+                <div className='col-sm-12 col-md-6 col-lg-4 col-lg-4 col-xl-4'
+                // style={{ maxWidth: '350px' }}
+                >
+                    <div>
+                        <a href="https://maps.app.goo.gl/4eqS6DdxRkrgA5Rt5" target='__blank' className='text-decoration-none text-white d-flex'>
+                            <b class="bi bi-globe-americas me-1"></b> &nbsp;<div>Address: F-76, near saket metro, Saidulajab, DDA Flats, Munirka, New Delhi, Delhi 110030</div>
+                        </a>
+                    </div>
+                </div>
+                <div className='col-sm-12 col-md-6 col-lg-4 col-lg-4 col-xl-4'>
+                    <div className='d-flex justify-content-center'>
+                        <Link to="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsCZFQPHXCckjMhFzDBnRjqZchGtLrMPXTVFRSJpVcxfZPnJBHLFpvfnVgPLvTCjSCFvkncB" target='__blank' className='text-decoration-none'>
+                            <span className='d-flex align-items-start pe-3'>
+                                <div className=''>
+                                    Gmail:
+                                </div> &nbsp;
+                                <div className='rounded-0 text-white' >
+                                    Slogfy@gmail.com
+                                </div>
+                            </span>
+                        </Link>
+                    </div>
+
+                    {/* <span className='fs-5 d-flex align-items-center pe-3'><strong className='fs-6'>Gmail: </strong> &nbsp;<button className='btn rounded-0 py-1 fw-bold' style={{ background: '#ff5722' }} >Slogfy@gmail.com</button></span> */}
+                </div>
+                <div className='col-sm-12 col-md-6 col-lg-4 col-lg-4 col-xl-4'>
+                    <button className='text-white pptc'>Privacy</button>
+                    <button className='text-white pptc'>Term and Conditions</button>
+                    <button className='text-white pptc'>More..</button>
+                </div>
+            </div>
+            <div className='text-white py-2 d-flex align-items-center justify-content-center' style={{ borderTop: "1px solid gray" }}
             // data-aos="slide-down" data-aos-delay='100' data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='false'
             >
                 <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://wa.me/+918005183363'><b class="bi bi-whatsapp"> <b className='hideUnder600px utube'></b></b> </Link>
@@ -23,17 +56,6 @@ const Footer = () => {
                 {/* <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://Slogfy@gmail.com'><b class="bi bi-envelope-at"> <b className='hideUnder600px utube'>Gmail</b></b>
                 </Link> */}
             </div>
-            <Link to="https://maps.app.goo.gl/4eqS6DdxRkrgA5Rt5" target='__blank' className='text-decoration-none'>
-                <b class="bi fs-3 bi-globe-americas"></b> &nbsp;Address: F-76, near saket metro, Saidulajab, DDA Flats, Munirka, New Delhi, Delhi 110030
-            </Link>
-            <div>
-                <Link to="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsCZFQPHXCckjMhFzDBnRjqZchGtLrMPXTVFRSJpVcxfZPnJBHLFpvfnVgPLvTCjSCFvkncB" target='__blank' className='text-decoration-none'>
-                    <span className='fs-5 d-flex align-items-center pe-3'><strong className='fs-6'>Gmail: </strong> &nbsp;<button className='btn rounded-0 py-1 text-white fw-bold' >Slogfy@gmail.com</button></span>
-                </Link>
-
-                {/* <span className='fs-5 d-flex align-items-center pe-3'><strong className='fs-6'>Gmail: </strong> &nbsp;<button className='btn rounded-0 py-1 fw-bold' style={{ background: '#ff5722' }} >Slogfy@gmail.com</button></span> */}
-            </div>
-            <br />
             {/* <sm className='text-dark'>Website Designed and Created by <b>Anirudh Kala, 7668490213, anirudhkala110@gmail.com</b></sm> */}
         </div>
     )

@@ -102,6 +102,13 @@ const Home = () => {
     }
     return (
         <div className='min-vh-100'>
+            <Helmet>
+            <Helmet>
+                <title>Slogfy - Homepage</title>
+                <meta name='description' content='Home Automation using matter protocol, voice control home automation, movement control automation.' />
+                <meta name='keywords' content='Home Automation, voice control home management system, automated system, movement controler system' />
+            </Helmet>
+            </Helmet>
             <div className='bannerBack'>
                 <div className='container'>
                     <div className='row pt-3 '>
@@ -376,7 +383,7 @@ const Home = () => {
                         </form>
                     </div>
                 </div> */}
-                <div className='container-fluid w-100 py-4 border-dark'>
+                <div className='container-fluid w-100 py-4'>
                     <center className='fs-3 fw-semibold mb-3' >Have a Question ? Ask Here !</center>
                     <div className='container d-flex justify-content-center'
                     // style={{ background: "rgba(0, 0, 0, 55%)" }}
