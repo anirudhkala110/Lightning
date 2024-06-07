@@ -117,8 +117,8 @@ const FAQ = () => {
         setSearchResults(results);
     }, [searchTerm]);
 
+    const navigate = useNavigate()
     const handleSubmit = () => {
-        const navigate = useNavigate()
         // Your API endpoint for saving the content
         const saveEndpoint = 'https://localhost:5090/api/saveUpdate';
 
