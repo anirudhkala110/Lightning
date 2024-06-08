@@ -58,7 +58,7 @@ function App() {
             <div className='navbar-fixed-top bg-black d-flex align-items-center' style={{ minHeight: '50px', borderBottom: '0px solid white', zIndex: '100' }}>
               <Navbar />
             </div>
-            <div className='text-primary navSupport pt-3 mt-5 pb-2' style={{ zIndex: '50', borderBottom: '0px solid white', background: '#0a0c3fe8' }}>
+            <div className='text-primary navSupport pt-3 mt-5 pb-2' style={{ zIndex: '50', position:"relative",borderBottom: '0px solid white', background: '#0a0c3fe8' }}>
               <NavSupport />
             </div>
             <div className='text-white' style={{ minWidth: "400px" }}>

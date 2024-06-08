@@ -13,18 +13,19 @@ const Footer = () => {
             <div className='footerMorethan1000px'>
                 <div className='text-white'>
                     <div className='' >
-                        <div className='d-flex align-items-center justify-content-between' style={{borderBottom:'1px solid gray'}}>
+                        <div className='d-flex align-items-center justify-content-between'>
                             <div className='p-1 d-flex align-items-center'>
                                 <img src={logo} className='rounded-circle' style={{ width: '30px', height: '30px', filter: 'drop-shadow(0px 0px 33px #9db7d5)', boxShadow: " black 0px 0px 1px 2px", }} />
                                 &nbsp;
                                 <strong className='fs-2' style={{ letterSpacing: '3px' }}>Slogify</strong>
                             </div>
                             <div>
-                                <a href='/'><button className='btn btn-outline-primary mx-2 border-0 rounded-0'>Home Top</button></a>
+                                <a href='/'><button className='btn btn-outline-primary mx-2 border-0 rounded-0'>Home</button></a>
                                 <NavLink to='/about'><button className='btn btn-outline-primary mx-2 border-0 rounded-0'>About</button></NavLink>
                                 <NavLink to='/support' ><button className='btn btn-outline-primary mx-2 border-0 rounded-0'>Support</button></NavLink>
                             </div>
                         </div>
+                        <hr />
                         <div className='py-3 d-flex align-items-center justify-content-center'
                         // style={{ borderTop: "1px solid gray" }}
                         >
@@ -72,13 +73,13 @@ const Footer = () => {
                         </div>
                         <hr />
                         <center className=''>
-                           
-                                <div>
-                                    &copy; 2021, Slogify.
-                                
-                                    <button className='mx-2 termPrivacyButton' style={{ borderBottom: '1px solid gray' }}>Terms</button>
-                                    <button className='mx-2 termPrivacyButton' style={{ borderBottom: '1px solid gray' }}>Privacy</button>
-                                </div>
+
+                            <div>
+                                &copy; 2021, Slogify.
+
+                                <button className='mx-2 termPrivacyButton' style={{ borderBottom: '1px solid gray' }}>Terms</button>
+                                <button className='mx-2 termPrivacyButton' style={{ borderBottom: '1px solid gray' }}>Privacy</button>
+                            </div>
                         </center>
                     </div >
                 </div>
@@ -92,7 +93,7 @@ const Footer = () => {
                         <strong className='fs-3' style={{ letterSpacing: '3px' }}>Slogify</strong>
 
                         <div>
-                            <a href='/'><button className='btn btn-outline-primary mx-2 border-0 rounded-0'>Home Top</button></a>
+                            <a href='/'><button className='btn btn-outline-primary mx-2 border-0 rounded-0'>Home</button></a>
                             <NavLink to='/about'><button className='btn btn-outline-primary mx-2 border-0 rounded-0'>About</button></NavLink>
                             <NavLink to='/support' ><button className='btn btn-outline-primary mx-2 border-0 rounded-0'>Support</button></NavLink>
                         </div>
