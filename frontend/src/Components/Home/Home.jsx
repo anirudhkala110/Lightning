@@ -104,7 +104,7 @@ const Home = () => {
         <div className='min-vh-100'>
             <Helmet>
             <Helmet>
-                <title>Slogfy - Homepage</title>
+                <title>Slogify - Homepage</title>
                 <meta name='description' content='Home Automation using matter protocol, voice control home automation, movement control automation.' />
                 <meta name='keywords' content='Home Automation, voice control home management system, automated system, movement controler system' />
             </Helmet>
@@ -237,11 +237,11 @@ const Home = () => {
                             <div className='p-3'>
                                 <center className='fw-semibold' data-aos='fade-up' data-aos-delay='0' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>
                                     <h1>
-                                        <b style={{ fontSize: '50px' }}>What is a Slogfy smart home 🏡</b>
+                                        <b style={{ fontSize: '50px' }}>What is a Slogify smart home 🏡</b>
                                     </h1>
                                 </center>
                                 <center className='fs-4 ' data-aos='zoom-in' data-aos-delay='50' data-aos-anchor-easing='ease-in-out' data-aos-duration='200' data-aos-mirror='true'>
-                                    Slogfy Smart Home is designed,<br />  <h4 className='text-primary'><Link to='/what-is-matter-protocol?' className='text-decoration-none'>with matter protocol</Link></h4>to elevate the comfort of your space & redefine the way you live your daily life!
+                                    Slogify Smart Home is designed,<br />  <h4 className='text-primary'><Link to='/what-is-matter-protocol?' className='text-decoration-none'>with matter protocol</Link></h4>to elevate the comfort of your space & redefine the way you live your daily life!
                                 </center>
                                 <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
                                     <div className='w-100 border my-3 border-secondary' />
@@ -291,7 +291,7 @@ const Home = () => {
                                         </Link>
                                     </div>
                                     <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
-                                        <Link to='/Slogfy-App-Control' className='text-white text-decoration-none'>
+                                        <Link to='/Slogify-App-Control' className='text-white text-decoration-none'>
                                             <div className='homehoverTab bg-dark rounded-2 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='fw-bold' style={{ color: "#a8ece6" }}>App Control</h4> {truncate('We Put your home in the palm of your hands with our highly lauded mobile app.', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                             </div>
                                                 <img src={applicationControl} className='col-6 shadow' style={{ borderBottomRightRadius: '0px', borderTopLeftRadius: '5px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
@@ -299,7 +299,7 @@ const Home = () => {
                                         </Link>
                                     </div>
                                     <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
-                                        <Link to='/Slogfy-Voice-Control' className='text-white text-decoration-none'>
+                                        <Link to='/Slogify-Voice-Control' className='text-white text-decoration-none'>
                                             <div className='homehoverTab bg-dark rounded-2 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='fw-bold' style={{ color: "#a8ece6" }}>Voice Control</h4> {truncate('Compatible with all leading voice assistants like Alexa, Google Home and Apple Siri', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                             </div>
                                                 <img src={voiceAssistant} className='col-6 shadow' style={{ borderBottomRightRadius: '0px', borderTopLeftRadius: '5px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
@@ -307,7 +307,7 @@ const Home = () => {
                                         </Link>
                                     </div>
                                     <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
-                                        <Link to='/Slogfy-App-Analytics' className='text-white text-decoration-none'>
+                                        <Link to='/Slogify-App-Analytics' className='text-white text-decoration-none'>
                                             <div className='homehoverTab bg-dark rounded-2 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='fw-bold' style={{ color: "#a8ece6" }}>Analytics</h4> {truncate('Gain insight into consumption & save on your bills with analytics & bill prediction.', 100)} <br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                             </div>
                                                 <img src={analytics} className='col-6 shadow' style={{ borderBottomRightRadius: '0px', borderTopLeftRadius: '5px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
@@ -315,7 +315,7 @@ const Home = () => {
                                         </Link>
                                     </div>
                                     <div className='homehover col-sm-12 col-md-12 col-xl-6 col-xxl-6 col-lg-6 my-5' style={{ height: '220px' }}>
-                                        <Link to='/Slogfy-App-Schedule-Control' className='text-white text-decoration-none'>
+                                        <Link to='/Slogify-App-Schedule-Control' className='text-white text-decoration-none'>
                                             <div className='homehoverTab bg-dark rounded-2 ps-3 pb-2 d-flex justify-content-between align-items-start' style={{ height: '220px' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' className='p-2' style={{ fontSize: '0.7em' }}><h4 className='fw-bold' style={{ color: "#a8ece6" }}> Schedules</h4>{truncate('Get time-based appliance control with scheduling & timer functionalities', 100)}<br /><em className='fw-bold text-primary'>Learn More About Working. . .</em>
                                             </div>
                                                 <img src={automaticLightUsingSwitch} className='col-6 shadow' style={{ borderBottomRightRadius: '0px', borderTopLeftRadius: '5px', marginRight: "-1px", maxHeight: '-webkit-fill-available', marginTop: '-31px', minHeight: '250px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
@@ -330,7 +330,7 @@ const Home = () => {
                             <div className='px-2 row py-1' data-aos='fade-up' data-aos-delay='100' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'>
                                 <div className='w-100 border mb-2 border-secondary' />
                                 <img src={JoinUs} className='col-sm-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6' style={{ maxHeight: '300px' }} data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true' />
-                                <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>Join the SlogFy today and unlock the potential of robotic arm technology. Whether you're a seasoned professional or a curious enthusiast, RoboShop is your trusted partner in harnessing the power of robotics. Start exploring now and take the first step towards transforming your operations with cutting-edge robotic technology!</p>
+                                <p className='col-sm-12 col-md-6 col-xl-6 col-xxl-6 col-lg-6'>Join the Slogify today and unlock the potential of robotic arm technology. Whether you're a seasoned professional or a curious enthusiast, RoboShop is your trusted partner in harnessing the power of robotics. Start exploring now and take the first step towards transforming your operations with cutting-edge robotic technology!</p>
                             </div>
                         </div> */}
 
@@ -405,27 +405,27 @@ const Home = () => {
                             </Link>
                         </div>
                         <div className='homehover col-sm-6 col-md-4 col-xl-3 col-xxl-3 col-lg-3 mb-3' style={{ height: '100px' }}>
-                            <Link className='text-decoration-none text-white' target='__blank' to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg=='><div className='homehoverTab bg-dark rounded-2 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-instagram"></i><div><Link to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg==' className='text-decoration-none text-white' target='_blank'>Instagram: slogfy</Link></div></div></div>
+                            <Link className='text-decoration-none text-white' target='__blank' to='https://www.instagram.com/Slogify?igsh=MXdraDhpbzlxaHk1Zg=='><div className='homehoverTab bg-dark rounded-2 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-instagram"></i><div><Link to='https://www.instagram.com/Slogify?igsh=MXdraDhpbzlxaHk1Zg==' className='text-decoration-none text-white' target='_blank'>Instagram: Slogify</Link></div></div></div>
                             </Link>
                         </div>
                         <div className='homehover col-sm-6 col-md-4 col-xl-3 col-xxl-3 col-lg-3 mb-3' style={{ height: '100px' }}>
-                            <Link className='text-decoration-none text-white' target='__blank' to='https://Slogfy@gmail.com'><div className='homehoverTab bg-dark rounded-2 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-envelope-at"></i><div><Link to='https://Slogfy@gmail.com' className='text-decoration-none text-white' target='_blank'>Gmail: Slogfy@gmail.com</Link></div></div></div>
+                            <Link className='text-decoration-none text-white' target='__blank' to='https://Slogify@gmail.com'><div className='homehoverTab bg-dark rounded-2 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-envelope-at"></i><div><Link to='https://Slogify@gmail.com' className='text-decoration-none text-white' target='_blank'>Gmail: Slogify@gmail.com</Link></div></div></div>
                             </Link>
                         </div>
                         <div className='homehover col-sm-6 col-md-4 col-xl-3 col-xxl-3 col-lg-3 mb-3' style={{ height: '100px' }}>
-                            <Link className='text-decoration-none text-white' target='__blank' to='https://www.facebook.com/slogfy'><div className='homehoverTab bg-dark rounded-2 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-facebook"></i><div><Link to='https://www.facebook.com/slogfy' className='text-decoration-none text-white' target='_blank'>Facebook: SlogFy </Link></div></div></div>
+                            <Link className='text-decoration-none text-white' target='__blank' to='https://www.facebook.com/Slogify'><div className='homehoverTab bg-dark rounded-2 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-facebook"></i><div><Link to='https://www.facebook.com/Slogify' className='text-decoration-none text-white' target='_blank'>Facebook: Slogify </Link></div></div></div>
                             </Link>
                         </div>
                         <div className='homehover col-sm-6 col-md-4 col-xl-3 col-xxl-3 col-lg-3 mb-3' style={{ height: '100px' }}>
-                            <Link className='text-decoration-none text-white' target='__blank' to='https://www.linkedin.com/company/slogfy/'><div className='homehoverTab bg-dark rounded-2 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-linkedin"></i><div><Link to='https://www.linkedin.com/company/slogfy/' className='text-decoration-none text-white' target='_blank'>LinkedIn: Slogfy</Link></div></div></div>
+                            <Link className='text-decoration-none text-white' target='__blank' to='https://www.linkedin.com/company/Slogify/'><div className='homehoverTab bg-dark rounded-2 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-linkedin"></i><div><Link to='https://www.linkedin.com/company/Slogify/' className='text-decoration-none text-white' target='_blank'>LinkedIn: Slogify</Link></div></div></div>
                             </Link>
                         </div>
                         <div className='homehover col-sm-6 col-md-4 col-xl-3 col-xxl-3 col-lg-3 mb-3' style={{ height: '100px' }}>
-                            <Link className='text-decoration-none text-white' target='__blank' to='https://x.com/slogfy?t=7W11e-jgtl8NoIiFlBllQQ&s=09'><div className='homehoverTab bg-dark rounded-2 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-twitter-x"></i><div><Link to='https://x.com/slogfy?t=7W11e-jgtl8NoIiFlBllQQ&s=09' className='text-decoration-none text-white' target='_blank'>Twitter: @slogfy</Link></div></div></div>
+                            <Link className='text-decoration-none text-white' target='__blank' to='https://x.com/Slogify?t=7W11e-jgtl8NoIiFlBllQQ&s=09'><div className='homehoverTab bg-dark rounded-2 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-twitter-x"></i><div><Link to='https://x.com/Slogify?t=7W11e-jgtl8NoIiFlBllQQ&s=09' className='text-decoration-none text-white' target='_blank'>Twitter: @Slogify</Link></div></div></div>
                             </Link>
                         </div>
                         <div className='homehover col-sm-6 col-md-4 col-xl-3 col-xxl-3 col-lg-3 mb-3' style={{ height: '100px' }}>
-                            <Link className='text-decoration-none text-white' target='__blank' to='https://youtube.com/@slogfy8260'><div className='homehoverTab bg-dark rounded-2 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-youtube"></i><div><Link to='https://youtube.com/@slogfy8260' className='text-decoration-none text-white' target='_blank'>YouTube: @slogfy8260</Link></div></div></div>
+                            <Link className='text-decoration-none text-white' target='__blank' to='https://youtube.com/@Slogify8260'><div className='homehoverTab bg-dark rounded-2 px-3 py-2 d-flex justify-content-between align-items-start' style={{ height: '-webkit-fill-available' }}><div data-aos="fade-up" data-aos-delay='150' data-aos-anchor-easing='ease-in-out' data-aos-duration='500' data-aos-mirror='true'><i class="bi fs-3 bi-youtube"></i><div><Link to='https://youtube.com/@Slogify8260' className='text-decoration-none text-white' target='_blank'>YouTube: @Slogify8260</Link></div></div></div>
                             </Link>
                         </div>
                         <div className='homehover col-sm-6 col-md-4 col-xl-3 col-xxl-3 col-lg-3 mb-3' style={{ height: '100px' }}>

@@ -43,7 +43,7 @@ const Navbar = () => {
                             <img src={logo} width={50} className='' style={{ filter: 'invert(1) !important', borderRadius: '50%' }} />
                         </div>
                         &nbsp;
-                        <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogfy</strong>
+                        <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogify</strong>
                     </div>
                 </a>
                 <div className='show1000px ms-4 '>
@@ -92,16 +92,16 @@ const Navbar = () => {
                 </div>
                 <div className='less1000px  align-items-center me-1'>
                     {/* <div className='text-white'>
-                            <Link to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg==' className='text-decoration-none text-white' target='__blank'>
+                            <Link to='https://www.instagram.com/Slogify?igsh=MXdraDhpbzlxaHk1Zg==' className='text-decoration-none text-white' target='__blank'>
                                 <i class="bi bi-instagram fs-4 "></i>&nbsp;&nbsp;
                             </Link>
-                            <Link to='https://www.facebook.com/slogfy' className='text-decoration-none text-white' target='__blank'>
+                            <Link to='https://www.facebook.com/Slogify' className='text-decoration-none text-white' target='__blank'>
                                 <i class="bi bi-facebook fs-4 "></i>&nbsp;&nbsp;
                             </Link>
-                            <Link to='https://www.linkedin.com/company/slogfy/' className='text-decoration-none text-white' target='__blank'>
+                            <Link to='https://www.linkedin.com/company/Slogify/' className='text-decoration-none text-white' target='__blank'>
                                 <i class="bi bi-linkedin fs-4 "></i>&nbsp;&nbsp;
                             </Link>
-                            <Link to='https://youtube.com/@slogfy8260' className='text-decoration-none text-white' target='__blank'>
+                            <Link to='https://youtube.com/@Slogify8260' className='text-decoration-none text-white' target='__blank'>
                                 <i class="bi bi-youtube fs-4 "></i>&nbsp;&nbsp;
                             </Link>
                         </div> */}
@@ -120,7 +120,7 @@ const Navbar = () => {
                                 <img src={logo} width={35} className='rounded-circle text-white bg-black' style={{ filter: 'invert() !important' }} />
                             </div>
                             &nbsp;
-                            <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogfy</strong>
+                            <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogify</strong>
                         </a>
                         <button type="button" className="btn-close text-reset text-white fs-3 fw-bolder py-2" data-bs-dismiss="offcanvas" aria-label="Close" style={{ color: 'white' }}><i class="bi bi-x-lg text-white"></i></button>
                     </div>
@@ -155,35 +155,35 @@ const Navbar = () => {
                                 </NavLink>
                             </div>
                             <div className='bg-black text-white'>
-                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg==' >
+                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.instagram.com/Slogify?igsh=MXdraDhpbzlxaHk1Zg==' >
                                     <i class="bi bi-instagram"></i> Instagram
                                 </NavLink>
                             </div>
                             <div className='bg-black text-white'>
-                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://Slogfy@gmail.com' >
+                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://Slogify@gmail.com' >
                                     <i class="bi bi-envelope-at"></i> Gmail
                                 </NavLink>
                             </div>
                             <div className='bg-black text-white'>
-                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.facebook.com/slogfy' >
+                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.facebook.com/Slogify' >
                                     <i class="bi bi-facebook"></i> Facebook
                                 </NavLink>
                             </div>
 
                             <div className='bg-black text-white'>
-                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.linkedin.com/company/slogfy/' >
+                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://www.linkedin.com/company/Slogify/' >
                                     <i class="bi bi-linkedin"></i> LinkedIn
                                 </NavLink>
                             </div>
 
                             <div className='bg-black text-white'>
-                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://x.com/slogfy?t=7W11e-jgtl8NoIiFlBllQQ&s=09'>
+                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://x.com/Slogify?t=7W11e-jgtl8NoIiFlBllQQ&s=09'>
                                     <i class="bi bi-twitter-x"></i> Twiter
                                 </NavLink>
                             </div>
 
                             <div className='bg-black text-white'>
-                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://youtube.com/@slogfy8260'>
+                                <NavLink className='btn  my-1 w-100 rounded-0 linkTabs' target='__blank' to='https://youtube.com/@Slogify8260'>
                                     <i class="bi bi-youtube"></i> YouTube
                                 </NavLink>
                             </div>

@@ -35,15 +35,15 @@ const Footer = () => {
                                 // data-aos="slide-down" data-aos-delay='100' data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='false'
                                 >
                                     <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://wa.me/+918005183363'><b class="bi bi-whatsapp"> <b className='hideUnder600px utube'></b></b> </Link>
-                                    <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg=='><b class="bi bi-instagram"> <b className='hideUnder600px utube'></b></b> </Link>
-                                    {/* <Link className='text-decoration-none text-white' target='__blank' to='https://Slogfy@gmail.com'><b class="bi fs-3 bi-envelope-at"></b></Link> */}
-                                    <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.facebook.com/slogfy'><b class="bi bi-facebook"> <b className='hideUnder600px utube'></b></b> </Link>
-                                    <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.linkedin.com/company/slogfy/'><b class="bi bi-linkedin"> <b className='hideUnder600px utube'></b></b> </Link>
-                                    <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://x.com/slogfy?t=7W11e-jgtl8NoIiFlBllQQ&s=09'><b class="bi bi-twitter-x "> <b className='hideUnder600px utube'></b></b> </Link>
+                                    <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.instagram.com/Slogify?igsh=MXdraDhpbzlxaHk1Zg=='><b class="bi bi-instagram"> <b className='hideUnder600px utube'></b></b> </Link>
+                                    {/* <Link className='text-decoration-none text-white' target='__blank' to='https://Slogify@gmail.com'><b class="bi fs-3 bi-envelope-at"></b></Link> */}
+                                    <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.facebook.com/Slogify'><b class="bi bi-facebook"> <b className='hideUnder600px utube'></b></b> </Link>
+                                    <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.linkedin.com/company/Slogify/'><b class="bi bi-linkedin"> <b className='hideUnder600px utube'></b></b> </Link>
+                                    <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://x.com/Slogify?t=7W11e-jgtl8NoIiFlBllQQ&s=09'><b class="bi bi-twitter-x "> <b className='hideUnder600px utube'></b></b> </Link>
                                     {/* <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to=''><b class="bi bi-twitter-x "> <b className='hideUnder600px utube'>Twitter</b></b> </Link> */}
-                                    <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://youtube.com/@slogfy8260'><b class="bi bi-youtube"> <b className='hideUnder600px utube'></b></b>
+                                    <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://youtube.com/@Slogify8260'><b class="bi bi-youtube"> <b className='hideUnder600px utube'></b></b>
                                     </Link>
-                                    {/* <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://Slogfy@gmail.com'><b class="bi bi-envelope-at"> <b className='hideUnder600px utube'>Gmail</b></b>
+                                    {/* <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://Slogify@gmail.com'><b class="bi bi-envelope-at"> <b className='hideUnder600px utube'>Gmail</b></b>
                 </Link> */}
                                 </div>
                             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                                             Gmail:
                                         </div> &nbsp;
                                         <div className='rounded-0 text-warning' >
-                                            Slogfy@gmail.com ✉️
+                                            Slogify@gmail.com ✉️
                                             {/* <b className='bi bi-envelope'></b> */}
                                         </div>
                                     </span>
@@ -107,15 +107,15 @@ const Footer = () => {
                             // data-aos="slide-down" data-aos-delay='100' data-aos-anchor-easing='ease-in' data-aos-duration='1000' data-aos-mirror='false'
                             >
                                 <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://wa.me/+918005183363'><b class="bi bi-whatsapp"> <b className='hideUnder600px utube'></b></b> </Link>
-                                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.instagram.com/slogfy?igsh=MXdraDhpbzlxaHk1Zg=='><b class="bi bi-instagram"> <b className='hideUnder600px utube'></b></b> </Link>
-                                {/* <Link className='text-decoration-none text-white' target='__blank' to='https://Slogfy@gmail.com'><b class="bi fs-3 bi-envelope-at"></b></Link> */}
-                                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.facebook.com/slogfy'><b class="bi bi-facebook"> <b className='hideUnder600px utube'></b></b> </Link>
-                                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.linkedin.com/company/slogfy/'><b class="bi bi-linkedin"> <b className='hideUnder600px utube'></b></b> </Link>
-                                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://x.com/slogfy?t=7W11e-jgtl8NoIiFlBllQQ&s=09'><b class="bi bi-twitter-x "> <b className='hideUnder600px utube'></b></b> </Link>
+                                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.instagram.com/Slogify?igsh=MXdraDhpbzlxaHk1Zg=='><b class="bi bi-instagram"> <b className='hideUnder600px utube'></b></b> </Link>
+                                {/* <Link className='text-decoration-none text-white' target='__blank' to='https://Slogify@gmail.com'><b class="bi fs-3 bi-envelope-at"></b></Link> */}
+                                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.facebook.com/Slogify'><b class="bi bi-facebook"> <b className='hideUnder600px utube'></b></b> </Link>
+                                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://www.linkedin.com/company/Slogify/'><b class="bi bi-linkedin"> <b className='hideUnder600px utube'></b></b> </Link>
+                                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://x.com/Slogify?t=7W11e-jgtl8NoIiFlBllQQ&s=09'><b class="bi bi-twitter-x "> <b className='hideUnder600px utube'></b></b> </Link>
                                 {/* <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to=''><b class="bi bi-twitter-x "> <b className='hideUnder600px utube'>Twitter</b></b> </Link> */}
-                                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://youtube.com/@slogfy8260'><b class="bi bi-youtube"> <b className='hideUnder600px utube'></b></b>
+                                <Link className='hoveringEffect text-decoration-none me-2 text-white' target='__blank' to='https://youtube.com/@Slogify8260'><b class="bi bi-youtube"> <b className='hideUnder600px utube'></b></b>
                                 </Link>
-                                {/* <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://Slogfy@gmail.com'><b class="bi bi-envelope-at"> <b className='hideUnder600px utube'>Gmail</b></b>
+                                {/* <Link className='hoveringEffect text-decoration-none text-white' target='__blank' to='https://Slogify@gmail.com'><b class="bi bi-envelope-at"> <b className='hideUnder600px utube'>Gmail</b></b>
                 </Link> */}
                             </div>
                         </div>
@@ -129,7 +129,7 @@ const Footer = () => {
                                             Gmail:
                                         </div> &nbsp;
                                         <div className='rounded-0 text-warning' >
-                                            Slogfy@gmail.com ✉️
+                                            Slogify@gmail.com ✉️
                                             {/* <b className='bi bi-envelope'></b> */}
                                         </div>
                                     </span>

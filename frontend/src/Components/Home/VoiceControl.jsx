@@ -12,10 +12,10 @@ const VoiceControl = () => {
                 <div className='py-1'>
                     <br />
                     <center className='p-1 rounded-0 mb-1 alert text-primary fw-semibold fs-1'>
-                        Welcome to Slogfy: Your Smart Home, Your Voice
+                        Welcome to Slogify: Your Smart Home, Your Voice
                     </center>
                     <h5>
-                        Introducing Slogfy, where smart living meets effortless control. With our cutting-edge Slogfy App Control featuring Voice Integration, you're empowered to manage your home environment with the power of your voice. Say goodbye to complicated interfaces and hello to intuitive, hands-free control that puts you in command of your living space like never before.
+                        Introducing Slogify, where smart living meets effortless control. With our cutting-edge Slogify App Control featuring Voice Integration, you're empowered to manage your home environment with the power of your voice. Say goodbye to complicated interfaces and hello to intuitive, hands-free control that puts you in command of your living space like never before.
                     </h5>
                     <hr />
                     <div className='card bg-dark px-2 text-white rounded-0 py-2'>
@@ -35,7 +35,7 @@ const VoiceControl = () => {
                                 </li>
                                 <li>&nbsp;Seamless Appliance Management
                                     <div className='card-body text-white'>
-                                        Control your appliances with ease using natural voice commands. From adjusting the fan speed to powering on the TV for movie night, simply speak your desires and let Slogfy take care of the rest.
+                                        Control your appliances with ease using natural voice commands. From adjusting the fan speed to powering on the TV for movie night, simply speak your desires and let Slogify take care of the rest.
                                     </div>
                                 </li>
                             </ol>
@@ -45,14 +45,14 @@ const VoiceControl = () => {
                             <center className='fs-3'>How It Works</center>
                             <hr />
                             <ol className='ps-3 text-info'>
-                                <li>&nbsp;Download the Slogfy App
+                                <li>&nbsp;Download the Slogify App
                                     <div className='card-body text-white'>
-                                        Will be available soon for both iOS and Android devices, download the Slogfy App from the App Store or Google Play Store.
+                                        Will be available soon for both iOS and Android devices, download the Slogify App from the App Store or Google Play Store.
                                     </div>
                                 </li>
                                 <li>&nbsp;Connect Your Devices
                                     <div className='card-body text-white'>
-                                        Easily pair your smart devices, CCTV cameras, and appliances with the Slogfy App for seamless integration.
+                                        Easily pair your smart devices, CCTV cameras, and appliances with the Slogify App for seamless integration.
                                     </div>
                                 </li>
                                 <li>&nbsp;Customize Your Settings
@@ -62,12 +62,12 @@ const VoiceControl = () => {
                                 </li>
                                 <li>&nbsp;Enjoy Remote Control
                                     <div className='card-body text-white'>
-                                        Whether you're at home, at work, or on vacation, enjoy full control of your home environment with remote access via the Slogfy App.
+                                        Whether you're at home, at work, or on vacation, enjoy full control of your home environment with remote access via the Slogify App.
                                     </div>
                                 </li>
                             </ol>
                         </div>
-                        <span>Experience the convenience of smart living with Slogfy App Control featuring Voice Integration. Elevate your home automation experience and embrace a new era of effortless control. Welcome to Slogfy: Your smart home, your voice.</span>
+                        <span>Experience the convenience of smart living with Slogify App Control featuring Voice Integration. Elevate your home automation experience and embrace a new era of effortless control. Welcome to Slogify: Your smart home, your voice.</span>
                     </div>
                     {
                         !download ? <button className='btn btn-success my-2' onClick={e => SetDownload(!download)}>Download Info as PDF file</button> : <div className='w-100' style={{ height: "500px" }}>

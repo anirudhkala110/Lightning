@@ -85,10 +85,10 @@ function App() {
                   <Route exact path='/Enhancing-Emergency-SOS-with-Matter-Protocol' element={<EmergencySOS />} />
                   <Route exact path='/Home-Automation-with-Motion-Detectors' element={<HomeAutomation />} />
                   <Route exact path='/Thermostat-with-Matter-Protocol' element={<ThermostatControl />} />
-                  <Route exact path='/Slogfy-App-Control' element={<AppControl />} />
-                  <Route exact path='/Slogfy-Voice-Control' element={<VoiceControl />} />
-                  <Route exact path='/Slogfy-App-Analytics' element={<Analytics />} />
-                  <Route exact path='/Slogfy-App-Schedule-Control' element={<Schedule />} />
+                  <Route exact path='/Slogify-App-Control' element={<AppControl />} />
+                  <Route exact path='/Slogify-Voice-Control' element={<VoiceControl />} />
+                  <Route exact path='/Slogify-App-Analytics' element={<Analytics />} />
+                  <Route exact path='/Slogify-App-Schedule-Control' element={<Schedule />} />
                   <Route exact path='/contact-detail/:userName/:phone/:email/:address' element={<ContactDetails />} />
                   <Route path='*' element={<PageNoteFound />} />
                 </Routes>

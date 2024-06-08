@@ -30,7 +30,7 @@ import 'aos/dist/aos.css';
 SwiperCore.use([EffectCoverflow, Navigation, Autoplay]);
 
 const colors = [
-    { img: fv, info: "Complete Home Automation with Slogfy" },
+    { img: fv, info: "Complete Home Automation with Slogify" },
     { img: CHA, info: "Home Automation Using  Smart Phone" },
     { img: SSL, info: "Smart Lights and Switches " },
     // { img: six, info: 'Smart Display Control' },

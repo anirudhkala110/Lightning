@@ -42,12 +42,12 @@ const About = () => {
               <div className='col-12 p-2 '>
                 <ul className='bg- text-' style={{ listStyle: 'none' }}>
                   <li>
-                    Slogfy is the brand created by Roboslog. Slogfy is an integral part of Roboslog.Roboslog is company which deals with robotics related things.Slogfy assists people to secure their home with creating matter protocol based smart home automation that simply makes your smarter than ever and most precisely "SAFE". It's helping people since 2021 since it's establishment.
+                    Slogify is the brand created by Roboslog. Slogify is an integral part of Roboslog.Roboslog is company which deals with robotics related things.Slogify assists people to secure their home with creating matter protocol based smart home automation that simply makes your smarter than ever and most precisely "SAFE". It's helping people since 2021 since it's establishment.
                   </li>
-                  {/* <li>Slogfy is the brand created by <strong>Roboslog</strong>.</li>
-                  <li>Slogfy is an integral part of <strong>Roboslog</strong>.</li>
+                  {/* <li>Slogify is the brand created by <strong>Roboslog</strong>.</li>
+                  <li>Slogify is an integral part of <strong>Roboslog</strong>.</li>
                   <li>
-                    Slogfy assists people to secure their home with
+                    Slogify assists people to secure their home with
                     creating matter protocol based smart home automation
                     that simply makes your smarter than ever and most precisely "SAFE".</li>
                   <li>It's helping people since 2021 since it's establishment.</li> */}
@@ -61,7 +61,7 @@ const About = () => {
       <br />
       <br />
       <div>
-        <center className='btn w-100 text-white py-2' style={{background:'linear-gradient(0deg, #275c8b, #3175b0)'}}><i class="bi bi-c-circle"></i> Slogfy All Rights Reserved, Since 2021</center>
+        <center className='btn w-100 text-white py-2' style={{background:'linear-gradient(0deg, #275c8b, #3175b0)'}}><i class="bi bi-c-circle"></i> Slogify All Rights Reserved, Since 2021</center>
         <br />
         <div className='container'>
           <center className='fs-2'>Our Team</center>

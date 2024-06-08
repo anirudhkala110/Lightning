@@ -13,8 +13,8 @@ const SmartLightsandSwitches = () => {
                     <center className='p-1 rounded-0 mb-1 alert text-primary fw-semibold fs-1'>
                         Smart Emergency SOS
                     </center>
-                    <h5> Slogfy introduces an advanced Smart Emergency SOS system with Matter Protocal designed to ensure the safety and security of your home and loved ones. With cutting-edge technology and intelligent features, our SOS system is capable of detecting emergency situations, triggering alerts, and providing real-time assistance when needed.
-                        At Slogfy, we prioritize the safety and well-being of our customers. Our Smart Emergency SOS system is a testament to our commitment to providing innovative solutions that make homes safer and more secure. With advanced features and intuitive functionality, Slogfy empowers homeowners to respond swiftly and effectively to any emergency situation.
+                    <h5> Slogify introduces an advanced Smart Emergency SOS system with Matter Protocal designed to ensure the safety and security of your home and loved ones. With cutting-edge technology and intelligent features, our SOS system is capable of detecting emergency situations, triggering alerts, and providing real-time assistance when needed.
+                        At Slogify, we prioritize the safety and well-being of our customers. Our Smart Emergency SOS system is a testament to our commitment to providing innovative solutions that make homes safer and more secure. With advanced features and intuitive functionality, Slogify empowers homeowners to respond swiftly and effectively to any emergency situation.
                     </h5>
                     <hr />
                     <div className='card bg-dark px-2 text-white rounded-0 py-2'>
@@ -44,7 +44,7 @@ const SmartLightsandSwitches = () => {
                                 </li>
                                 <li>&nbsp;Customizable Settings
                                     <div className='card-body text-white'>
-                                        Slogfy understands that every home and situation is unique. Therefore, our Smart Emergency SOS system allows users to customize settings according to their preferences and needs. From adjusting sensitivity levels to defining emergency contacts, users have full control over how the system responds to different scenarios.
+                                        Slogify understands that every home and situation is unique. Therefore, our Smart Emergency SOS system allows users to customize settings according to their preferences and needs. From adjusting sensitivity levels to defining emergency contacts, users have full control over how the system responds to different scenarios.
                                     </div>
                                 </li>
                             </ol>
@@ -56,7 +56,7 @@ const SmartLightsandSwitches = () => {
                             <ol className='ps-3 text-info'>
                                 <li>&nbsp;Enhanced Safety
                                     <div className='card-body text-white'>
-                                        With Slogfy's Smart Emergency SOS system, homeowners can rest assured knowing that their home is equipped to handle unforeseen emergencies effectively.
+                                        With Slogify's Smart Emergency SOS system, homeowners can rest assured knowing that their home is equipped to handle unforeseen emergencies effectively.
                                     </div>
                                 </li>
                                 <li>&nbsp;Peace of Mind
