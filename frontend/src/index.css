@@ -120,11 +120,48 @@ body {
   /* margin-top: 2px; */
   margin-bottom: 2px;
   margin-right: 2px;
-  padding:0px 10px;
+  padding: 0px 10px;
   transition: .2s ease-in-out;
 }
-.pptc:hover{
+
+.pptc:hover {
   border: 1px solid white;
   background: rgb(0, 157, 255);
   /* color: black !important; */
+}
+
+/* Footer */
+
+
+@media only screen and (max-width:1000px) {
+  .footerMorethan1000px {
+    display: none;
+  }
+
+  .footerLessthan1000px {
+    display: block;
+  }
+}
+
+@media only screen and (min-width:1000px) {
+  .footerMorethan1000px {
+    display: block;
+  }
+
+  .footerLess1000px {
+    display: none;
+  }
+}
+
+.termPrivacyButton {
+  transition: .3s ease-in-out;
+  padding: 3px 5px;
+}
+
+.termPrivacyButton:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+  color: black;
+  border-color: rgb(0, 85, 232) !important;
+  box-shadow: 0px 2px 5px 1px white;
 }
