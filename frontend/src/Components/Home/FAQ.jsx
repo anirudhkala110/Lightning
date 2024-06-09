@@ -171,11 +171,11 @@ const FAQ = () => {
                 <button className={`btn mx-2 typeBtn ${type === 'product' ? 'btn-primary' : ''}`} onClick={e => setType('product')}>Product</button>
                 <button className={`btn mx-2 typeBtn ${type === 'usage' ? 'btn-primary' : ''}`} onClick={e => setType('usage')}>Usage</button>
             </center>
-            <section className='faq px-3' style={{maxHeight:'270px',overflow:'auto'}} >
+            <section className='faq px-3' style={{ maxHeight: '270px', overflow: 'auto' }} >
                 {searchResults.map((item) => (
                     <>
                         {
-                            type === item.type ? <div className='' style={{maxHeight:''}}><Question key={item.id} question={item.question} answer={item.answer} id={item.id} initialLikes={item.likes} initialdisLikes={item.dislikes} /></div> : ''
+                            type === item.type ? <div className='' style={{ maxHeight: '' }}><Question key={item.id} question={item.question} answer={item.answer} id={item.id} initialLikes={item.likes} initialdisLikes={item.dislikes} /></div> : ''
                         }
                     </>
                 ))}
@@ -285,9 +285,13 @@ const Question = ({ id, question, answer, initialLikes, initialdisLikes }) => {
             </div>
             {
                 modalShow &&
-                <div className='modalMade border rounded-3 container-fluid'>
-                    <strong>{like && 'Thanks for your feedback 😍!'}{!like && 'Thanks for your feedback 🙂!'}</strong>
-                    {/* <strong>{dislike && !like && 'Thanks for your feedback 😰!' }{!dislike && 'Thanks for your feedback 🙂!'}</strong> */}
+                <div className='container w-100 d-flex justify-content-center align-items-center' style={{ position: 'fixed', top: '40%', left: '5%', zIndex: '1000' }}>
+                    <div style={{ boxShadow: "0px 0px 8000px 800px #000000db" }}>
+                        <center className='modalMade border rounded-3 container-fluid' style={{ position: '', top: '0%', maxWidth: '450px' }}>
+                            <strong>{like && 'Thanks for your feedback 😍!'}{!like && 'Thanks for your feedback 🙂!'}</strong>
+                            {/* <strong>{dislike && !like && 'Thanks for your feedback 😰!' }{!dislike && 'Thanks for your feedback 🙂!'}</strong> */}
+                        </center>
+                    </div>
                 </div>
             }
         </>

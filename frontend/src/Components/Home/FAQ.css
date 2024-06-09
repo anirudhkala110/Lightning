@@ -320,17 +320,17 @@ button:focus {
     }
 }
 .modalMade{
-    box-shadow: #070831bc 0px 0px 8000px 8000px;
+    box-shadow: inset  #ffffffbc 0px 0px 100px 1px;
     color: rgb(255, 255, 255);
     display: flex;
     z-index: 100;
     position: relative;
     left: 0px;
-    background: #060741f7;
+    background: #043272;
     height: 150px;
-    width: 90%;
+    /* width: 90%; */
     text-align: center;
     justify-content: center;
     align-items: center;
-    transition: 5s ease-in-out !important
+    transition: .5s ease-in-out !important
 }

@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import emailjs from '@emailjs/browser';
 import { Helmet } from 'react-helmet';
-import csc from './Customer_service_chat.gif'
 import Query from '../../Query/Query';
 
 axios.defaults.withCredentials = true

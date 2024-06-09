@@ -40,7 +40,8 @@ const Navbar = () => {
                 <a href="/" id="logo" className='text-decoration-none text-white d-flex ps-0 align-items-center' style={{ fontSize: isScrolled ? '25px' : '35px', transition: 'font-size 0.3s' }} >
                     <div className='d-flex align-items-center justify-content-between'>
                         <div className=''>
-                            <img src={logo} width={50} className='' style={{ filter: 'invert(1) !important', borderRadius: '50%' }} />
+                            <img src={logo} className='' style={{ filter: 'invert(0) !important', borderRadius: '',height:"50px"
+                             }} />
                         </div>
                         &nbsp;
                         <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogify</strong>
