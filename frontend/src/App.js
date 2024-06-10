@@ -39,6 +39,8 @@ function App() {
   // const [admin, setAdmin] = useState("Admin")
   const [time, setTime] = useState(new Date());
   const [value, setValue] = useState(1)
+  const [degree, setDegree] = useState()
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -46,23 +48,35 @@ function App() {
 
 
     }, 5000);
+    const handleScroll = () => {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+      setDegree(parseInt(document.documentElement.scrollTop/360))
+    }
+    window.addEventListener('scroll', handleScroll);
     // Cleanup function to clear the interval when the component unmounts
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval)
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
   return (
     <div className=''>
       {/* <div className={`${time % 3 == 0 ? 'imageSliderBacki1' : time % 3 == 1 ? 'imageSliderBacki3' : time % 3 == 2 ? 'imageSliderBacki2' : 'bg-black'}`} style={{ minWidth: "400px" }}> */}
-      <div className='bgBacki' style={{ minWidth: "400px" }}>
+      <div className='bgBacki' style={{ minWidth: "400px", background: isScrolled ? `linear-gradient(${degree}deg, rgb(2 187 244 / 100%), rgb(43 101 152))` : 'linear-gradient(-90deg, rgb(2 187 244 / 100%),rgb(43 101 152))' }}>
         <userContext.Provider value={admin}>
           <Router>
             <div className='navbar-fixed-top d-flex align-items-center' style={{ minHeight: '50px', borderBottom: '0px solid white', zIndex: '100' }}>
               <Navbar />
             </div>
-            <div className='text-primary navSupport pt-3 mt-5 pb-2' style={{ zIndex: '50', position:"relative",borderBottom: '0px solid white', background: '#0a0c3fe8' }}>
+            {/* <div className='text-primary navSupport' style={{ zIndex: '990',left:'80px',top:'24px', position:"fixed",borderBottom: '0px solid white' }}>
               <NavSupport />
-            </div>
+            </div> */}
             <div className='text-white' style={{ minWidth: "400px" }}>
-              <div className='container' style={{ background: 'rgb(0 0 0 / 67%) ',zIndex:'2' }}>
+              <div className='container mt-5 pt-5' style={{ background: 'rgb(0 0 0 / 67%) ', zIndex: '2' }}>
                 <Routes>
                   <Route exact path='/' element={<Home />} />
                   <Route exact path='/home' element={<Home />} />
@@ -94,7 +108,9 @@ function App() {
                 </Routes>
               </div>
             </div>
-            <div className='rounded-0 footerBacki d-flex align-items-center' style={{ minHeight: '50px' }}>
+            <div className='rounded-0 footerBacki d-flex align-items-center' style={{ minHeight: '50px',
+              background:'#0a324d'               
+            }}>
               {/* <div className='navbar-inverse rounded-0' style={{ minHeight: '50px' }}> */}
               {/* <div className='navbar-fixed-bottom navbar-inverse'> */}
               <Footer />

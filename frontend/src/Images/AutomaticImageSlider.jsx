@@ -84,29 +84,41 @@ function AutomaticImageSlider() {
         >
             <div className='show750px'>
                 {/* <div className="swiper-button-prev slider-arrow p-2" style={{ height:"-webkit-fill-available", background: 'white' }}> */}
-                <div className="swiper-button-prev slider-arrow hovleft py-5" style={{
+                <div className="swiper-button-prev slider-arrow py-5" 
+                // hovleft
+                style={{
                     // height:"-webkit-fill-available",
-                    background: '#ffffff52'
+                    // background: '#ffffff52'
                 }}>
                     <ion-icon name="arrow-back-outline"></ion-icon>
                 </div>
                 <Swiper
                     // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                     className="slideshowSlider swiper_container rounded-0 shadow-6-strong py-5"
-                    effect={'coverflow'}
+                    effect="cube"
                     grabCursor={true}
                     centeredSlides={true}
                     loop={true}
                     // autoplay={hover ? false : { delay: 2500 }}
                     // autoplay={hover === true ? false : { delay: 300 }}
                     autoplay={autoplayParams}
-                    slidesPerView={2}
-                    coverflowEffect={{
-                        rotate: 0,
-                        stretch: 1,
-                        depth: 100,
-                        modifier: 1,
+                    slidesPerView={3}
+                    // flipEffect={{
+                    //     slideShadows: true,
+                    //     limitRotation: true
+                    // }}
+                    // coverflowEffect={{
+                    //     rotate: 0,
+                    //     stretch: 10,
+                    //     depth: 10,
+                    //     modifier: 10,
+                    //     slideShadows: true,
+                    // }}
+                    cubeEffect={{
+                        shadow: true,
                         slideShadows: true,
+                        shadowOffset: 20,
+                        shadowScale: 0.94
                     }}
                     navigation={{
                         nextEl: '.swiper-button-next',
@@ -115,10 +127,11 @@ function AutomaticImageSlider() {
                 >
 
                     {colors.map((data, idx) => (
-                        <SwiperSlide className="slide imageShadow text-white mb-3" key={idx}
+                        <SwiperSlide className="slide imageShadow text-white mb-2" key={idx}
                             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                         >
-                            <center className=''>
+                           <div>
+                             <center className=''>
                                 <center className='text-white bg-black py-3 border-0 rounded-0 mb-0'>{data.info}</center>
                                 <div className=''>
                                     <img
@@ -130,6 +143,7 @@ function AutomaticImageSlider() {
                                     />
                                 </div>
                             </center>
+                           </div>
                         </SwiperSlide>
                     ))}
 
@@ -145,9 +159,11 @@ function AutomaticImageSlider() {
                     ))}
                 </center> */}
                 </Swiper>
-                <div className="swiper-button-next slider-arrow py-5 hovright" style={{
+                <div className="swiper-button-next slider-arrow py-5 "
+                //  hovright 
+                style={{
                     // height:"-webkit-fill-available", 
-                    background: '#ffffff52'
+                    // background: '#ffffff52'
                 }}>
                     <ion-icon name="arrow-forward-outline"></ion-icon>
                 </div>

@@ -8,14 +8,16 @@ const Footer = () => {
         window.open(`tel:+91${phoneNumber}`);
     };
     return (
-        <div className='bg-black container-fluid py-3' style={{ borderTop: "1px solid rgb(72 145 255)", boxShadow: '0px 0px 25px 1px #5388e2' }}>
+        <div className='container-fluid py-3' style={{ borderTop: "1px solid rgb(72 145 255)", boxShadow: '0px 0px 0px 0px #5388e2' }}>
 
             <div className='footerMorethan1000px'>
                 <div className='text-white'>
                     <div className='' >
                         <div className='d-flex align-items-center justify-content-between'>
                             <div className='p-1 d-flex align-items-center'>
-                                <img src={logo} className='rounded-circle' style={{ width: '30px', height: '30px', filter: 'drop-shadow(0px 0px 33px #9db7d5)', boxShadow: " black 0px 0px 1px 2px", }} />
+                                <img src={logo} width={30} className='rounded-circle' 
+                                // style={{ width: '30px', height: '30px', filter: 'drop-shadow(0px 0px 33px #9db7d5)', boxShadow: " black 0px 0px 1px 2px", }} 
+                                />
                                 &nbsp;
                                 <strong className='fs-2' style={{ letterSpacing: '3px' }}>Slogify</strong>
                             </div>
@@ -77,8 +79,8 @@ const Footer = () => {
                             <div>
                                 &copy; 2021, Slogify.
 
-                                <button className='mx-2 termPrivacyButton' style={{ borderBottom: '1px solid gray' }}>Terms</button>
-                                <button className='mx-2 termPrivacyButton' style={{ borderBottom: '1px solid gray' }}>Privacy</button>
+                                <button className='mx-2 termPrivacyButton text-white' style={{ borderBottom: '1px solid gray' }}>Terms</button>
+                                <button className='mx-2 termPrivacyButton text-white' style={{ borderBottom: '1px solid gray' }}>Privacy</button>
                             </div>
                         </center>
                     </div >

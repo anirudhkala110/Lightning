@@ -17,7 +17,7 @@ const Support = () => {
       </Helmet>
       <div className=" container min-vh-100 pt-3">
         <center className="fs-3 text-primary border-bottom py-3 fw-semibold alert rounded-0" style={{ letterSpacing: '1px', wordSpacing: '5px' }}>CONTACT US ✉</center>
-        <div className="px-5 py-1 container" style={{ background: "rgba(0, 0, 0, 35%)", minHeight: "100vh" }}>
+        <div className="px-5 py-1 container min-vh-100">
           <div className="my-3">
             <center> <i className="bi bi-exclamation-triangle-fill text-warning me-1"></i> If you have any questions or require our assistance, Get in touch with <a href='/' className='text-primary text-decoration-none fw-bolder'>Slogify</a>. We are here to help you.</center>
           </div>

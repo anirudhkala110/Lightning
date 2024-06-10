@@ -6,6 +6,7 @@ import logo from '../Images/Logo.png'
 const Navbar = () => {
     const admin = useContext(userContext);
     const navigate = useNavigate()
+    const [degree, setDegree] = useState()
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -15,6 +16,7 @@ const Navbar = () => {
             } else {
                 setIsScrolled(false);
             }
+            setDegree(parseInt(document.documentElement.scrollTop/360))
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -36,13 +38,14 @@ const Navbar = () => {
         <div className=''>
             {/* <nav className="navbar w-100 rounded-0 py-0" id="sidebar" style={{ background: 'black', borderBottom: '0px solid' }}> */}
             {/* <div className="d-flex w-100 justify-content-between align-items-center "> */}
-            <div id="navbar" className='d-flex justify-content-between' style={{ padding: isScrolled ? '2px 2px' : '15px 15px', maxHeight: isScrolled ? '80px' : '', transition: 'padding 0.3s', borderBottom: '1px solid white', boxShadow: '0px 0px 25px 1px #5388e2',background: "linear-gradient(to right, royalblue, #7c18c5)" }} >
-            {/* <div id="navbar" className='d-flex justify-content-between' style={{ padding: isScrolled ? '2px 2px' : '15px 15px', maxHeight: isScrolled ? '80px' : '', transition: 'padding 0.3s', borderBottom: '1px solid rgb(72 145 255)', boxShadow: '0px 0px 25px 1px #5388e2',background: "linear-gradient(to right, royalblue, #7c18c5)" }} > */}
+            <div id="navbar" className='d-flex justify-content-between' style={{ padding: isScrolled ? '2px 2px' : '15px 15px', maxHeight: isScrolled ? '80px' : '', transition: 'padding 0.3s', borderBottom: '1px solid white', boxShadow: '0px 0px 0px 0px #5388e2', background: isScrolled ? `linear-gradient(${degree}deg, rgb(2 187 244 / 100%), rgb(43 101 152))` : 'linear-gradient(to left, rgb(2 187 244 / 100%), rgb(43 101 152))' }} >
+                {/* <div id="navbar" className='d-flex justify-content-between' style={{ padding: isScrolled ? '2px 2px' : '15px 15px', maxHeight: isScrolled ? '80px' : '', transition: 'padding 0.3s', borderBottom: '1px solid rgb(72 145 255)', boxShadow: '0px 0px 25px 1px #5388e2',background: "linear-gradient(to right, royalblue, #7c18c5)" }} > */}
                 <a href="/" id="logo" className='text-decoration-none text-white d-flex ps-0 align-items-center' style={{ fontSize: isScrolled ? '25px' : '35px', transition: 'font-size 0.3s' }} >
                     <div className='d-flex align-items-center justify-content-between'>
                         <div className=''>
-                            <img src={logo} className='' style={{ filter: 'invert(0) !important', borderRadius: '',height:"50px"
-                             }} />
+                            <img src={logo} className='' style={{
+                                filter: 'invert(0) !important', borderRadius: '', height: "50px"
+                            }} />
                         </div>
                         &nbsp;
                         <strong style={{ filter: 'drop-shadow(1px 1px 1px #296192)' }}>Slogify</strong>
@@ -199,8 +202,42 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-
-
+            <div className='text-white container px-1 d-flex align-items-center mt-5' style={{ top: isScrolled ? '140px' : '200px', left: isScrolled ? "200px" : '500px' }}>
+                <div className='navsupport ps-1 text-black' >
+                    SmartSync
+                </div>
+                <div className='w-100 justify-content-end show1000NavSupport' >
+                    {/* <div className='w-100 justify-content-end show1000NavSupport' > */}
+                    {/* <NavLink to='https://wa.me/+918005183363' className='text-white rounded-0 py-1 px-3 fw-bold' target='_blank' >
+                    <i className='bi bi-whatsapp'></i>
+                </NavLink> */}
+                    {/* <div className="dropdown me-1">
+                    <button className="btn btnHover navsupport fw-bold dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                        {/* <button className="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"> 
+                        Technical
+                    </button>
+                    <ul className="dropdown-menu p-0 rounded-0" aria-labelledby="dropdownMenuButton1">
+                        <a href='/about'><button className='btn rounded-0 technicalDropDownbtn' style={{ width: '100%' }}>About</button></a>
+                        <a href='/contact-us'><button className='btn rounded-0 technicalDropDownbtn ' style={{ width: '100%' }}>Contact</button></a>
+                        <a href='/services'> <button className='btn rounded-0 technicalDropDownbtn ' style={{ width: '100%' }}>Services</button></a>
+                        <a href="/support"><button className='btn rounded-0 technicalDropDownbtn ' style={{ width: '100%' }}>Support</button></a>
+                    </ul>
+                </div> */}
+                    {/* <div className="dropleft btn-group ms-1 me-0">
+                    <button className="btn btnHover navsupport fw-bold dropdown-toggle pe-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                        {/* <button className="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                        Account
+                    </button>
+                    <ul className="dropdown-menu p-0 rounded-0" aria-labelledby="dropdownMenuButton">
+                        <a href={`/profile/${admin}`}><button className='btn rounded-0 technicalDropDownbtn' style={{ width: '100%' }}>Profile</button></a>
+                        {/* <button className='btn btn-primary mt-1' style={{ width: '100%' }}>Dashboard</button> *
+                        <a href="/login"><button className='btn rounded-0 technicalDropDownbtn ' style={{ width: '100%' }}>Login</button></a>
+                        <a href='/register'><button className='btn rounded-0 technicalDropDownbtn ' style={{ width: '100%' }}>Sign Up</button></a>
+                        <button className='btn btn-danger rounded-0' style={{ width: '100%' }}>Logout</button>
+                    </ul>
+                </div> */}
+                </div>
+            </div>
             {/* </div> */}
             {/* </nav> */}
         </div>

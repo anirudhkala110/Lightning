@@ -9,7 +9,7 @@ const NavSupport = () => {
     };
     return (
         <div className='text-white container px-1 d-flex align-items-center mt-5' >
-            <div className='navsupport ps-1 fs-5' >
+            <div className='navsupport ps-1 text-black' >
                 SmartSync
             </div>
             <div className='w-100 justify-content-end show1000NavSupport' >

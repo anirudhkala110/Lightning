@@ -33,7 +33,7 @@ const About = () => {
       <div className='aboutUsBacki d-flex align-items-center justify-content-center' style={{ fontSize: '78px', height: '250px', width: '100%' }} >
         <center className='fw-bold aboutusName' style={{ filter: 'drop-shadow(12px 12px 2px black)' }}>About Us</center>
       </div>
-      <div className='container bg-black pt-3' style={{ borderLeft: '1px solid #8080806b', borderRight: '1px solid #8080806b' }}>
+      <div className='container pt-3' style={{ borderLeft: '1px solid #8080806b', borderRight: '1px solid #8080806b' }}>
         <hr />
         <div className='row pb-2'>
           <img src={b3} className='rounded-3 col-sm-12 col-lg-6 col-xl-6 col-md-6' />
@@ -63,13 +63,13 @@ const About = () => {
       <div>
         <center className='btn w-100 text-white py-2' style={{background:'linear-gradient(0deg, #275c8b, #3175b0)'}}><i class="bi bi-c-circle"></i> Slogify All Rights Reserved, Since 2021</center>
         <br />
-        <div className='container'>
+        <div className='container my-3'>
           <center className='fs-2'>Our Team</center>
           <hr />
           <div className='row'>
             {
               data.map((data, idx) => (
-                <div className='card pt-2 col-sm-12 col-md-6 col-lg-4 bg-black col-xl-3 col-xxl-3 border-dark rounded-0 aboutUsTeam' key={idx}>
+                <div className='card bg-dark border-black border pt-2 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 border-dark rounded-0 aboutUsTeam' key={idx} style={{background:'transparent',borderColor:'white'}}>
                   <img src={data.profilePic} className='rounded-2' style={{ maxWidth: '100%', maxHeight: '300px' }} />
                   <div className='card-body text-white'>
                     <strong className='text-primary'>{data.name}</strong><br />

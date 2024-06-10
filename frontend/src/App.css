@@ -8,7 +8,8 @@
 }
 
 .navSupport {
-  box-shadow: 0px -1px 10px;
+  /* box-shadow: 0px -1px 10px; */
+  font-size: 14px !important;
 }
 
 html {
@@ -172,9 +173,9 @@ body {
 
 .btnHover:hover {
   border-radius: 0px;
-  border-bottom: 1px solid rgb(0, 110, 255) !important;
+  border-bottom: 1px solid rgb(0, 0, 0) !important;
   border-radius: 0px;
-  color: rgb(0, 110, 255) !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .btnHover:focus,
@@ -1014,7 +1015,9 @@ transform: scale(2.5);
   /* height: 500px; */
   width: 100%;
   border-radius: 40px;
+  transition: .2s ease-in-out;
 }
+
 
 /* Buttons */
 
