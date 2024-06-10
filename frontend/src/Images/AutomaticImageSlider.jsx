@@ -102,7 +102,7 @@ function AutomaticImageSlider() {
                     autoplay={autoplayParams}
                     slidesPerView={2}
                     coverflowEffect={{
-                        rotate: 65,
+                        rotate: 0,
                         stretch: 1,
                         depth: 100,
                         modifier: 1,
@@ -165,7 +165,7 @@ function AutomaticImageSlider() {
                     autoplay={autoplayParams}
                     slidesPerView={1}
                     coverflowEffect={{
-                        rotate: 15,
+                        rotate: 0,
                         stretch: 1,
                         depth: 100,
                         modifier: 1,
