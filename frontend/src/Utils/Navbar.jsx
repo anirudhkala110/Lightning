@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className=''>
             {/* <nav className="navbar w-100 rounded-0 py-0" id="sidebar" style={{ background: 'black', borderBottom: '0px solid' }}> */}
             {/* <div className="d-flex w-100 justify-content-between align-items-center "> */}
-            <div id="navbar" className='bg-black d-flex justify-content-between' style={{ padding: isScrolled ? '2px 2px' : '15px 15px', maxHeight: isScrolled ? '80px' : '', transition: 'padding 0.3s', borderBottom: '1px solid rgb(72 145 255)', boxShadow: '0px 0px 25px 1px #5388e2' }} >
+            <div id="navbar" className='d-flex justify-content-between' style={{ padding: isScrolled ? '2px 2px' : '15px 15px', maxHeight: isScrolled ? '80px' : '', transition: 'padding 0.3s', borderBottom: '1px solid rgb(72 145 255)', boxShadow: '0px 0px 25px 1px #5388e2',background: "linear-gradient(to right, royalblue, #7c18c5)" }} >
                 <a href="/" id="logo" className='text-decoration-none text-white d-flex ps-0 align-items-center' style={{ fontSize: isScrolled ? '25px' : '35px', transition: 'font-size 0.3s' }} >
                     <div className='d-flex align-items-center justify-content-between'>
                         <div className=''>

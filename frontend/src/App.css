@@ -12,7 +12,8 @@
 }
 
 html {
-  background-image: -webkit-linear-gradient(#00000021, transparent, #00000021);
+  /* background-image: -webkit-linear-gradient(#00000021, transparent, #00000021); */
+  background: linear-gradient(to bottom, royalblue, indigo);
   background-repeat: no-repeat;
   background-size: contain;
   font-size: 16px;

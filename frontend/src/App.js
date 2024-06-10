@@ -50,12 +50,12 @@ function App() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className='bg-black'>
+    <div className=''>
       {/* <div className={`${time % 3 == 0 ? 'imageSliderBacki1' : time % 3 == 1 ? 'imageSliderBacki3' : time % 3 == 2 ? 'imageSliderBacki2' : 'bg-black'}`} style={{ minWidth: "400px" }}> */}
       <div className='bgBacki' style={{ minWidth: "400px" }}>
         <userContext.Provider value={admin}>
           <Router>
-            <div className='navbar-fixed-top bg-black d-flex align-items-center' style={{ minHeight: '50px', borderBottom: '0px solid white', zIndex: '100' }}>
+            <div className='navbar-fixed-top d-flex align-items-center' style={{ minHeight: '50px', borderBottom: '0px solid white', zIndex: '100' }}>
               <Navbar />
             </div>
             <div className='text-primary navSupport pt-3 mt-5 pb-2' style={{ zIndex: '50', position:"relative",borderBottom: '0px solid white', background: '#0a0c3fe8' }}>

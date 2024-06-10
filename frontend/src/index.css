@@ -10,12 +10,14 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #000;
+  background: linear-gradient(to bottom, royalblue, indigo);
 }
 
 
 body {
   font-family: "Maven Pro", sans-serif;
-  background: black;
+  /* background: black; */
+  background: linear-gradient(to bottom, royalblue, indigo);
   text-align: center;
 }
 

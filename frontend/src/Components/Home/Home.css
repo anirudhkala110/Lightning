@@ -52,6 +52,7 @@
 }
 .bgBacki{
     background-image: url(../../Images/finalBack.jpg);
+    background: linear-gradient(to bottom, royalblue, #7c18c5);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
