@@ -21,7 +21,7 @@ const questions = [
         answer: '<ul><li>Switch Based Appliances : A Credit card sized device is installed behind your switchboard which connects to the supply and loads & provides conventional switching as well as Wi-Fi based control.</li><li>Remote-Based appliances : A Table-top device is installed in front of the appliance and is trained to replicate the respective IR-based commands</li></ul>',
         type: 'product',
         likes: 980,
-        dislikes: 20
+        dislikes: 201
     },
     {
         id: 2,
@@ -29,7 +29,7 @@ const questions = [
         answer: 'All Standard IR-based Remote operated appliances such as ACs, TVs & Sound systems are compatible with the automation system.',
         type: 'product',
         likes: 653,
-        dislikes: 20
+        dislikes: 23
     },
     {
         id: 3,
@@ -37,7 +37,7 @@ const questions = [
         answer: 'The Aliste product line is compatible with Amazon Alexa, Apple Siri Shortcuts & Google Assistant. It can easily be integrated with these assistants via their respective applications.',
         type: 'product',
         likes: 771,
-        dislikes: 20
+        dislikes: 25
     },
     {
         id: 5,
@@ -45,7 +45,7 @@ const questions = [
         answer: 'No, we provide you with a complete retrofit solution. The Sync Device goes right behind your existing switchboards without any additional rewiring.',
         type: 'general',
         likes: 840,
-        dislikes: 20
+        dislikes: 104
     },
     {
         id: 4,
@@ -53,7 +53,7 @@ const questions = [
         answer: 'Yes, our solutions are designed to automate new & existing homes without any rewiring or reconfiguration.',
         type: 'general',
         likes: 1750,
-        dislikes: 20
+        dislikes: 143
     },
     {
         id: 6,
@@ -61,7 +61,7 @@ const questions = [
         answer: 'No, Our products do not require any rewiring. They are perfectly compatible with your existing switchboard.',
         type: 'general',
         likes: 352,
-        dislikes: 20
+        dislikes: 2
     },
     {
         id: 7,
@@ -69,7 +69,7 @@ const questions = [
         answer: 'A device typically takes around 15 minutes to install. Set up of a standard 3 BHK takes approximately 2-3 hours.',
         type: 'general',
         likes: 554,
-        dislikes: 20
+        dislikes: 7
     },
     {
         id: 8,
@@ -77,7 +77,7 @@ const questions = [
         answer: 'The device requires a 2.4 GHz WiFi Connection of sufficient strength, Aliste is not liable for irregularities or malfunctions caused due to low quality network',
         type: 'usage',
         likes: 210,
-        dislikes: 20
+        dislikes: 8
     },
     {
         id: 9,
@@ -85,7 +85,7 @@ const questions = [
         answer: 'The device requires a 2.4 GHz WiFi Connection of sufficient strength, Aliste is not liable for irregularities or malfunctions caused due to low quality network',
         type: 'usage',
         likes: 789,
-        dislikes: 20
+        dislikes: 21
     },
     {
         id: 10,
@@ -93,7 +93,7 @@ const questions = [
         answer: 'There is no limit on the number of users that can access a single home',
         type: 'usage',
         likes: 511,
-        dislikes: 20
+        dislikes: 5
     },
 ];
 
